@@ -75,6 +75,11 @@
 
 - Home: https://piedmontdentalbydesign.com/
 - About: https://piedmontdentalbydesign.com/about — practice values, team, doctor bio
+- About > Dr. Martenson: https://piedmontdentalbydesign.com/about/dr-martenson — owner & lead dentist
+- About > Dr. Cangini: https://piedmontdentalbydesign.com/about/dr-cangini — board-certified periodontist
+- About > Dr. Ma: https://piedmontdentalbydesign.com/about/dr-ma — restorative & cosmetic dentist
+- About > Team: https://piedmontdentalbydesign.com/about/team — full practice team (3 dentists + 9 staff)
+- About > Office Tour: https://piedmontdentalbydesign.com/about/tour — practice photos and location
 - Procedures: https://piedmontdentalbydesign.com/procedures — full list of dental procedures by category
 - Resources: https://piedmontdentalbydesign.com/resources — patient forms, smile gallery, insurance, financing, account access
 - FAQs: https://piedmontdentalbydesign.com/faqs — dental health questions answered (daily care, conditions, cosmetic)
