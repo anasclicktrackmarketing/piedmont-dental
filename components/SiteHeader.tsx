@@ -79,6 +79,7 @@ export default function SiteHeader() {
   }, [open]);
 
   return (
+    <>
     <header className="site-header">
       <nav className="nav">
         <Link href="/" className="brand" aria-label="Piedmont Dental By Design — Home">
@@ -188,16 +189,46 @@ export default function SiteHeader() {
           </button>
         </div>
       </nav>
+    </header>
 
-      {/* Mobile drawer */}
-      <div
+    {/* Mobile backdrop + drawer — rendered OUTSIDE the header so its
+        position: fixed is relative to the viewport. The .site-header has
+        backdrop-filter, which creates a containing block for fixed
+        descendants and would otherwise clip the drawer. */}
+      <button
+        type="button"
+        className={`mobile-menu-backdrop ${open ? "is-open" : ""}`}
+        aria-label="Close menu"
+        aria-hidden={!open}
+        tabIndex={open ? 0 : -1}
+        onClick={() => setOpen(false)}
+        inert={!open}
+      />
+      <aside
         id="mobile-menu"
         className={`mobile-menu ${open ? "is-open" : ""}`}
         role="dialog"
         aria-modal="true"
         aria-label="Site navigation"
-        hidden={!open}
+        aria-hidden={!open}
+        inert={!open}
       >
+        <button
+          type="button"
+          className="mobile-menu-close"
+          aria-label="Close menu"
+          onClick={() => setOpen(false)}
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              d="M6 6l12 12M18 6L6 18"
+            />
+          </svg>
+        </button>
         <div className="mobile-menu-inner">
           <div className="mobile-menu-section">
             <span className="mobile-menu-heading">Procedures</span>
@@ -249,7 +280,7 @@ export default function SiteHeader() {
             </Link>
           </div>
         </div>
-      </div>
-    </header>
+      </aside>
+    </>
   );
 }
