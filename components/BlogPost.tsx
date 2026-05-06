@@ -17,27 +17,29 @@ export default function BlogPost({
       {/* Hero */}
       <section className="post-hero">
         <div className="post-hero-inner">
-          <div className="post-hero-meta">
-            <Link href="/blog" className="post-hero-back">
-              ← Back to blog
-            </Link>
-            <span className="post-hero-cat">{post.category}</span>
-            <time className="post-hero-date" dateTime={post.dateISO}>
-              {post.date}
-            </time>
+          <div className="post-hero-text">
+            <div className="post-hero-meta">
+              <Link href="/blog" className="post-hero-back">
+                ← Back to blog
+              </Link>
+              <span className="post-hero-cat">{post.category}</span>
+              <time className="post-hero-date" dateTime={post.dateISO}>
+                {post.date}
+              </time>
+            </div>
+            <h1 className="post-hero-title">{post.title}</h1>
+            <p className="post-hero-excerpt">{post.excerpt}</p>
           </div>
-          <h1 className="post-hero-title">{post.title}</h1>
-          <p className="post-hero-excerpt">{post.excerpt}</p>
-        </div>
-        <div className="post-hero-image">
-          <Image
-            src={post.image}
-            alt={post.alt}
-            fill
-            sizes="(max-width: 1080px) 100vw, 1100px"
-            style={{ objectFit: "cover" }}
-            priority
-          />
+          <div className="post-hero-image">
+            <Image
+              src={post.image}
+              alt={post.alt}
+              fill
+              sizes="(max-width: 1080px) 50vw, 540px"
+              style={{ objectFit: "cover" }}
+              priority
+            />
+          </div>
         </div>
       </section>
 
@@ -121,7 +123,7 @@ export default function BlogPost({
                   Other <em>articles.</em>
                 </h2>
               </div>
-              <Link href="/blog" className="lede">
+              <Link href="/blog" className="post-related-all">
                 Browse all posts →
               </Link>
             </header>

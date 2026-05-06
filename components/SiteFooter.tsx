@@ -60,6 +60,11 @@ export default function SiteFooter() {
           © 2026 Piedmont Dental By Design · Piedmont, CA
           <span className="footer-updated"> · Last updated {LAST_UPDATED}</span>
         </span>
+        <nav className="footer-legal" aria-label="Legal">
+          <a href="/terms-and-conditions">Terms</a>
+          <a href="/privacy-policy-2">Privacy</a>
+          <a href="/notice-of-privacy-practices">Notice of Privacy Practices</a>
+        </nav>
         <div className="footer-social">
           <a href="https://www.instagram.com/piedmontdentalbydesign/" aria-label="Instagram">
             IG

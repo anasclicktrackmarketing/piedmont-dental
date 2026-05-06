@@ -52,7 +52,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/resources`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE}/faqs`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE}/blog`, lastModified, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${SITE}/patient-reviews`, lastModified, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${SITE}/patient-reviews/testimonial`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE}/contact`, lastModified, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE}/terms-and-conditions`, lastModified, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE}/privacy-policy-2`, lastModified, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE}/notice-of-privacy-practices`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     ...blogPosts,
   ];
 }
