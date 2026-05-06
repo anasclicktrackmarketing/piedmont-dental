@@ -40,10 +40,29 @@ const PROCEDURES_DROPDOWN: DropdownGroup[] = [
     ],
   },
   {
-    heading: "Other categories",
+    heading: "Periodontal Services",
     items: [
-      { href: "/procedures#periodontal", label: "Periodontal Services", muted: true },
-      { href: "/procedures#prevention", label: "Cleanings & Prevention", muted: true },
+      { href: "/procedures/periodontal-services", label: "Overview" },
+      { href: "/procedures/periodontal-services/what-is-periodontal-gum-disease", label: "What Is Gum Disease?" },
+      { href: "/procedures/periodontal-services/treatment", label: "Treatment" },
+      { href: "/procedures/periodontal-services/maintenance", label: "Maintenance" },
+      { href: "/procedures/periodontal-services/gum-grafting", label: "Gum Grafting" },
+      { href: "/procedures/periodontal-services/bone-grafting", label: "Bone Grafting" },
+      { href: "/procedures/periodontal-services/crown-lengthening", label: "Crown Lengthening" },
+      { href: "/procedures/periodontal-services/periodontal-scaling-root-planing", label: "Scaling & Root Planing" },
+      { href: "/procedures/periodontal-services/sinus-augmentation", label: "Sinus Augmentation" },
+    ],
+  },
+  {
+    heading: "Cleanings & Prevention",
+    items: [
+      { href: "/procedures/cleanings-prevention", label: "Overview" },
+      { href: "/procedures/cleanings-prevention/dental-exams-cleanings", label: "Dental Exams & Cleanings" },
+      { href: "/procedures/cleanings-prevention/dental-x-rays", label: "Dental X-Rays" },
+      { href: "/procedures/cleanings-prevention/panoramic-x-rays", label: "Panoramic X-Rays" },
+      { href: "/procedures/cleanings-prevention/fluoride-treatment", label: "Fluoride Treatment" },
+      { href: "/procedures/cleanings-prevention/home-care", label: "Home Care" },
+      { href: "/procedures/cleanings-prevention/how-to-properly-brush-floss", label: "How to Brush & Floss" },
     ],
   },
 ];

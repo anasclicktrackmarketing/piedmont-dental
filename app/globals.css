@@ -1077,10 +1077,10 @@ a { color: inherit; text-decoration: none; }
 
 /* Wider, multi-group dropdown for Procedures */
 .nav-dropdown--wide .nav-dropdown-menu--grouped {
-  min-width: 760px;
+  min-width: 980px;
   display: grid;
-  grid-template-columns: 1.1fr 1.1fr 1fr;
-  gap: 8px 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 20px;
   padding: 16px;
 }
 /* Anchor wide dropdown on the left side of trigger so it doesn't overflow on the right */
