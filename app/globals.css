@@ -1394,6 +1394,13 @@ a { color: inherit; text-decoration: none; }
   font-size: 18px;
   flex-shrink: 0;
 }
+/* When real photo is used, the <Image> fills the circle */
+.team-full-avatar.has-photo {
+  position: relative;
+  overflow: hidden;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+}
 .team-full-meta h3 {
   font-family: var(--serif);
   font-size: 19px;

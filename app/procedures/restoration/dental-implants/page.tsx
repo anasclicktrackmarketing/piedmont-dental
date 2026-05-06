@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       "Permanent tooth replacement with implants — placed by specialist Dr. Filippo Cangini, restored by Dr. Jill Martenson.",
     url: "https://piedmontdentalbydesign.com/procedures/restoration/dental-implants",
     type: "article",
+    images: ["/img/procedures/restoration/dental-implants/hero.png"],
   },
 };
 
@@ -75,6 +76,7 @@ export default function DentalImplantsPage() {
             },
           ]}
           related={category.items}
+          featuredImage="/img/procedures/restoration/dental-implants/hero.png"
         />
         <AwardsStrip />
         <AboutCTA />

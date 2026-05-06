@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Chairside ceramic restorations milled in-office in a single visit. CAD/CAM, biocompatible, no temporary crowns.",
     url: "https://piedmontdentalbydesign.com/procedures/cosmetic-dentistry/cerec",
     type: "article",
-    images: ["/svc/cerec.jpg"],
+    images: ["/img/procedures/cosmetic-dentistry/_index/figure-3.jpg"],
   },
 };
 
@@ -83,7 +83,7 @@ export default function CerecPage() {
             },
           ]}
           related={category.items}
-          featuredImage="/svc/cerec.jpg"
+          featuredImage="/img/procedures/cosmetic-dentistry/_index/figure-3.jpg"
         />
         <AwardsStrip />
         <AboutCTA />

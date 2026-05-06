@@ -16,7 +16,7 @@ const categories: Category[] = [
     title: "Cleanings & Prevention",
     blurb:
       "Piedmont Dental by Design provides professional cleanings to remove plaque and tartar while promoting proper home care to prevent cavities and gum disease.",
-    image: "/svc/cleanings.jpg",
+    image: "/img/procedures/cleanings-prevention/_index/hero.jpg",
     alt: "Routine cleaning and exam",
     anchor: "prevention",
     highlights: [
@@ -32,7 +32,7 @@ const categories: Category[] = [
     title: "Cosmetic Dentistry",
     blurb:
       "Cosmetic services like teeth whitening, veneers, and bonding to enhance smiles. Our treatments improve the appearance of teeth while maintaining natural function and health.",
-    image: "/svc/veneers.jpg",
+    image: "/img/procedures/cosmetic-dentistry/_index/hero.jpg",
     alt: "Polished cosmetic smile result",
     anchor: "cosmetic",
     highlights: [
@@ -48,7 +48,7 @@ const categories: Category[] = [
     title: "Periodontal Services",
     blurb:
       "Deep cleanings and gum disease treatments to maintain healthy gums and prevent tooth loss. Procedures like scaling and root planing remove harmful bacteria and restore gum health.",
-    image: "/svc/perio.jpg",
+    image: "/img/procedures/periodontal-services/_index/hero.jpg",
     alt: "Periodontal gum care",
     anchor: "periodontal",
     highlights: [
@@ -64,7 +64,7 @@ const categories: Category[] = [
     title: "Dental Restorations",
     blurb:
       "Fillings, crowns, and implants to repair damaged or missing teeth. Our treatments restore function, strength, and aesthetics for a healthy, natural smile.",
-    image: "/svc/restoration.jpg",
+    image: "/img/procedures/restoration/_index/hero.jpg",
     alt: "Restorative dentistry",
     anchor: "restorative",
     highlights: [

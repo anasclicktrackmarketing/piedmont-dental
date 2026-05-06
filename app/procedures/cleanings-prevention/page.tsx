@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Exams, cleanings, X-rays, fluoride, and home-care coaching — keeping problems small.",
     url: "https://piedmontdentalbydesign.com/procedures/cleanings-prevention",
     type: "website",
-    images: ["/svc/cleanings.jpg"],
+    images: ["/img/procedures/cleanings-prevention/_index/hero.jpg"],
   },
 };
 
@@ -85,7 +85,7 @@ export default function CleaningsPreventionCategoryPage() {
             "Preventing dental disease starts at home with good oral hygiene and a balanced diet, and is continued in the office through the work of your dentist and hygienist to promote, restore, and maintain your oral health.",
             "Prevention also means regular exams, cleanings, and X-rays — alongside fluoride and sealants where helpful. Done well, prevention helps you avoid serious and costly dental problems and is the surest path to a healthy, confident, beautiful smile.",
           ]}
-          image="/svc/cleanings.jpg"
+          image="/img/procedures/cleanings-prevention/_index/hero.jpg"
           imageAlt="Hygiene appointment at Piedmont Dental By Design"
           cards={CARDS}
         />

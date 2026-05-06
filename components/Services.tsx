@@ -15,7 +15,7 @@ const tiles: Tile[] = [
     category: "Cosmetic",
     title: "Porcelain veneers",
     caption: "Hand-shaped, color-matched in person",
-    image: "/svc/veneers.jpg",
+    image: "/img/procedures/cosmetic-dentistry/_index/figure-1.jpg",
     alt: "Close-up of a polished smile after veneer treatment",
   },
   {
@@ -23,7 +23,7 @@ const tiles: Tile[] = [
     category: "Cosmetic",
     title: "Tooth whitening",
     caption: "In-office and take-home programs",
-    image: "/svc/whitening.jpg",
+    image: "/img/procedures/cosmetic-dentistry/_index/figure-2.jpg",
     alt: "Patient with bright, naturally white teeth smiling",
   },
   {
@@ -31,7 +31,7 @@ const tiles: Tile[] = [
     category: "Cosmetic",
     title: "Invisalign®",
     caption: "Clear aligners, planned in 3D",
-    image: "/svc/invisalign.jpg",
+    image: "/img/procedures/cosmetic-dentistry/invisalign/hero.jpg",
     alt: "Clear Invisalign aligners",
   },
   {
@@ -39,7 +39,7 @@ const tiles: Tile[] = [
     category: "Restorative",
     title: "Dental implants",
     caption: "Replace missing teeth with a permanent fix",
-    image: "/svc/implants.jpg",
+    image: "/img/procedures/restoration/dental-implants/hero.png",
     alt: "Restored smile after dental implant treatment",
   },
   {
@@ -47,7 +47,7 @@ const tiles: Tile[] = [
     category: "Restorative",
     title: "CEREC® crowns",
     caption: "Same-day digital crowns, in one visit",
-    image: "/svc/cerec.jpg",
+    image: "/img/procedures/cosmetic-dentistry/_index/figure-3.jpg",
     alt: "CEREC dental tools and equipment",
   },
   {
@@ -55,7 +55,7 @@ const tiles: Tile[] = [
     category: "Restorative",
     title: "Full mouth restoration",
     caption: "Comprehensive rebuild, planned together",
-    image: "/svc/restoration.jpg",
+    image: "/img/procedures/restoration/_index/hero.jpg",
     alt: "Restorative dentistry consultation",
   },
   {
@@ -63,7 +63,7 @@ const tiles: Tile[] = [
     category: "Periodontal",
     title: "Gum care",
     caption: "Treatment, grafting, scaling & root planing",
-    image: "/svc/perio.jpg",
+    image: "/img/procedures/periodontal-services/_index/hero.jpg",
     alt: "Periodontal gum treatment",
   },
   {
@@ -71,7 +71,7 @@ const tiles: Tile[] = [
     category: "Preventive",
     title: "Cleanings & exams",
     caption: "Routine care for the whole family",
-    image: "/svc/cleanings.jpg",
+    image: "/img/procedures/cleanings-prevention/_index/hero.jpg",
     alt: "Patient brushing her teeth",
   },
 ];

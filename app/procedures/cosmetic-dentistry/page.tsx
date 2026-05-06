@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Veneers, whitening, CEREC, Invisalign, and cosmetic surgery — every smile thoughtfully designed.",
     url: "https://piedmontdentalbydesign.com/procedures/cosmetic-dentistry",
     type: "website",
-    images: ["/svc/veneers.jpg"],
+    images: ["/img/procedures/cosmetic-dentistry/_index/hero.jpg"],
   },
 };
 
@@ -78,7 +78,7 @@ export default function CosmeticDentistryCategoryPage() {
             "As one of your most significant features, your smile deserves to radiate beauty, health, and confidence. Dr. Jill Martenson combines advanced technology with a keen eye for detail to deliver personalized cosmetic care — from quick enhancements to complete smile transformations.",
             "Our treatments are amalgam-free, built from durable, natural-looking materials, and designed to preserve oral health while achieving the smile you've always wanted.",
           ]}
-          image="/svc/veneers.jpg"
+          image="/img/procedures/cosmetic-dentistry/_index/hero.jpg"
           imageAlt="Cosmetic dentistry consultation at Piedmont Dental By Design"
           cards={CARDS}
         />

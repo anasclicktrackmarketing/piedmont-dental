@@ -22,7 +22,7 @@ export const posts: Post[] = [
     date: "March 9, 2026",
     dateISO: "2026-03-09",
     category: "Restorative",
-    image: "/blog/dental-implants.jpg",
+    image: "/img/blog/dental-implants-piedmont-ca/hero.png",
     alt: "Dental implants illustration",
     excerpt:
       "Dental implants are widely recognized as the gold standard solution for missing teeth — the only option that replaces the entire tooth structure, including the root, for a result that looks, feels, and functions like a natural tooth.",
@@ -34,7 +34,7 @@ export const posts: Post[] = [
     date: "February 9, 2026",
     dateISO: "2026-02-09",
     category: "Cosmetic",
-    image: "/blog/cosmetic-dentistry.jpg",
+    image: "/img/blog/cosmetic-dentist-piedmont-ca/hero.png",
     alt: "Cosmetic dentistry results",
     excerpt:
       "Your smile is one of the most powerful expressions of who you are. Whether you're preparing for a milestone or just ready to feel better about your teeth, modern cosmetic dentistry can create a transformation that's both meaningful and lasting.",
@@ -46,7 +46,7 @@ export const posts: Post[] = [
     date: "January 9, 2026",
     dateISO: "2026-01-09",
     category: "Family Care",
-    image: "/blog/general-dentist.jpg",
+    image: "/img/blog/family-dentist-piedmont-ca/hero.jpg",
     alt: "Family general dentist appointment",
     excerpt:
       "Choosing a dentist for your entire household is one of the most significant health decisions a family can make. From a child's first dental visit to a grandparent's routine cleaning, a trusted general dentist builds the foundation for lifelong oral wellness.",
@@ -57,7 +57,7 @@ export const posts: Post[] = [
     date: "December 9, 2025",
     dateISO: "2025-12-09",
     category: "Practice",
-    image: "/blog/oakland-dentist.jpg",
+    image: "/img/blog/trusted-dentist-oakland-ca/hero.jpg",
     alt: "Practice exterior — trusted dentist near Oakland",
     excerpt:
       "If you're seeking a dedicated and experienced dentist near Oakland, look no further than Piedmont Dental by Design. Located at 1331 Grand Ave, Piedmont, we have been providing great dental care to the Oakland and Piedmont communities since 2000.",
@@ -68,7 +68,7 @@ export const posts: Post[] = [
     date: "November 9, 2025",
     dateISO: "2025-11-09",
     category: "Daily Care",
-    image: "/blog/waterpik-vs-floss.jpg",
+    image: "/img/blog/waterpik-vs-flossing/hero.jpg",
     alt: "Waterpik vs traditional dental floss",
     excerpt:
       "Brushing your teeth twice a day is essential — but it's only half the battle. Most people are familiar with traditional dental floss, but Waterpiks are becoming increasingly popular. So which is better for your teeth?",
@@ -80,7 +80,7 @@ export const posts: Post[] = [
     date: "October 9, 2025",
     dateISO: "2025-10-09",
     category: "Family Care",
-    image: "/blog/family-dentist.jpg",
+    image: "/img/blog/family-dentist-piedmont/hero.jpg",
     alt: "Local family dentist visit",
     excerpt:
       "When it comes to your family's oral health, convenience, consistency, and comfort are key. A family dentist provides comprehensive dental care for patients of all ages — instead of visiting multiple specialists, you can simplify with one provider you trust.",

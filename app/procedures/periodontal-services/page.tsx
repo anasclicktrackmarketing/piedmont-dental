@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Surgical and non-surgical care for gum disease — scaling, grafts, crown lengthening, maintenance.",
     url: "https://piedmontdentalbydesign.com/procedures/periodontal-services",
     type: "website",
-    images: ["/svc/perio.jpg"],
+    images: ["/img/procedures/periodontal-services/_index/hero.jpg"],
   },
 };
 
@@ -99,7 +99,7 @@ export default function PeriodontalCategoryPage() {
             "Healthy gums are the foundation of a lasting smile. At Piedmont Dental By Design, Dr. Jill Martenson works alongside skilled hygienists and a board-certified periodontist to protect, treat, and restore gum health using both non-surgical and surgical techniques.",
             "From early gingivitis to advanced periodontitis — and from grafts that reverse recession to sinus lifts that prepare you for implants — every treatment is staged carefully to your condition and paired with home-care guidance to prevent recurrence.",
           ]}
-          image="/svc/perio.jpg"
+          image="/img/procedures/periodontal-services/_index/hero.jpg"
           imageAlt="Periodontal evaluation at Piedmont Dental By Design"
           cards={CARDS}
         />

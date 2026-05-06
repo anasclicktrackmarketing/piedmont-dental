@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Custom porcelain shells bonded to the fronts of teeth — color-matched in person, durable, beautiful.",
     url: "https://piedmontdentalbydesign.com/procedures/cosmetic-dentistry/porcelain-veneers",
     type: "article",
-    images: ["/svc/veneers.jpg"],
+    images: ["/img/procedures/cosmetic-dentistry/_index/figure-1.jpg"],
   },
 };
 
@@ -72,7 +72,7 @@ export default function PorcelainVeneersPage() {
             },
           ]}
           related={category.items}
-          featuredImage="/svc/veneers.jpg"
+          featuredImage="/img/procedures/cosmetic-dentistry/_index/figure-1.jpg"
         />
         <AwardsStrip />
         <AboutCTA />

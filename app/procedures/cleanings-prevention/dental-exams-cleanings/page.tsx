@@ -68,7 +68,7 @@ export default function DentalExamsCleaningsPage() {
             },
           ]}
           related={category.items}
-          featuredImage="/svc/cleanings.jpg"
+          featuredImage="/img/procedures/cleanings-prevention/_index/hero.jpg"
         />
         <AwardsStrip />
         <AboutCTA />

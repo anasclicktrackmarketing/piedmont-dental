@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Custom-tray bleaching at home or in-office whitening — supervised, ADA-approved, calibrated to your enamel.",
     url: "https://piedmontdentalbydesign.com/procedures/cosmetic-dentistry/tooth-whitening",
     type: "article",
-    images: ["/svc/whitening.jpg"],
+    images: ["/img/procedures/cosmetic-dentistry/_index/figure-2.jpg"],
   },
 };
 
@@ -73,7 +73,7 @@ export default function ToothWhiteningPage() {
             },
           ]}
           related={category.items}
-          featuredImage="/svc/whitening.jpg"
+          featuredImage="/img/procedures/cosmetic-dentistry/_index/figure-2.jpg"
         />
         <AwardsStrip />
         <AboutCTA />

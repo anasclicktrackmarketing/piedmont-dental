@@ -41,10 +41,10 @@ export type ProcedureDetailProps = {
 };
 
 const CATEGORY_IMAGE: Record<string, string> = {
-  "cleanings-prevention": "/svc/cleanings.jpg",
-  "cosmetic-dentistry": "/svc/veneers.jpg",
-  "periodontal-services": "/svc/perio.jpg",
-  restoration: "/svc/restoration.jpg",
+  "cleanings-prevention": "/img/procedures/cleanings-prevention/_index/hero.jpg",
+  "cosmetic-dentistry": "/img/procedures/cosmetic-dentistry/_index/hero.jpg",
+  "periodontal-services": "/img/procedures/periodontal-services/_index/hero.jpg",
+  restoration: "/img/procedures/restoration/_index/hero.jpg",
 };
 
 export default function ProcedureDetail({

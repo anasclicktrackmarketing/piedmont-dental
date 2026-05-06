@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Discreet teeth straightening with clear plastic aligners. iTero digital scanning, custom-made trays, comfortable removal for eating.",
     url: "https://piedmontdentalbydesign.com/procedures/cosmetic-dentistry/invisalign",
     type: "article",
-    images: ["/svc/invisalign.jpg"],
+    images: ["/img/procedures/cosmetic-dentistry/invisalign/hero.jpg"],
   },
 };
 
@@ -98,7 +98,7 @@ export default function InvisalignPage() {
             },
           ]}
           related={category.items}
-          featuredImage="/svc/invisalign.jpg"
+          featuredImage="/img/procedures/cosmetic-dentistry/invisalign/hero.jpg"
         />
         <AwardsStrip />
         <AboutCTA />
