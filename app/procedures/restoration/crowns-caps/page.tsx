@@ -35,6 +35,7 @@ export default function CrownsCapsPage() {
           slug="crowns-caps"
           title="Crowns (Caps)"
           tagline="Custom porcelain coverings that restore tooth shape, size, and strength."
+          featuredImage="/img/lIVE Piedmont website images/63e2da680b885fcdefe302c1_Crown-Lengthening2-scaled.jpg"
           intro={[
             "A crown (or cap) is a covering that encases the entire tooth surface, restoring it to its original shape and size. A crown protects and strengthens tooth structure that cannot be restored with fillings or other types of restorations.",
             "Although there are several types of crowns, porcelain (tooth-colored) crowns are the most popular. They are highly durable and will last many years, but like most dental restorations, they may eventually need to be replaced. Porcelain crowns are made to match the shape, size, and color of your teeth, giving you a natural, long-lasting beautiful smile.",

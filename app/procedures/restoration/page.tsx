@@ -76,7 +76,7 @@ export default function RestorationCategoryPage() {
           intro={[
             "Piedmont Dental by Design offers dental restorations like fillings, crowns, and implants to repair damaged or missing teeth. Our treatments restore function, strength, and aesthetics for a healthy, natural smile.",
           ]}
-          image="/img/procedures/restoration/_index/hero.jpg"
+          image="/img/lIVE Piedmont website images/Fusion-Dental-Care-Raleigh-NC-Oral-Surgery-1596x1024-1.jpeg"
           imageAlt="Restorative dentistry consultation at Piedmont Dental By Design"
           cards={CARDS}
         />

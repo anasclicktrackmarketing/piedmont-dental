@@ -37,6 +37,7 @@ export default function SinusAugmentationPage() {
           slug="sinus-augmentation"
           title="Sinus Augmentation"
           tagline="Raise the sinus floor to make room for upper-jaw implants."
+          featuredImage="/img/lIVE Piedmont website images/Sinus Augmentation.png"
           intro={[
             "A dental implant serves as an artificial tooth root attached to the jawbone, with a replacement tooth or bridge securely fixed on top to restore complete tooth function. Successful, long-lasting implants depend on adequate jawbone quality and quantity.",
             "When bone has been lost due to injury or periodontal disease, a sinus augmentation can raise the sinus floor to enable new bone formation — making implant placement possible in the upper jaw where it otherwise wouldn't be safe.",

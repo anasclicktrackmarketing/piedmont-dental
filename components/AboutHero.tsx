@@ -45,8 +45,8 @@ export default function AboutHero() {
 
         <div className="page-hero-image">
           <Image
-            src="/about.jpg"
-            alt="Dr. Jill Martenson at Piedmont Dental By Design"
+            src="/img/lIVE Piedmont website images/Cosmetic-Dentistry.png"
+            alt="Dr. Jill Martenson examining a patient at Piedmont Dental By Design"
             fill
             sizes="(max-width: 1080px) 100vw, 540px"
             style={{ objectFit: "cover" }}

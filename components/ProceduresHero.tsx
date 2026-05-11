@@ -35,8 +35,8 @@ export default function ProceduresHero() {
 
         <div className="procedures-hero-feature">
           <Image
-            src="/about.jpg"
-            alt="Inside Piedmont Dental By Design — where every procedure is performed"
+            src="/img/lIVE Piedmont website images/5477-dentist_showing_patient_xrays-732x549-thumbnail-732x549-1.avif"
+            alt="Dentist showing patient X-rays at Piedmont Dental By Design"
             fill
             sizes="(max-width: 1080px) 100vw, 540px"
             style={{ objectFit: "cover" }}

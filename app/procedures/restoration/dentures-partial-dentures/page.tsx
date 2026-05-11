@@ -37,6 +37,7 @@ export default function DenturesPage() {
           slug="dentures-partial-dentures"
           title="Dentures & Partial Dentures"
           tagline="Removable tooth replacement, custom-crafted for fit and comfort."
+          featuredImage="/img/lIVE Piedmont website images/Dentures & Partial Dentures.png"
           intro={[
             "A denture is a removable dental appliance replacement for missing teeth and surrounding tissue. They are made to closely resemble your natural teeth and may even enhance your smile.",
             "There are two types of dentures — complete and partial. Complete dentures are used when all of the teeth are missing, while partial dentures are used when some natural teeth remain. A partial denture not only fills in the spaces created by missing teeth, it prevents other teeth from shifting.",

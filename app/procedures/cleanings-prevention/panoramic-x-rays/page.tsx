@@ -35,6 +35,7 @@ export default function PanoramicXRaysPage() {
           slug="panoramic-x-rays"
           title="Panoramic X-Rays"
           tagline="Wraparound imaging for the whole mouth — extraoral, simple, and revealing."
+          featuredImage="/img/lIVE Piedmont website images/Panoramic X-Rays.png"
           intro={[
             "Panoramic X-rays (also known as Panorex® or orthopantomograms) are wraparound photographs of the face and teeth. They offer a view that would otherwise be invisible to the naked eye — exposing hidden structures like wisdom teeth, revealing preliminary signs of cavities, and showing fractures and bone loss.",
             "Panoramic X-rays are extraoral and simple to perform. Where most dental X-rays involve film placed inside the mouth, panoramic film sits inside a mechanism that rotates around the outside of the head.",

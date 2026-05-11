@@ -37,6 +37,7 @@ export default function FluorideTreatmentPage() {
           slug="fluoride-treatment"
           title="Fluoride Treatment"
           tagline="The most effective single agent for preventing tooth decay."
+          featuredImage="/img/lIVE Piedmont website images/Fluoride Treatment.png"
           intro={[
             "Fluoride is the most effective agent available to help prevent tooth decay. It's a mineral that's naturally present in varying amounts in almost all foods and water supplies.",
             "The benefits of fluoride have been well known for over fifty years and are supported by many health and professional organizations. Used properly, fluoride helps prevent the most common chronic condition there is — dental decay.",

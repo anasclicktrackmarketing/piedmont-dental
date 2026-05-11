@@ -83,7 +83,7 @@ export default function CerecPage() {
             },
           ]}
           related={category.items}
-          featuredImage="/img/procedures/cosmetic-dentistry/_index/figure-3.jpg"
+          featuredImage="/img/lIVE Piedmont website images/CEREC® Same-Day Crowns.png"
         />
         <AwardsStrip />
         <AboutCTA />

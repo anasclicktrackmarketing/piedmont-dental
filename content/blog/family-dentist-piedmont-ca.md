@@ -69,6 +69,8 @@ Research confirms that chronic gum disease links to elevated risks of heart dise
 
 New patients receive a thorough appointment including comprehensive oral exam, full-mouth digital X-rays, periodontal assessment, oral cancer screening, and a personalized treatment plan tailored to individual health goals.
 
+![Comprehensive dental exam at Piedmont Dental By Design](/img/lIVE%20Piedmont%20website%20images/Dentist-blog-image-1.jpg)
+
 ## Frequently Asked Questions
 
 **How often should I visit?**

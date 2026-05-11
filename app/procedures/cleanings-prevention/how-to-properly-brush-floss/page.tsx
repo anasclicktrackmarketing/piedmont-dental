@@ -37,6 +37,7 @@ export default function HowToBrushFlossPage() {
           slug="how-to-properly-brush-floss"
           title="How to Brush & Floss"
           tagline="The two most important habits in oral health — done correctly."
+          featuredImage="/img/lIVE Piedmont website images/How to Brush & Floss.png"
           intro={[
             "Brushing and flossing are of paramount importance to oral hygiene. Though bi-annual professional dental cleanings remove plaque, tartar, and debris, excellent home care is equally valuable.",
             "Proper brushing and flossing can enhance the health of the mouth, make the smile sparkle, and prevent serious diseases. Doing them well is more important than doing them often.",

@@ -26,7 +26,7 @@ export default function BeforeAfter() {
             alt="Before and after teeth whitening"
             fill
             sizes="(max-width: 1080px) 100vw, 1280px"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", objectPosition: "center top" }}
             priority={false}
           />
           <span className="ba-tag before">Before</span>

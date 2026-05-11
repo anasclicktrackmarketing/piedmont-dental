@@ -66,6 +66,8 @@ Most healthy adults with missing teeth are candidates. Ideal candidates have ade
 
 Implants offer advantages in bone preservation, natural appearance, durability, comfort, and long-term cost-effectiveness. While bridges and dentures have lower upfront costs, they typically require replacement and adjustment over time, whereas implants are a one-time investment.
 
+![Dental implant components — crown, abutment, and titanium post](/img/lIVE%20Piedmont%20website%20images/Dental-Implants-1.png)
+
 ## Frequently Asked Questions
 
 **Cost in the East Bay**

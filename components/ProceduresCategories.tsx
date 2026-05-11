@@ -64,8 +64,8 @@ const categories: Category[] = [
     title: "Dental Restorations",
     blurb:
       "Fillings, crowns, and implants to repair damaged or missing teeth. Our treatments restore function, strength, and aesthetics for a healthy, natural smile.",
-    image: "/img/procedures/restoration/_index/hero.jpg",
-    alt: "Restorative dentistry",
+    image: "/img/lIVE Piedmont website images/Dental-Implants-1.png",
+    alt: "Dental restorations and implants",
     anchor: "restorative",
     highlights: [
       "Dental implants",

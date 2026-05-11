@@ -55,7 +55,7 @@ const tiles: Tile[] = [
     category: "Restorative",
     title: "Full mouth restoration",
     caption: "Comprehensive rebuild, planned together",
-    image: "/img/procedures/restoration/_index/hero.jpg",
+    image: "/img/lIVE Piedmont website images/Gingivitis.jpg",
     alt: "Restorative dentistry consultation",
   },
   {

@@ -44,7 +44,7 @@ export default function ResourcesHero() {
 
         <div className="page-hero-image">
           <Image
-            src="/about.jpg"
+            src="/img/lIVE Piedmont website images/female-dentist-performing-dental-check-patient-scaled.jpg"
             alt="Patient resources at Piedmont Dental By Design"
             fill
             sizes="(max-width: 1080px) 100vw, 540px"

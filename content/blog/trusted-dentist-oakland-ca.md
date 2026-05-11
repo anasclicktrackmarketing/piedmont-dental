@@ -73,6 +73,8 @@ The practice utilizes advanced technology to ensure efficient, comfortable, and 
 
 **Patient Testimonials:** A satisfied patient noted that Dr. Martenson and her team are amazing, the office is modern, and the staff is incredibly friendly.
 
+![Dentist examining a patient in Oakland, CA](/img/lIVE%20Piedmont%20website%20images/Dentist-in-Oakland.jpg)
+
 ## Serving the Oakland Community
 
 The practice prioritizes oral health awareness and accessible dental care for individuals and families of all ages and backgrounds, whether longtime residents or newcomers to the area.

@@ -35,6 +35,7 @@ export default function HomeCarePage() {
           slug="home-care"
           title="Home Care"
           tagline="Daily habits that protect everything we do in the office."
+          featuredImage="/img/lIVE Piedmont website images/girl-brushing-her-teeth.jpg"
           intro={[
             "A beautiful, healthy smile that lasts a lifetime is our ultimate goal when treating patients. Your personal home care plays an important role in achieving that goal.",
             "Personal home care starts by eating balanced meals, reducing the number of snacks you eat, and correctly using the various dental aids that help control the plaque and bacteria that cause dental disease.",

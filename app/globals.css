@@ -4200,7 +4200,7 @@ section.bay {
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid var(--rule);
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 8 / 7;
   background: var(--paper);
   box-shadow: var(--shadow-md);
 }
@@ -4222,6 +4222,8 @@ section.bay {
 }
 .ba-tag.after {
   right: 24px;
+  top: auto;
+  bottom: 24px;
   background: var(--teal);
   color: white;
 }
@@ -4312,7 +4314,7 @@ section.bay {
   letter-spacing: 0.12em;
   margin: 0;
 }
-.about-cta { margin-top: 32px; }
+.about-cta { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
 
 /* Question subhead — small italic teal eyebrow used across sections */
 .about-question,
@@ -5592,7 +5594,7 @@ footer.site-footer {
   .section-head { grid-template-columns: 1fr; gap: 20px; margin-bottom: 36px; }
   .svc-grid, .reviews-grid, .about-team, .footer-inner { grid-template-columns: 1fr; }
   .visit-areas { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .ba-photo { aspect-ratio: 4 / 3; }
+  .ba-photo { aspect-ratio: 8 / 7; }
   .reviews-head { grid-template-columns: 1fr; gap: 32px; }
   .g-score-num { font-size: 44px; }
   .booker { padding: 24px; }

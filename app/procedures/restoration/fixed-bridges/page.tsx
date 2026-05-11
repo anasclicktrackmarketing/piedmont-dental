@@ -35,6 +35,7 @@ export default function FixedBridgesPage() {
           slug="fixed-bridges"
           title="Fixed Bridges"
           tagline="Permanent, non-removable replacement for missing teeth."
+          featuredImage="/img/lIVE Piedmont website images/Fixed bridges.png"
           intro={[
             "A dental bridge is a fixed (non-removable) appliance and is an excellent way to replace missing teeth.",
             "There are several types of bridges. You and your dentist will discuss the best options for your particular case. The \"traditional bridge\" is the most popular type and is usually made of porcelain fused to metal. This type of bridge consists of two crowns that go over two anchoring teeth (abutment teeth) and are attached to pontics (artificial teeth), filling the gap created by one or more missing teeth.",

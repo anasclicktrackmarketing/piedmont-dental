@@ -35,6 +35,7 @@ export default function BoneGraftingPage() {
           slug="bone-grafting"
           title="Bone Grafting"
           tagline="Rebuild lost jawbone — for implants, gum disease control, and aesthetics."
+          featuredImage="/img/lIVE Piedmont website images/bone grafting.png"
           intro={[
             "Periodontal disease is the leading cause of bone loss in the oral cavity, though there are others — ill-fitting dentures and facial trauma among them. Bone grafting is an excellent way to replace lost bone tissue and encourage natural bone growth, fulfilling a wide variety of functions.",
             "A bone graft may be required to create a stable base for dental implant placement, to halt the progression of gum disease, or to make a smile appear more aesthetically pleasing.",

@@ -35,6 +35,7 @@ export default function DentalXRaysPage() {
           slug="dental-x-rays"
           title="Dental X-Rays"
           tagline="Diagnostic imaging that reveals what an exam alone can't."
+          featuredImage="/img/lIVE Piedmont website images/dental-xray.jpg"
           intro={[
             "Dental radiographs (X-rays) are essential preventive and diagnostic tools that provide valuable information not visible during a regular dental exam. Dentists and hygienists use this information to safely and accurately detect hidden dental abnormalities and complete an accurate treatment plan.",
             "Without X-rays, problem areas may go undetected. Catching dental problems early can save you time, money, unnecessary discomfort — and your teeth.",

@@ -26,7 +26,7 @@ export default function About() {
     <section className="about" id="about">
       <div className="about-portrait">
         <Image
-          src="/about.jpg"
+          src="/img/lIVE Piedmont website images/Headshot_Dr-Jill-Martenson-scaled.jpg"
           alt="Dr. Jill Martenson at Piedmont Dental By Design"
           fill
           sizes="(max-width: 1080px) 100vw, 540px"

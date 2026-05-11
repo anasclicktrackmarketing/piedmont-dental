@@ -70,6 +70,8 @@ Composite dental bonding offers an elegant and cost-effective solution for minor
 
 The quality of cosmetic outcomes depends heavily on the dentist's experience, artistic sensibility, and technical precision. Dr. Martenson has delivered cosmetic results to East Bay patients since 2000, combining advanced continuing education, state-of-the-art technology, and meticulous attention to detail. Piedmont Dental by Design was honored as Best of the East Bay 2024 and 2025.
 
+![Bright, healthy smile after cosmetic dentistry](/img/lIVE%20Piedmont%20website%20images/Cosmetic-Dentistry-1.png)
+
 ## Frequently Asked Questions
 
 **Invisalign Costs:** Vary depending on case complexity and treatment duration. Many dental insurance plans include orthodontic benefits applicable to Invisalign, with flexible financing options available.

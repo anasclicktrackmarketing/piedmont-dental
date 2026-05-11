@@ -35,6 +35,7 @@ export default function GumGraftingPage() {
           slug="gum-grafting"
           title="Gum Grafting"
           tagline="Cover exposed tooth roots, reduce sensitivity, and protect against further recession."
+          featuredImage="/img/lIVE Piedmont website images/gum-grafting.webp"
           intro={[
             "A gum graft (also known as a gingival graft or periodontal plastic surgery) is the collective name for surgical procedures that aim to cover exposed tooth root surfaces with grafted oral tissue.",
             "Exposed tooth roots are usually the result of gingival recession from periodontal disease, but other common causes include overly aggressive brushing and trauma. Though the name might sound frightening, gum grafting is a common periodontal procedure with excellent results.",

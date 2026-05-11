@@ -68,7 +68,7 @@ export default function DentalExamsCleaningsPage() {
             },
           ]}
           related={category.items}
-          featuredImage="/img/procedures/cleanings-prevention/_index/hero.jpg"
+          featuredImage="/img/lIVE Piedmont website images/Dental Exams & Cleanings.png"
         />
         <AwardsStrip />
         <AboutCTA />
