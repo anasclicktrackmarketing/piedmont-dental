@@ -13,8 +13,60 @@ const ABOUT_DROPDOWN = [
   { href: "/about/tour", label: "Office Tour" },
 ];
 
+const REVIEWS_DROPDOWN = [
+  { href: "/patient-reviews", label: "All Patient Reviews" },
+  { href: "/patient-reviews/testimonial", label: "Share a Testimonial" },
+];
+
 type DropdownItem = { href: string; label: string; muted?: boolean };
 type DropdownGroup = { heading: string; items: DropdownItem[] };
+
+const RESOURCES_DROPDOWN: DropdownGroup[] = [
+  {
+    heading: "Forms & Practical",
+    items: [
+      { href: "/resources", label: "All Resources" },
+      { href: "/resources/patient-forms", label: "Patient Forms" },
+      { href: "/resources/financing", label: "Financing" },
+      { href: "/resources/insurance", label: "Insurance" },
+      { href: "/resources/smile-analysis", label: "Smile Analysis" },
+      { href: "/resources/links", label: "Useful Links" },
+    ],
+  },
+  {
+    heading: "Education",
+    items: [
+      { href: "/resources/dental-videos", label: "Dental Videos" },
+      { href: "/resources/invisalign", label: "Invisalign® Info" },
+      { href: "/resources/gummy-smile", label: "Treating a Gummy Smile" },
+      { href: "/resources/cosmetic-dentistry", label: "Cosmetic Dentistry" },
+    ],
+  },
+  {
+    heading: "Smile Gallery · Cosmetic",
+    items: [
+      { href: "/smile-gallery", label: "Smile Gallery Hub" },
+      { href: "/resources/porcelain-veneers", label: "Porcelain Veneers" },
+      { href: "/resources/invisalign-results", label: "Invisalign® Results" },
+      { href: "/resources/surgery", label: "Surgery" },
+      { href: "/resources/full-mouth-restoration", label: "Full Mouth Restoration" },
+    ],
+  },
+  {
+    heading: "Smile Gallery · Restorations",
+    items: [
+      { href: "/resources/restorations", label: "All Restorations" },
+      { href: "/resources/dental-implants", label: "Dental Implants" },
+      { href: "/resources/restorations/crowns-caps", label: "Crowns (Caps)" },
+      { href: "/resources/restorations/dentures", label: "Dentures & Partials" },
+      { href: "/smile-gallery/other-procedures", label: "Other Procedures" },
+      { href: "/smile-gallery/porcelain-crowns-caps", label: "Porcelain Crown Cases" },
+      { href: "/smile-gallery/dental-implants", label: "Implant Cases" },
+      { href: "/smile-gallery/composite-fillings", label: "Composite Fillings" },
+      { href: "/smile-gallery/composite-fillings-recent", label: "Composite Fillings — Recent" },
+    ],
+  },
+];
 
 const PROCEDURES_DROPDOWN: DropdownGroup[] = [
   {
@@ -180,9 +232,74 @@ export default function SiteHeader() {
             </div>
           </div>
 
-          <Link href="/resources">Resources</Link>
-          <Link href="/smile-gallery">Smile Gallery</Link>
-          <Link href="/patient-reviews">Reviews</Link>
+          <div className="nav-dropdown nav-dropdown--wide">
+            <Link href="/resources" className="nav-dropdown-trigger">
+              Patient Resources
+              <svg
+                className="nav-dropdown-icon"
+                width="10"
+                height="10"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 9l6 6 6-6"
+                />
+              </svg>
+            </Link>
+            <div className="nav-dropdown-menu nav-dropdown-menu--grouped" role="menu">
+              {RESOURCES_DROPDOWN.map((group) => (
+                <div className="nav-dropdown-group" key={group.heading}>
+                  <span className="nav-dropdown-heading">{group.heading}</span>
+                  {group.items.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      role="menuitem"
+                      className={item.muted ? "is-muted" : undefined}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="nav-dropdown">
+            <Link href="/patient-reviews" className="nav-dropdown-trigger">
+              Reviews
+              <svg
+                className="nav-dropdown-icon"
+                width="10"
+                height="10"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 9l6 6 6-6"
+                />
+              </svg>
+            </Link>
+            <div className="nav-dropdown-menu" role="menu">
+              {REVIEWS_DROPDOWN.map((item) => (
+                <Link key={item.href} href={item.href} role="menuitem">
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <Link href="/blog">Blog</Link>
           <Link href="/faqs">FAQs</Link>
           <Link href="/contact">Contact</Link>
@@ -284,10 +401,31 @@ export default function SiteHeader() {
           </div>
 
           <div className="mobile-menu-section">
+            <span className="mobile-menu-heading">Patient Resources</span>
+
+            {RESOURCES_DROPDOWN.map((group) => (
+              <div className="mobile-menu-group" key={group.heading}>
+                <span className="mobile-menu-subheading">{group.heading}</span>
+                {group.items.map((item) => (
+                  <Link key={item.href} href={item.href} className="mobile-menu-link">
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          <div className="mobile-menu-section">
+            <span className="mobile-menu-heading">Reviews</span>
+            {REVIEWS_DROPDOWN.map((item) => (
+              <Link key={item.href} href={item.href} className="mobile-menu-link">
+                {item.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="mobile-menu-section">
             <span className="mobile-menu-heading">More</span>
-            <Link href="/resources" className="mobile-menu-link">Patient Resources</Link>
-            <Link href="/smile-gallery" className="mobile-menu-link">Smile Gallery</Link>
-            <Link href="/patient-reviews" className="mobile-menu-link">Patient Reviews</Link>
             <Link href="/blog" className="mobile-menu-link">Blog</Link>
             <Link href="/faqs" className="mobile-menu-link">FAQs</Link>
             <Link href="/contact" className="mobile-menu-link">Contact</Link>
