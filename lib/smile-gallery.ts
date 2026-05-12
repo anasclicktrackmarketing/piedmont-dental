@@ -90,8 +90,24 @@ export const GALLERY_META: Meta[] = [
   },
 ];
 
+/**
+ * Slugs handled by dedicated static routes under app/smile-gallery/{slug}/page.tsx.
+ * The dynamic [slug] route MUST exclude these — otherwise Vercel's build
+ * produces two pages for the same URL and the markdown-rendering dynamic one
+ * can win arbitrarily, masking the polished static page.
+ */
+const STATIC_GALLERY_SLUGS = new Set([
+  "other-procedures",
+  "composite-fillings",
+  "composite-fillings-recent",
+  "dental-implants",
+  "porcelain-crowns-caps",
+]);
+
 export function getGallerySlugs(): string[] {
-  return GALLERY_META.filter((m) => m.slug !== "_index").map((m) => m.slug);
+  return GALLERY_META.filter(
+    (m) => m.slug !== "_index" && !STATIC_GALLERY_SLUGS.has(m.slug)
+  ).map((m) => m.slug);
 }
 
 export function getGalleryBySlug(slug: string): SmileGalleryDoc {

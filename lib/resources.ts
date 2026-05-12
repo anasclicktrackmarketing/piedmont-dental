@@ -217,16 +217,48 @@ export const RESOURCES_META: Meta[] = [
   },
 ];
 
+/**
+ * Slugs handled by dedicated static routes under app/resources/{slug}/page.tsx.
+ * The dynamic [slug] route MUST exclude these or Vercel's build will produce
+ * two pages for the same URL — and the markdown-rendering dynamic one can
+ * arbitrarily win, masking the polished static page.
+ */
+const STATIC_RESOURCE_SLUGS = new Set([
+  "cosmetic-dentistry",
+  "dental-implants",
+  "dental-videos",
+  "financing",
+  "full-mouth-restoration",
+  "gummy-smile",
+  "insurance",
+  "invisalign",
+  "invisalign-results",
+  "links",
+  "patient-forms",
+  "porcelain-veneers",
+  "restorations",
+  "surgery",
+]);
+
+/** Slugs under /resources/restorations/{slug} handled by static routes. */
+const STATIC_NESTED_RESTORATION_SLUGS = new Set([
+  "crowns-caps",
+  "dentures",
+]);
+
 export function getResourceSlugs(): string[] {
-  return RESOURCES_META.filter((m) => !m.url.includes("/restorations/")).map(
-    (m) => m.slug
-  );
+  return RESOURCES_META.filter(
+    (m) =>
+      !m.url.includes("/restorations/") && !STATIC_RESOURCE_SLUGS.has(m.slug)
+  ).map((m) => m.slug);
 }
 
 export function getNestedRestorationSlugs(): string[] {
-  return RESOURCES_META.filter((m) => m.url.includes("/restorations/")).map(
-    (m) => m.slug
-  );
+  return RESOURCES_META.filter(
+    (m) =>
+      m.url.includes("/restorations/") &&
+      !STATIC_NESTED_RESTORATION_SLUGS.has(m.slug)
+  ).map((m) => m.slug);
 }
 
 export function getResourceBySlug(slug: string): ResourceDoc {
