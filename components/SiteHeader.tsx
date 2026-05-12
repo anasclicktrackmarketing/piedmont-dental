@@ -181,6 +181,7 @@ export default function SiteHeader() {
           </div>
 
           <Link href="/resources">Resources</Link>
+          <Link href="/smile-gallery">Smile Gallery</Link>
           <Link href="/patient-reviews">Reviews</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/faqs">FAQs</Link>
@@ -284,7 +285,8 @@ export default function SiteHeader() {
 
           <div className="mobile-menu-section">
             <span className="mobile-menu-heading">More</span>
-            <Link href="/resources" className="mobile-menu-link">Resources</Link>
+            <Link href="/resources" className="mobile-menu-link">Patient Resources</Link>
+            <Link href="/smile-gallery" className="mobile-menu-link">Smile Gallery</Link>
             <Link href="/patient-reviews" className="mobile-menu-link">Patient Reviews</Link>
             <Link href="/blog" className="mobile-menu-link">Blog</Link>
             <Link href="/faqs" className="mobile-menu-link">FAQs</Link>
