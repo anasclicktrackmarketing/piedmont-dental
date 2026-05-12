@@ -3,7 +3,7 @@ url: https://piedmontdentalbydesign.com/patient-resources/links
 slug: links
 title: Links
 category: patient-resources
-fetched: 2026-05-05
+fetched: 2026-05-12
 fetchStatus: complete
 featuredImage:
 sectionHeadings:
@@ -11,7 +11,6 @@ sectionHeadings:
   - General Dental Websites
   - Oral Health Care & Products
   - Other Interesting Websites
-  - professional associations
 metaDescription:
 ---
 
@@ -25,25 +24,19 @@ If you have a suggestion for a new link, please send us an email, as we are alwa
 
 The following links provide some good general information on dentistry.
 
-- **Academy of General Dentistry** — The AGD's consumer information site "Know Your Teeth" provides information on more than 50 oral dental health topics.
-- **American Dental Association** — Provides information for the general public including dental care articles, dental insurance information, and information for students interested in dentistry.
+- [**Academy of General Dentistry**](https://knowyourteeth.com/default.asp) — The AGD's consumer information site "Know Your Teeth" provides information on more than 50 oral dental health topics.
+- [**American Dental Association**](https://www.ada.org/) — Provides information for the general public including dental care articles, dental insurance information, and information for students interested in dentistry.
 
 ## Oral Health Care & Products
 
 Links to sites providing helpful information on oral health and home care products patients can use to maintain optimum oral health.
 
-- **Colgate** — Trusted resource for dental health information and oral care products.
-- **Crest** — One of the world's most trusted brands in dental products.
-- **Sonicare** — Learn how the Sonicare toothbrush creates an indescribable clean feeling, the benefits you can expect, and even take a factory tour.
+- [**Colgate**](https://www.colgate.com/en-us) — Trusted resource for dental health information and oral care products.
+- [**Crest**](https://crest.com/en-us) — One of the world's most trusted brands in dental products.
+- [**Sonicare**](https://www.usa.philips.com/c-m-pe/electric-toothbrushes) — Learn how the Sonicare toothbrush creates an indescribable clean feeling, the benefits you can expect, and even take a factory tour.
 
 ## Other Interesting Websites
 
 Other sites of interest on the Web.
 
-- **Healthy Smiles 2010** — A program with a goal to combat America's Oral Health Epidemic by improving the oral health of more than 50 million American children and their families by the year 2010.
-- **National Museum of Dentistry** — The museum, a Smithsonian Institution Affiliate, is a lively national center where visitors learn the importance of a healthy smile and are fascinated by the rich history of dentistry.
-
-## CTAs
-
-- REQUEST APPOINTMENT (button linking to contact page)
-- If you have a suggestion for a new link, please send us an email
+- [**National Museum of Dentistry**](https://www.dentalmuseum.com/) — The museum, a Smithsonian Institution Affiliate, is a lively national center where visitors learn the importance of a healthy smile and are fascinated by the rich history of dentistry.

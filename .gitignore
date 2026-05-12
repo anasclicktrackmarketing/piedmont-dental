@@ -17,6 +17,9 @@ dist/
 Thumbs.db
 *.tsbuildinfo
 
+# Claude Code local config
+.claude/
+
 # TypeScript / Next.js generated
 next-env.d.ts
 

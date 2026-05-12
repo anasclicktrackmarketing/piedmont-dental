@@ -14,11 +14,14 @@ export default function ResourceArticle({
   doc,
   eyebrow,
   related,
+  ctaSlot,
 }: {
   doc: ResourceDoc;
   /** Section pill above the title — e.g. "Patient Resources · Procedure info" */
   eyebrow: string;
   related: RelatedItem[];
+  /** Optional custom CTA block rendered at the end of the article body */
+  ctaSlot?: React.ReactNode;
 }) {
   const isGallery = doc.group === "before-after";
   return (
@@ -107,6 +110,7 @@ export default function ResourceArticle({
                 </a>
               </div>
             )}
+            {ctaSlot}
           </article>
 
           <aside className="resource-sidebar">
