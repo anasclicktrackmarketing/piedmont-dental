@@ -133,7 +133,7 @@ export default function StructuredData() {
       name: "Piedmont Dental By Design",
       alternateName: ["PDxD", "Piedmont Dental"],
       url: `${SITE}/`,
-      logo: `${SITE}/icon.svg`,
+      logo: `${SITE}/icon-512.png`,
       image: `${SITE}/hero-poster.jpg`,
       telephone: "+1-510-350-3937",
       priceRange: "$$",

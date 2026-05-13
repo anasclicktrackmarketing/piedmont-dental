@@ -124,6 +124,8 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
+  position: relative;        /* positioning context for wide dropdowns so they
+                                center on the nav row, not on their trigger */
   gap: 32px;
 }
 .brand {
@@ -1059,6 +1061,13 @@ a { color: inherit; text-decoration: none; }
   transition: background 0.15s ease, color 0.15s ease;
   white-space: nowrap;
 }
+/* In the wide multi-column dropdown, long labels like "Composite Fillings —
+   Recent" should wrap inside their column rather than push the column wider
+   (which would overflow the viewport). */
+.nav-dropdown-menu--grouped a {
+  white-space: normal;
+  line-height: 1.35;
+}
 .nav-dropdown-menu a:hover {
   background: var(--paper-2);
   color: var(--teal-deep);
@@ -1075,22 +1084,52 @@ a { color: inherit; text-decoration: none; }
   font-style: italic;
 }
 
-/* Wider, multi-group dropdown for Procedures */
+/* Wider, multi-group dropdown for Procedures + Patient Resources */
 .nav-dropdown--wide .nav-dropdown-menu--grouped {
-  min-width: 980px;
+  width: min(980px, calc(100vw - 24px));
+  max-width: calc(100vw - 24px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px 20px;
   padding: 16px;
 }
-/* Anchor wide dropdown on the left side of trigger so it doesn't overflow on the right */
+
+/* Take the wide dropdown out of the trigger's positioning context so its
+   menu positions relative to .nav (which is position:relative + centered
+   in the viewport). The menu is then horizontally centered in the nav
+   row — never overflows on either side, regardless of which trigger
+   owns it. */
+.nav-dropdown--wide {
+  position: static;
+}
 .nav-dropdown--wide .nav-dropdown-menu {
-  left: 0;
-  transform: translateX(0) translateY(-6px);
+  /* Anchor the menu's top below the nav row. Because .nav-dropdown is now
+     position:static, `top` is measured from the .nav parent. We use a
+     fixed offset that matches where the trigger sits + 12px gap. */
+  top: calc(100% - 16px);
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%) translateY(-6px);
 }
 .nav-dropdown--wide:hover .nav-dropdown-menu,
 .nav-dropdown--wide:focus-within .nav-dropdown-menu {
-  transform: translateX(0) translateY(0);
+  transform: translateX(-50%) translateY(0);
+}
+/* Extend the hover-bridge across the full menu width so users can move
+   freely from any trigger down to the menu without losing hover. */
+.nav-dropdown--wide .nav-dropdown-menu::before {
+  inset: -32px 0 auto 0;
+  height: 32px;
+}
+
+/* When viewport gets tight, drop the wide grid from 4 cols to 2 so each
+   column has room to breathe — items in each column wrap cleanly without
+   getting cut off. */
+@media (max-width: 1280px) {
+  .nav-dropdown--wide .nav-dropdown-menu--grouped {
+    width: min(720px, calc(100vw - 24px));
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .nav-dropdown-group {
   display: flex;
