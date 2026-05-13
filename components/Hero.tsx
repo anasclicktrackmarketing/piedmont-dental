@@ -48,9 +48,9 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-eyebrow">Cosmetic Dentistry · Piedmont, California</div>
         <h1 className="hero-headline">
-          Quietly <em>extraordinary</em>
+          Cosmetic <em>Dentistry</em>
           <br />
-          smiles, since 2000.
+          in Piedmont Since 2000.
         </h1>
         <p className="hero-sub">
           Personalized cosmetic and restorative care on Grand Avenue. Dr. Jill

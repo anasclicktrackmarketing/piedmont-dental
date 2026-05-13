@@ -138,7 +138,7 @@ export default function StructuredData() {
       telephone: "+1-510-350-3937",
       priceRange: "$$",
       foundingDate: "2000",
-      slogan: "Quietly extraordinary smiles, since 2000.",
+      slogan: "Cosmetic Dentistry in Piedmont Since 2000.",
       description:
         "Cosmetic and restorative dental practice in Piedmont, California. Personalized care from Dr. Jill Martenson and team. Voted Best Esthetic Dentist 2024 by Best of the East Bay.",
       address: {

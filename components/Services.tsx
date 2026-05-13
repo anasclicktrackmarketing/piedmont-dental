@@ -89,7 +89,8 @@ export default function Services() {
           <div>
             <div className="num">i. — Care</div>
             <h2>
-              From routine to <em>complete</em> smile design.
+              From Routine Dental to <br />
+              <em>complete</em> smile design.
             </h2>
             <p className="services-question">
               What care does Piedmont Dental offer?
