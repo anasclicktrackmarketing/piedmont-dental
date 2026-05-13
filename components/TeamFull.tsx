@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 type Member = {
   name: string;
@@ -100,6 +103,48 @@ const members: Member[] = team.map((m, i) => ({
 }));
 
 export default function TeamFull() {
+  // Set of currently-open card indices
+  const [open, setOpen] = useState<Set<number>>(new Set());
+
+  // Whether we're on a viewport that renders the grid in 2 columns.
+  // When 2-col, clicking one card also opens its row partner so the
+  // other half of the row isn't a tall empty box.
+  const [pairMode, setPairMode] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    // The grid switches to 1 column at the same breakpoint as the global
+    // mobile breakpoint (720px).
+    const mq = window.matchMedia("(min-width: 720px)");
+    const apply = () => setPairMode(mq.matches);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
+
+  const partnerOf = (idx: number): number | null => {
+    if (!pairMode) return null;
+    const partner = idx % 2 === 0 ? idx + 1 : idx - 1;
+    if (partner < 0 || partner >= members.length) return null;
+    return partner;
+  };
+
+  const toggle = (idx: number) => {
+    setOpen((prev) => {
+      const next = new Set(prev);
+      const wasOpen = next.has(idx);
+      const partner = partnerOf(idx);
+      if (wasOpen) {
+        next.delete(idx);
+        if (partner !== null) next.delete(partner);
+      } else {
+        next.add(idx);
+        if (partner !== null) next.add(partner);
+      }
+      return next;
+    });
+  };
+
   return (
     <section className="team-full" id="team-list">
       <div className="team-full-inner">
@@ -118,49 +163,69 @@ export default function TeamFull() {
         </header>
 
         <div className="team-full-grid">
-          {members.map((m) => (
-            <details className="team-full-card" key={m.name}>
-              <summary className="team-full-summary">
-                <span
-                  className={`team-full-avatar${m.photo ? " has-photo" : ""}`}
-                  style={m.photo ? undefined : { background: m.bg }}
+          {members.map((m, i) => {
+            const isOpen = open.has(i);
+            const panelId = `team-bio-${i}`;
+            return (
+              <article
+                className={`team-full-card ${isOpen ? "is-open" : ""}`}
+                key={m.name}
+              >
+                <button
+                  type="button"
+                  className="team-full-summary"
+                  aria-expanded={isOpen}
+                  aria-controls={panelId}
+                  onClick={() => toggle(i)}
                 >
-                  {m.photo ? (
-                    <Image
-                      src={m.photo}
-                      alt={m.name}
-                      fill
-                      sizes="64px"
-                      style={{ objectFit: "cover" }}
+                  <span
+                    className={`team-full-avatar${m.photo ? " has-photo" : ""}`}
+                    style={m.photo ? undefined : { background: m.bg }}
+                  >
+                    {m.photo ? (
+                      <Image
+                        src={m.photo}
+                        alt={m.name}
+                        fill
+                        sizes="64px"
+                        style={{ objectFit: "cover" }}
+                      />
+                    ) : (
+                      m.initials
+                    )}
+                  </span>
+                  <div className="team-full-meta">
+                    <h3>{m.name}</h3>
+                    <p>{m.role}</p>
+                  </div>
+                  <svg
+                    className="team-full-chevron"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 9l6 6 6-6"
                     />
-                  ) : (
-                    m.initials
-                  )}
-                </span>
-                <div className="team-full-meta">
-                  <h3>{m.name}</h3>
-                  <p>{m.role}</p>
-                </div>
-                <svg
-                  className="team-full-chevron"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
+                  </svg>
+                </button>
+                <div
+                  id={panelId}
+                  className="team-full-panel"
+                  role="region"
+                  aria-hidden={!isOpen}
                 >
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 9l6 6 6-6"
-                  />
-                </svg>
-              </summary>
-              <blockquote className="team-full-quote">{m.quote}</blockquote>
-            </details>
-          ))}
+                  <blockquote className="team-full-quote">{m.quote}</blockquote>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

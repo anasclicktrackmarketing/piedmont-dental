@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import StructuredData from "@/components/StructuredData";
+import BestOfBayBadge from "@/components/BestOfBayBadge";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -123,6 +124,7 @@ export default function RootLayout({
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
       <body>
         {children}
+        <BestOfBayBadge />
         <StructuredData />
       </body>
     </html>

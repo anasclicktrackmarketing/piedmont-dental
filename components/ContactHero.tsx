@@ -94,6 +94,32 @@ export default function ContactHero() {
               </div>
             </div>
 
+            <fieldset className="form-radiogroup">
+              <legend>
+                Are you a new or existing patient?{" "}
+                <span className="req">*</span>
+              </legend>
+              <div className="form-radiogroup-options">
+                <label className="form-radio">
+                  <input
+                    type="radio"
+                    name="patient_status"
+                    value="new"
+                    required
+                  />
+                  <span>New patient</span>
+                </label>
+                <label className="form-radio">
+                  <input
+                    type="radio"
+                    name="patient_status"
+                    value="existing"
+                  />
+                  <span>Existing patient</span>
+                </label>
+              </div>
+            </fieldset>
+
             <div className="form-row">
               <label htmlFor="contact-message">
                 Message <span className="req">*</span>
@@ -115,6 +141,11 @@ export default function ContactHero() {
                 at any time and Piedmont Dental by Design will honor my request.
               </span>
             </label>
+
+            <p className="form-disclaimer">
+              <strong>Disclaimer:</strong> We do not accept Medi-cal and
+              Medi-care.
+            </p>
 
             <button type="submit" className="btn btn-teal btn-lg form-submit">
               Send message →
