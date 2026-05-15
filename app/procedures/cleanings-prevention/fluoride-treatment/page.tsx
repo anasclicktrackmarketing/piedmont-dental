@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Fluoride Treatment in Piedmont, CA | Strengthen Tooth Enamel | Piedmont Dental",
+    "Fluoride Treatment in Piedmont, CA",
   description:
-    "Professional fluoride treatment at Piedmont Dental By Design — the most effective agent for preventing tooth decay. Topical and systemic options for adults and children.",
+    "Professional fluoride treatment — the most effective agent for preventing tooth decay. Topical and systemic options for adults and children.",
   alternates: {
     canonical: "/procedures/cleanings-prevention/fluoride-treatment",
   },
@@ -74,6 +74,40 @@ export default function FluorideTreatmentPage() {
               body: [
                 "Remember — fluoride alone will not prevent tooth decay. It's important to brush at least twice a day, floss regularly, eat balanced meals, reduce sugary snacks, and visit your dentist on a regular basis. Fluoride supports good habits; it doesn't replace them.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "Is fluoride safe for children?",
+              a: "Yes — fluoride is safe and recommended for children in the doses used in toothpaste, professional treatments, and most municipal water. The key is amount: too much fluoride during tooth development (under age 8) can cause fluorosis, mild white spots on developing teeth. We coach parents on how much toothpaste to use at each age and whether supplements are appropriate.",
+            },
+            {
+              q: "What is fluorosis?",
+              a: "Fluorosis is cosmetic — white spots, streaks, or in severe cases brown discoloration on teeth — caused by ingesting too much fluoride while teeth are still developing under the gums (under age 8). It's preventable by using the right amount of toothpaste for your child's age and by checking whether your home water source already contains fluoride before considering supplements.",
+            },
+            {
+              q: "Do adults need fluoride treatments?",
+              a: "Many do. Adults with exposed root surfaces from gum recession, frequent cavities, dry mouth from medications, or who don't drink fluoridated tap water benefit from professional fluoride. It's typically a quick varnish application at the end of your cleaning visit — no extra time required.",
+            },
+            {
+              q: "What's the difference between topical and systemic fluoride?",
+              a: "Topical fluoride sits on the outside of erupted teeth, strengthening enamel from the surface — it's what you get from toothpaste, mouth rinses, and our in-office varnish. Systemic fluoride is ingested (water, drops, tablets) and incorporates into developing teeth before they erupt. Both work; topical is the main protection for adults.",
+            },
+            {
+              q: "Why does my child need a professional fluoride treatment at every cleaning?",
+              a: "Twice-yearly professional fluoride applications give kids a concentrated dose that toothpaste alone can't provide, especially around the deep pits and fissures of new molars where most childhood cavities form. The treatment takes 1–2 minutes and is a leading reason childhood cavity rates have dropped over the last 50 years.",
+            },
+            {
+              q: "Will fluoride alone prevent cavities?",
+              a: "No — fluoride supports good habits, it doesn't replace them. To prevent cavities you still need to brush twice a day, floss daily, eat balanced meals, limit sugar between meals, and see your dentist regularly. Fluoride makes enamel more resistant to acid attack, but it can't undo a poor home-care routine.",
+            },
+            {
+              q: "What does a professional fluoride treatment feel like?",
+              a: "It feels like having a thin varnish painted onto your teeth with a tiny brush — takes about 30 seconds, then dries quickly. We ask you to avoid eating hard or sticky foods for 4 hours afterward so the fluoride can do its work on the enamel.",
+            },
+            {
+              q: "When are fluoride supplements (drops or tablets) recommended?",
+              a: "Only if your child isn't getting enough fluoride from their water supply and is at higher-than-average cavity risk. Drops are for infants; tablets for children through the teen years. We never recommend supplements without first checking your home water source — too much fluoride during tooth development causes fluorosis.",
             },
           ]}
           related={category.items}

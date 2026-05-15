@@ -5,11 +5,12 @@ import DoctorProfile from "@/components/DoctorProfile";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Dr. David Ma — Restorative & Cosmetic Dentist | Piedmont Dental",
+  title: "Dr. David Ma — Cosmetic Dentist",
   description:
-    "Dr. David Ma graduated with honors from the University of Pennsylvania School of Dental Medicine. UC Davis-trained in Neurobiology, with extensive experience in full mouth rehabilitations and complex treatment planning.",
+    "Dr. David Ma — UPenn Dental Medicine graduate with honors and UC Davis training in neurobiology. Expert in full-mouth rehabilitations and complex planning.",
   alternates: { canonical: "/about/dr-ma" },
   openGraph: {
     title: "Dr. David Ma — Piedmont Dental By Design",
@@ -94,6 +95,12 @@ export default function DrMaPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "About", url: "/about" },
+          { name: "Dr. David Ma", url: "/about/dr-ma" },
+        ]}
+      />
     </>
   );
 }

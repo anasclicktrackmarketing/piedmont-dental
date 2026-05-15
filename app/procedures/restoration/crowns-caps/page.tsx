@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Porcelain Crowns (Caps) in Piedmont, CA | Restore Damaged Teeth | Piedmont Dental",
+    "Porcelain Crowns (Caps) in Piedmont, CA",
   description:
-    "Custom porcelain crowns restore broken, fractured, or heavily decayed teeth — color-matched to your natural smile. Piedmont Dental By Design serves Piedmont, Oakland, and the East Bay.",
+    "Custom porcelain crowns restore broken, fractured, or heavily decayed teeth — color-matched to your natural smile.",
   alternates: { canonical: "/procedures/restoration/crowns-caps" },
   openGraph: {
     title: "Crowns (Caps) — Piedmont Dental By Design",
@@ -66,6 +66,40 @@ export default function CrownsCapsPage() {
                 "At your second appointment, your temporary crown will be removed, the tooth will be cleaned, and your new crown will be carefully placed to ensure the spacing and bite are accurate.",
                 "You will be given care instructions and encouraged to have regular dental visits to check your new crown.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "How long do porcelain crowns last?",
+              a: "Most porcelain crowns last 15–25 years with good care — some last 30+. Lifespan depends on the underlying tooth's health, your bite, grinding habits, and home care. The crown itself is durable porcelain; what fails first is usually the tooth structure underneath if a new cavity forms at the margin where crown meets tooth.",
+            },
+            {
+              q: "What's the difference between a crown and a cap?",
+              a: "Nothing — they're two words for the same thing. 'Crown' is the technical term; 'cap' is the older everyday term. Some dental offices use one or the other; we use them interchangeably. A crown/cap covers the entire tooth above the gumline, restoring shape, size, and strength.",
+            },
+            {
+              q: "Why do I need a crown after a root canal?",
+              a: "Root canals remove the inner pulp of the tooth, which leaves the remaining tooth structure brittle and prone to fracture. A crown encases the tooth and protects it from breaking under chewing forces. Most back-tooth root canals need a crown within a few months to prevent tooth loss; front teeth sometimes can be restored with just a filling.",
+            },
+            {
+              q: "Will my crown look like a natural tooth?",
+              a: "Yes — modern all-porcelain crowns are shaped, sized, and shaded to match your existing teeth. Most patients can't tell their crown from their natural teeth in the mirror. We choose the shade together using a guide and review the final result before bonding.",
+            },
+            {
+              q: "Can a crown get a cavity?",
+              a: "The crown itself can't — porcelain doesn't decay. But new decay can form at the margin where the crown meets the natural tooth, especially if you have gum recession exposing root surfaces. That's why we still check crowns at every cleaning visit and X-ray. Good home care prevents this from being a problem.",
+            },
+            {
+              q: "How long is the wait between the temporary crown and the permanent one?",
+              a: "Typically about 2 weeks. At the first appointment we prepare the tooth, take a mold, and place a temporary. The lab fabricates your permanent crown during that 2-week period; we bond it at the second visit. CEREC same-day crowns skip this wait entirely — the permanent is milled in our office while you wait.",
+            },
+            {
+              q: "Will a crown feel different from my natural tooth?",
+              a: "For the first few days, yes — your tongue notices a new shape and you may feel it when biting. Most patients adjust within a week. If the crown feels too tall (hits before other teeth when biting) or rocks against your other teeth, call us — we'll do a quick bite adjustment.",
+            },
+            {
+              q: "How much does a porcelain crown cost?",
+              a: "Most porcelain crowns at our practice run $1,200–$1,800 depending on the tooth, material choice, and lab used. Dental insurance typically covers a substantial portion (often around 50%) when the crown is for a damaged tooth. We provide exact quotes and verify insurance benefits before starting.",
             },
           ]}
           related={category.items}

@@ -22,7 +22,7 @@ export const posts: Post[] = [
     date: "March 9, 2026",
     dateISO: "2026-03-09",
     category: "Restorative",
-    image: "/img/blog/dental-implants-piedmont-ca/hero.png",
+    image: "/img/blog/dental-implants-piedmont-ca/hero.jpg",
     alt: "Dental implants illustration",
     excerpt:
       "Dental implants are widely recognized as the gold standard solution for missing teeth — the only option that replaces the entire tooth structure, including the root, for a result that looks, feels, and functions like a natural tooth.",
@@ -34,7 +34,7 @@ export const posts: Post[] = [
     date: "February 9, 2026",
     dateISO: "2026-02-09",
     category: "Cosmetic",
-    image: "/img/blog/cosmetic-dentist-piedmont-ca/hero.png",
+    image: "/img/blog/cosmetic-dentist-piedmont-ca/hero.jpg",
     alt: "Cosmetic dentistry results",
     excerpt:
       "Your smile is one of the most powerful expressions of who you are. Whether you're preparing for a milestone or just ready to feel better about your teeth, modern cosmetic dentistry can create a transformation that's both meaningful and lasting.",

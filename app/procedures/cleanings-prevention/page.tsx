@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Cleanings & Prevention in Piedmont, CA | Exams, X-Rays, Fluoride | Piedmont Dental",
+    "Cleanings & Prevention in Piedmont, CA",
   description:
-    "Preventive dentistry at Piedmont Dental By Design — comprehensive exams, professional cleanings, dental and panoramic X-rays, fluoride treatment, and personalized home-care guidance.",
+    "Preventive dentistry — comprehensive exams, professional cleanings, dental and panoramic X-rays, fluoride treatment, and personalized home-care guidance.",
   alternates: { canonical: "/procedures/cleanings-prevention" },
   openGraph: {
     title: "Cleanings & Prevention — Piedmont Dental By Design",

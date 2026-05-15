@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Scaling & Root Planing in Piedmont, CA | Deep Dental Cleaning | Piedmont Dental",
+    "Scaling & Root Planing in Piedmont, CA",
   description:
-    "Periodontal scaling and root planing at Piedmont Dental By Design — non-surgical deep cleaning to halt gum disease, remove tartar from below the gumline, and promote root reattachment.",
+    "Periodontal scaling and root planing — non-surgical deep cleaning to halt gum disease, remove tartar from below the gumline, and promote root reattachment.",
   alternates: {
     canonical: "/procedures/periodontal-services/periodontal-scaling-root-planing",
   },
@@ -70,6 +70,40 @@ export default function ScalingRootPlaningPage() {
                 "Root planing removes cementum and surface dentin embedded with microorganisms, toxins, and tartar. The root of the tooth is literally smoothed to promote good healing. Clean, smooth root surfaces help prevent bacteria from easily colonizing in the future.",
                 "Following these deep cleaning procedures, the gum pockets may be treated with antibiotics — soothing irritation and helping the gum tissues heal quickly. At your next appointment, the dentist or hygienist will examine the gums again to see how well the pockets have healed. If pockets still measure more than 3mm, additional treatment may be recommended.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "What's the difference between scaling and root planing?",
+              a: "Scaling removes plaque, tartar, and toxins from the visible tooth surface and from below the gumline. Root planing smooths the rough surface of the tooth root itself, which removes bacterial pockets and makes it harder for bacteria to recolonize. They're typically done together as one combined procedure.",
+            },
+            {
+              q: "Is scaling and root planing painful?",
+              a: "We use local anesthesia in most cases so the procedure itself is comfortable. Some patients with mild disease can tolerate it with just topical numbing. After the anesthetic wears off, mild soreness and gum tenderness for 24–48 hours is typical and well-managed with over-the-counter pain relief.",
+            },
+            {
+              q: "How long does a scaling and root planing appointment take?",
+              a: "Most cases are split into 2 appointments (one half of the mouth at each), each lasting about 60–75 minutes. Spreading the work allows us to be thorough and gives one side of your mouth a break between visits. Severe cases may need 4 quarterly appointments.",
+            },
+            {
+              q: "Will I need antibiotics after the procedure?",
+              a: "Often, yes — either oral antibiotics for a few days, antibiotic-soaked medicated chips placed directly in the pockets, or both. The goal is to wipe out the bacterial colonies that the mechanical cleaning disrupted. Whether you need them depends on the severity of your disease and your medical history.",
+            },
+            {
+              q: "How often do I need scaling and root planing?",
+              a: "It's typically a one-time treatment for an active periodontal disease episode — done once to get the disease under control. Afterward, you transition to quarterly periodontal maintenance visits, which prevent recurrence. Some patients may need the deep cleaning repeated years later if disease flares back up.",
+            },
+            {
+              q: "What's a 'pocket' and why does the depth matter?",
+              a: "A pocket is the space between your tooth and the gum cuff around it. Healthy pockets measure 1–3mm. Pockets deeper than 4mm trap bacteria that you can't reach with brushing or floss. The deeper the pocket, the worse the disease — at 5mm we get worried, at 7+mm we may need surgical intervention. We measure every pocket at your initial perio exam.",
+            },
+            {
+              q: "Does scaling and root planing reverse gum disease?",
+              a: "It stops disease progression and shrinks inflamed gum tissue — pockets usually become 1–2mm shallower as gums tighten back around clean root surfaces. It doesn't regrow bone that's already been lost. With consistent quarterly maintenance, you can keep the disease in remission for life.",
+            },
+            {
+              q: "Will my teeth be more sensitive after the procedure?",
+              a: "Possibly — your root surfaces have been cleaned of the bacterial film that was insulating them, and gums may shrink back slightly as inflammation resolves. Temporary cold sensitivity for a few weeks is common. We can prescribe a desensitizing toothpaste if it's bothering you. Most patients find the sensitivity resolves as roots build up natural protective layers.",
             },
           ]}
           related={category.items}

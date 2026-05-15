@@ -6,6 +6,7 @@ import SmileAnalysisForm from "@/components/SmileAnalysisForm";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Smile Analysis | Piedmont Dental By Design",
@@ -66,6 +67,12 @@ export default function SmileAnalysisPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Smile Analysis", url: "/resources/smile-analysis" },
+        ]}
+      />
     </>
   );
 }

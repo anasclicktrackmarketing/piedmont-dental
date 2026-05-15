@@ -1,10 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQPageSchema from "@/components/schema/FAQPageSchema";
+
+// Schema.org category name per practice-area slug
+const SCHEMA_CATEGORY: Record<string, string> = {
+  "cleanings-prevention": "Preventive Dentistry",
+  "cosmetic-dentistry": "Cosmetic Dentistry",
+  "periodontal-services": "Periodontal Services",
+  restoration: "Restorative Dentistry",
+};
 
 export type ProcedureSection = {
   title: string;
   body?: string[];
   bullets?: string[];
+};
+
+export type ProcedureFAQ = {
+  q: string;
+  a: string;
 };
 
 export type ProcedureStat = {
@@ -33,6 +49,8 @@ export type ProcedureDetailProps = {
   stats?: ProcedureStat[];
   /** Body sections: reasons, process, etc. */
   sections: ProcedureSection[];
+  /** Frequently asked questions — rendered as a server-side accordion + emits FAQPage JSON-LD */
+  faqs?: ProcedureFAQ[];
   /** Sibling procedures in the same category */
   related?: RelatedProcedure[];
   /** Optional procedure-specific featured image; otherwise category-themed image is used */
@@ -55,6 +73,7 @@ export default function ProcedureDetail({
   intro,
   stats,
   sections,
+  faqs,
   related,
   featuredImage,
   featuredAlt,
@@ -184,6 +203,28 @@ export default function ProcedureDetail({
               </section>
             ))}
 
+            {/* Frequently asked questions — server-rendered accordion */}
+            {faqs && faqs.length > 0 && (
+              <section className="proc-faqs" aria-labelledby="proc-faqs-heading">
+                <h2 id="proc-faqs-heading" className="proc-section-title">
+                  Frequently asked questions
+                </h2>
+                <div className="proc-faq-list">
+                  {faqs.map((f, i) => (
+                    <details key={i} className="proc-faq-item">
+                      <summary className="proc-faq-question">
+                        <span>{f.q}</span>
+                        <span className="proc-faq-icon" aria-hidden>+</span>
+                      </summary>
+                      <div className="proc-faq-answer">
+                        <p>{f.a}</p>
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* Inline mid-page CTA */}
             <aside className="proc-mid-cta">
               <h3>Have questions about {title.toLowerCase()}?</h3>
@@ -204,6 +245,22 @@ export default function ProcedureDetail({
           </article>
         </div>
       </section>
+
+      {/* Per-page JSON-LD — Service (this procedure) + breadcrumbs */}
+      <ServiceSchema
+        name={title}
+        description={intro[0] ?? `${title} at Piedmont Dental By Design.`}
+        url={`/procedures/${category.slug}/${slug}`}
+        category={SCHEMA_CATEGORY[category.slug] ?? "Dentistry"}
+      />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Procedures", url: "/procedures" },
+          { name: category.label, url: `/procedures/${category.slug}` },
+          { name: title, url: `/procedures/${category.slug}/${slug}` },
+        ]}
+      />
+      {faqs && faqs.length > 0 && <FAQPageSchema faqs={faqs} />}
     </>
   );
 }

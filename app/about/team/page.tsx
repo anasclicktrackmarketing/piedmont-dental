@@ -7,11 +7,12 @@ import TeamFull from "@/components/TeamFull";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Meet the Team | Piedmont Dental By Design",
   description:
-    "The full Piedmont Dental By Design team — three dentists and nine practice staff including hygienists, assistants, and patient services. Real people who keep the practice running.",
+    "Meet the full team — three dentists plus nine practice staff: hygienists, assistants, and patient services. Real people who keep the practice running.",
   alternates: { canonical: "/about/team" },
   openGraph: {
     title: "Meet the Team — Piedmont Dental By Design",
@@ -104,6 +105,12 @@ export default function TeamPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "About", url: "/about" },
+          { name: "Meet the Team", url: "/about/team" },
+        ]}
+      />
     </>
   );
 }

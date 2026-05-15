@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Composite Fillings in Piedmont, CA | Tooth-Colored Restorations | Piedmont Dental",
+    "Composite Fillings in Piedmont, CA",
   description:
-    "Composite (tooth-colored) fillings repair decay, cracks, chips, and worn teeth. Color-matched and aesthetically suited for visible front teeth. Piedmont Dental By Design serves Piedmont, Oakland, and the East Bay.",
+    "Composite (tooth-colored) fillings repair decay, cracks, chips, and worn teeth. Color-matched and aesthetically suited for visible front teeth.",
   alternates: { canonical: "/procedures/restoration/composite-fillings" },
   openGraph: {
     title: "Composite Fillings — Piedmont Dental By Design",
@@ -65,6 +65,40 @@ export default function CompositeFillingsPage() {
                 "It is normal to experience sensitivity to hot and cold when composite fillings are first placed, however this will subside shortly after your tooth acclimates to the new filling.",
                 "You will be given care instructions at the conclusion of your treatment. Good oral hygiene practices, eating habits, and regular dental visits will aid in the life of your new fillings.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "How long do composite fillings last?",
+              a: "Composite fillings typically last 7–10 years with good care — some last longer, some need replacement sooner. Lifespan depends on the size of the filling, where it's located (back-tooth fillings on chewing surfaces wear faster than front-tooth fillings), your bite, and grinding habits. Regular check-ups catch any wear before it becomes a problem.",
+            },
+            {
+              q: "Are composite fillings better than silver (amalgam) fillings?",
+              a: "Modern composite is comparable in strength to amalgam for small-to-medium fillings, with major aesthetic advantages: it matches your tooth color and bonds directly to the tooth (no mechanical wedging needed). For very large fillings or in high-stress molar areas, amalgam still has some advantages in durability — but we use composite for the vast majority of our cases.",
+            },
+            {
+              q: "Why are my teeth sensitive after getting a filling?",
+              a: "Temporary sensitivity to hot and cold for 1–2 weeks after a filling is normal — the tooth is acclimating to the new restoration and the nerve is responding to the slight inflammation from the procedure. If sensitivity persists beyond a few weeks or if you feel pain when biting down, call us — we may need to adjust the bite or check for a deep cavity.",
+            },
+            {
+              q: "Can I replace my old silver fillings with composite?",
+              a: "Yes, and we do this regularly — both for aesthetic reasons (tooth-colored replacement) and when an old amalgam has cracked, worn, or leaked. We remove the old filling, check for any decay underneath, and bond a new composite in its place. It's a single-visit procedure for most cases.",
+            },
+            {
+              q: "How long does a composite filling appointment take?",
+              a: "Typically 30–60 minutes per filling, depending on size and location. We numb the tooth, remove decay, prepare the cavity, place the composite in layers (curing each layer with a special light), shape it to match your bite, then polish. You walk out with the restoration done — no second visit needed.",
+            },
+            {
+              q: "Will my filling match my tooth color exactly?",
+              a: "Yes — we use a shade guide to select composite that matches your tooth color, and we can blend multiple shades for the most natural result. Within a year or two, slight differences can appear as your natural tooth shade changes — but the original match is typically very close to invisible.",
+            },
+            {
+              q: "Can a composite filling fall out?",
+              a: "Rarely — composites bond chemically to your tooth, so they don't 'fall out' the way an old mechanical filling might. If a composite does fail, it's usually because of new decay at the edge, a cracked tooth around the filling, or a very large filling that breaks under bite stress. Regular check-ups catch problems before the filling fails.",
+            },
+            {
+              q: "How much does a composite filling cost?",
+              a: "Most composite fillings at our practice run $200–$400 depending on size and number of surfaces involved. Dental insurance typically covers a significant portion. We provide an exact quote before starting work and verify insurance benefits ahead of time.",
             },
           ]}
           related={category.items}

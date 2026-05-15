@@ -6,6 +6,7 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Dental Videos | Piedmont Dental By Design",
   description:
@@ -188,6 +189,13 @@ export default function DentalVideosPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Dental Videos", url: "/resources/dental-videos" },
+        ]}
+      />
+</>
   );
 }

@@ -7,8 +7,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Porcelain Crowns (Caps) — Smile Gallery | Piedmont Dental By Design",
+  title: "Porcelain Crowns (Caps) — Smile Gallery",
   description:
     "Five real porcelain crown case studies — single tooth restorations, full upper arch rebuilds, and implant-supported crowns.",
   alternates: { canonical: "/smile-gallery/porcelain-crowns-caps" },
@@ -225,6 +226,13 @@ export default function PorcelainCrownsGalleryPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Smile Gallery", url: "/smile-gallery" },
+          { name: "Porcelain Crowns (Caps)", url: "/smile-gallery/porcelain-crowns-caps" },
+        ]}
+      />
+</>
   );
 }

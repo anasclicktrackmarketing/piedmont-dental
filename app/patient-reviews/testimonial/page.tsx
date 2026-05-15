@@ -5,6 +5,7 @@ import SiteHeader from "@/components/SiteHeader";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import {
   directTestimonials,
   googleTestimonials,
@@ -14,7 +15,7 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Patient Testimonials | Real Patient Stories — Piedmont Dental By Design",
+    "Patient Testimonials",
   description:
     "Read full patient testimonials about Piedmont Dental By Design — first-hand stories from patients of Dr. Jill Martenson, plus selected Google reviews.",
   alternates: { canonical: "/patient-reviews/testimonial" },
@@ -208,6 +209,12 @@ export default function TestimonialPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Patient Reviews", url: "/patient-reviews" },
+          { name: "Share a Testimonial", url: "/patient-reviews/testimonial" },
+        ]}
+      />
     </>
   );
 }

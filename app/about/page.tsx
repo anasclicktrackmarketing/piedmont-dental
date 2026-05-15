@@ -9,9 +9,9 @@ import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "About — Dr. Jill Martenson and team | Piedmont Dental By Design",
+  title: "About — Dr. Jill Martenson and team",
   description:
-    "Meet Dr. Jill Martenson, DDS — owner and lead dentist of Piedmont Dental By Design. 29 years of cosmetic and restorative dentistry on Grand Avenue. Voted Best Esthetic Dentist 2024 by Best of the East Bay.",
+    "Meet Dr. Jill Martenson, DDS — owner & lead dentist. 29 years of cosmetic and restorative dentistry on Grand Avenue. Best Esthetic Dentist 2024.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Piedmont Dental By Design",

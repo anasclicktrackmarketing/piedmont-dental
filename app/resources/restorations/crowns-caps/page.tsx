@@ -7,8 +7,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Crowns (Caps) — Before & After | Piedmont Dental By Design",
+  title: "Crowns (Caps) — Before & After",
   description:
     "Interactive before-and-after crown cases — porcelain crowns, implant-supported crowns, and full-arch rehabilitation from Dr. Jill Martenson's practice.",
   alternates: { canonical: "/resources/restorations/crowns-caps" },
@@ -249,6 +250,14 @@ export default function CrownsCapsResourcePage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Restorations", url: "/resources/restorations" },
+          { name: "Crowns (Caps)", url: "/resources/restorations/crowns-caps" },
+        ]}
+      />
+</>
   );
 }

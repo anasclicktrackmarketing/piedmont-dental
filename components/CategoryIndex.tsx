@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { CategorySlug, ProcedureItem } from "@/lib/procedure-categories";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export type CategoryIndexProps = {
   slug: CategorySlug;
@@ -107,6 +108,13 @@ export default function CategoryIndex({
           </ol>
         </div>
       </section>
+
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Procedures", url: "/procedures" },
+          { name: label, url: `/procedures/${slug}` },
+        ]}
+      />
     </>
   );
 }

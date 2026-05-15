@@ -6,6 +6,7 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 const PORTAL_URL =
   "https://piedmontdentalbydesign.dentalsymphony.com/Patient/Newpatient.aspx";
 
@@ -121,6 +122,13 @@ export default function PatientFormsPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Patient Forms", url: "/resources/patient-forms" },
+        ]}
+      />
+</>
   );
 }

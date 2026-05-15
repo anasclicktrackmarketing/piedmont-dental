@@ -10,9 +10,9 @@ import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title:
-    "Dental Procedures — Cosmetic, Restorative, Periodontal & Preventive | Piedmont Dental By Design",
+    "Dental Procedures in Piedmont, CA",
   description:
-    "Comprehensive dental care under one roof: cosmetic (veneers, whitening, Invisalign), restorative (implants, crowns, full-mouth restoration), periodontal (gum care, grafting), and preventive (cleanings, exams, X-rays).",
+    "Comprehensive dental care: cosmetic (veneers, whitening, Invisalign), restorative (implants, crowns), periodontal, and preventive (cleanings, exams, X-rays).",
   alternates: { canonical: "/procedures" },
   openGraph: {
     title: "Dental Procedures at Piedmont Dental By Design",

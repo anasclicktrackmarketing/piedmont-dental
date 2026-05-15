@@ -7,8 +7,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Surgery — Before & After | Piedmont Dental By Design",
+  title: "Surgery — Before & After",
   description:
     "Real before-and-after cases from Dr. Jill Martenson combining minor in-office surgery (gum reshaping) with composite bonding and porcelain veneers.",
   alternates: { canonical: "/resources/surgery" },
@@ -206,7 +207,14 @@ export default function SurgeryPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Surgery", url: "/resources/surgery" },
+        ]}
+      />
+</>
   );
 }
 

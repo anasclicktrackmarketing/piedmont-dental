@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Cosmetic Dentistry in Piedmont, CA | Veneers, Whitening, Invisalign, CEREC",
+    "Cosmetic Dentistry in Piedmont, CA",
   description:
-    "Cosmetic dentistry at Piedmont Dental By Design — porcelain veneers, professional teeth whitening, CEREC same-day crowns, Invisalign clear aligners, and surgical crown lengthening. Personalized care from Dr. Jill Martenson.",
+    "Cosmetic dentistry — porcelain veneers, professional whitening, CEREC same-day crowns, Invisalign, and crown lengthening. Personalized care from Dr. Martenson.",
   alternates: { canonical: "/procedures/cosmetic-dentistry" },
   openGraph: {
     title: "Cosmetic Dentistry — Piedmont Dental By Design",

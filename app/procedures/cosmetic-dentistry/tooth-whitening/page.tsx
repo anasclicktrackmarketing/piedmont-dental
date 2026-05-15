@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Professional Teeth Whitening in Piedmont, CA | Take-Home & In-Office | Piedmont Dental",
+    "Teeth Whitening in Piedmont, CA",
   description:
-    "Professional teeth whitening — change the color of natural enamel with custom take-home trays or in-office treatment. ADA-approved methods, supervised by Dr. Jill Martenson. Piedmont, Oakland & East Bay.",
+    "Professional teeth whitening — change the color of natural enamel with custom take-home trays or in-office treatment. ADA-approved methods.",
   alternates: { canonical: "/procedures/cosmetic-dentistry/tooth-whitening" },
   openGraph: {
     title: "Tooth Whitening — Piedmont Dental By Design",
@@ -71,6 +71,44 @@ export default function ToothWhiteningPage() {
               body: [
                 "We proudly serve patients throughout Oakland, the East Bay, Lake Merritt, Montclair, Rockridge, and Berkeley.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "How much does professional teeth whitening cost?",
+              a: "Custom take-home tray whitening at our practice typically runs $400–$600 — that covers the molds, custom trays, and several syringes of professional-strength gel. In-office whitening (single appointment, faster results) runs higher. Both are significantly less than the cumulative cost of repeatedly buying over-the-counter strips that don't deliver lasting results.",
+            },
+            {
+              q: "Will whitening work on my crowns and fillings?",
+              a: "No — whitening only works on natural tooth enamel. Crowns, veneers, and tooth-colored fillings won't change color. If you have visible restorations and want to whiten, we whiten the natural teeth first and then replace any restorations afterward to match the new lighter shade. We'll plan this with you at your consultation.",
+            },
+            {
+              q: "Is professional whitening better than over-the-counter products?",
+              a: "Significantly. Professional gels contain higher concentrations of bleaching agents (calibrated to your enamel by your dentist), and the custom trays keep the gel in contact with your teeth — not your gums. Most over-the-counter strips deliver 6–10% peroxide; professional gels are 15–35%. Results last longer and look more uniform.",
+            },
+            {
+              q: "How long do whitening results last?",
+              a: "Typically 1–3 years before a touch-up is needed. The biggest factors are coffee, tea, red wine, smoking, and how diligent you are with your home-care routine. We provide extra gel syringes so you can do a 2–3 night touch-up at home whenever you notice your shade starting to drift.",
+            },
+            {
+              q: "Will whitening hurt my teeth?",
+              a: "Temporary sensitivity to cold air or cold liquids is common during the 2-week active whitening period — it stops within a few days of finishing. We can prescribe a desensitizing gel if it bothers you. Whitening at the concentrations we use doesn't damage enamel; the sensitivity comes from the bleaching agent passing through dentin to the nerve, which calms down once you stop.",
+            },
+            {
+              q: "How white can my teeth actually get?",
+              a: "Most patients see 3–8 shades of improvement on the standard dental shade guide. Your starting color, the cause of staining (genetic, food/drink, age, medication), and the porosity of your enamel all factor in. Tetracycline staining from childhood antibiotics is the hardest to budge; food and age-related yellowing responds best.",
+            },
+            {
+              q: "Can pregnant or nursing women whiten their teeth?",
+              a: "We recommend postponing whitening during pregnancy and breastfeeding — not because of proven harm, but because peroxide hasn't been formally studied in those populations, and we'd rather err on the side of caution. Routine cleanings are still completely safe.",
+            },
+            {
+              q: "Why do I need to whiten before getting new dental work?",
+              a: "Because crowns, veneers, and fillings can't be whitened later — once they're placed, they're locked in that shade. If you want a whiter smile and need new restorations, the sequence is: whiten first, wait two weeks for the color to stabilize, then place restorations matched to your new shade. Reversing this order means redoing the restoration to match.",
+            },
+            {
+              q: "What causes tooth discoloration in the first place?",
+              a: "Surface staining from coffee, tea, red wine, tobacco, and certain foods (dark berries, soy sauce, curry). Internal discoloration from age (enamel thins, revealing the yellower dentin underneath), genetics, medication (especially tetracycline taken in childhood), and trauma. Surface stains respond to whitening; deep internal discoloration may need veneers.",
             },
           ]}
           related={category.items}

@@ -8,8 +8,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Composite Fillings — Recent Cases | Piedmont Dental By Design",
+  title: "Composite Fillings — Recent Cases",
   description:
     "Recent composite filling case studies from Piedmont Dental — tooth-colored repairs placed in a single visit, with answers to the questions patients ask most.",
   alternates: { canonical: "/smile-gallery/composite-fillings-recent" },
@@ -199,6 +200,13 @@ export default function CompositeFillingsRecentPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Smile Gallery", url: "/smile-gallery" },
+          { name: "Composite Fillings — Recent", url: "/smile-gallery/composite-fillings-recent" },
+        ]}
+      />
+</>
   );
 }

@@ -7,10 +7,11 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Cosmetic Dentistry | Piedmont Dental By Design",
+  title: "Cosmetic Dentistry",
   description:
-    "Cosmetic dentistry at Piedmont Dental — porcelain veneers, professional whitening, Invisalign®, CEREC same-day crowns, and more. Real patient results and details.",
+    "Cosmetic dentistry — porcelain veneers, professional whitening, Invisalign®, CEREC same-day crowns, and more. Real patient results and procedure details.",
   alternates: { canonical: "/resources/cosmetic-dentistry" },
   openGraph: {
     title: "Cosmetic Dentistry — Piedmont Dental By Design",
@@ -290,6 +291,13 @@ export default function CosmeticDentistryPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Cosmetic Dentistry", url: "/resources/cosmetic-dentistry" },
+        ]}
+      />
+</>
   );
 }

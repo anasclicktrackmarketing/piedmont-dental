@@ -8,7 +8,7 @@ import { getLegalDoc } from "@/lib/legal";
 const doc = getLegalDoc("privacy-policy-2");
 
 export const metadata: Metadata = {
-  title: `${doc.title} | Piedmont Dental By Design`,
+  title: doc.title,
   description: doc.description,
   alternates: { canonical: "/privacy-policy-2" },
   robots: { index: true, follow: false },

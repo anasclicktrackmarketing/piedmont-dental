@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Invisalign® Clear Aligners in Piedmont, CA | Discreet Teeth Straightening | Piedmont Dental",
+    "Invisalign® Clear Aligners in Piedmont, CA",
   description:
-    "Invisalign® aligners — a discreet alternative to traditional braces for adults. Mess-free iTero scans, custom clear trays, 22 hours of daily wear. Piedmont, Oakland & East Bay.",
+    "Invisalign® aligners — a discreet alternative to traditional braces for adults. Mess-free iTero scans, custom clear trays, 22 hours of daily wear.",
   alternates: { canonical: "/procedures/cosmetic-dentistry/invisalign" },
   openGraph: {
     title: "Invisalign® — Piedmont Dental By Design",
@@ -95,6 +95,44 @@ export default function InvisalignPage() {
               body: [
                 "Cleaning and caring for your aligners is simple and straightforward. Be sure to remove them before eating and clean them using a soft-bristled toothbrush and an approved rinse or toothpaste. Make sure to rinse your trays after removal and before putting them back in your smile. You may do this with room-temperature water.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "How much does Invisalign cost in Piedmont, CA?",
+              a: "Most cases at our practice range from $4,500–$7,500 depending on complexity (how many trays, total treatment length, and whether refinements are needed). We provide a complete written quote after your consultation and iTero scan. CareCredit and Sunbit financing are available.",
+            },
+            {
+              q: "Can I eat with my Invisalign aligners in?",
+              a: "No — you remove the aligners for every meal, snack, and any drink other than water. This is actually one of Invisalign's biggest advantages over traditional braces: no food restrictions, no broken brackets from popcorn or bagels. You just brush before putting them back in.",
+            },
+            {
+              q: "How long does Invisalign treatment take?",
+              a: "Most adult cases run 6–18 months depending on the severity of misalignment. Simple cases (minor crowding, small gaps) can finish in 6–9 months. Moderate cases (crossbites, deeper crowding) typically run 12–18 months. Dr. Martenson will give you a specific timeline after the iTero scan.",
+            },
+            {
+              q: "Will Invisalign work for severe cases?",
+              a: "Invisalign handles mild to moderate orthodontic concerns extremely well — crooked teeth, crowding, gaps, mild overbites/underbites/crossbites. For severely rotated teeth, large skeletal jaw discrepancies, or cases that require surgical correction, traditional braces or referral to an orthodontist may be more appropriate. We'll be honest about whether Invisalign is the right tool for your case.",
+            },
+            {
+              q: "Are there age restrictions for Invisalign?",
+              a: "Invisalign is recommended for adults 18+ in our practice — the 22-hour daily wear requirement is the make-or-break factor, and adults are typically more reliable about compliance. Teen versions exist but require strong family support. The aligners work mechanically the same at any age.",
+            },
+            {
+              q: "Does Invisalign hurt?",
+              a: "Mild pressure and soreness when you switch to a new aligner — usually fades within 24–48 hours. Because the trays are smooth plastic, you don't get the cheek and lip irritation that traditional metal braces cause. Most patients describe the discomfort as much milder than they expected.",
+            },
+            {
+              q: "How do I clean my Invisalign aligners?",
+              a: "Rinse them with room-temperature water every time you take them out. Brush them gently with a soft-bristled toothbrush and clear soap (not toothpaste — it can scratch). Don't use hot water or run them through the dishwasher — heat warps the plastic. Invisalign sells official cleaning crystals as an optional weekly soak.",
+            },
+            {
+              q: "What happens if I lose an aligner?",
+              a: "Tell us right away — usually we can either advance you to the next aligner (if you've worn the current one long enough) or order a replacement from Invisalign. Don't go without an aligner for more than 24 hours; your teeth will start to shift back and you may need to backtrack a tray.",
+            },
+            {
+              q: "Will I need a retainer after Invisalign?",
+              a: "Yes — for life, just like with traditional braces. Teeth naturally try to drift back toward their original positions after any orthodontic treatment. We make clear Vivera retainers at the end of your case; most patients wear them nightly indefinitely. Skipping the retainer is the #1 reason teeth relapse.",
             },
           ]}
           related={category.items}

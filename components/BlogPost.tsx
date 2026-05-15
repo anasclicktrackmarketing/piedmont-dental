@@ -26,6 +26,12 @@ export default function BlogPost({
               <time className="post-hero-date" dateTime={post.dateISO}>
                 {post.date}
               </time>
+              <span className="post-hero-byline">
+                By{" "}
+                <Link href="/about/dr-martenson" rel="author">
+                  Dr. Jill Martenson, DDS
+                </Link>
+              </span>
             </div>
             <h1 className="post-hero-title">{post.title}</h1>
             <p className="post-hero-excerpt">{post.excerpt}</p>

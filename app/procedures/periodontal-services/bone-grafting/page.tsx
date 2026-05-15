@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Bone Grafting in Piedmont, CA | Restore Jawbone for Implants | Piedmont Dental",
+    "Bone Grafting in Piedmont, CA",
   description:
-    "Dental bone grafting at Piedmont Dental By Design — replace lost bone tissue, prepare the jaw for implants, and halt the progression of gum disease. Autogenous, allograft, and xenograft options.",
+    "Dental bone grafting — replace lost bone tissue, prepare the jaw for implants, halt gum disease progression. Autogenous, allograft, xenograft options.",
   alternates: { canonical: "/procedures/periodontal-services/bone-grafting" },
   openGraph: {
     title: "Bone Grafting — Piedmont Dental By Design",
@@ -71,6 +71,40 @@ export default function BoneGraftingPage() {
                 "The grafting material is harvested or prepared, a small incision is made in the gum tissue, and the bone graft is gently placed at the affected site. Bone regeneration may be aided by membrane barriers (separating slower-growing bone from faster-growing gum tissue), tissue-stimulating proteins like Emdogain, or platelet-rich growth factors that stimulate denser bone in shorter time.",
                 "The gum is sutured in place and a follow-up appointment is scheduled within 10 days to assess progress. Bone grafting is highly successful and creates an excellent foundation for further periodontal restoration.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "Why do I need a bone graft for a dental implant?",
+              a: "Implants need to be anchored in healthy, dense jawbone. If you've been missing a tooth for a while, the bone in that area has likely shrunk — your jaw loses bone density without a tooth root to stimulate it. A bone graft rebuilds enough volume and density for the implant to integrate securely. Without sufficient bone, an implant can fail.",
+            },
+            {
+              q: "Where does the bone for a graft come from?",
+              a: "Three main sources: your own body (autogenous — usually from the chin, jaw, hip, or shin); a tissue bank (allograft — donated, processed human bone); or animal source (xenograft — typically bovine bone, processed to be inert). For most cases at our practice, an allograft or xenograft works well and avoids a second surgical site.",
+            },
+            {
+              q: "Is bone grafting painful?",
+              a: "The procedure itself is done under local anesthesia and is generally comfortable. Postoperative soreness for 3–5 days is typical and well-managed with over-the-counter pain relief. If we're harvesting from a second site (your own bone), there's some additional discomfort at the donor site — most patients describe it as similar to a bruise.",
+            },
+            {
+              q: "How long does a bone graft take to heal?",
+              a: "The initial soft-tissue healing happens in 2 weeks, but the graft itself integrates into your jawbone over 3–6 months. Implants typically can't be placed until integration is complete and confirmed by X-ray. We'll see you at 10 days, then again at 3 months and 6 months to monitor progress.",
+            },
+            {
+              q: "Are cow-derived (xenograft) bone grafts safe?",
+              a: "Yes — xenograft material is processed to remove all organic components, leaving only the mineral scaffolding. It's been used safely for decades and is one of the most common materials worldwide. There's no risk of disease transmission because the biological material is destroyed during processing.",
+            },
+            {
+              q: "What is a sinus lift, and is it the same as bone grafting?",
+              a: "A sinus lift is a specific type of bone grafting done in the upper jaw (premolar/molar region). When implants are planned in that area but the sinus floor is too close, we gently lift the sinus membrane and pack bone graft material beneath it. After healing, there's enough bone for safe implant placement. It's covered in detail on our sinus augmentation page.",
+            },
+            {
+              q: "Will my body reject a bone graft?",
+              a: "Bone grafts don't 'reject' the way an organ transplant might — the materials we use are inert mineral scaffolds, not living tissue. The graft fails only if it doesn't integrate properly (uncommon when placed by an experienced periodontist), if infection occurs, or if mechanical stress disturbs the site during healing.",
+            },
+            {
+              q: "What happens if I skip the bone graft?",
+              a: "If the implant site doesn't have enough bone, we have a few options: place a smaller-diameter or shorter implant (sometimes possible), use a different replacement option like a bridge or denture, or simply leave the gap. Forcing an implant into insufficient bone leads to early failure, so a graft is usually the right investment.",
             },
           ]}
           related={category.items}

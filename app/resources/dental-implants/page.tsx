@@ -7,10 +7,11 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Dental Implants — Before & After | Piedmont Dental By Design",
+  title: "Dental Implants — Before & After",
   description:
-    "Real dental implant cases from Dr. Jill Martenson — single-tooth replacements, full-arch rehabilitation, and implant-supported restorations with drag-to-compare results.",
+    "Real implant cases from Dr. Martenson — single-tooth replacements, full-arch rehabilitation, and implant-supported restorations with drag-to-compare results.",
   alternates: { canonical: "/resources/dental-implants" },
   openGraph: {
     title: "Dental Implants — Before & After | Piedmont Dental By Design",
@@ -335,6 +336,13 @@ export default function DentalImplantsResultsPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Dental Implants", url: "/resources/dental-implants" },
+        ]}
+      />
+</>
   );
 }

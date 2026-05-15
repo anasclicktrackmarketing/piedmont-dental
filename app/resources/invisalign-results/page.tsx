@@ -7,8 +7,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Invisalign® Results — Before & After | Piedmont Dental By Design",
+  title: "Invisalign® Results — Before & After",
   description:
     "Drag-to-compare before and after Invisalign® cases from Dr. Jill Martenson's practice — real patient smile transformations with clear aligners.",
   alternates: { canonical: "/resources/invisalign-results" },
@@ -297,6 +298,13 @@ export default function InvisalignResultsPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Invisalign® Results", url: "/resources/invisalign-results" },
+        ]}
+      />
+</>
   );
 }

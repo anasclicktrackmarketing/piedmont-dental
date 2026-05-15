@@ -5,11 +5,12 @@ import SiteHeader from "@/components/SiteHeader";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Office Tour | Piedmont Dental By Design",
   description:
-    "Take a guided tour of Piedmont Dental By Design — 10 views inside the practice at 1331 Grand Ave, Piedmont, CA. Modern operatories, digital imaging, and a comfortable patient experience.",
+    "Take a guided tour — 10 views inside our practice at 1331 Grand Ave, Piedmont. Modern operatories, digital imaging, and a comfortable patient experience.",
   alternates: { canonical: "/about/tour" },
   openGraph: {
     title: "Office Tour — Piedmont Dental By Design",
@@ -223,6 +224,12 @@ export default function OfficeTourPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "About", url: "/about" },
+          { name: "Office Tour", url: "/about/tour" },
+        ]}
+      />
     </>
   );
 }

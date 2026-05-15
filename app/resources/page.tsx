@@ -8,7 +8,7 @@ import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Patient Resources | Piedmont Dental By Design",
+  title: "Patient Resources",
   description:
     "Patient forms, post-op instructions, smile gallery, insurance & financing info, and educational resources for patients of Piedmont Dental By Design.",
   alternates: { canonical: "/resources" },

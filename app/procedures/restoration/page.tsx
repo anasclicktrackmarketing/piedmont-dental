@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Dental Restoration in Piedmont, CA | Implants, Crowns, Fillings, Bridges, Dentures",
+    "Dental Restoration in Piedmont, CA",
   description:
-    "Comprehensive dental restoration at Piedmont Dental By Design — dental implants, composite fillings, porcelain crowns, fixed bridges, and dentures. Repair damaged or missing teeth and restore function and appearance.",
+    "Comprehensive restoration — dental implants, fillings, porcelain crowns, fixed bridges, and dentures. Repair damaged or missing teeth and restore function.",
   alternates: { canonical: "/procedures/restoration" },
   openGraph: {
     title: "Restoration — Piedmont Dental By Design",

@@ -50,6 +50,10 @@ export const metadata: Metadata = {
   publisher: "Piedmont Dental By Design",
   alternates: {
     canonical: "/",
+    languages: {
+      "en-US": "/",
+      "x-default": "/",
+    },
   },
   openGraph: {
     type: "website",
@@ -123,7 +127,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en-US" className={`${fraunces.variable} ${inter.variable}`}>
       <body>
         {children}
         <BestOfBayBadge />
