@@ -7,8 +7,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Composite Fillings — Before & After | Piedmont Dental By Design",
+  title: "Composite Fillings — Before & After",
   description:
     "Real composite filling case studies — tooth-colored restorations that blend invisibly with natural teeth.",
   alternates: { canonical: "/smile-gallery/composite-fillings" },
@@ -282,6 +283,13 @@ export default function CompositeFillingsGalleryPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Smile Gallery", url: "/smile-gallery" },
+          { name: "Composite Fillings", url: "/smile-gallery/composite-fillings" },
+        ]}
+      />
+</>
   );
 }

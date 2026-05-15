@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Panoramic X-Rays in Piedmont, CA | Wraparound Dental Imaging | Piedmont Dental",
+    "Panoramic X-Rays in Piedmont, CA",
   description:
-    "Panoramic X-rays at Piedmont Dental By Design — extraoral wraparound imaging for wisdom teeth evaluation, TMJ assessment, jawbone fractures, and dental implant planning.",
+    "Panoramic X-rays — extraoral wraparound imaging for wisdom teeth evaluation, TMJ assessment, jawbone fractures, and dental implant planning.",
   alternates: { canonical: "/procedures/cleanings-prevention/panoramic-x-rays" },
   openGraph: {
     title: "Panoramic X-Rays — Piedmont Dental By Design",
@@ -73,6 +73,40 @@ export default function PanoramicXRaysPage() {
                 "The positioning of the head and body determines how sharp, clear, and useful the X-rays will be. The pictures are magnified by as much as 30% to ensure that even the minutest detail is visible.",
                 "Panoramic X-rays are an important diagnostic tool and are also valuable for planning future treatment. They are safer than other types of X-rays because less radiation enters the body.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "What's the difference between a panoramic X-ray and a regular dental X-ray?",
+              a: "A regular bite-wing or periapical X-ray is taken with a small sensor inside your mouth and shows a few teeth in detail. A panoramic X-ray is taken from outside the mouth by a machine that rotates around your head — it captures all upper and lower teeth, both jaws, sinuses, and TMJ joints in a single wraparound image. Less detail per tooth, much broader view.",
+            },
+            {
+              q: "When is a panoramic X-ray needed?",
+              a: "Most often for wisdom-teeth evaluation, dental implant planning, suspected sinus problems causing tooth pain, jaw fractures, TMJ assessment, and orthodontic planning. It's also helpful for patients with severe gag reflexes who can't tolerate intraoral sensors. Most patients don't need a panoramic X-ray at every visit — it's done on an as-needed basis.",
+            },
+            {
+              q: "Do I have to bite down on anything for a panoramic X-ray?",
+              a: "Just a small plastic bite tab to hold your front teeth in the right position. You stand still while the machine rotates around your head — typically 15–20 seconds. The plastic positioning piece can feel a little awkward, but the X-ray itself is fast and painless.",
+            },
+            {
+              q: "How long does a panoramic X-ray take?",
+              a: "About 5 minutes total — most of it positioning. The scan itself is 15–20 seconds while the rotating arm moves around your head. The image appears on the screen immediately for the dentist to review.",
+            },
+            {
+              q: "Is a panoramic X-ray safer than other X-rays?",
+              a: "Per image, yes — panoramic X-rays deliver less radiation than a full-mouth series of intraoral X-rays because they capture everything in a single exposure rather than 14–20 individual films. They also avoid film placement in the mouth, which is helpful for patients with strong gag reflexes.",
+            },
+            {
+              q: "Will a panoramic X-ray show cavities?",
+              a: "Small cavities between teeth — no, not reliably. The image isn't sharp enough at the tooth level. For that, we rely on bite-wing X-rays. Panoramic X-rays show structural problems: impacted teeth, jaw fractures, large cysts, bone loss, sinus involvement, and developmental abnormalities.",
+            },
+            {
+              q: "Why does the dentist need a panoramic X-ray to plan implants?",
+              a: "To check the position of the mandibular nerve (the major nerve running through your lower jaw) and the floor of the sinus (in the upper jaw). Implants must be placed without contacting either. The panoramic image — sometimes combined with a 3D cone-beam scan — maps out the safe placement zone.",
+            },
+            {
+              q: "Can a panoramic X-ray detect TMJ problems?",
+              a: "It can show the bony structures of the TMJ joints and any obvious fractures or arthritis. For soft-tissue diagnosis of the disc or muscle problems, MRI is more useful. Panoramic imaging is often the first imaging step when TMJ pain is suspected.",
             },
           ]}
           related={category.items}

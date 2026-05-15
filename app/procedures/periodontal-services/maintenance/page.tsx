@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Periodontal Maintenance in Piedmont, CA | Quarterly Gum Care | Piedmont Dental",
+    "Periodontal Maintenance in Piedmont, CA",
   description:
-    "Periodontal maintenance after gum disease treatment — quarterly cleanings, pocket-depth checks, oral cancer screening, and ongoing pocket health monitoring at Piedmont Dental By Design.",
+    "Periodontal maintenance after gum disease treatment — quarterly cleanings, pocket-depth checks, oral cancer screening, and ongoing pocket health monitoring at.",
   alternates: { canonical: "/procedures/periodontal-services/maintenance" },
   openGraph: {
     title: "Periodontal Maintenance — Piedmont Dental By Design",
@@ -63,6 +63,40 @@ export default function MaintenancePage() {
               body: [
                 "Good oral hygiene practices and periodontal cleanings are essential in maintaining dental health and keeping periodontal disease under control. Once gum disease has been present, periodontal pockets re-form much faster than original disease developed — quarterly visits keep the bacterial colonies that cause infection from re-establishing themselves.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "How is periodontal maintenance different from a regular cleaning?",
+              a: "A regular cleaning (dental prophylaxis) removes plaque and tartar from healthy teeth above the gumline. Periodontal maintenance is for patients who have already been treated for gum disease — it includes deeper cleaning below the gumline, careful checking of pocket depths, and ongoing monitoring to keep the disease from returning. Different procedure code, longer appointment, often more frequent.",
+            },
+            {
+              q: "Why do I need cleanings every 3 months instead of every 6?",
+              a: "Because plaque starts hardening into tartar within just 24 hours, and patients with treated gum disease re-form periodontal pockets much faster than people who've never had it. The quarterly cadence keeps bacterial colonies from re-establishing in the pockets where disease started. Stretching to 6 months often allows the disease to recur.",
+            },
+            {
+              q: "Can I ever go back to regular 6-month cleanings?",
+              a: "For most periodontal patients, the answer is no — once gum disease has been present, the risk of recurrence stays elevated for life. The 3-month cadence is the standard of care that keeps your case stable. Some patients with very mild disease history and excellent home care may stretch to every 4 months, but we'll make that call together at your visits.",
+            },
+            {
+              q: "What happens at a periodontal maintenance visit?",
+              a: "Pocket-depth measurements at every tooth, an oral cancer screening, an exam of all existing dental work, X-rays as needed, deep cleaning above and below the gumline, polishing, and a discussion of your home care. Total time about 60–75 minutes.",
+            },
+            {
+              q: "Will my insurance cover quarterly maintenance?",
+              a: "Most plans cover 2 visits per calendar year at the cleaning rate, then quarterly visits are billed at the periodontal maintenance rate (different code). Many plans cover periodontal maintenance up to 4× per year; some cap at 2 with the rest as out-of-pocket. We verify your specific benefits and discuss any cost upfront.",
+            },
+            {
+              q: "What happens if I skip a maintenance visit?",
+              a: "Tartar starts re-accumulating below the gumline immediately. Skipping one visit usually means pockets get a little deeper, gums become more inflamed, and the next visit takes longer to bring you back to baseline. Skipping multiple visits often leads to disease progression — sometimes requiring scaling and root planing or surgery again.",
+            },
+            {
+              q: "How long will I need to do quarterly maintenance?",
+              a: "Indefinitely — for life. Periodontal disease is managed, not cured. Quarterly visits keep it in remission the same way regular medication keeps a chronic medical condition stable. The investment is far cheaper than letting the disease recur and needing surgery again.",
+            },
+            {
+              q: "Do I still need to floss daily between maintenance visits?",
+              a: "Absolutely — and possibly more carefully than someone who's never had gum disease. Daily flossing disrupts the bacterial colonies that drive recurrence. Many of our maintenance patients also use a water flosser, interdental brushes, or medicated rinses. We coach the right tools for your case.",
             },
           ]}
           related={category.items}

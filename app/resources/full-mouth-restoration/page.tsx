@@ -7,8 +7,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Full Mouth Restoration | Piedmont Dental By Design",
+  title: "Full Mouth Restoration",
   description:
     "Comprehensive full-mouth restoration cases from Dr. Jill Martenson — combining implants, crowns, veneers, and prosthetics to rebuild function and confidence.",
   alternates: { canonical: "/resources/full-mouth-restoration" },
@@ -267,6 +268,13 @@ export default function FullMouthRestorationPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Full Mouth Restoration", url: "/resources/full-mouth-restoration" },
+        ]}
+      />
+</>
   );
 }

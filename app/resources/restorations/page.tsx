@@ -7,10 +7,11 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Restorations | Piedmont Dental By Design",
   description:
-    "Restorative dentistry at Piedmont Dental — porcelain crowns, dental implants, dentures, composite fillings, and fixed bridges, all crafted to look and feel natural.",
+    "Restorative dentistry — porcelain crowns, dental implants, dentures, composite fillings, and fixed bridges. All crafted to look and feel natural.",
   alternates: { canonical: "/resources/restorations" },
   openGraph: {
     title: "Restorations — Piedmont Dental By Design",
@@ -269,6 +270,13 @@ export default function RestorationsResourcePage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Restorations", url: "/resources/restorations" },
+        ]}
+      />
+</>
   );
 }

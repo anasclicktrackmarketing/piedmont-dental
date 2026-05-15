@@ -7,7 +7,7 @@ import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Blog — Dental Care, Cosmetic Dentistry & Local Insights | Piedmont Dental By Design",
+  title: "Blog — Dental Notes & Local Insights",
   description:
     "Posts on cosmetic dentistry, dental implants, family care, and daily oral health from Dr. Jill Martenson and the Piedmont Dental By Design team in Piedmont, CA.",
   alternates: { canonical: "/blog" },

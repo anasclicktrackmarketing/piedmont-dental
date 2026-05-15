@@ -6,6 +6,8 @@ import BlogPost from "@/components/BlogPost";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
+import ArticleSchema from "@/components/schema/ArticleSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import {
   getPostSlugs,
   getPostBySlug,
@@ -27,7 +29,7 @@ export async function generateMetadata({
   try {
     const post = getPostBySlug(slug);
     return {
-      title: `${post.title} | Piedmont Dental By Design Blog`,
+      title: { absolute: post.title },
       description: post.excerpt,
       alternates: { canonical: `/blog/${post.slug}` },
       openGraph: {
@@ -40,7 +42,7 @@ export async function generateMetadata({
       },
     };
   } catch {
-    return { title: "Article not found | Piedmont Dental By Design" };
+    return { title: "Article not found" };
   }
 }
 
@@ -70,6 +72,13 @@ export default async function BlogPostPage({
         <AboutCTA />
       </main>
       <SiteFooter />
+      <ArticleSchema post={post} />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Blog", url: "/blog" },
+          { name: post.title, url: `/blog/${post.slug}` },
+        ]}
+      />
     </>
   );
 }

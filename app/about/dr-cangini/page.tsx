@@ -5,11 +5,12 @@ import DoctorProfile from "@/components/DoctorProfile";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Dr. Filippo Cangini — Board-Certified Periodontist | Piedmont Dental",
+  title: "Dr. Filippo Cangini, Periodontist",
   description:
-    "Dr. Filippo Cangini is a board-certified periodontist with 25 years of experience. University of Siena, University of Buffalo, and University of Rochester (Eastman Dental Center) trained.",
+    "Dr. Filippo Cangini — board-certified periodontist, 25 years' experience. Trained at U. of Siena, Buffalo, and Rochester's Eastman Dental Center.",
   alternates: { canonical: "/about/dr-cangini" },
   openGraph: {
     title: "Dr. Filippo Cangini — Periodontist at Piedmont Dental By Design",
@@ -87,6 +88,12 @@ export default function DrCanginiPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "About", url: "/about" },
+          { name: "Dr. Filippo Cangini", url: "/about/dr-cangini" },
+        ]}
+      />
     </>
   );
 }

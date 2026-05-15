@@ -7,8 +7,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Invisalign® — Clear Aligners | Piedmont Dental By Design",
+  title: "Invisalign® — Clear Aligners",
   description:
     "How Invisalign® works, what bite problems it corrects, what treatment involves, and what to expect day-to-day with clear aligners.",
   alternates: { canonical: "/resources/invisalign" },
@@ -295,6 +296,13 @@ export default function InvisalignResourcePage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Invisalign®", url: "/resources/invisalign" },
+        ]}
+      />
+</>
   );
 }

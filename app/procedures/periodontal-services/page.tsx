@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Periodontal Services in Piedmont, CA | Gum Disease Treatment | Piedmont Dental",
+    "Periodontal Services in Piedmont, CA",
   description:
-    "Comprehensive periodontal care at Piedmont Dental By Design — scaling and root planing, gum and bone grafting, crown lengthening, sinus augmentation, and ongoing maintenance. Protect gum health and tooth foundation.",
+    "Comprehensive periodontal care — scaling, root planing, gum & bone grafting, crown lengthening, sinus augmentation, maintenance. Protect gum & tooth health.",
   alternates: { canonical: "/procedures/periodontal-services" },
   openGraph: {
     title: "Periodontal Services — Piedmont Dental By Design",

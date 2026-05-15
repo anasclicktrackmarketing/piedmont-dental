@@ -27,7 +27,7 @@ export async function generateMetadata({
   try {
     const doc = getResourceBySlug(slug);
     return {
-      title: `${doc.title} | Piedmont Dental By Design`,
+      title: doc.title,
       description: doc.description,
       alternates: { canonical: doc.url },
       openGraph: {
@@ -38,7 +38,7 @@ export async function generateMetadata({
       },
     };
   } catch {
-    return { title: "Resource not found | Piedmont Dental By Design" };
+    return { title: "Resource not found" };
   }
 }
 

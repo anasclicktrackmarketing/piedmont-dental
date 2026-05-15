@@ -8,8 +8,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Other Procedures — Smile Gallery | Piedmont Dental By Design",
+  title: "Other Procedures — Smile Gallery",
   description:
     "Before-and-after results for porcelain crowns, dental implants, and composite fillings — real patient transformations across our restorative work.",
   alternates: { canonical: "/smile-gallery/other-procedures" },
@@ -266,6 +267,13 @@ export default function OtherProceduresGalleryPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Smile Gallery", url: "/smile-gallery" },
+          { name: "Other Procedures", url: "/smile-gallery/other-procedures" },
+        ]}
+      />
+</>
   );
 }

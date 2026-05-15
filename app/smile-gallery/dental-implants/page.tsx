@@ -7,8 +7,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Dental Implants — Smile Gallery | Piedmont Dental By Design",
+  title: "Dental Implants — Smile Gallery",
   description:
     "Real dental implant transformations — single-tooth replacements, multi-tooth restorations, and full-arch rehabilitations from Dr. Jill Martenson.",
   alternates: { canonical: "/smile-gallery/dental-implants" },
@@ -240,6 +241,13 @@ export default function DentalImplantsGalleryPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Smile Gallery", url: "/smile-gallery" },
+          { name: "Dental Implants", url: "/smile-gallery/dental-implants" },
+        ]}
+      />
+</>
   );
 }

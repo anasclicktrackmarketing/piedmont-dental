@@ -6,6 +6,7 @@ import ResourceArticle from "@/components/ResourceArticle";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import { getResourceBySlug, RESOURCES_META } from "@/lib/resources";
 
 const SLUG = "links";
@@ -13,7 +14,7 @@ const SLUG = "links";
 export async function generateMetadata(): Promise<Metadata> {
   const doc = getResourceBySlug(SLUG);
   return {
-    title: `${doc.title} | Piedmont Dental By Design`,
+    title: doc.title,
     description: doc.description,
     alternates: { canonical: doc.url },
     openGraph: {
@@ -74,6 +75,12 @@ export default function LinksResourcePage() {
         <AboutCTA />
       </main>
       <SiteFooter />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Useful Links", url: "/resources/links" },
+        ]}
+      />
     </>
   );
 }

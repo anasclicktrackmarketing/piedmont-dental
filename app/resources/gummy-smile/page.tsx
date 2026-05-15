@@ -7,10 +7,11 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Treating a Gummy Smile | Piedmont Dental By Design",
+  title: "Treating a Gummy Smile",
   description:
-    "What causes a gummy smile and the treatments that reshape the gum line for a more balanced, confident look — crown lengthening, gum contouring, veneers, and orthodontics.",
+    "What causes a gummy smile and the treatments that fix it — crown lengthening, gum contouring, veneers, and orthodontics for a balanced, confident look.",
   alternates: { canonical: "/resources/gummy-smile" },
   openGraph: {
     title: "Treating a Gummy Smile — Piedmont Dental By Design",
@@ -355,6 +356,13 @@ export default function GummySmilePage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Treating a Gummy Smile", url: "/resources/gummy-smile" },
+        ]}
+      />
+</>
   );
 }

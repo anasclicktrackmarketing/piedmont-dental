@@ -7,6 +7,7 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 const CARECREDIT_APPLY =
   "https://www.carecredit.com/apply/?sitecode=PDDS&encm=v4O7HHCnTczQ";
 const CARECREDIT_HOME = "https://www.carecredit.com/";
@@ -279,6 +280,13 @@ export default function FinancingPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Financing", url: "/resources/financing" },
+        ]}
+      />
+</>
   );
 }

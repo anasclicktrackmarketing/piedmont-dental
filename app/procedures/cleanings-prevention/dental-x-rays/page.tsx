@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Dental X-Rays in Piedmont, CA | Safe Diagnostic Imaging | Piedmont Dental",
+    "Dental X-Rays in Piedmont, CA",
   description:
-    "Dental X-rays at Piedmont Dental By Design — safe, low-radiation diagnostic imaging that reveals decay, abscesses, bone loss, and developmental issues invisible during a regular exam.",
+    "Dental X-rays — safe, low-radiation diagnostic imaging that reveals decay, abscesses, bone loss, and developmental issues invisible during a regular exam.",
   alternates: { canonical: "/procedures/cleanings-prevention/dental-x-rays" },
   openGraph: {
     title: "Dental X-Rays — Piedmont Dental By Design",
@@ -72,6 +72,40 @@ export default function DentalXRaysPage() {
                 "The need for dental X-rays depends on each patient's individual dental health needs. Your dentist and hygienist will recommend necessary X-rays based on a review of your medical and dental history, the dental exam, signs and symptoms, age considerations, and risk for disease.",
                 "A full-mouth series of dental X-rays is recommended for new patients and is usually good for three to five years. Bite-wing X-rays — top and bottom teeth biting together — are taken at recall (check-up) visits and are recommended once or twice a year to detect new dental problems.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "Are dental X-rays safe during pregnancy?",
+              a: "Routine dental X-rays are generally postponed during pregnancy unless there's an urgent diagnostic need (severe pain, infection, trauma). If an X-ray is necessary, we use a lead apron with a thyroid collar and modern low-dose digital sensors. Always tell us if you're pregnant or trying to conceive so we can plan accordingly.",
+            },
+            {
+              q: "How much radiation am I exposed to during dental X-rays?",
+              a: "A full-mouth series of dental X-rays delivers about the same radiation you'd receive from one day of natural background exposure (sun, air, rocks, food). Single bite-wing X-rays at a recall visit are roughly a fraction of that. We use lead aprons, thyroid collars, and modern fast-film/digital sensors to keep exposure as low as possible.",
+            },
+            {
+              q: "How often should I have dental X-rays taken?",
+              a: "Bite-wing X-rays — the small ones taken with you biting down on a tab — are recommended once or twice a year at your recall visits to catch new decay between teeth. A full-mouth series is taken on new patients and then every 3–5 years. Your dentist will adjust based on your dental history, age, and risk for disease.",
+            },
+            {
+              q: "What's the difference between bite-wing X-rays and a full-mouth series?",
+              a: "Bite-wing X-rays show the crowns of your upper and lower back teeth biting together — they're the best tool for spotting decay between teeth and checking bone level. A full-mouth series captures every tooth from crown to root tip across multiple individual films. The full series is used as a baseline for new patients and to check for problems beneath the gumline.",
+            },
+            {
+              q: "Why do I need X-rays if I'm not having pain?",
+              a: "Most dental problems are silent in their early stages — decay between teeth, small abscesses, bone loss, cysts, and even tumors typically don't cause pain until they're advanced. X-rays catch these issues when they're still small and inexpensive to fix. Waiting for pain usually means a bigger problem and a bigger procedure.",
+            },
+            {
+              q: "Can I refuse dental X-rays?",
+              a: "You can decline X-rays, but we're then diagnosing partially blind — about a third of dental problems aren't visible during a clinical exam alone. We'll always explain why we're recommending a specific X-ray and how often. If you'd like to push out the cadence, talk to your dentist about your concerns.",
+            },
+            {
+              q: "Do children need dental X-rays?",
+              a: "Yes — children typically get X-rays once a year, more frequently if they have a high cavity risk or are in mixed-dentition (losing baby teeth, gaining permanent ones). X-rays in kids monitor tooth development, look for decay between teeth, and check that adult teeth are coming in correctly.",
+            },
+            {
+              q: "Are digital X-rays safer than film X-rays?",
+              a: "Yes — digital X-ray sensors deliver about 70–80% less radiation than traditional film. We use digital imaging throughout the practice, which also means we can review your images chairside on a screen and store them as part of your record without any chemical processing.",
             },
           ]}
           related={category.items}

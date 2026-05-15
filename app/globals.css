@@ -956,6 +956,88 @@ a { color: inherit; text-decoration: none; }
   background: var(--teal);
 }
 
+/* Procedure FAQ accordion (server-rendered <details>/<summary>) */
+.proc-faqs {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--rule);
+}
+.proc-faqs .proc-section-title {
+  margin-bottom: 24px;
+}
+.proc-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.proc-faq-item {
+  border-bottom: 1px solid var(--rule);
+}
+.proc-faq-item:first-child {
+  border-top: 1px solid var(--rule);
+}
+.proc-faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  cursor: pointer;
+  list-style: none;
+  padding: 22px 4px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.4;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+.proc-faq-question::-webkit-details-marker {
+  display: none;
+}
+.proc-faq-question:hover {
+  color: var(--teal);
+}
+.proc-faq-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--ink-faint);
+  transition: transform 0.3s ease, border-color 0.2s ease;
+}
+.proc-faq-item[open] > .proc-faq-question .proc-faq-icon {
+  transform: rotate(45deg);
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.proc-faq-answer {
+  padding: 0 4px 24px;
+}
+.proc-faq-answer p {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .proc-faq-question {
+    font-size: 17px;
+    padding: 18px 4px;
+  }
+  .proc-faq-answer p {
+    font-size: 14.5px;
+  }
+}
+
 /* Mid-page CTA */
 .proc-mid-cta {
   margin-top: 56px;
@@ -2426,6 +2508,19 @@ a { color: inherit; text-decoration: none; }
 .post-hero-date {
   color: var(--ink-faint);
   font-size: 13px;
+}
+.post-hero-byline {
+  color: var(--ink-faint);
+  font-size: 13px;
+}
+.post-hero-byline a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.2s ease;
+}
+.post-hero-byline a:hover {
+  border-bottom-color: var(--ink);
 }
 .post-hero-title {
   font-family: var(--serif);
@@ -13055,4 +13150,23 @@ footer.site-footer {
 /* Mobile — smaller still, comfortably out of the way */
 @media (max-width: 720px) {
   .bob-badge { width: 80px; bottom: 12px; right: 12px; }
+}
+
+/* =====================================================================
+ * Global reduced-motion safety net (WAI / WCAG 2.3.3)
+ * Users who set "Reduce motion" at the OS level get near-instant
+ * animations and transitions across every component on the site.
+ * Specific component-level overrides above (carousels, BOB badge,
+ * etc.) still apply for autoplay loops where `animation: none` is
+ * required to fully stop scrolling.
+ * ===================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

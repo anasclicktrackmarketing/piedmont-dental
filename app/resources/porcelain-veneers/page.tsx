@@ -7,8 +7,9 @@ import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Porcelain Veneers — Before & After | Piedmont Dental By Design",
+  title: "Porcelain Veneers — Before & After",
   description:
     "Drag-to-compare porcelain veneer cases from Dr. Jill Martenson's practice — custom-shaded shells crafted to look completely natural.",
   alternates: { canonical: "/resources/porcelain-veneers" },
@@ -323,6 +324,13 @@ export default function PorcelainVeneersResultsPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
-    </>
+    
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Resources", url: "/resources" },
+          { name: "Porcelain Veneers", url: "/resources/porcelain-veneers" },
+        ]}
+      />
+</>
   );
 }

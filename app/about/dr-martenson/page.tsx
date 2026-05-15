@@ -5,11 +5,12 @@ import DoctorProfile from "@/components/DoctorProfile";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Dr. Jill Martenson, DDS — Owner & Lead Dentist | Piedmont Dental By Design",
+  title: "Dr. Jill Martenson, DDS — Lead Dentist",
   description:
-    "Meet Dr. Jill A. Martenson, DDS — owner of Piedmont Dental By Design and Best Esthetic Dentist 2024. UCLA & UOP-trained with 29 years of experience in cosmetic and restorative dentistry.",
+    "Dr. Jill A. Martenson, DDS — owner and Best Esthetic Dentist 2024. UCLA & UOP-trained, 29 years of cosmetic and restorative dentistry experience.",
   alternates: { canonical: "/about/dr-martenson" },
   openGraph: {
     title: "Dr. Jill Martenson, DDS — Piedmont Dental By Design",
@@ -106,6 +107,12 @@ export default function DrMartensonPage() {
         <AboutCTA />
       </main>
       <SiteFooter />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "About", url: "/about" },
+          { name: "Dr. Jill Martenson", url: "/about/dr-martenson" },
+        ]}
+      />
     </>
   );
 }

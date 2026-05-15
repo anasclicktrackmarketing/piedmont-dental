@@ -10,6 +10,7 @@ import FAQ from "@/components/FAQ";
 import Booker from "@/components/Booker";
 import Visit from "@/components/Visit";
 import SiteFooter from "@/components/SiteFooter";
+import HomepageSchema from "@/components/schema/HomepageSchema";
 
 export default function HomePage() {
   return (
@@ -26,6 +27,7 @@ export default function HomePage() {
       <Booker />
       <Visit />
       <SiteFooter />
+      <HomepageSchema />
     </>
   );
 }

@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Gum Grafting in Piedmont, CA | Treat Receding Gums | Piedmont Dental",
+    "Gum Grafting in Piedmont, CA",
   description:
-    "Gum grafting at Piedmont Dental By Design — surgical correction of gum recession to cover exposed tooth roots, reduce sensitivity, improve appearance, and protect long-term gum health.",
+    "Gum grafting — surgical correction of gum recession to cover exposed tooth roots, reduce sensitivity, improve appearance, and protect long-term gum health.",
   alternates: { canonical: "/procedures/periodontal-services/gum-grafting" },
   openGraph: {
     title: "Gum Grafting — Piedmont Dental By Design",
@@ -70,6 +70,40 @@ export default function GumGraftingPage() {
                 "The procedure itself is performed under local anesthetic. Small incisions create a pocket at the recipient site, the connective tissue graft is inserted between the layers of tissue, and sutures stabilize the graft to prevent shifting. Surgical dressing protects the area during the first week of healing.",
                 "Uniformity and full healing of the gums is achieved in approximately six weeks.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "What causes gum recession in the first place?",
+              a: "The two most common causes are periodontal disease (chronic gum infection breaking down tissue) and overly aggressive brushing with a hard-bristled brush. Other contributors include trauma, grinding or clenching (which puts unusual pressure on certain teeth), naturally thin tissue, and orthodontic movement. Identifying the cause is part of the treatment so it doesn't keep recurring.",
+            },
+            {
+              q: "Is a gum graft painful?",
+              a: "The procedure itself is done under local anesthesia and is comfortable during. Most discomfort comes from the donor site (your palate) if a free or connective tissue graft was used — feels like a pizza burn for about a week. If we use an allograft (donated tissue), there's no second site and discomfort is much milder. Most patients return to work the next day.",
+            },
+            {
+              q: "How long does it take to heal after gum grafting?",
+              a: "Initial soft-tissue healing is 2 weeks. The grafted tissue fully integrates over about 6 weeks, and the final aesthetic settling continues for several months. We'll see you at 1 week to remove the surgical dressing and again at 4 and 12 weeks to check on integration.",
+            },
+            {
+              q: "Where does the tissue come from for a gum graft?",
+              a: "Three sources: your own palate (free gingival graft or connective tissue graft — most common, predictable healing), or processed donor tissue from a tissue bank (acellular dermal matrix allograft — no second site, slightly less predictable). Dr. Cangini will recommend the right approach for your case during consultation.",
+            },
+            {
+              q: "Can gums grow back without a graft?",
+              a: "Unfortunately, no — receded gum tissue doesn't regenerate spontaneously. The goal of grafting is to add new tissue to the recession site so the root is covered. If recession is caught very early (just starting), sometimes addressing the cause (changing brushing technique, treating periodontal disease) can stop further loss — but rebuilding what's gone requires a graft.",
+            },
+            {
+              q: "Will my teeth still feel sensitive after grafting?",
+              a: "Usually significantly less — that's one of the major benefits. The graft covers the exposed root (which is sensitive because it lacks the protective enamel of the crown). Most patients notice a dramatic reduction in cold and hot sensitivity within a few weeks of healing.",
+            },
+            {
+              q: "How long does a gum graft last?",
+              a: "When done by a periodontist and properly cared for, a gum graft is permanent. The rare cases of graft 'failure' come from severe ongoing periodontal disease or continued aggressive brushing. We'll coach you on technique and home care to protect the result.",
+            },
+            {
+              q: "Will the grafted area look natural?",
+              a: "Yes — modern grafting techniques produce excellent aesthetic results, especially when an experienced periodontist (Dr. Cangini in our practice) does the procedure. The grafted tissue blends with the surrounding gum tissue over the first few months. Patients are typically very happy with both the comfort relief and the appearance improvement.",
             },
           ]}
           related={category.items}

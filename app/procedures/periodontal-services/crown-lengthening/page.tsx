@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "Crown Lengthening in Piedmont, CA | Reshape Gumline | Piedmont Dental",
+    "Crown Lengthening in Piedmont, CA",
   description:
-    "Crown lengthening at Piedmont Dental By Design — reshape gum and bone to expose more tooth, correct 'gummy' smiles, prepare teeth for crowns, and restore aesthetics after gum disease.",
+    "Crown lengthening — reshape gum and bone to expose more tooth, correct 'gummy' smiles, prepare teeth for crowns, and restore aesthetics after gum disease.",
   alternates: {
     canonical: "/procedures/periodontal-services/crown-lengthening",
   },
@@ -65,6 +65,40 @@ export default function CrownLengtheningPage() {
                 "In some cases, removing a small amount of soft tissue provides enough exposure to place a crown. In others, a small amount of bone is removed using a combination of hand and rotary instruments. Teeth will look noticeably longer immediately after surgery because the gums have been repositioned.",
                 "The surgical site is secured with an intraoral periodontal bandage to prevent infection. Pain medication and a chlorhexidine antimicrobial mouth rinse may be prescribed. The site is completely healed in approximately two to three months.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "What's the difference between crown lengthening and gum contouring?",
+              a: "Gum contouring (or gum reshaping with a laser) removes only soft tissue and is reversible — gums can grow back over time. Crown lengthening reshapes both gum tissue and a small amount of underlying bone, which makes the change permanent. Contouring is for minor cosmetic adjustments; crown lengthening is needed when more substantial repositioning is required or when prepping for a crown.",
+            },
+            {
+              q: "How long does it take for the gums to heal after crown lengthening?",
+              a: "Initial soft-tissue healing happens in 10–14 days. Full healing — when the gumline has settled into its final position — takes 2–3 months. If we're planning veneers or new crowns on the treated teeth, we wait until full healing before placement so the final result matches the stable gumline.",
+            },
+            {
+              q: "Is crown lengthening painful?",
+              a: "The procedure is done with local anesthesia and is comfortable during. Postoperative soreness for 3–5 days is typical, well-managed with over-the-counter pain relief. The surgical site is protected with a periodontal bandage for the first week.",
+            },
+            {
+              q: "Why is crown lengthening needed before a crown?",
+              a: "A crown needs adequate tooth structure above the gumline to bond properly. If a tooth has broken near or below the gumline (from decay, fracture, or large old fillings), there's not enough exposed tooth for the crown to grip. Crown lengthening exposes the additional tooth needed, giving the new crown a stable, healthy foundation.",
+            },
+            {
+              q: "Will my teeth look longer permanently after crown lengthening?",
+              a: "Yes — that's the point. The newly exposed tooth surface is what gives you a balanced smile (cosmetic case) or a viable surface for a crown (restorative case). The gumline doesn't 'grow back' once both tissue and bone have been reshaped.",
+            },
+            {
+              q: "Can crown lengthening fix a single tooth or do you do all of them?",
+              a: "Both. For a single tooth needing a crown, we'll often shape just that area — though we may also touch up the neighboring 1–2 teeth so the gumline transitions smoothly. For a gummy smile correction, we'll work across the visible front teeth (usually 6–8) so the result is symmetrical.",
+            },
+            {
+              q: "How is this different from cosmetic gum surgery on your cosmetic dentistry page?",
+              a: "They're the same procedure, just listed in two contexts. The cosmetic dentistry page focuses on aesthetic gummy-smile correction; this periodontal page covers the full scope including restorative (prep-for-crown) and disease-related uses. The surgical technique is identical.",
+            },
+            {
+              q: "Will insurance cover crown lengthening?",
+              a: "If the procedure is functional (necessary to place a crown, or to treat damaged teeth), insurance typically covers a significant portion. If it's purely cosmetic (gummy smile correction without restorative need), most plans treat it as elective and don't cover. We verify your benefits before booking and give you a clear cost estimate.",
             },
           ]}
           related={category.items}

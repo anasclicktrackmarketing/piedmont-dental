@@ -9,9 +9,9 @@ import { getCategory } from "@/lib/procedure-categories";
 
 export const metadata: Metadata = {
   title:
-    "CEREC® Same-Day Crowns in Piedmont, CA | Single-Visit Restorations | Piedmont Dental",
+    "CEREC® Same-Day Crowns in Piedmont, CA",
   description:
-    "CEREC® brings ceramic restorations — crowns, onlays, inlays, and veneers — into a single-visit process using CAD/CAM digital design and chairside milling. Piedmont, Oakland & East Bay.",
+    "CEREC® brings ceramic restorations — crowns, onlays, inlays, and veneers — into a single-visit process using CAD/CAM digital design and chairside milling.",
   alternates: { canonical: "/procedures/cosmetic-dentistry/cerec" },
   openGraph: {
     title: "CEREC® — Piedmont Dental By Design",
@@ -80,6 +80,44 @@ export default function CerecPage() {
                 "These images are transposed onto the computer screen, where the dentist will view the tooth from every angle and design the final restoration. When the design is complete, it will be transmitted to the milling unit.",
                 "The dentist will insert a block of ceramic, matching your tooth color, into the milling machine which will then create the full crown, onlay, inlay, or veneer. Before affixing the restoration to the tooth, the dentist will perform a dry fit to ensure comfort. Once a perfect fit is established, the restoration will be polished and affixed to the tooth with dental cement.",
               ],
+            },
+          ]}
+          faqs={[
+            {
+              q: "What does CEREC stand for?",
+              a: "Chairside Economical Restoration of Esthetic Ceramic — a digital system that designs and mills custom ceramic crowns, onlays, inlays, and veneers right in our office. The 'chairside' part is the key benefit: no temporary crowns, no second visit, no lab wait.",
+            },
+            {
+              q: "How long does a CEREC crown procedure take?",
+              a: "About 1.5–2 hours total in a single visit. Roughly 30 minutes to prepare the tooth and take the 3D scan, 15 minutes for Dr. Martenson to design the restoration on screen, 15 minutes for the milling machine to carve it from a ceramic block, then 30 minutes to fit, polish, and bond it. You walk out with the permanent restoration in place.",
+            },
+            {
+              q: "Is a CEREC crown as durable as a traditional lab-made crown?",
+              a: "Yes — modern CEREC ceramic blocks are made from the same high-strength materials (lithium disilicate or zirconia) used by dental labs. Recent studies show 10+ year survival rates comparable to traditional lab crowns. The main difference is speed of delivery, not durability.",
+            },
+            {
+              q: "Do I need a temporary crown with CEREC?",
+              a: "No — that's one of the biggest advantages. Traditional crowns require a temporary while the lab fabricates the permanent (2–3 weeks). CEREC eliminates that step. You leave the appointment with the final, permanent crown bonded in place.",
+            },
+            {
+              q: "How long do CEREC restorations last?",
+              a: "Studies show most CEREC restorations last 10+ years with good care. Like any porcelain restoration, longevity depends on your bite, grinding habits, and oral hygiene. Patients who clench or grind heavily may need a nightguard to protect the investment.",
+            },
+            {
+              q: "Is CEREC more expensive than a traditional crown?",
+              a: "Pricing is comparable to traditional lab crowns at most practices — and CEREC often saves on the lab fee and second-visit time. You'll get an exact quote at your consultation. Coverage by dental insurance is identical to a traditional crown.",
+            },
+            {
+              q: "Can CEREC make veneers?",
+              a: "Yes — CEREC can mill porcelain veneers in a single visit, though most patients who want a multi-veneer smile makeover still prefer lab-fabricated veneers for the highest aesthetic refinement. CEREC veneers are ideal for single-tooth replacements or smaller cases.",
+            },
+            {
+              q: "Who isn't a candidate for CEREC?",
+              a: "Patients with a history of breaking ceramic restorations or a very deep bite that puts unusual force on the front teeth may not be ideal candidates. Severe grinders (bruxism) need a nightguard regardless of whether the restoration is CEREC or lab-made. Dr. Martenson will evaluate during your consultation.",
+            },
+            {
+              q: "Does CEREC use natural-looking materials?",
+              a: "Yes — CEREC ceramic blocks come in a full range of tooth shades and translucencies. We choose a block matched to your existing teeth and then characterize it (glaze, staining) before bonding. Most patients can't tell their CEREC crown from their natural teeth.",
             },
           ]}
           related={category.items}
