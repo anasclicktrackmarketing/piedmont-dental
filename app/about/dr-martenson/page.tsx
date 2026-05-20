@@ -10,12 +10,12 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Dr. Jill Martenson, DDS — Lead Dentist",
   description:
-    "Dr. Jill A. Martenson, DDS — owner and Best Esthetic Dentist 2024. UCLA & UOP-trained, 29 years of cosmetic and restorative dentistry experience.",
+    "Dr. Jill A. Martenson, DDS — co-founder and co-owner of Piedmont Dental By Design. UCLA & UOP-trained, with over 30 years of cosmetic and restorative dentistry experience.",
   alternates: { canonical: "/about/dr-martenson" },
   openGraph: {
     title: "Dr. Jill Martenson, DDS — Piedmont Dental By Design",
     description:
-      "Owner & Lead Dentist · 29 years of cosmetic and restorative dentistry · Best Esthetic Dentist 2024.",
+      "Co-Founder & Co-Owner · over 30 years of cosmetic and restorative dentistry · Best of the East Bay 2024 & 2025.",
     url: "https://piedmontdentalbydesign.com/about/dr-martenson",
     type: "profile",
     images: ["/team/dr-martenson.webp"],
@@ -32,19 +32,19 @@ export default function DrMartensonPage() {
           index="i"
           eyebrow="— Dr. Jill Martenson —"
           name="Dr. Jill A. Martenson, DDS"
-          role="Owner & Lead Dentist · Cosmetic Dentistry"
-          intro="Dr. Jill Martenson is a highly accomplished dentist with a passion for providing exceptional dental care. She has a strong educational background and a deep commitment to her profession, making her a trusted name in the field of dentistry."
+          role="Co-Founder & Co-Owner of Piedmont Dental By Design"
+          intro="For over 30 years, Dr. Jill Martenson has been a trusted, award-winning dentist serving the Piedmont community with exceptional, patient-centered care."
           photo="/team/dr-martenson.webp"
           photoAlt="Dr. Jill Martenson, DDS"
           credentials={[
-            { value: "29 yrs", label: "Experience" },
-            { value: "2024", label: "Best Esthetic Dentist" },
-            { value: "2013", label: "Angie's List Super Service Award" },
-            { value: "Owner", label: "Piedmont Dental by Design" },
+            { value: "30 yrs", label: "Experience" },
+            { value: "2025", label: "Best of the East Bay" },
+            { value: "2024 & '25", label: "Best Esthetic Dentist" },
+            { value: "2025", label: "Best Dental Practice" },
           ]}
           bioParagraphs={[
-            "Dr. Martenson grew up in the Bay Area and has been practicing dentistry there for nearly three decades. After graduating with high honors from UOP School of Dentistry and completing a General Practice Residency in Denver, she returned home to join Piedmont Dental by Design — first as an associate, then as a partner, and ultimately as owner.",
-            "She has been a member of an Implant Study Club since 1997, incorporating implant treatment planning and restoration into her practice from the beginning. She is dedicated to continuing education, consistently adding hours to her CE courses in implants, aesthetics, and bonding — and to courses in personal growth and leadership to further enhance her practice.",
+            "For over 30 years, Dr. Jill Martenson has been a trusted, award-winning dentist proudly serving the Piedmont community with exceptional, patient-centered care. Known for her dedication to excellence and compassionate approach, Dr. Martenson has built a reputation as a highly respected leader in dentistry.",
+            "She graduated with honors from UCLA in 1991 with a Bachelor of Science degree in Kinesiology, followed by earning her Doctor of Dental Surgery degree with high honors from the University of the Pacific School of Dentistry in 1996. Dr. Martenson's deep commitment to her profession, advanced expertise, and passion for creating healthy, confident smiles have made her a cornerstone of dental care in the community.",
           ]}
           education={[
             {

@@ -82,7 +82,7 @@ export default function PatientReviewsPage() {
               </h1>
               <p className="page-hero-sub">
                 We&apos;ve been caring for patients in Piedmont, Oakland, and
-                the East Bay since 2000. Here&apos;s what they say about the
+                the East Bay for 30 years. Here&apos;s what they say about the
                 practice — verified Google reviews and first-hand testimonials,
                 in their own words.
               </p>
@@ -136,10 +136,10 @@ export default function PatientReviewsPage() {
               </div>
             </div>
             <div className="reviews-stat">
-              <div className="reviews-stat-num">25+</div>
+              <div className="reviews-stat-num">30</div>
               <div className="reviews-stat-label">
                 Years in practice
-                <span>caring for the East Bay since 2000</span>
+                <span>caring for the East Bay since 1996</span>
               </div>
             </div>
             <div className="reviews-stat">
@@ -152,10 +152,10 @@ export default function PatientReviewsPage() {
               </div>
             </div>
             <div className="reviews-stat">
-              <div className="reviews-stat-num">2024</div>
+              <div className="reviews-stat-num">2025</div>
               <div className="reviews-stat-label">
-                Best Esthetic Dentist
-                <span>Best of the East Bay</span>
+                Best of the East Bay
+                <span>Best Dental Practice &amp; Esthetic Dentist</span>
               </div>
             </div>
           </div>

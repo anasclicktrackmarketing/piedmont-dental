@@ -60,7 +60,7 @@ export const posts: Post[] = [
     image: "/img/blog/trusted-dentist-oakland-ca/hero.jpg",
     alt: "Practice exterior — trusted dentist near Oakland",
     excerpt:
-      "If you're seeking a dedicated and experienced dentist near Oakland, look no further than Piedmont Dental by Design. Located at 1331 Grand Ave, Piedmont, we have been providing great dental care to the Oakland and Piedmont communities since 2000.",
+      "If you're seeking a dedicated and experienced dentist near Oakland, look no further than Piedmont Dental by Design. Located at 1331 Grand Ave, Piedmont, we have been providing great dental care to the Oakland and Piedmont communities for over 30 years.",
   },
   {
     slug: "waterpik-vs-flossing",

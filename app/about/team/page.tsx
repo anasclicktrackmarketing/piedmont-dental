@@ -12,7 +12,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Meet the Team | Piedmont Dental By Design",
   description:
-    "Meet the full team — three dentists plus nine practice staff: hygienists, assistants, and patient services. Real people who keep the practice running.",
+    "Meet the full team — three dentists plus eight practice staff: hygienists, assistants, and patient services. Real people who keep the practice running.",
   alternates: { canonical: "/about/team" },
   openGraph: {
     title: "Meet the Team — Piedmont Dental By Design",
@@ -27,20 +27,20 @@ const DOCTORS = [
   {
     href: "/about/dr-martenson",
     name: "Dr. Jill A. Martenson, DDS",
-    role: "Owner & Lead Dentist · Cosmetic",
+    role: "Co-Founder & Co-Owner · Cosmetic",
     photo: "/team/dr-martenson.webp",
-  },
-  {
-    href: "/about/dr-cangini",
-    name: "Dr. Filippo Cangini",
-    role: "Periodontist",
-    photo: "/team/dr-cangini.webp",
   },
   {
     href: "/about/dr-ma",
     name: "Dr. David Ma",
     role: "Restorative & Cosmetic",
     photo: "/team/dr-ma.webp",
+  },
+  {
+    href: "/about/dr-cangini",
+    name: "Dr. Filippo Cangini",
+    role: "Periodontist",
+    photo: "/team/dr-cangini.webp",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function TeamPage() {
             <div className="page-hero-content">
               <div className="num">— Meet the Team —</div>
               <h1>
-                Three dentists, <em>nine</em>
+                Three dentists, <em>eight</em>
                 <br />
                 practice members.
               </h1>
@@ -97,6 +97,19 @@ export default function TeamPage() {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        <section className="team-photo-banner">
+          <div className="team-photo-banner-inner">
+            <Image
+              src="/img/about/full-team.jpg"
+              alt="The Piedmont Dental By Design team"
+              width={2400}
+              height={1600}
+              sizes="(max-width: 1200px) 100vw, 1200px"
+              priority
+            />
           </div>
         </section>
 

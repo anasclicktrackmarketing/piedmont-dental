@@ -21,19 +21,19 @@ const GRADIENTS = {
 const doctors: Member[] = [
   {
     name: "Dr. Jill A. Martenson, DDS",
-    role: "Owner · Lead dentist · Cosmetic",
+    role: "Co-Founder & Co-Owner · Cosmetic",
     bg: GRADIENTS.teal,
     // photo: "/team/dr-martenson.jpg",  // ← drop file here when available
-  },
-  {
-    name: "Dr. Filippo Cangini",
-    role: "Periodontics",
-    bg: GRADIENTS.ink,
   },
   {
     name: "Dr. David Ma",
     role: "Restorative",
     bg: GRADIENTS.warm,
+  },
+  {
+    name: "Dr. Filippo Cangini",
+    role: "Periodontics",
+    bg: GRADIENTS.ink,
   },
 ];
 
@@ -43,7 +43,6 @@ const staffRaw: Omit<Member, "bg">[] = [
   { name: "Christine", role: "Patient Services Manager · RDA" },
   { name: "Elaina", role: "Financial, Treatment & Business Manager" },
   { name: "Michelle", role: "Registered Dental Hygienist" },
-  { name: "Julie", role: "Registered Dental Hygienist" },
   { name: "Kelley", role: "Registered Dental Hygienist" },
   { name: "Cesar", role: "Registered Dental Hygienist" },
   { name: "Lee'Lannee", role: "Expanded Function Dental Assistant 2" },
@@ -112,7 +111,7 @@ export default function AboutTeam() {
             <p className="about-question">Who works at Piedmont Dental?</p>
           </div>
           <p className="lede">
-            Three dentists and nine practice staff. The same hygienist or
+            Three dentists and eight practice staff. The same hygienist or
             assistant tends to handle the same patients visit after visit —
             it&apos;s how we keep care personal.
           </p>

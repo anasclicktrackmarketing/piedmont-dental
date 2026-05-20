@@ -11026,6 +11026,19 @@ a.gummy-treatment-card:hover .gummy-treatment-cta { color: var(--ink); }
   margin-bottom: 26px;
   letter-spacing: 0;
 }
+.award-badge {
+  width: 76px;
+  height: 76px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.award-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .award-headline {
   font-family: var(--serif);
   font-size: clamp(26px, 2.4vw, 34px);
@@ -11050,6 +11063,83 @@ a.gummy-treatment-card:hover .gummy-treatment-cta { color: var(--ink); }
   line-height: 1.55;
   margin: 0;
   max-width: 26ch;
+}
+
+/* ============================================================
+   About — feature band (image + text), used on the About page
+   ============================================================ */
+.about-feature {
+  border-top: 1px solid var(--rule);
+}
+.about-feature-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 88px 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.about-feature--img-left .about-feature-image {
+  order: -1;
+}
+.about-feature-text h2 {
+  font-family: var(--serif);
+  font-size: clamp(28px, 3.4vw, 44px);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  margin: 14px 0 22px;
+  color: var(--ink);
+}
+.about-feature-text h2 em {
+  font-style: italic;
+  color: var(--teal);
+}
+.about-feature-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+.about-feature-text p:last-child {
+  margin-bottom: 0;
+}
+.about-feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+@media (max-width: 900px) {
+  .about-feature-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 56px 24px;
+  }
+  .about-feature--img-left .about-feature-image {
+    order: 0;
+  }
+}
+
+/* Meet the Team — full-width team photo banner */
+.team-photo-banner-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px 48px;
+}
+.team-photo-banner-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+@media (max-width: 720px) {
+  .team-photo-banner-inner {
+    padding: 0 20px 32px;
+  }
 }
 
 /* ============================================================

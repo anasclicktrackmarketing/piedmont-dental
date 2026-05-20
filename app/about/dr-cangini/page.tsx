@@ -10,12 +10,12 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Dr. Filippo Cangini, Periodontist",
   description:
-    "Dr. Filippo Cangini — board-certified periodontist, 25 years' experience. Trained at U. of Siena, Buffalo, and Rochester's Eastman Dental Center.",
+    "Dr. Filippo Cangini — board-certified periodontist, 26 years' experience. Trained at U. of Siena, Buffalo, and Rochester's Eastman Dental Center.",
   alternates: { canonical: "/about/dr-cangini" },
   openGraph: {
     title: "Dr. Filippo Cangini — Periodontist at Piedmont Dental By Design",
     description:
-      "Board-certified periodontist · 25 years of experience · specialized training in periodontics and implant dentistry.",
+      "Board-certified periodontist · 26 years of experience · specialized training in periodontics and implant dentistry.",
     url: "https://piedmontdentalbydesign.com/about/dr-cangini",
     type: "profile",
     images: ["/team/dr-cangini.webp"],
@@ -37,7 +37,7 @@ export default function DrCanginiPage() {
           photo="/team/dr-cangini.webp"
           photoAlt="Dr. Filippo Cangini, periodontist"
           credentials={[
-            { value: "25 yrs", label: "Experience" },
+            { value: "26 yrs", label: "Experience" },
             { value: "Board", label: "Certified Periodontist" },
             { value: "1994", label: "University of Siena, Italy" },
             { value: "2011", label: "U. Rochester (Eastman Dental)" },

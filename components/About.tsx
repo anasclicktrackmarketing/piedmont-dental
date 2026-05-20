@@ -30,35 +30,18 @@ const DOCTORS: Doctor[] = [
     bg: "var(--teal)",
     name: "Dr. Jill A. Martenson",
     suffix: "DDS",
-    role: "Lead dentist · cosmetic",
-    yearsLabel: "25+ years",
-    awardLabel: "Best Esthetic Dentist 2024",
+    role: "Co-founder · cosmetic",
+    yearsLabel: "30 years",
+    awardLabel: "Best Esthetic Dentist 2024 & 2025",
     photo:
       "/img/lIVE Piedmont website images/Headshot_Dr-Jill-Martenson-scaled.jpg",
     photoAlt: "Dr. Jill Martenson at Piedmont Dental By Design",
     question: "Who is Dr. Jill Martenson?",
     paragraphs: [
-      "Dr. Jill A. Martenson, DDS, has led Piedmont Dental By Design since 2000. She was voted Best Esthetic Dentist 2024 by Best of the East Bay readers and is a member of the AACD, ADA, and CDA — three of the professional associations most associated with cosmetic dental standards.",
-      "Working alongside Dr. Martenson are Dr. Filippo Cangini, who covers periodontics, and Dr. David Ma, who handles restorative work — so patients can stay with one practice for cosmetic, gum, and structural care.",
+      "Dr. Jill A. Martenson, DDS, co-founded Piedmont Dental By Design and has cared for the Piedmont community for 30 years. She was voted Best Esthetic Dentist by Best of the East Bay readers in 2024 and 2025, and is a member of the AACD, ADA, and CDA — three of the professional associations most associated with cosmetic dental standards.",
+      "Working alongside Dr. Martenson are Dr. David Ma, who handles restorative work, and Dr. Filippo Cangini, who covers periodontics — so patients can stay with one practice for cosmetic, gum, and structural care.",
     ],
     href: "/about/dr-martenson",
-  },
-  {
-    id: "cangini",
-    initials: "FC",
-    bg: "var(--ink)",
-    name: "Dr. Filippo Cangini",
-    role: "Periodontics",
-    yearsLabel: "25+ years",
-    awardLabel: "Board-certified periodontist",
-    photo: "/team/dr-cangini.webp",
-    photoAlt: "Dr. Filippo Cangini, board-certified periodontist",
-    question: "Who is Dr. Filippo Cangini?",
-    paragraphs: [
-      "Dr. Cangini brings over two decades of clinical and academic experience to Piedmont Dental — training that spans three institutions across general dentistry, periodontics, and oral sciences.",
-      "As a board-certified periodontist, his focus is gums and the structures that support your teeth — treating gum disease, performing gum and bone grafting, and surgically placing dental implants in coordination with the rest of the practice.",
-    ],
-    href: "/about/dr-cangini",
   },
   {
     id: "ma",
@@ -76,6 +59,23 @@ const DOCTORS: Doctor[] = [
       "He completed his General Practice Residency at the Northern California VA Hospital, where he gained extensive experience in full-mouth rehabilitations and complex treatment planning — the foundation he brings to patients today.",
     ],
     href: "/about/dr-ma",
+  },
+  {
+    id: "cangini",
+    initials: "FC",
+    bg: "var(--ink)",
+    name: "Dr. Filippo Cangini",
+    role: "Periodontics",
+    yearsLabel: "26 years",
+    awardLabel: "Board-certified periodontist",
+    photo: "/team/dr-cangini.webp",
+    photoAlt: "Dr. Filippo Cangini, board-certified periodontist",
+    question: "Who is Dr. Filippo Cangini?",
+    paragraphs: [
+      "Dr. Cangini brings over two decades of clinical and academic experience to Piedmont Dental — training that spans three institutions across general dentistry, periodontics, and oral sciences.",
+      "As a board-certified periodontist, his focus is gums and the structures that support your teeth — treating gum disease, performing gum and bone grafting, and surgically placing dental implants in coordination with the rest of the practice.",
+    ],
+    href: "/about/dr-cangini",
   },
 ];
 
@@ -110,7 +110,7 @@ export default function About() {
       <div className="about-text">
         <span className="num">iii. — The dentist</span>
         <h2>
-          Twenty-five years of cosmetic dentistry, <em>in the East Bay.</em>
+          Thirty years of cosmetic dentistry, <em>in the East Bay.</em>
         </h2>
 
         <div className="about-doc-content" key={active.id}>

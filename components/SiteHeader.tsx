@@ -7,8 +7,8 @@ import { usePathname } from "next/navigation";
 
 const ABOUT_DROPDOWN = [
   { href: "/about/dr-martenson", label: "Dr. Jill Martenson" },
-  { href: "/about/dr-cangini", label: "Dr. Filippo Cangini" },
   { href: "/about/dr-ma", label: "Dr. David Ma" },
+  { href: "/about/dr-cangini", label: "Dr. Filippo Cangini" },
   { href: "/about/team", label: "Meet the Team" },
   { href: "/about/tour", label: "Office Tour" },
 ];

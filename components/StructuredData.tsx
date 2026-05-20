@@ -89,10 +89,10 @@ export default function StructuredData() {
       image: `${SITE}/hero-poster.jpg`,
       telephone: "+1-510-350-3937",
       priceRange: "$$",
-      foundingDate: "2000",
-      slogan: "Cosmetic Dentistry in Piedmont Since 2000.",
+      foundingDate: "1996",
+      slogan: "Cosmetic Dentistry in Piedmont Since 1996.",
       description:
-        "Cosmetic and restorative dental practice in Piedmont, California. Personalized care from Dr. Jill Martenson and team. Voted Best Esthetic Dentist 2024 by Best of the East Bay.",
+        "Cosmetic and restorative dental practice in Piedmont, California — celebrating 30 years of personalized care from Dr. Jill Martenson and team. Voted Best of the East Bay: Best Dental Practice 2025 and Best Esthetic Dentist 2024 & 2025.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "1331 Grand Ave",
@@ -147,8 +147,10 @@ export default function StructuredData() {
           url: "https://www.cda.org",
         },
       ],
-      award:
-        "Best Esthetic Dentist 2024 — Best of the East Bay readers' choice",
+      award: [
+        "Best Dental Practice 2025 — Best of the East Bay readers' choice",
+        "Best Esthetic Dentist 2024 & 2025 — Best of the East Bay readers' choice",
+      ],
       knowsAbout: [
         "Cosmetic Dentistry",
         "Porcelain Veneers",
@@ -215,7 +217,7 @@ export default function StructuredData() {
         "Tooth Whitening",
       ],
       award:
-        "Best Esthetic Dentist 2024 — Best of the East Bay readers' choice",
+        "Best Esthetic Dentist 2024 & 2025 — Best of the East Bay readers' choice",
       memberOf: [
         { "@type": "Organization", name: "American Academy of Cosmetic Dentistry" },
         { "@type": "Organization", name: "American Dental Association" },

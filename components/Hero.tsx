@@ -50,11 +50,11 @@ export default function Hero() {
         <h1 className="hero-headline">
           Cosmetic <em>Dentistry</em>
           <br />
-          in Piedmont Since 2000.
+          in Piedmont Since 1996.
         </h1>
         <p className="hero-sub">
           Personalized cosmetic and restorative care on Grand Avenue. Dr. Jill
-          Martenson and team have served the East Bay for over twenty-five years.
+          Martenson and team have served the East Bay for over 30 years.
         </p>
         <div className="hero-actions">
           <a href="#booker" className="btn btn-teal btn-lg">
@@ -68,7 +68,7 @@ export default function Hero() {
           <span className="stars">★★★★★</span>
           <span><b>4.9</b> · 344 Google reviews</span>
           <span className="dot" />
-          <span>Best Esthetic Dentist <b>2024</b></span>
+          <span>Best of the East Bay <b>2024 &amp; 2025</b></span>
           <span className="dot" />
           <span>Now accepting new patients</span>
         </div>

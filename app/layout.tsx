@@ -23,7 +23,7 @@ const SITE = "https://piedmontdentalbydesign.com";
 const TITLE =
   "Piedmont Dental By Design — Cosmetic dentistry in Piedmont, CA";
 const DESCRIPTION =
-  "Cosmetic and restorative dental practice on Grand Avenue in Piedmont, California. Dr. Jill Martenson and team since 2000. 4.9 ★ on Google. Best Esthetic Dentist 2024.";
+  "Cosmetic and restorative dental practice on Grand Avenue in Piedmont, California — 30 years of care with Dr. Jill Martenson and team. 4.9 ★ on Google. Voted Best of the East Bay 2024 & 2025.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),

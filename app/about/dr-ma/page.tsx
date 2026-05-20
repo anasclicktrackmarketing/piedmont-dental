@@ -33,7 +33,7 @@ export default function DrMaPage() {
           eyebrow="— Dr. David Ma —"
           name="Dr. David Ma"
           role="Restorative & Cosmetic Dentistry"
-          intro="Born in Japan but raised in the Bay Area — which he considers home — Dr. Ma earned his dental degree with honors from the University of Pennsylvania School of Dental Medicine. He brings expertise in full mouth rehabilitations, complex treatment planning, and cosmetic dentistry to every patient he sees."
+          intro="Dr. David Ma is a compassionate, highly skilled dentist dedicated to comprehensive, patient-focused care — combining advanced clinical expertise with a personalized approach."
           photo="/team/dr-ma.webp"
           photoAlt="Dr. David Ma, restorative dentist"
           credentials={[
@@ -43,8 +43,8 @@ export default function DrMaPage() {
             { value: "VA Hospital", label: "General Practice Residency" },
           ]}
           bioParagraphs={[
-            "Dr. Ma's path into dentistry started with neurobiology — he earned his undergraduate degree in Neurobiology, Physiology, and Behavior from UC Davis before going on to dental school at the University of Pennsylvania. He graduated with honors in clinical practice and community service.",
-            "After dental school, Dr. Ma completed a General Practice Residency at the Northern California Veteran Affairs Hospital. There he gained extensive experience in full mouth rehabilitations and complex treatment planning — the foundation he brings to patients at Piedmont Dental by Design today.",
+            "Dr. David Ma is a compassionate and highly skilled dentist dedicated to delivering comprehensive, patient-focused care. Born in Japan and raised in the Bay Area, Dr. Ma proudly considers Northern California home. He earned his degree in Neurobiology, Physiology, and Behavior from the University of California, Davis, before receiving his dental degree from the University of Pennsylvania School of Dental Medicine, where he graduated with honors in clinical practice and community service.",
+            "Following dental school, Dr. Ma completed a General Practice Residency at the Northern California Veterans Affairs Hospital, gaining advanced experience in full mouth rehabilitations and complex treatment planning. He is passionate about helping patients achieve healthy, confident smiles through preventive, restorative, and cosmetic dentistry, combining advanced clinical expertise with a personalized approach to care.",
           ]}
           education={[
             {

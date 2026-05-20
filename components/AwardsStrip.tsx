@@ -1,5 +1,10 @@
+import Image from "next/image";
+
 type Award = {
-  ico: string;
+  /** Text glyph icon — used when no badge image is set. */
+  ico?: string;
+  /** Optional badge image path (e.g. the Best of the Bay gold icon). */
+  badge?: string;
   headline: string;
   title: string;
   meta: string;
@@ -7,10 +12,16 @@ type Award = {
 
 const awards: Award[] = [
   {
-    ico: "★",
-    headline: "2024",
+    badge: "/img/badges/best-of-bay-2025.png",
+    headline: "2024 & 2025",
     title: "Best Esthetic Dentist",
-    meta: "Best of the East Bay readers' choice",
+    meta: "Voted Best of the East Bay — readers' choice",
+  },
+  {
+    badge: "/img/badges/best-of-bay-2025.png",
+    headline: "2025",
+    title: "Best Dental Practice",
+    meta: "Voted Best of the East Bay — readers' choice",
   },
   {
     ico: "G",
@@ -20,15 +31,9 @@ const awards: Award[] = [
   },
   {
     ico: "⊕",
-    headline: "AACD · ADA · CDA",
-    title: "Member affiliations",
-    meta: "Three professional associations",
-  },
-  {
-    ico: "25",
-    headline: "Since 2000",
+    headline: "30 years",
     title: "Serving the East Bay",
-    meta: "Twenty-five years of cosmetic & restorative care",
+    meta: "Three decades of cosmetic & restorative care",
   },
 ];
 
@@ -40,7 +45,19 @@ export default function AwardsStrip() {
         <div className="awards-grid">
           {awards.map((a) => (
             <article className="award" key={a.title}>
-              <span className="award-ico">{a.ico}</span>
+              {a.badge ? (
+                <span className="award-badge">
+                  <Image
+                    src={a.badge}
+                    alt=""
+                    width={76}
+                    height={76}
+                    aria-hidden="true"
+                  />
+                </span>
+              ) : (
+                <span className="award-ico">{a.ico}</span>
+              )}
               <div className="award-headline">{a.headline}</div>
               <h3 className="award-title">{a.title}</h3>
               <p className="award-meta">{a.meta}</p>

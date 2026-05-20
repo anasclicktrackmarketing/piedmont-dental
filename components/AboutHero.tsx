@@ -9,7 +9,7 @@ export default function AboutHero() {
           <h1>
             Your trusted dentist in <em>Piedmont</em>
             <br />
-            and the East Bay.
+            and the East Bay for over 30 years.
           </h1>
           <p className="page-hero-sub">
             Piedmont Dental By Design is a small, intentional dental practice on
@@ -20,7 +20,7 @@ export default function AboutHero() {
 
           <ul className="page-hero-meta">
             <li>
-              <span className="meta-num">29</span>
+              <span className="meta-num">30</span>
               <span>
                 <b>Years</b>
                 of practice experience
@@ -29,8 +29,8 @@ export default function AboutHero() {
             <li>
               <span className="meta-num">★</span>
               <span>
-                <b>Best Esthetic Dentist 2024</b>
-                Best of the East Bay readers&apos; choice
+                <b>Best of the East Bay 2024 &amp; 2025</b>
+                Best Esthetic Dentist &amp; Best Dental Practice
               </span>
             </li>
             <li>
@@ -43,17 +43,17 @@ export default function AboutHero() {
           </ul>
         </div>
 
-        <div className="page-hero-image">
+        <div className="page-hero-image" style={{ aspectRatio: "3 / 2" }}>
           <Image
-            src="/img/lIVE Piedmont website images/Cosmetic-Dentistry.png"
-            alt="Dr. Jill Martenson examining a patient at Piedmont Dental By Design"
+            src="/img/about/full-team.jpg"
+            alt="The Piedmont Dental By Design team"
             fill
             sizes="(max-width: 1080px) 100vw, 540px"
             style={{ objectFit: "cover" }}
             priority
           />
           <span className="page-hero-image-caption">
-            1331 Grand Avenue · Piedmont, California
+            The Piedmont Dental By Design team · Grand Avenue
           </span>
         </div>
       </div>

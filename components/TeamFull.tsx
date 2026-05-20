@@ -48,14 +48,6 @@ const team: Omit<Member, "bg">[] = [
       "I am a registered dental hygienist and have been working for Piedmont Dental by Design since 1999. I truly have a passion for my profession and love educating patients about their oral health. On my time off I enjoy spending time with my husband and two sons. We enjoy outdoor events such as boating, swimming and hiking. My sons play sports such as soccer, basketball and baseball so we spend a lot of times at games and practice. I also enjoy kickboxing and working out.",
   },
   {
-    name: "Julie",
-    role: "Registered Dental Hygienist",
-    initials: "J",
-    photo: "/img/team/julie.jpg",
-    quote:
-      "I have been a Registered Dental Hygienist for twelve years. Throughout those twelve years I have had the pleasure of working with Dr. Herrero and Dr. Martenson here at Piedmont Dental by Design and plan to continue for at least another twelve. Everyone here is a loved member of my second family. I suppose you could say it's my home away from home. I have been married to my wonderful husband, Ron, for 6 years. Together we love outdoor activities such as hiking, jet skiing, 4-wheeling, and taking road trips and camping with our 40ft 5th wheel. We share 6 children together; 3 girls and 3 boys.",
-  },
-  {
     name: "Kelley",
     role: "Registered Dental Hygienist",
     initials: "K",
@@ -156,7 +148,7 @@ export default function TeamFull() {
             </h2>
           </div>
           <p className="lede">
-            Nine team members across patient services, hygiene, and dental
+            Eight team members across patient services, hygiene, and dental
             assisting — most have been with the practice for a decade or more.
             Click any card to read their full bio.
           </p>
