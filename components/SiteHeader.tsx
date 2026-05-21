@@ -157,8 +157,8 @@ export default function SiteHeader() {
           <Image
             src="/logo.webp"
             alt="Piedmont Dental By Design"
-            width={234}
-            height={100}
+            width={210}
+            height={90}
             priority
             className="brand-logo"
           />
