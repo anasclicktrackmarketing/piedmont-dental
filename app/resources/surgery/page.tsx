@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Surgery — Before & After",
   description:
-    "Real before-and-after cases from Dr. Jill Martenson combining minor in-office surgery (gum reshaping) with composite bonding and porcelain veneers.",
+    "Real before-and-after cases from Dr. Jill Martenson and Dr. David Ma combining minor in-office surgery (gum reshaping) with composite bonding and porcelain veneers.",
   alternates: { canonical: "/resources/surgery" },
   openGraph: {
     title: "Surgery — Before & After | Piedmont Dental By Design",
@@ -71,7 +71,7 @@ export default function SurgeryPage() {
               </div>
               <h1 className="resource-hero-title">Surgery</h1>
               <p className="resource-hero-description">
-                Real cases from Dr. Martenson&apos;s practice, combining minor
+                Real cases from the practice of Dr. Martenson and Dr. Ma, combining minor
                 in-office gum surgery with bonding or veneers. Every result
                 here was achieved with local anesthetic — no general
                 anesthesia, no operating room.

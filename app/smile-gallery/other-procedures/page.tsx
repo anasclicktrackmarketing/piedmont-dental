@@ -247,8 +247,8 @@ export default function OtherProceduresGalleryPage() {
             <div className="op-cta">
               <h2>Want to see what&apos;s possible for your teeth?</h2>
               <p>
-                Book a complimentary consultation. Dr. Martenson will
-                evaluate your teeth, walk through every realistic option, and
+                Book a complimentary consultation. Dr. Martenson or
+                Dr. Ma will evaluate your teeth, walk through every realistic option, and
                 map out a plan that fits your goals.
               </p>
               <div className="op-cta-actions">

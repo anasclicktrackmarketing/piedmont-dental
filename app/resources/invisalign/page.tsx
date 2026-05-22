@@ -267,7 +267,7 @@ export default function InvisalignResourcePage() {
               </ul>
               <p className="gummy-considerations-note">
                 If you have any questions about Invisalign® specifically for
-                your case, please ask Dr. Martenson at your consultation.
+                your case, please ask Dr. Martenson or Dr. Ma at your consultation.
               </p>
             </div>
 
@@ -275,8 +275,8 @@ export default function InvisalignResourcePage() {
             <div className="gummy-cta">
               <h2>Ready to find out if Invisalign® is right for you?</h2>
               <p>
-                Book a no-pressure cosmetic consultation. Dr. Martenson will
-                evaluate your bite, walk through whether Invisalign® or another
+                Book a no-pressure cosmetic consultation. Dr. Martenson or
+                Dr. Ma will evaluate your bite, walk through whether Invisalign® or another
                 approach is the best fit, and tailor a treatment plan to your
                 goals.
               </p>

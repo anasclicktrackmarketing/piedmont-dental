@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Crowns (Caps) — Before & After",
   description:
-    "Interactive before-and-after crown cases — porcelain crowns, implant-supported crowns, and full-arch rehabilitation from Dr. Jill Martenson's practice.",
+    "Interactive before-and-after crown cases — porcelain crowns, implant-supported crowns, and full-arch rehabilitation from the practice of Dr. Jill Martenson and Dr. David Ma.",
   alternates: { canonical: "/resources/restorations/crowns-caps" },
   openGraph: {
     title: "Crowns (Caps) — Before & After | Piedmont Dental By Design",
@@ -115,7 +115,7 @@ export default function CrownsCapsResourcePage() {
               </div>
               <h1 className="resource-hero-title">Crowns (Caps)</h1>
               <p className="resource-hero-description">
-                Real porcelain crown cases from Dr. Martenson — front-tooth
+                Real porcelain crown cases from Dr. Martenson and Dr. Ma — front-tooth
                 restorations, single-tooth implant replacements, and full-arch
                 rehabilitation. Drag the slider on any case below to see the
                 before and after.

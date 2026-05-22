@@ -37,7 +37,7 @@ export default function InvisalignPage() {
           title="Invisalign® Clear Aligners"
           tagline="Discreet teeth straightening — clear plastic, removable, planned in 3D."
           intro={[
-            "Your smile is too important to not look, feel, and function at its best. If you are looking to correct crooked teeth or a misaligned bite without noticeable metal braces, we may have the solution for you. Jill Martenson, DDS offers Invisalign — a popular alternative to traditional orthodontics that focuses on preserving your personal aesthetics.",
+            "Your smile is too important to not look, feel, and function at its best. If you are looking to correct crooked teeth or a misaligned bite without noticeable metal braces, we may have the solution for you. Dr. Jill Martenson and Dr. David Ma offer Invisalign — a popular alternative to traditional orthodontics that focuses on preserving your personal aesthetics.",
             "We blend reliable techniques with advanced technology and safe materials to provide you with a one-of-a-kind smile. Our Invisalign dentist and team take the time to craft a personalized treatment plan based on your needs.",
           ]}
           stats={[
@@ -51,7 +51,7 @@ export default function InvisalignPage() {
               title: "How does Invisalign work?",
               body: [
                 "Conventional braces use metal brackets, wires, and tension to guide your teeth into healthier positions. Invisalign can do the same without requiring metal components of any kind. It works by using a series of clear, smooth plastic aligners. Each is designed to fit over your teeth comfortably.",
-                "Instead of using tension, your trays target specific teeth in need of straightening and apply gentle pressure to guide your smile into ideal alignment. Dr. Martenson begins treatment with a thorough consultation and exam. We use digital and panoramic X-rays to gain detailed images of your teeth, gums, and jaws. These pictures provide us with the information we need to determine if Invisalign is your best option.",
+                "Instead of using tension, your trays target specific teeth in need of straightening and apply gentle pressure to guide your smile into ideal alignment. We begin treatment with a thorough consultation and exam. We use digital and panoramic X-rays to gain detailed images of your teeth, gums, and jaws. These pictures provide us with the information we need to determine if Invisalign is your best option.",
                 "If you qualify, we will take mess-free impressions of your smile with our iTero scanner. With this technology, we can create a digital blueprint which we send to a lab. There, they create a series of aligners made just for you. You wear each set of trays for 22 hours a day before graduating to the next every two weeks.",
               ],
             },

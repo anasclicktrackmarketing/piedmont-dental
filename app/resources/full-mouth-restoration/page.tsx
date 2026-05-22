@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Full Mouth Restoration",
   description:
-    "Comprehensive full-mouth restoration cases from Dr. Jill Martenson — combining implants, crowns, veneers, and prosthetics to rebuild function and confidence.",
+    "Comprehensive full-mouth restoration cases from Dr. Jill Martenson and Dr. David Ma — combining implants, crowns, veneers, and prosthetics to rebuild function and confidence.",
   alternates: { canonical: "/resources/full-mouth-restoration" },
   openGraph: {
     title: "Full Mouth Restoration — Piedmont Dental By Design",
@@ -148,8 +148,8 @@ export default function FullMouthRestorationPage() {
                 When years of wear, loss, or failing dental work have compromised
                 both function and appearance, full-mouth restoration brings it
                 all back together — implants, crowns, and prosthetics
-                coordinated as one plan. Below are real cases from Dr.
-                Martenson&apos;s practice.
+                coordinated as one plan. Below are real cases from the
+                practice of Dr. Martenson and Dr. Ma.
               </p>
             </div>
           </div>
@@ -248,7 +248,7 @@ export default function FullMouthRestorationPage() {
               <h2>Wondering if full-mouth restoration is right for you?</h2>
               <p>
                 Book a complimentary restorative consultation. Dr. Martenson
-                will evaluate your bite, talk through realistic options, and
+                or Dr. Ma will evaluate your bite, talk through realistic options, and
                 put together a coordinated plan that fits your goals,
                 timeline, and budget.
               </p>

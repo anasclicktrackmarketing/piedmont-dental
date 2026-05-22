@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Dental Implants — Before & After",
   description:
-    "Real implant cases from Dr. Martenson — single-tooth replacements, full-arch rehabilitation, and implant-supported restorations with drag-to-compare results.",
+    "Real implant cases from Dr. Martenson and Dr. Ma — single-tooth replacements, full-arch rehabilitation, and implant-supported restorations with drag-to-compare results.",
   alternates: { canonical: "/resources/dental-implants" },
   openGraph: {
     title: "Dental Implants — Before & After | Piedmont Dental By Design",
@@ -163,7 +163,7 @@ export default function DentalImplantsResultsPage() {
                 A dental implant replaces a missing tooth from the root up —
                 titanium fused to bone, topped with a porcelain crown
                 that&apos;s indistinguishable from your natural teeth. Real
-                patient cases from Dr. Martenson below.
+                patient cases from Dr. Martenson and Dr. Ma below.
               </p>
             </div>
           </div>
@@ -315,8 +315,8 @@ export default function DentalImplantsResultsPage() {
             <div className="implants-cta">
               <h2>Wondering if implants are the right call for you?</h2>
               <p>
-                Book a complimentary implant consultation. Dr. Martenson will
-                evaluate the site, talk through realistic timelines and
+                Book a complimentary implant consultation. Dr. Martenson or
+                Dr. Ma will evaluate the site, talk through realistic timelines and
                 alternatives, and put together a plan that fits your goals
                 and budget.
               </p>

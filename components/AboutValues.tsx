@@ -27,7 +27,7 @@ const values: Value[] = [
     num: "04",
     title: "Modern technology",
     body:
-      "Dr. Martenson stays current with advances in cosmetic dental science. Our office uses state-of-the-art technology including digital radiography — reducing radiation exposure by 80–90% versus film, with instant detailed imaging that catches hidden issues earlier.",
+      "Dr. Martenson and Dr. Ma stay current with advances in cosmetic dental science. Our office uses state-of-the-art technology including digital radiography — reducing radiation exposure by 80–90% versus film, with instant detailed imaging that catches hidden issues earlier.",
   },
   {
     num: "05",

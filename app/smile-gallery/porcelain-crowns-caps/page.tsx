@@ -205,8 +205,8 @@ export default function PorcelainCrownsGalleryPage() {
             <div className="pcc-cta">
               <h2>Need a crown — or wondering if you do?</h2>
               <p>
-                Book a complimentary consultation. Dr. Martenson will
-                evaluate the tooth, walk through whether a porcelain crown,
+                Book a complimentary consultation. Dr. Martenson or
+                Dr. Ma will evaluate the tooth, walk through whether a porcelain crown,
                 onlay, or another option fits best, and put together a plan
                 tailored to you.
               </p>

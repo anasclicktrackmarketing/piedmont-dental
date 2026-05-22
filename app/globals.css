@@ -1440,6 +1440,9 @@ a { color: inherit; text-decoration: none; }
   background: var(--paper-3);
   flex-shrink: 0;
 }
+.team-doctor-photo img {
+  object-position: center top;
+}
 .team-doctor-meta h3 {
   font-family: var(--serif);
   font-size: 18px;
@@ -1533,6 +1536,9 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
   background: var(--paper-2);
   border: 1px solid var(--rule);
+}
+.team-full-avatar.has-photo img {
+  object-position: center top;
 }
 .team-full-meta h3 {
   font-family: var(--serif);
@@ -10858,7 +10864,7 @@ a.gummy-treatment-card:hover .gummy-treatment-cta { color: var(--ink); }
   align-items: center;
   justify-content: center;
 }
-.team-avatar img { object-fit: cover; }
+.team-avatar img { object-fit: cover; object-position: center top; }
 .team-avatar-glyph {
   position: relative;
   z-index: 1;
@@ -11650,6 +11656,7 @@ section.bay {
 }
 .doc-avatar--photo img {
   object-fit: cover;
+  object-position: center top;
 }
 
 /* On the homepage about section, give the doctor row a touch more breathing room */

@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Dental Implants — Smile Gallery",
   description:
-    "Real dental implant transformations — single-tooth replacements, multi-tooth restorations, and full-arch rehabilitations from Dr. Jill Martenson.",
+    "Real dental implant transformations — single-tooth replacements, multi-tooth restorations, and full-arch rehabilitations from Dr. Jill Martenson and Dr. David Ma.",
   alternates: { canonical: "/smile-gallery/dental-implants" },
   openGraph: {
     title: "Dental Implants — Smile Gallery | Piedmont Dental By Design",
@@ -122,7 +122,7 @@ export default function DentalImplantsGalleryPage() {
               </div>
               <h1 className="resource-hero-title">Dental Implants</h1>
               <p className="resource-hero-description">
-                Real dental implant cases from Dr. Martenson — from
+                Real dental implant cases from Dr. Martenson and Dr. Ma — from
                 single-tooth replacements to full-arch rehabilitations. Tap
                 any tab below to drag-compare that case&apos;s before and
                 after.
@@ -221,8 +221,8 @@ export default function DentalImplantsGalleryPage() {
             <div className="dig-cta">
               <h2>Curious about implants for your specific case?</h2>
               <p>
-                Book a complimentary implant consultation. Dr. Martenson will
-                evaluate the site, walk through realistic timelines and
+                Book a complimentary implant consultation. Dr. Martenson or
+                Dr. Ma will evaluate the site, walk through realistic timelines and
                 alternatives, and put together a plan tailored to you.
               </p>
               <div className="dig-cta-actions">

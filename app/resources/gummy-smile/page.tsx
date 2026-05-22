@@ -160,7 +160,7 @@ export default function GummySmilePage() {
               <span className="num">iii. — Treatment options</span>
               <h2>How we treat a gummy smile</h2>
               <p>
-                Dr. Martenson will walk through which of these is right for you
+                Dr. Martenson or Dr. Ma will walk through which of these is right for you
                 during a cosmetic consultation. Many patients combine two
                 approaches — for example, crown lengthening followed by veneers
                 — for the most natural-looking result.
@@ -283,7 +283,7 @@ export default function GummySmilePage() {
               </p>
               <ol className="gummy-steps">
                 <li>
-                  <strong>Cosmetic evaluation.</strong> Dr. Martenson examines
+                  <strong>Cosmetic evaluation.</strong> Dr. Martenson or Dr. Ma examines
                   your gum line, lip dynamics, and tooth proportions, then
                   recommends the simplest treatment that&apos;ll achieve the
                   look you want.

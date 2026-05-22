@@ -8,14 +8,14 @@ import SiteFooter from "@/components/SiteFooter";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Dr. David Ma — Cosmetic Dentist",
+  title: "Dr. David Ma — Co-Owner & Cosmetic Dentist",
   description:
-    "Dr. David Ma — UPenn Dental Medicine graduate with honors and UC Davis training in neurobiology. Expert in full-mouth rehabilitations and complex planning.",
+    "Dr. David Ma — co-owner of Piedmont Dental By Design and a UPenn Dental Medicine graduate with honors. Expert in restorative, cosmetic, and full-mouth rehabilitation dentistry.",
   alternates: { canonical: "/about/dr-ma" },
   openGraph: {
     title: "Dr. David Ma — Piedmont Dental By Design",
     description:
-      "Restorative and cosmetic dentistry · UPenn-trained · expert in full mouth rehabilitations.",
+      "Co-Owner · restorative and cosmetic dentistry · UPenn-trained · expert in full mouth rehabilitations.",
     url: "https://piedmontdentalbydesign.com/about/dr-ma",
     type: "profile",
     images: ["/team/dr-ma.webp"],
@@ -32,7 +32,7 @@ export default function DrMaPage() {
           index="i"
           eyebrow="— Dr. David Ma —"
           name="Dr. David Ma"
-          role="Restorative & Cosmetic Dentistry"
+          role="Co-Owner · Restorative & Cosmetic Dentistry"
           intro="Dr. David Ma is a compassionate, highly skilled dentist dedicated to comprehensive, patient-focused care — combining advanced clinical expertise with a personalized approach."
           photo="/team/dr-ma.webp"
           photoAlt="Dr. David Ma, restorative dentist"

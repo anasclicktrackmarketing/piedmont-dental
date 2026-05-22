@@ -92,7 +92,7 @@ export default function StructuredData() {
       foundingDate: "1996",
       slogan: "Cosmetic Dentistry in Piedmont Since 1996.",
       description:
-        "Cosmetic and restorative dental practice in Piedmont, California — celebrating 30 years of personalized care from Dr. Jill Martenson and team. Voted Best of the East Bay: Best Dental Practice 2025 and Best Esthetic Dentist 2024 & 2025.",
+        "Cosmetic and restorative dental practice in Piedmont, California — celebrating 30 years of personalized care, co-owned by Dr. Jill Martenson and Dr. David Ma. Voted Best of the East Bay: Best Dental Practice 2025 and Best Esthetic Dentist 2024 & 2025.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "1331 Grand Ave",
@@ -207,7 +207,7 @@ export default function StructuredData() {
       givenName: "Jill",
       familyName: "Martenson",
       honorificSuffix: "DDS",
-      jobTitle: "Lead Dentist · Cosmetic Dentistry",
+      jobTitle: "Co-Owner · Cosmetic Dentistry",
       worksFor: { "@id": `${SITE}/#org` },
       knowsAbout: [
         "Cosmetic Dentistry",
@@ -236,7 +236,7 @@ export default function StructuredData() {
       "@type": "Person",
       "@id": `${SITE}/#dr-ma`,
       name: "David Ma",
-      jobTitle: "Restorative Dentist",
+      jobTitle: "Co-Owner · Restorative Dentistry",
       worksFor: { "@id": `${SITE}/#org` },
       knowsAbout: ["Restorative Dentistry", "Dental Implants", "Crowns"],
     },

@@ -10,9 +10,9 @@ import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "About — Dr. Jill Martenson and team",
+  title: "About — Dr. Martenson, Dr. Ma & our team",
   description:
-    "Meet Dr. Jill Martenson, DDS — owner & lead dentist. Over 30 years of cosmetic and restorative dentistry on Grand Avenue. Best of the East Bay 2024 & 2025.",
+    "Meet Dr. Jill Martenson and Dr. David Ma — co-owners of Piedmont Dental By Design. Over 30 years of cosmetic and restorative dentistry on Grand Avenue. Best of the East Bay 2024 & 2025.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Piedmont Dental By Design",
@@ -39,7 +39,7 @@ export default function AboutPage() {
           }
           body={[
             "For 30 years, Piedmont Dental By Design has remained a locally owned, family-oriented practice — devoted to restoring and enhancing the natural beauty of your smile using conservative, state-of-the-art procedures that result in beautiful, long-lasting smiles.",
-            "Today the practice is led by Dr. Jill Martenson, its co-founder, alongside Dr. David Ma, who joined as partner in 2026. Together they share the same values that have guided the practice for three decades — trust, comfort, and personalized care.",
+            "Today the practice is led by its co-owners, Dr. Jill Martenson and Dr. David Ma, who share the same values that have guided the practice for three decades — trust, comfort, and personalized care.",
           ]}
           image="/img/about/doctors-martenson-ma.jpg"
           imageAlt="Dr. Jill Martenson and Dr. David Ma of Piedmont Dental By Design"

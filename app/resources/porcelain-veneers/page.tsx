@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Porcelain Veneers — Before & After",
   description:
-    "Drag-to-compare porcelain veneer cases from Dr. Jill Martenson's practice — custom-shaded shells crafted to look completely natural.",
+    "Drag-to-compare porcelain veneer cases from the practice of Dr. Jill Martenson and Dr. David Ma — custom-shaded shells crafted to look completely natural.",
   alternates: { canonical: "/resources/porcelain-veneers" },
   openGraph: {
     title: "Porcelain Veneers — Before & After | Piedmont Dental By Design",
@@ -111,7 +111,7 @@ export default function PorcelainVeneersResultsPage() {
               <h1 className="resource-hero-title">Porcelain Veneers</h1>
               <p className="resource-hero-description">
                 Real before-and-after porcelain veneer cases from Dr.
-                Martenson — thin custom shells crafted to refine shape, color,
+                Martenson and Dr. Ma — thin custom shells crafted to refine shape, color,
                 and the way light catches your smile. Each one designed to
                 look like your own teeth, only better.
               </p>
@@ -303,8 +303,8 @@ export default function PorcelainVeneersResultsPage() {
             <div className="veneers-cta">
               <h2>Curious if porcelain veneers are right for your smile?</h2>
               <p>
-                Book a no-pressure cosmetic consultation. Dr. Martenson will
-                evaluate your smile, walk through whether veneers (or another
+                Book a no-pressure cosmetic consultation. Dr. Martenson or
+                Dr. Ma will evaluate your smile, walk through whether veneers (or another
                 approach) is the best fit, and design a treatment plan
                 tailored to your goals.
               </p>

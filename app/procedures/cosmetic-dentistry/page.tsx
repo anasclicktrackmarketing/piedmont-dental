@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title:
     "Cosmetic Dentistry in Piedmont, CA",
   description:
-    "Cosmetic dentistry — porcelain veneers, professional whitening, CEREC same-day crowns, Invisalign, and crown lengthening. Personalized care from Dr. Martenson.",
+    "Cosmetic dentistry — porcelain veneers, professional whitening, CEREC same-day crowns, Invisalign, and crown lengthening. Personalized care from Dr. Martenson and Dr. Ma.",
   alternates: { canonical: "/procedures/cosmetic-dentistry" },
   openGraph: {
     title: "Cosmetic Dentistry — Piedmont Dental By Design",
@@ -75,7 +75,7 @@ export default function CosmeticDentistryCategoryPage() {
           eyebrow="Procedures · Cosmetic Dentistry"
           title="Cosmetic Dentistry"
           intro={[
-            "As one of your most significant features, your smile deserves to radiate beauty, health, and confidence. Dr. Jill Martenson combines advanced technology with a keen eye for detail to deliver personalized cosmetic care — from quick enhancements to complete smile transformations.",
+            "As one of your most significant features, your smile deserves to radiate beauty, health, and confidence. Dr. Jill Martenson and Dr. David Ma combine advanced technology with a keen eye for detail to deliver personalized cosmetic care — from quick enhancements to complete smile transformations.",
             "Our treatments are amalgam-free, built from durable, natural-looking materials, and designed to preserve oral health while achieving the smile you've always wanted.",
           ]}
           image="/img/procedures/cosmetic-dentistry/_index/hero.jpg"

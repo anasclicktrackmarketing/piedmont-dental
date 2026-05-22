@@ -271,7 +271,7 @@ export default function CosmeticDentistryPage() {
               <h2>Wondering which cosmetic option is right for you?</h2>
               <p>
                 Book a complimentary cosmetic consultation. Dr. Martenson
-                will walk through every realistic option, mock up what your
+                or Dr. Ma will walk through every realistic option, mock up what your
                 smile could look like, and put together a plan tailored to
                 your goals.
               </p>

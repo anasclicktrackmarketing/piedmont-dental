@@ -23,7 +23,7 @@ const SITE = "https://piedmontdentalbydesign.com";
 const TITLE =
   "Piedmont Dental By Design — Cosmetic dentistry in Piedmont, CA";
 const DESCRIPTION =
-  "Cosmetic and restorative dental practice on Grand Avenue in Piedmont, California — 30 years of care with Dr. Jill Martenson and team. 4.9 ★ on Google. Voted Best of the East Bay 2024 & 2025.";
+  "Cosmetic and restorative dental practice on Grand Avenue in Piedmont, California — co-owned by Dr. Jill Martenson and Dr. David Ma, with 30 years of trusted care. 4.9 ★ on Google. Voted Best of the East Bay 2024 & 2025.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     "Dr. Jill Martenson",
     "Piedmont Dental By Design",
   ],
-  authors: [{ name: "Dr. Jill A. Martenson, DDS" }],
+  authors: [{ name: "Dr. Jill A. Martenson, DDS" }, { name: "Dr. David Ma" }],
   creator: "Piedmont Dental By Design",
   publisher: "Piedmont Dental By Design",
   alternates: {
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
         url: "/hero-poster.jpg",
         width: 1920,
         height: 1080,
-        alt: "Piedmont Dental By Design — Dr. Jill Martenson and team in Piedmont, California",
+        alt: "Piedmont Dental By Design — Dr. Jill Martenson, Dr. David Ma, and team in Piedmont, California",
       },
     ],
   },

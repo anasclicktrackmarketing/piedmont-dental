@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Invisalign® Results — Before & After",
   description:
-    "Drag-to-compare before and after Invisalign® cases from Dr. Jill Martenson's practice — real patient smile transformations with clear aligners.",
+    "Drag-to-compare before and after Invisalign® cases from the practice of Dr. Jill Martenson and Dr. David Ma — real patient smile transformations with clear aligners.",
   alternates: { canonical: "/resources/invisalign-results" },
   openGraph: {
     title: "Invisalign® Results — Before & After | Piedmont Dental By Design",
@@ -80,7 +80,7 @@ export default function InvisalignResultsPage() {
               </div>
               <h1 className="resource-hero-title">Invisalign® Results</h1>
               <p className="resource-hero-description">
-                Real before-and-after Invisalign® cases from Dr. Martenson —
+                Real before-and-after Invisalign® cases from Dr. Martenson and Dr. Ma —
                 clear aligners that straightened smiles with no metal, no
                 wires, and trays that come out for meals and special
                 occasions. Drag any slider below to compare.
@@ -278,8 +278,8 @@ export default function InvisalignResultsPage() {
             <div className="ivresults-cta">
               <h2>Curious if your smile could change like this?</h2>
               <p>
-                Book a no-pressure Invisalign® consultation. Dr. Martenson
-                will evaluate your bite, share a realistic timeline, and put
+                Book a no-pressure Invisalign® consultation. Dr. Martenson or
+                Dr. Ma will evaluate your bite, share a realistic timeline, and put
                 together a treatment plan tailored to your goals.
               </p>
               <div className="ivresults-cta-actions">

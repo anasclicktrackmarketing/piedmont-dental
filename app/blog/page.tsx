@@ -9,7 +9,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "Blog — Dental Notes & Local Insights",
   description:
-    "Posts on cosmetic dentistry, dental implants, family care, and daily oral health from Dr. Jill Martenson and the Piedmont Dental By Design team in Piedmont, CA.",
+    "Posts on cosmetic dentistry, dental implants, family care, and daily oral health from Dr. Jill Martenson, Dr. David Ma, and the Piedmont Dental By Design team in Piedmont, CA.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Blog — Piedmont Dental By Design",

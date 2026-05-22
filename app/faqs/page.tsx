@@ -10,7 +10,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "FAQs — Dental Health Questions Answered",
   description:
-    "Common dental questions answered: bad breath, brushing, flossing, gum disease, fillings, cosmetic dentistry, veneers, and whitening — by Dr. Martenson.",
+    "Common dental questions answered: bad breath, brushing, flossing, gum disease, fillings, cosmetic dentistry, veneers, and whitening — by Dr. Martenson and Dr. Ma.",
   alternates: { canonical: "/faqs" },
   openGraph: {
     title: "Dental Health FAQs — Piedmont Dental By Design",

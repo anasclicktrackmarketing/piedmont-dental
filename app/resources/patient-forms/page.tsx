@@ -103,7 +103,7 @@ export default function PatientFormsPage() {
               <h2>Ready to book your visit?</h2>
               <p>
                 Once your forms are submitted, the next step is picking a date.
-                Reserve a comprehensive exam with Dr. Martenson — or call us
+                Reserve a comprehensive exam with Dr. Martenson or Dr. Ma — or call us
                 directly and we&apos;ll set you up.
               </p>
               <div className="forms-cta-actions">

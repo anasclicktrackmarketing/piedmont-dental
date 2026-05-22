@@ -96,7 +96,7 @@ export default function PeriodontalCategoryPage() {
           eyebrow="Procedures · Periodontal Services"
           title="Periodontal Services"
           intro={[
-            "Healthy gums are the foundation of a lasting smile. At Piedmont Dental By Design, Dr. Jill Martenson works alongside skilled hygienists and a board-certified periodontist to protect, treat, and restore gum health using both non-surgical and surgical techniques.",
+            "Healthy gums are the foundation of a lasting smile. At Piedmont Dental By Design, Dr. Jill Martenson and Dr. David Ma work alongside skilled hygienists and a board-certified periodontist to protect, treat, and restore gum health using both non-surgical and surgical techniques.",
             "From early gingivitis to advanced periodontitis — and from grafts that reverse recession to sinus lifts that prepare you for implants — every treatment is staged carefully to your condition and paired with home-care guidance to prevent recurrence.",
           ]}
           image="/img/procedures/periodontal-services/_index/hero.jpg"

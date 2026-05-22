@@ -229,9 +229,9 @@ export default function ProcedureDetail({
             <aside className="proc-mid-cta">
               <h3>Have questions about {title.toLowerCase()}?</h3>
               <p>
-                Book a free consultation with Dr. Martenson — we&apos;ll review
-                your goals, walk through what&apos;s involved, and answer any
-                questions before any treatment is scheduled.
+                Book a free consultation with Dr. Martenson or Dr. Ma —
+                we&apos;ll review your goals, walk through what&apos;s involved,
+                and answer any questions before any treatment is scheduled.
               </p>
               <div className="actions">
                 <a href="/#booker" className="btn btn-teal">

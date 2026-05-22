@@ -101,7 +101,7 @@ export default function Services() {
             cosmetic (veneers, whitening, Invisalign), restorative (implants,
             CEREC crowns, full-mouth rebuild), periodontal (gum disease,
             grafting), and preventive (cleanings, exams, X-rays) — all
-            delivered by Dr. Martenson, Dr. Cangini, and Dr. Ma.
+            delivered by Dr. Martenson, Dr. Ma, and Dr. Cangini.
           </p>
         </header>
       </div>

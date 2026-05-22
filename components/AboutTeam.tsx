@@ -21,13 +21,13 @@ const GRADIENTS = {
 const doctors: Member[] = [
   {
     name: "Dr. Jill A. Martenson, DDS",
-    role: "Co-Founder & Co-Owner · Cosmetic",
+    role: "Co-Owner · Cosmetic",
     bg: GRADIENTS.teal,
     // photo: "/team/dr-martenson.jpg",  // ← drop file here when available
   },
   {
     name: "Dr. David Ma",
-    role: "Restorative",
+    role: "Co-Owner · Restorative",
     bg: GRADIENTS.warm,
   },
   {

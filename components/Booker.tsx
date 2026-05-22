@@ -110,7 +110,7 @@ export default function Booker() {
           </h2>
           <p className="booker-lede">
             Comprehensive exam, digital X-rays, and a one-on-one consultation with
-            Dr. Martenson. Pick a date and a time — we&apos;ll confirm by email.
+            Dr. Martenson or Dr. Ma. Pick a date and a time — we&apos;ll confirm by email.
           </p>
           <ul className="booker-bullets">
             <li>
@@ -155,7 +155,7 @@ export default function Booker() {
           <div className="booker-row">
             <span>
               <div className="lbl">Provider</div>
-              <div className="val">Dr. Jill Martenson</div>
+              <div className="val">Dr. Martenson or Dr. Ma</div>
             </span>
             <span className="chev">⌄</span>
           </div>

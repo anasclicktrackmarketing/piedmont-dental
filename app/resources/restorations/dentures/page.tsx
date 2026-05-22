@@ -82,8 +82,8 @@ export default function DenturesResourcePage() {
                 Dentures & Partial Dentures
               </h1>
               <p className="resource-hero-description">
-                Real denture and full-arch cases from Dr. Martenson&apos;s
-                practice. When dentures are combined with implants and porcelain
+                Real denture and full-arch cases from the practice of Dr.
+                Martenson and Dr. Ma. When dentures are combined with implants and porcelain
                 crowns, the result restores not just your smile — but chewing
                 function and the facial proportions teeth have always
                 supported.
@@ -251,7 +251,7 @@ export default function DenturesResourcePage() {
               <h2>Curious if dentures or implants are right for you?</h2>
               <p>
                 Book a complimentary restorative consultation. Dr. Martenson
-                will evaluate your bite, talk through your options
+                or Dr. Ma will evaluate your bite, talk through your options
                 honestly — full dentures, partials, implant-supported — and put
                 together a plan that fits your goals and budget.
               </p>

@@ -8,14 +8,14 @@ import SiteFooter from "@/components/SiteFooter";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Dr. Jill Martenson, DDS — Lead Dentist",
+  title: "Dr. Jill Martenson, DDS — Co-Owner",
   description:
-    "Dr. Jill A. Martenson, DDS — co-founder and co-owner of Piedmont Dental By Design. UCLA & UOP-trained, with over 30 years of cosmetic and restorative dentistry experience.",
+    "Dr. Jill A. Martenson, DDS — co-owner of Piedmont Dental By Design. UCLA & UOP-trained, with over 30 years of cosmetic and restorative dentistry experience.",
   alternates: { canonical: "/about/dr-martenson" },
   openGraph: {
     title: "Dr. Jill Martenson, DDS — Piedmont Dental By Design",
     description:
-      "Co-Founder & Co-Owner · over 30 years of cosmetic and restorative dentistry · Best of the East Bay 2024 & 2025.",
+      "Co-Owner · over 30 years of cosmetic and restorative dentistry · Best of the East Bay 2024 & 2025.",
     url: "https://piedmontdentalbydesign.com/about/dr-martenson",
     type: "profile",
     images: ["/team/dr-martenson.webp"],
@@ -32,7 +32,7 @@ export default function DrMartensonPage() {
           index="i"
           eyebrow="— Dr. Jill Martenson —"
           name="Dr. Jill A. Martenson, DDS"
-          role="Co-Founder & Co-Owner of Piedmont Dental By Design"
+          role="Co-Owner of Piedmont Dental By Design"
           intro="For over 30 years, Dr. Jill Martenson has been a trusted, award-winning dentist serving the Piedmont community with exceptional, patient-centered care."
           photo="/team/dr-martenson.webp"
           photoAlt="Dr. Jill Martenson, DDS"
