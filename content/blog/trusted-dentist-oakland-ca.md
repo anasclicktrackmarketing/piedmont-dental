@@ -47,7 +47,7 @@ Services designed to enhance smile appearance include:
 
 - Professional teeth whitening treatments
 - Custom porcelain veneers for chips, gaps, and discoloration
-- Invisalign clear aligners as a discreet alternative to traditional braces
+- Invisalign® clear aligners as a discreet alternative to traditional braces
 - Comprehensive smile design planning
 
 Dr. Martenson employs modern techniques to create natural-looking results that complement facial features.

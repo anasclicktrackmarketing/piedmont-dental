@@ -21,8 +21,8 @@ const tiles: Tile[] = [
   {
     num: "02",
     category: "Cosmetic",
-    title: "Tooth whitening",
-    caption: "In-office and take-home programs",
+    title: "Teeth whitening",
+    caption: "In-office and take-home treatments",
     image: "/img/home-services/tooth-whitening.jpg",
     alt: "Patient with bright, naturally white teeth smiling",
   },
@@ -32,7 +32,7 @@ const tiles: Tile[] = [
     title: "Invisalign®",
     caption: "Clear aligners, planned in 3D",
     image: "/img/home-services/invisalign.jpg",
-    alt: "Clear Invisalign aligners",
+    alt: "Clear Invisalign® aligners",
   },
   {
     num: "04",
@@ -89,7 +89,7 @@ export default function Services() {
           <div>
             <div className="num">i. — Care</div>
             <h2>
-              From Routine Dental to <br />
+              From routine dental care to <br />
               <em>complete</em> smile design.
             </h2>
             <p className="services-question">
@@ -97,8 +97,8 @@ export default function Services() {
             </p>
           </div>
           <p className="lede">
-            Piedmont Dental By Design covers four categories under one roof:
-            cosmetic (veneers, whitening, Invisalign), restorative (implants,
+            Piedmont Dental By Design offers comprehensive oral care:
+            cosmetic (veneers, whitening, Invisalign®), restorative (implants,
             CEREC crowns, full-mouth rebuild), periodontal (gum disease,
             grafting), and preventive (cleanings, exams, X-rays) — all
             delivered by Dr. Martenson, Dr. Ma, and Dr. Cangini.

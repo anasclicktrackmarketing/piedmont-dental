@@ -7,9 +7,12 @@ import "./globals.css";
 const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
-  weight: ["300", "400", "500"],
+  weight: "variable",
   style: ["normal", "italic"],
   display: "swap",
+  // Expose the WONK axis so we can turn off the font's "wonky" stylistic
+  // alternates (the playful f/j/g letterforms the client flagged).
+  axes: ["SOFT", "WONK"],
 });
 
 const inter = Inter({
@@ -21,9 +24,9 @@ const inter = Inter({
 
 const SITE = "https://piedmontdentalbydesign.com";
 const TITLE =
-  "Piedmont Dental By Design — Cosmetic dentistry in Piedmont, CA";
+  "Piedmont Dental By Design — Cosmetic, Restorative & Preventive Dentistry";
 const DESCRIPTION =
-  "Cosmetic and restorative dental practice on Grand Avenue in Piedmont, California — co-owned by Dr. Jill Martenson and Dr. David Ma, with 30 years of trusted care. 4.9 ★ on Google. Voted Best of the East Bay 2024 & 2025.";
+  "Cosmetic, restorative, and preventive dental practice on Grand Avenue in Piedmont, California — co-owned by Dr. Jill Martenson and Dr. David Ma, with 30 years of trusted care. 4.9 ★ on Google. Voted Best of the East Bay 2024 & 2025.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -39,13 +42,13 @@ export const metadata: Metadata = {
     "cosmetic dentist Piedmont",
     "dentist Piedmont CA",
     "porcelain veneers Piedmont",
-    "Invisalign Piedmont",
+    "Invisalign® Piedmont",
     "teeth whitening Piedmont",
     "cosmetic dentistry East Bay",
     "Dr. Jill Martenson",
     "Piedmont Dental By Design",
   ],
-  authors: [{ name: "Dr. Jill A. Martenson, DDS" }, { name: "Dr. David Ma" }],
+  authors: [{ name: "Dr. Jill A. Martenson" }, { name: "Dr. David Ma" }],
   creator: "Piedmont Dental By Design",
   publisher: "Piedmont Dental By Design",
   alternates: {

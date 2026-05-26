@@ -179,10 +179,10 @@ export default function InvisalignResultsPage() {
               ))}
             </div>
 
-            {/* Comparison table — Invisalign vs metal braces */}
+            {/* Comparison table — Invisalign® vs metal braces */}
             <div className="ivresults-compare">
               <header>
-                <span className="num">— Why patients pick Invisalign</span>
+                <span className="num">— Why patients pick Invisalign®</span>
                 <h2>Invisalign® vs traditional metal braces</h2>
                 <p>
                   Both treatments can correct the same alignment issues — the

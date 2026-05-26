@@ -43,7 +43,7 @@ Services include:
 - Preventive cleanings and exams
 - Fluoride treatments and sealants
 - Cavity fillings
-- Invisalign and orthodontic options
+- Invisalign® and orthodontic options
 - Gum disease treatment
 - Dental crowns and bridges
 - Tooth extractions
@@ -70,7 +70,7 @@ The practice distinguishes itself through:
 A: Schedule your child's first appointment by their first birthday or when their first tooth appears.
 
 **Q: Can a family dentist treat orthodontic issues?**
-A: Yes, the practice offers Invisalign and early orthodontic assessments for children, teens, and adults.
+A: Yes, the practice offers Invisalign® and early orthodontic assessments for children, teens, and adults.
 
 **Q: Do you accept dental insurance?**
 A: The practice accepts most major PPO and HMO plans, plus offers financing and membership options for uninsured patients.

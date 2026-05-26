@@ -22,8 +22,8 @@ const faqs: QA[] = [
     a: "Street parking is generally available on Grand Avenue near our entrance at 1331 Grand Ave. We're about a five-minute drive from MacArthur BART, and AC Transit serves the area. If accessibility is a concern, mention it when booking and we'll guide you to the closest spot.",
   },
   {
-    q: "Should I get veneers or Invisalign?",
-    a: "It depends on what you want to change. Veneers reshape the front of teeth — color, length, alignment — typically across two to three visits. Invisalign moves teeth into a new position over six to eighteen months without altering tooth structure. We'll review options together at your consultation.",
+    q: "Should I get veneers or Invisalign®?",
+    a: "It depends on what you want to change. Veneers reshape the front of teeth — color, length, alignment — typically across two to three visits. Invisalign® moves teeth into a new position over six to eighteen months without altering tooth structure. We'll review options together at your consultation.",
   },
   {
     q: "Do you offer financing?",

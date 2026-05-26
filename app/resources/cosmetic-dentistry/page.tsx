@@ -48,7 +48,7 @@ const PROCEDURES: Procedure[] = [
   {
     href: "/resources/invisalign-results",
     image: "/img/cosmetic/invisalign.jpg",
-    imageAlt: "Clear Invisalign aligner",
+    imageAlt: "Clear Invisalign® aligner",
     title: "Invisalign®",
     tag: "Alignment",
     blurb:

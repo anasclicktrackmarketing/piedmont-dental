@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title:
     "Dental Procedures in Piedmont, CA",
   description:
-    "Comprehensive dental care: cosmetic (veneers, whitening, Invisalign), restorative (implants, crowns), periodontal, and preventive (cleanings, exams, X-rays).",
+    "Comprehensive dental care: cosmetic (veneers, whitening, Invisalign®), restorative (implants, crowns), periodontal, and preventive (cleanings, exams, X-rays).",
   alternates: { canonical: "/procedures" },
   openGraph: {
     title: "Dental Procedures at Piedmont Dental By Design",

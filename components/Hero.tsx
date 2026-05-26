@@ -1,61 +1,57 @@
-"use client";
+import Image from "next/image";
 
-import { useEffect, useRef, useState } from "react";
+/**
+ * Homepage hero — rotating office stills with a fixed text overlay.
+ * Replaces the previous muted video at the client's request:
+ *   "Maybe some of the office shots can be stills that rotate through
+ *    in the background vs. playing as a video?"
+ */
+const HERO_IMAGES = [
+  {
+    src: "/img/hero/office-front.jpg",
+    alt: "Front office reception at Piedmont Dental By Design",
+  },
+  {
+    src: "/img/hero/office-waiting.jpg",
+    alt: "Waiting room at Piedmont Dental By Design",
+  },
+  {
+    src: "/img/hero/office-3.jpg",
+    alt: "Piedmont Dental By Design at 1331 Grand Avenue, Piedmont",
+  },
+];
 
 export default function Hero() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [videoReady, setVideoReady] = useState(false);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    // Make sure the video is paused on mount (some browsers nudge towards autoplay).
-    try { video.pause(); } catch {}
-
-    const t = setTimeout(() => {
-      const v = videoRef.current;
-      if (!v) return;
-      v.currentTime = 0;
-      v.play()
-        .then(() => setVideoReady(true))
-        .catch(() => {
-          // Browser blocked playback; reveal the video element anyway so the poster keeps showing.
-          setVideoReady(true);
-        });
-    }, 3000);
-
-    return () => clearTimeout(t);
-  }, []);
-
   return (
     <section className="hero">
       <div className="hero-bg">
-        <video
-          ref={videoRef}
-          className={`hero-video${videoReady ? " is-ready" : ""}`}
-          loop
-          muted
-          playsInline
-          preload="auto"
-          poster="/hero-poster.jpg"
-        >
-          <source src="/hero.mp4" type="video/mp4" />
-        </video>
+        {HERO_IMAGES.map((img, i) => (
+          <div key={img.src} className={`hero-img hero-img-${i + 1}`}>
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              priority={i === 0}
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+        ))}
         <div className="hero-overlay" />
       </div>
 
       <div className="hero-content">
-        <div className="hero-eyebrow">Cosmetic Dentistry · Piedmont, California</div>
+        <div className="hero-eyebrow">
+          Cosmetic Dentistry · Piedmont, California
+        </div>
         <h1 className="hero-headline">
-          Cosmetic <em>Dentistry</em>
+          Cosmetic, Restorative &amp; Preventive <em>Dentistry</em>
           <br />
           in Piedmont Since 1996.
         </h1>
         <p className="hero-sub">
-          Personalized cosmetic and restorative care on Grand Avenue. Co-owners
-          Dr. Jill Martenson and Dr. David Ma lead a practice serving the East
-          Bay for over 30 years.
+          Personalized cosmetic and restorative care on Grand Avenue. Dr. Jill
+          Martenson and team have served the East Bay for over 30 years.
         </p>
         <div className="hero-actions">
           <a href="#booker" className="btn btn-teal btn-lg">
@@ -67,15 +63,23 @@ export default function Hero() {
         </div>
         <div className="hero-reassure">
           <span className="stars">★★★★★</span>
-          <span><b>4.9</b> · 344 Google reviews</span>
+          <span>
+            <b>4.9</b> · 350+ Google reviews
+          </span>
           <span className="dot" />
-          <span>Best of the East Bay <b>2024 &amp; 2025</b></span>
+          <span>
+            Best of the East Bay <b>2024 &amp; 2025</b>
+          </span>
           <span className="dot" />
           <span>Now accepting new patients</span>
         </div>
       </div>
 
-      <a href="#awards" className="hero-scroll" aria-label="Scroll to next section">
+      <a
+        href="#awards"
+        className="hero-scroll"
+        aria-label="Scroll to next section"
+      >
         <span>Scroll</span>
         <span className="line" />
       </a>

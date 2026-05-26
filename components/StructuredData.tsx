@@ -24,13 +24,13 @@ const services = [
     category: "Cosmetic Dentistry",
   },
   {
-    name: "Tooth Whitening",
+    name: "Teeth Whitening",
     description:
-      "In-office and take-home whitening programs supervised by Dr. Martenson.",
+      "In-office and take-home whitening treatments supervised by Dr. Martenson.",
     category: "Cosmetic Dentistry",
   },
   {
-    name: "Invisalign",
+    name: "Invisalign®",
     description:
       "Clear aligners planned in 3D with checkpoint visits. Most cases between 6 and 18 months.",
     category: "Cosmetic Dentistry",
@@ -155,8 +155,8 @@ export default function StructuredData() {
         "Cosmetic Dentistry",
         "Porcelain Veneers",
         "Smile Design",
-        "Tooth Whitening",
-        "Invisalign",
+        "Teeth Whitening",
+        "Invisalign®",
         "Dental Implants",
         "CEREC Crowns",
         "Periodontal Treatment",
@@ -171,7 +171,7 @@ export default function StructuredData() {
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "4.9",
-        reviewCount: "344",
+        reviewCount: "351",
         bestRating: "5",
         worstRating: "1",
       },
@@ -213,8 +213,8 @@ export default function StructuredData() {
         "Cosmetic Dentistry",
         "Porcelain Veneers",
         "Smile Design",
-        "Invisalign",
-        "Tooth Whitening",
+        "Invisalign®",
+        "Teeth Whitening",
       ],
       award:
         "Best Esthetic Dentist 2024 & 2025 — Best of the East Bay readers' choice",

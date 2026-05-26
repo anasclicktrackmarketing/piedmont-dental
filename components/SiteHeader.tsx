@@ -85,7 +85,7 @@ const PROCEDURES_DROPDOWN: DropdownGroup[] = [
     items: [
       { href: "/procedures/cosmetic-dentistry", label: "Overview" },
       { href: "/procedures/cosmetic-dentistry/porcelain-veneers", label: "Porcelain Veneers" },
-      { href: "/procedures/cosmetic-dentistry/tooth-whitening", label: "Tooth Whitening" },
+      { href: "/procedures/cosmetic-dentistry/tooth-whitening", label: "Teeth Whitening" },
       { href: "/procedures/cosmetic-dentistry/cerec", label: "CEREC®" },
       { href: "/procedures/cosmetic-dentistry/invisalign", label: "Invisalign®" },
       { href: "/procedures/cosmetic-dentistry/surgery", label: "Cosmetic Surgery" },
@@ -153,17 +153,7 @@ export default function SiteHeader() {
     <>
     <header className="site-header">
       <nav className="nav">
-        <Link href="/" className="brand" aria-label="Piedmont Dental By Design — Home">
-          <Image
-            src="/logo.webp"
-            alt="Piedmont Dental By Design"
-            width={210}
-            height={90}
-            priority
-            className="brand-logo"
-          />
-        </Link>
-        <div className="nav-links">
+        <div className="nav-links nav-links--left">
           <div className="nav-dropdown nav-dropdown--wide">
             <Link href="/procedures" className="nav-dropdown-trigger">
               Procedures
@@ -300,11 +290,23 @@ export default function SiteHeader() {
             </div>
           </div>
 
-          <Link href="/blog">Blog</Link>
-          <Link href="/faqs">FAQs</Link>
-          <Link href="/contact">Contact</Link>
         </div>
+        <Link href="/" className="brand" aria-label="Piedmont Dental By Design — Home">
+          <Image
+            src="/logo.webp"
+            alt="Piedmont Dental By Design"
+            width={210}
+            height={90}
+            priority
+            className="brand-logo"
+          />
+        </Link>
         <div className="nav-right">
+          <div className="nav-links nav-links--right">
+            <Link href="/blog">Blog</Link>
+            <Link href="/faqs">FAQs</Link>
+            <Link href="/contact">Contact</Link>
+          </div>
           <a href="tel:5103503937" className="phone-link">
             (510) 350-3937
           </a>

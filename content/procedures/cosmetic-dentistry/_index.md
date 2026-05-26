@@ -19,7 +19,7 @@ sectionHeadings:
   - Comfortable In-Office Teeth Whitening
   - Personalized Whitening Take-Home & Touch Up Kits
   - Invisalign® Aligners for Improving Smiles Discreetly
-  - 7 Orthodontic Issues Invisalign Can Correct
+  - 7 Orthodontic Issues Invisalign® Can Correct
   - Cosmetic Periodontal Care
   - Digital Smile Design for Creating Your Dream Smile
   - Achieve Your Healthiest & Most Beautiful Smile Yet!
@@ -89,13 +89,13 @@ Take-home whitening kits offer the convenience of whitening your smile where, wh
 
 ## Invisalign® Aligners for Improving Smiles Discreetly
 
-Dr. Martenson and her team provide a comprehensive way to straighten your teeth and improve dental health with Invisalign. Invisalign is a popular alternative to traditional metal braces. This orthodontic system includes a series of clear plastic trays, making treatment virtually invisible. Unlike braces, Invisalign aligners are removable, requiring no changes to your diet, lifestyle, or oral hygiene routine.
+Dr. Martenson and her team provide a comprehensive way to straighten your teeth and improve dental health with Invisalign®. Invisalign® is a popular alternative to traditional metal braces. This orthodontic system includes a series of clear plastic trays, making treatment virtually invisible. Unlike braces, Invisalign® aligners are removable, requiring no changes to your diet, lifestyle, or oral hygiene routine.
 
-Invisalign trays must be worn for at least 22 hours a day to ensure the best possible results. Complying with treatment guidelines helps to reduce the risk of orthodontic relapse and keeps your progress on the right track. This is why we solely recommend Invisalign to individuals eighteen years old and up.
+Invisalign® trays must be worn for at least 22 hours a day to ensure the best possible results. Complying with treatment guidelines helps to reduce the risk of orthodontic relapse and keeps your progress on the right track. This is why we solely recommend Invisalign® to individuals eighteen years old and up.
 
-## 7 Orthodontic Issues Invisalign Can Correct
+## 7 Orthodontic Issues Invisalign® Can Correct
 
-Invisalign is effective at treating mild to moderate orthodontic issues, such as:
+Invisalign® is effective at treating mild to moderate orthodontic issues, such as:
 
 - Crooked Teeth
 - Dental Crowding

@@ -18,7 +18,7 @@ const groups: Group[] = [
     sub: "Smile design",
     items: [
       "Porcelain Veneers",
-      "Tooth Whitening",
+      "Teeth Whitening",
       "Surgery",
       "CEREC®",
       "Invisalign®",

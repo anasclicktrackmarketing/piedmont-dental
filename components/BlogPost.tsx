@@ -29,7 +29,7 @@ export default function BlogPost({
               <span className="post-hero-byline">
                 By{" "}
                 <Link href="/about/dr-martenson" rel="author">
-                  Dr. Jill Martenson, DDS
+                  Dr. Jill Martenson
                 </Link>
               </span>
             </div>

@@ -102,7 +102,7 @@ export default function PorcelainVeneersPage() {
             },
             {
               q: "Can veneers fix crooked teeth?",
-              a: "For mildly crooked or rotated front teeth, yes — veneers can give the appearance of a straight smile. For more significant misalignment, Invisalign or traditional orthodontics first, then veneers if needed, gives a more conservative result. Dr. Martenson can help you decide which path makes sense.",
+              a: "For mildly crooked or rotated front teeth, yes — veneers can give the appearance of a straight smile. For more significant misalignment, Invisalign® or traditional orthodontics first, then veneers if needed, gives a more conservative result. Dr. Martenson can help you decide which path makes sense.",
             },
             {
               q: "How are veneers different from composite bonding?",

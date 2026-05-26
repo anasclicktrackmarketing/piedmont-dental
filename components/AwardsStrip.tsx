@@ -27,7 +27,7 @@ const awards: Award[] = [
     ico: "G",
     headline: "4.9 / 5",
     title: "Google Reviews",
-    meta: "From 344 verified patients",
+    meta: "From 350+ verified patients",
   },
   {
     ico: "⊕",

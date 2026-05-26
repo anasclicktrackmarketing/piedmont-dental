@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Patient Reviews",
   description:
-    "Read what real patients say — 4.9 stars across 344+ Google reviews, plus first-hand testimonials from patients of Dr. Jill Martenson, Dr. David Ma, and team.",
+    "Read what real patients say — 4.9 stars across 350+ Google reviews, plus first-hand testimonials from patients of Dr. Jill Martenson, Dr. David Ma, and team.",
   alternates: { canonical: "/patient-reviews" },
   openGraph: {
     title: "Patient Reviews — Piedmont Dental By Design",

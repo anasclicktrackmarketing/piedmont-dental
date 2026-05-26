@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Treating a Gummy Smile — Piedmont Dental By Design",
     description:
-      "Causes and treatments for a gummy smile — from crown lengthening and gum contouring to veneers and Invisalign.",
+      "Causes and treatments for a gummy smile — from crown lengthening and gum contouring to veneers and Invisalign®.",
     url: "https://piedmontdentalbydesign.com/resources/gummy-smile",
     type: "article",
   },

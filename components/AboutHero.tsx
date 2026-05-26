@@ -12,10 +12,11 @@ export default function AboutHero() {
             and the East Bay for over 30 years.
           </h1>
           <p className="page-hero-sub">
-            Piedmont Dental By Design is a small, intentional dental practice on
-            Grand Avenue. We are devoted to restoring and enhancing the natural
-            beauty of your smile using conservative, state-of-the-art procedures
-            that result in beautiful, long-lasting smiles.
+            The Piedmont Dental By Design team is committed to providing
+            exceptional, patient-centered care in a comfortable and friendly
+            environment. Dr. Martenson and Dr. Ma are devoted to restoring and
+            enhancing the natural beauty of your smile using state-of-the-art
+            procedures that result in beautiful, long-lasting smiles.
           </p>
 
           <ul className="page-hero-meta">
@@ -27,7 +28,15 @@ export default function AboutHero() {
               </span>
             </li>
             <li>
-              <span className="meta-num">★</span>
+              <span className="meta-num meta-num--badge">
+                <Image
+                  src="/img/badges/best-of-bay-2025.png"
+                  alt=""
+                  width={48}
+                  height={48}
+                  aria-hidden="true"
+                />
+              </span>
               <span>
                 <b>Best of the East Bay 2024 &amp; 2025</b>
                 Best Esthetic Dentist &amp; Best Dental Practice
@@ -38,6 +47,13 @@ export default function AboutHero() {
               <span>
                 <b>Dr. Martenson &amp; Dr. Ma</b>
                 Co-Owners of the practice
+              </span>
+            </li>
+            <li>
+              <span className="meta-num">★</span>
+              <span>
+                <b>Patient Reviews</b>
+                350+ Google 4.9 Star Reviews
               </span>
             </li>
           </ul>

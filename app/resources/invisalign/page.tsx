@@ -56,7 +56,7 @@ export default function InvisalignResourcePage() {
               <div className="gummy-lead-image">
                 <Image
                   src="/img/invisalign-hero.jpg"
-                  alt="Close-up of an Invisalign clear aligner tray"
+                  alt="Close-up of an Invisalign® clear aligner tray"
                   fill
                   sizes="(max-width: 1080px) 100vw, 520px"
                   style={{ objectFit: "cover" }}

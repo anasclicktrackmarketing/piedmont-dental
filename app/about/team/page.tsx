@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const DOCTORS = [
   {
     href: "/about/dr-martenson",
-    name: "Dr. Jill A. Martenson, DDS",
+    name: "Dr. Jill A. Martenson",
     role: "Co-Owner · Cosmetic",
     photo: "/team/dr-martenson.webp",
   },

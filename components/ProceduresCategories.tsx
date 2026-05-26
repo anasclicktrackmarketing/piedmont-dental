@@ -37,7 +37,7 @@ const categories: Category[] = [
     anchor: "cosmetic",
     highlights: [
       "Porcelain veneers",
-      "Tooth whitening",
+      "Teeth whitening",
       "Smile design",
       "CEREC® same-day crowns",
       "Invisalign®",

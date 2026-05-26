@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const MOSAIC = [
   { src: "/img/veneers/case1-after.jpg", alt: "Porcelain veneers — after", size: "tall" },
   { src: "/img/crowns-caps/case2-after.jpg", alt: "Porcelain crown — after", size: "wide" },
-  { src: "/img/invisalign-results/case1-after.jpg", alt: "Invisalign — after", size: "square" },
+  { src: "/img/invisalign-results/case1-after.jpg", alt: "Invisalign® — after", size: "square" },
   { src: "/img/full-mouth/case3-after.jpg", alt: "Full mouth restoration — after", size: "square" },
   { src: "/img/surgery/case2-after.jpg", alt: "Cosmetic surgery — after", size: "wide" },
   { src: "/img/dentures/case2-after.jpg", alt: "Implant denture — after", size: "tall" },
@@ -53,7 +53,7 @@ const GALLERIES: GalleryCard[] = [
   {
     href: "/resources/invisalign-results",
     image: "/img/invisalign-results/case1-after.jpg",
-    imageAlt: "Invisalign clear aligners case",
+    imageAlt: "Invisalign® clear aligners case",
     title: "Invisalign®",
     blurb: "Clear aligners that straighten teeth without metal — comparable results to braces.",
     count: "2 cases",

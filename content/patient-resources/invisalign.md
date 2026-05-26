@@ -12,12 +12,12 @@ sectionHeadings:
   - "Journey of Change : Before and After"
   - "Patient Photos Depicting:"
   - professional associations
-metaDescription: "Rediscover Your Smile with Invisalign Treatment | Piedmont Dental"
+metaDescription: "Rediscover Your Smile with Invisalign® Treatment | Piedmont Dental"
 ---
 
 # Invisalign®
 
-The page is primarily a smile gallery showcasing Invisalign treatment results.
+The page is primarily a smile gallery showcasing Invisalign® treatment results.
 
 ## Location & Status
 
@@ -27,7 +27,7 @@ Accepting New Patients!
 
 ## Journey of Change : Before and After
 
-Two sets of before-and-after patient photos are displayed under the heading "Journey of Change : Before and After," demonstrating smile transformations achieved through Invisalign treatment.
+Two sets of before-and-after patient photos are displayed under the heading "Journey of Change : Before and After," demonstrating smile transformations achieved through Invisalign® treatment.
 
 ## Patient Notice
 

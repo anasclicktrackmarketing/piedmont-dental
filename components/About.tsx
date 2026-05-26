@@ -29,7 +29,6 @@ const DOCTORS: Doctor[] = [
     initials: "JM",
     bg: "var(--teal)",
     name: "Dr. Jill A. Martenson",
-    suffix: "DDS",
     role: "Co-Owner · cosmetic",
     yearsLabel: "30 years",
     awardLabel: "Best Esthetic Dentist 2024 & 2025",
@@ -38,7 +37,7 @@ const DOCTORS: Doctor[] = [
     photoAlt: "Dr. Jill Martenson at Piedmont Dental By Design",
     question: "Who is Dr. Jill Martenson?",
     paragraphs: [
-      "Dr. Jill A. Martenson, DDS, is a co-owner of Piedmont Dental By Design and has cared for the Piedmont community for 30 years. She was voted Best Esthetic Dentist by Best of the East Bay readers in 2024 and 2025, and is a member of the AACD, ADA, and CDA — three of the professional associations most associated with cosmetic dental standards.",
+      "Dr. Jill A. Martenson is a co-owner of Piedmont Dental By Design and has cared for the Piedmont community for 30 years. She was voted Best Esthetic Dentist by Best of the East Bay readers in 2024 and 2025, and is a member of the AACD, ADA, and CDA — three of the professional associations most associated with cosmetic dental standards.",
       "She co-owns the practice with Dr. David Ma, who handles restorative work; board-certified periodontist Dr. Filippo Cangini completes the team — so patients can stay with one practice for cosmetic, gum, and structural care.",
     ],
     href: "/about/dr-martenson",
@@ -108,13 +107,12 @@ export default function About() {
       </div>
 
       <div className="about-text">
-        <span className="num">iii. — The dentist</span>
+        <span className="num">iii. — The dentists</span>
         <h2>
           Thirty years of cosmetic dentistry, <em>in the East Bay.</em>
         </h2>
 
         <div className="about-doc-content" key={active.id}>
-          <p className="about-question">{active.question}</p>
           {active.paragraphs.map((p, i) => (
             <p
               key={i}
@@ -124,44 +122,6 @@ export default function About() {
             </p>
           ))}
 
-          <aside
-            className="about-byline"
-            itemScope
-            itemType="https://schema.org/Person"
-          >
-            <span
-              className="byline-avatar"
-              aria-hidden="true"
-              style={{ background: active.bg }}
-            >
-              {active.initials}
-            </span>
-            <div className="byline-text">
-              <span className="byline-name" itemProp="name">
-                {active.name}
-                {active.suffix && (
-                  <>
-                    , <span className="suffix">{active.suffix}</span>
-                  </>
-                )}
-              </span>
-              <span className="byline-meta">
-                <span itemProp="jobTitle">{active.role}</span>
-                {active.yearsLabel && (
-                  <>
-                    <span className="byline-dot">·</span>
-                    {active.yearsLabel}
-                  </>
-                )}
-                {active.awardLabel && (
-                  <>
-                    <span className="byline-dot">·</span>
-                    <span itemProp="award">{active.awardLabel}</span>
-                  </>
-                )}
-              </span>
-            </div>
-          </aside>
         </div>
 
         <div className="about-team" role="tablist" aria-label="Choose a doctor">

@@ -14,7 +14,7 @@ sectionHeadings:
   - What does Invisalign® treatment involve?
   - What are some considerations when wearing Invisalign® trays?
   - professional associations
-metaDescription: "Invisalign Procedures for Gummy Smile & Full Mouth Restoration"
+metaDescription: "Invisalign® Procedures for Gummy Smile & Full Mouth Restoration"
 ---
 
 # Invisalign®

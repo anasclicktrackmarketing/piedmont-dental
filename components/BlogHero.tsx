@@ -1,5 +1,5 @@
 const TOPICS = [
-  { label: "Cosmetic dentistry", desc: "Veneers, whitening, Invisalign", count: 1 },
+  { label: "Cosmetic dentistry", desc: "Veneers, whitening, Invisalign®", count: 1 },
   { label: "Dental implants", desc: "Permanent solutions for missing teeth", count: 1 },
   { label: "Family care", desc: "Whole-family dentistry from kids to seniors", count: 2 },
   { label: "Daily oral health", desc: "Brushing, flossing, and prevention", count: 1 },

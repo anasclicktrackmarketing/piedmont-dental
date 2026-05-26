@@ -30,7 +30,7 @@ export const posts: Post[] = [
   {
     slug: "cosmetic-dentist-piedmont-ca",
     title:
-      "Cosmetic Dentistry in Piedmont, CA: Invisalign, Teeth Whitening and More",
+      "Cosmetic Dentistry in Piedmont, CA: Invisalign®, Teeth Whitening and More",
     date: "February 9, 2026",
     dateISO: "2026-02-09",
     category: "Cosmetic",

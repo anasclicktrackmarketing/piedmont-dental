@@ -140,7 +140,7 @@ export const allTestimonials: Testimonial[] = [
 ];
 
 export const REVIEW_TOTALS = {
-  google: 344,
+  google: 350,
   rating: "4.9",
 };
 

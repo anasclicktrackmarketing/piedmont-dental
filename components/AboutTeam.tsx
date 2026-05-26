@@ -20,7 +20,7 @@ const GRADIENTS = {
 
 const doctors: Member[] = [
   {
-    name: "Dr. Jill A. Martenson, DDS",
+    name: "Dr. Jill A. Martenson",
     role: "Co-Owner · Cosmetic",
     bg: GRADIENTS.teal,
     // photo: "/team/dr-martenson.jpg",  // ← drop file here when available

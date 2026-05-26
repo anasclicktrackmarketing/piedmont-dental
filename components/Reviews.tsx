@@ -143,7 +143,7 @@ export default function Reviews() {
             </h2>
             <p className="lede">
               A rolling selection of verified patient quotes. Hover to pause; tap
-              the summary to read all 344 on Google.
+              the summary to read all 350+ on Google.
             </p>
           </div>
 
@@ -162,7 +162,7 @@ export default function Reviews() {
               <span className="g-score-num">4.9</span>
               <Stars />
             </div>
-            <div className="g-summary-meta">Based on 344 reviews</div>
+            <div className="g-summary-meta">Based on 350+ reviews</div>
           </a>
         </header>
       </div>
@@ -205,7 +205,7 @@ export default function Reviews() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read all 344 reviews on Google →
+            Read all 350+ reviews on Google →
           </a>
         </div>
       </div>

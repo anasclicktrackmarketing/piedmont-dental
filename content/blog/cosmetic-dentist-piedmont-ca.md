@@ -1,7 +1,7 @@
 ---
 url: https://piedmontdentalbydesign.com/blog-cosmetic-dentist-piedmont-ca/
 slug: blog-cosmetic-dentist-piedmont-ca
-title: "Cosmetic Dentistry in Piedmont, CA: Invisalign, Teeth Whitening and More"
+title: "Cosmetic Dentistry in Piedmont, CA: Invisalign®, Teeth Whitening and More"
 category: blog
 date: 2026-02-09
 fetched: 2026-05-06
@@ -9,7 +9,7 @@ fetchStatus: full
 featuredImage: ../assets/2026/03/Cosmetic-Dentistry.png
 sectionHeadings:
   - What Is Cosmetic Dentistry?
-  - "Invisalign Clear Aligners: Straight Teeth Without Braces"
+  - "Invisalign® Clear Aligners: Straight Teeth Without Braces"
   - "Professional Teeth Whitening: Brighter Results, Safely Delivered"
   - "Porcelain Veneers: A Total Smile Transformation"
   - "Dental Bonding: Quick, Effective, and Affordable"
@@ -17,7 +17,7 @@ sectionHeadings:
   - Frequently Asked Questions
 ---
 
-# Cosmetic Dentistry in Piedmont, CA: Invisalign, Teeth Whitening and More
+# Cosmetic Dentistry in Piedmont, CA: Invisalign®, Teeth Whitening and More
 
 **Published by Piedmont Dental by Design | Piedmont, CA**
 
@@ -31,9 +31,9 @@ The practice distinguishes itself through the combination of clinical expertise 
 
 Cosmetic dentistry is the branch of dental care focused primarily on enhancing the appearance of your teeth, gums, and overall smile. While restorative dentistry repairs damage or disease, cosmetic dentistry improves esthetics—often accomplishing both goals simultaneously. Modern procedures are personalized, predictable, and increasingly comfortable, with results lasting a decade or longer with proper maintenance.
 
-## Invisalign Clear Aligners
+## Invisalign® Clear Aligners
 
-Invisalign is an FDA-cleared clear aligner system that gradually shifts teeth into optimal alignment using custom-fitted, virtually invisible trays—without brackets, wires, or dietary restrictions of traditional braces.
+Invisalign® is an FDA-cleared clear aligner system that gradually shifts teeth into optimal alignment using custom-fitted, virtually invisible trays—without brackets, wires, or dietary restrictions of traditional braces.
 
 **Ideal for:**
 
@@ -74,13 +74,13 @@ The quality of cosmetic outcomes depends heavily on the dentist's experience, ar
 
 ## Frequently Asked Questions
 
-**Invisalign Costs:** Vary depending on case complexity and treatment duration. Many dental insurance plans include orthodontic benefits applicable to Invisalign, with flexible financing options available.
+**Invisalign® Costs:** Vary depending on case complexity and treatment duration. Many dental insurance plans include orthodontic benefits applicable to Invisalign®, with flexible financing options available.
 
 **Whitening Longevity:** Results typically last 12 to 24 months. Patients avoiding heavy staining foods and maintaining consistent oral hygiene enjoy results at the longer end of that range.
 
 **Veneer Permanence:** Veneers are considered irreversible as they require small enamel removal. However, they last 10 to 15 years and can be replaced.
 
-**Invisalign and Bite Correction:** Invisalign addresses cosmetic alignment and functional bite issues including overbites, underbites, crossbites, and open bites, depending on severity.
+**Invisalign® and Bite Correction:** Invisalign® addresses cosmetic alignment and functional bite issues including overbites, underbites, crossbites, and open bites, depending on severity.
 
 **Finding the Right Treatment:** Contact the practice for a personalized consultation at (510) 350-3937.
 
