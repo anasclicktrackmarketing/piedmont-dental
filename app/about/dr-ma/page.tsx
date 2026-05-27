@@ -30,7 +30,7 @@ export default function DrMaPage() {
       <main>
         <DoctorProfile
           index="i"
-          eyebrow="— Dr. David Ma —"
+          pronoun="he"
           name="Dr. David Ma"
           role="Co-Owner · Restorative & Cosmetic Dentistry"
           intro="Dr. David Ma is a compassionate, highly skilled dentist dedicated to comprehensive, patient-focused care — combining advanced clinical expertise with a personalized approach."

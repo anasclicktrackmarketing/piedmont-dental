@@ -30,7 +30,7 @@ export default function DrCanginiPage() {
       <main>
         <DoctorProfile
           index="i"
-          eyebrow="— Dr. Filippo Cangini —"
+          pronoun="he"
           name="Dr. Filippo Cangini"
           role="Board-Certified Periodontist"
           intro="Dr. Filippo Cangini is a board-certified periodontist. He graduated from the University of Siena in 1994, earned a Master of Oral Sciences from the University of Buffalo in 2000, and completed specialized training in periodontics and implant dentistry at the University of Rochester in 2011."

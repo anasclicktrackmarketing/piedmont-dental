@@ -4,7 +4,7 @@ export type Credential = { value: string; label: string };
 export type TimelineEntry = { date: string; text: string };
 export type DoctorProfileProps = {
   // Hero
-  eyebrow: string;            // "— Dr. Jill Martenson —"
+  eyebrow?: string;           // "— Dr. Jill Martenson —" — optional; usually omitted because it duplicates the H1
   name: string;               // "Dr. Jill A. Martenson, DDS"
   role: string;               // "Owner & Lead Dentist · Cosmetic Dentistry"
   intro: string;              // 1-2 sentence bio summary
@@ -18,6 +18,8 @@ export type DoctorProfileProps = {
   specializations?: { title: string; body: string }[];
   associations?: string[];
   personal?: string[];        // bullet points about personal life/interests
+  // Subject pronoun used in headings like "Where they trained." Defaults to "they".
+  pronoun?: "he" | "she" | "they";
   // Layout
   index: string;              // Roman numeral for the eyebrow num e.g. "i"
 };
@@ -37,6 +39,7 @@ export default function DoctorProfile(props: DoctorProfileProps) {
     specializations = [],
     associations = [],
     personal = [],
+    pronoun = "they",
   } = props;
 
   return (
@@ -45,7 +48,7 @@ export default function DoctorProfile(props: DoctorProfileProps) {
       <section className="page-hero doctor-hero">
         <div className="page-hero-inner doctor-hero-inner">
           <div className="page-hero-content">
-            <div className="num">{eyebrow}</div>
+            {eyebrow ? <div className="num">{eyebrow}</div> : null}
             <h1 className="doctor-name">{name}</h1>
             <p className="doctor-role">{role}</p>
             <p className="page-hero-sub">{intro}</p>
@@ -109,7 +112,7 @@ export default function DoctorProfile(props: DoctorProfileProps) {
                 <div>
                   <div className="num">ii. — Education</div>
                   <h2>
-                    Where they <em>trained.</em>
+                    Where {pronoun} <em>trained.</em>
                   </h2>
                 </div>
                 <ol className="doctor-timeline">

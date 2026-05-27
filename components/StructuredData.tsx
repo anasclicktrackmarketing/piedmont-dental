@@ -148,8 +148,8 @@ export default function StructuredData() {
         },
       ],
       award: [
-        "Best Dental Practice 2025 — Best of the East Bay readers' choice",
-        "Best Esthetic Dentist 2024 & 2025 — Best of the East Bay readers' choice",
+        "Best Dental Practice 2025 — Best of the East Bay",
+        "Best Esthetic Dentist 2024 & 2025 — Best of the East Bay",
       ],
       knowsAbout: [
         "Cosmetic Dentistry",
@@ -217,7 +217,7 @@ export default function StructuredData() {
         "Teeth Whitening",
       ],
       award:
-        "Best Esthetic Dentist 2024 & 2025 — Best of the East Bay readers' choice",
+        "Best Esthetic Dentist 2024 & 2025 — Best of the East Bay",
       memberOf: [
         { "@type": "Organization", name: "American Academy of Cosmetic Dentistry" },
         { "@type": "Organization", name: "American Dental Association" },

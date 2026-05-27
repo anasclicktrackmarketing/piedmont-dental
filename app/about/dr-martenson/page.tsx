@@ -30,16 +30,16 @@ export default function DrMartensonPage() {
       <main>
         <DoctorProfile
           index="i"
-          eyebrow="— Dr. Jill Martenson —"
+          pronoun="she"
           name="Dr. Jill A. Martenson"
-          role="Co-Owner of Piedmont Dental By Design"
-          intro="For over 30 years, Dr. Jill Martenson has been a trusted, award-winning dentist serving the Piedmont community with exceptional, patient-centered care."
+          role="Co-Owner of Piedmont Dental By Design, Preventative, Restorative & Cosmetic Dentistry"
+          intro="For over 30 years, Dr. Jill Martenson has been a trusted, award-winning dentist serving the Piedmont community with exceptional, patient-centered care focused on preventative, restorative, and cosmetic dentistry."
           photo="/team/dr-martenson.webp"
           photoAlt="Dr. Jill Martenson"
           credentials={[
             { value: "30 yrs", label: "Experience" },
             { value: "2025", label: "Best of the East Bay" },
-            { value: "2024 & '25", label: "Best Esthetic Dentist" },
+            { value: "2024 & 2025", label: "Best Esthetic Dentist" },
             { value: "2025", label: "Best Dental Practice" },
           ]}
           bioParagraphs={[
@@ -84,8 +84,8 @@ export default function DrMartensonPage() {
               body: "Consistently adds CE hours in cosmetic dentistry, bonding, and esthetic restoration to stay current with technique and materials.",
             },
             {
-              title: "Personal growth & leadership",
-              body: "Pursues courses in personal growth and leadership in addition to clinical training — to enhance the practice itself, not only the dentistry.",
+              title: "Preventive & restorative",
+              body: "Preventive care and restorative treatments such as fillings, crowns, and bridges, designed to repair damage and maintain optimal oral health.",
             },
           ]}
           associations={[

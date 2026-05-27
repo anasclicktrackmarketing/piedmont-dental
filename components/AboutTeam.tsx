@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Member = {
   name: string;
@@ -7,6 +8,8 @@ type Member = {
   photo?: string;
   /** CSS background used as a placeholder when no photo is set. */
   bg: string;
+  /** Optional click-through to a profile page (used for dentists). */
+  href?: string;
 };
 
 // Tasteful photo-style gradients that read as "image placeholder" until real headshots land.
@@ -23,31 +26,35 @@ const doctors: Member[] = [
     name: "Dr. Jill A. Martenson",
     role: "Co-Owner · Cosmetic",
     bg: GRADIENTS.teal,
-    // photo: "/team/dr-martenson.jpg",  // ← drop file here when available
+    photo: "/team/dr-martenson.webp",
+    href: "/about/dr-martenson",
   },
   {
     name: "Dr. David Ma",
-    role: "Co-Owner · Restorative",
+    role: "Co-Owner · Restorative & Cosmetic",
     bg: GRADIENTS.warm,
+    photo: "/team/dr-ma.webp",
+    href: "/about/dr-ma",
   },
   {
     name: "Dr. Filippo Cangini",
-    role: "Periodontics",
+    role: "Periodontist",
     bg: GRADIENTS.ink,
+    photo: "/team/dr-cangini.webp",
+    href: "/about/dr-cangini",
   },
 ];
 
 const PALETTE = [GRADIENTS.teal, GRADIENTS.ink, GRADIENTS.warm, GRADIENTS.tealDeep];
 
 const staffRaw: Omit<Member, "bg">[] = [
-  { name: "Christine", role: "Patient Services Manager · RDA" },
-  { name: "Elaina", role: "Financial, Treatment & Business Manager" },
-  { name: "Michelle", role: "Registered Dental Hygienist" },
-  { name: "Kelley", role: "Registered Dental Hygienist" },
-  { name: "Cesar", role: "Registered Dental Hygienist" },
-  { name: "Lee'Lannee", role: "Expanded Function Dental Assistant 2" },
-  { name: "Debra", role: "Registered Dental Assistant" },
-  { name: "Susana", role: "Registered Dental Assistant" },
+  { name: "Christine", role: "Patient Services Manager · RDA", photo: "/img/team/christine.jpg" },
+  { name: "Elaina", role: "Financial, Treatment & Business Manager", photo: "/img/team/elaina.jpg" },
+  { name: "Michelle", role: "Registered Dental Hygienist", photo: "/img/team/michelle.jpg" },
+  { name: "Kelley", role: "Registered Dental Hygienist", photo: "/img/team/kelley.jpg" },
+  { name: "Cesar", role: "Registered Dental Hygienist", photo: "/img/team/cesar.jpg" },
+  { name: "Lee'Lannee", role: "Expanded Function Dental Assistant 2", photo: "/img/team/lee-lannee.jpg" },
+  { name: "Susana", role: "Registered Dental Assistant", photo: "/img/team/susana.jpg" },
 ];
 
 const staff: Member[] = staffRaw.map((m, i) => ({
@@ -74,9 +81,9 @@ function PersonGlyph() {
   );
 }
 
-function TeamCard({ name, role, photo, bg }: Member) {
-  return (
-    <article className="team-card">
+function TeamCard({ name, role, photo, bg, href }: Member) {
+  const body = (
+    <>
       <span className="team-avatar" style={!photo ? { background: bg } : undefined}>
         {photo ? (
           <Image
@@ -94,8 +101,17 @@ function TeamCard({ name, role, photo, bg }: Member) {
         <h4>{name}</h4>
         <p>{role}</p>
       </div>
-    </article>
+    </>
   );
+
+  if (href) {
+    return (
+      <Link href={href} className="team-card team-card--link">
+        {body}
+      </Link>
+    );
+  }
+  return <article className="team-card">{body}</article>;
 }
 
 export default function AboutTeam() {
@@ -108,10 +124,9 @@ export default function AboutTeam() {
             <h2>
               Meet the people behind <em>your care.</em>
             </h2>
-            <p className="about-question">Who works at Piedmont Dental?</p>
           </div>
           <p className="lede">
-            Three dentists and eight practice staff. The same hygienist or
+            Three dentists and seven practice staff. The same hygienist or
             assistant tends to handle the same patients visit after visit —
             it&apos;s how we keep care personal.
           </p>

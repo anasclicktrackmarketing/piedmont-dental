@@ -15,13 +15,13 @@ const awards: Award[] = [
     badge: "/img/badges/best-of-bay-2025.png",
     headline: "2024 & 2025",
     title: "Best Esthetic Dentist",
-    meta: "Voted Best of the East Bay — readers' choice",
+    meta: "Voted Best of the East Bay",
   },
   {
     badge: "/img/badges/best-of-bay-2025.png",
     headline: "2025",
     title: "Best Dental Practice",
-    meta: "Voted Best of the East Bay — readers' choice",
+    meta: "Voted Best of the East Bay",
   },
   {
     ico: "G",
@@ -33,7 +33,7 @@ const awards: Award[] = [
     ico: "⊕",
     headline: "30 years",
     title: "Serving the East Bay",
-    meta: "Three decades of cosmetic & restorative care",
+    meta: "Three decades of preventative, cosmetic & restorative care",
   },
 ];
 

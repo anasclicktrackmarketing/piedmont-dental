@@ -12,7 +12,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Meet the Team | Piedmont Dental By Design",
   description:
-    "Meet the full team — three dentists plus eight practice staff: hygienists, assistants, and patient services. Real people who keep the practice running.",
+    "Meet the full team — three dentists plus seven practice staff: hygienists, assistants, and patient services. Real people who keep the practice running.",
   alternates: { canonical: "/about/team" },
   openGraph: {
     title: "Meet the Team — Piedmont Dental By Design",
@@ -56,7 +56,7 @@ export default function TeamPage() {
             <div className="page-hero-content">
               <div className="num">— Meet the Team —</div>
               <h1>
-                Three dentists, <em>eight</em>
+                Three dentists, <em>seven</em>
                 <br />
                 practice members.
               </h1>
@@ -75,7 +75,22 @@ export default function TeamPage() {
               </div>
             </div>
 
-            <ul className="team-doctor-list">
+            <div className="team-hero-photo">
+              <Image
+                src="/img/about/full-team.jpg"
+                alt="The Piedmont Dental By Design team"
+                width={2400}
+                height={1600}
+                sizes="(max-width: 1200px) 50vw, 600px"
+                priority
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="team-doctors-strip">
+          <div className="team-doctors-strip-inner">
+            <ul className="team-doctor-list team-doctor-list--row">
               {DOCTORS.map((d) => (
                 <li key={d.name}>
                   <Link href={d.href} className="team-doctor-link">
@@ -97,19 +112,6 @@ export default function TeamPage() {
                 </li>
               ))}
             </ul>
-          </div>
-        </section>
-
-        <section className="team-photo-banner">
-          <div className="team-photo-banner-inner">
-            <Image
-              src="/img/about/full-team.jpg"
-              alt="The Piedmont Dental By Design team"
-              width={2400}
-              height={1600}
-              sizes="(max-width: 1200px) 100vw, 1200px"
-              priority
-            />
           </div>
         </section>
 
