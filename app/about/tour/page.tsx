@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import SiteHeader from "@/components/SiteHeader";
@@ -115,9 +116,25 @@ const STOPS: Stop[] = [
   },
 ];
 
-const PRACTICE_DETAILS = [
+type PracticeDetail = {
+  label: string;
+  value: ReactNode;
+  meta: string;
+};
+
+const PRACTICE_DETAILS: PracticeDetail[] = [
   { label: "Address", value: "1331 Grand Ave", meta: "Piedmont, CA 94610" },
-  { label: "Hours", value: "Mon & Wed 7–5", meta: "Tue & Thu 7–3 · Fri–Sun closed" },
+  {
+    label: "Hours",
+    value: (
+      <>
+        Mon &amp; Wed 7–5
+        <br />
+        Tue &amp; Thu 7–3
+      </>
+    ),
+    meta: "Fri–Sun closed",
+  },
   { label: "Phone", value: "(510) 350-3937", meta: "Or text the practice" },
 ];
 
@@ -136,9 +153,8 @@ export default function OfficeTourPage() {
                 A guided look <em>inside.</em>
               </h1>
               <p className="page-hero-sub">
-                Ten stops through the practice — reception, operatories, imaging,
-                and the spaces in between. Take the tour at your own pace, then
-                book a visit when you&apos;re ready to see it in person.
+                Take the tour at your own pace, then book a visit when
+                you&apos;re ready to see it in person.
               </p>
               <div className="procedures-hero-actions">
                 <a href="#stop-01" className="btn btn-primary btn-lg">

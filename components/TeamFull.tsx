@@ -72,14 +72,6 @@ const team: Omit<Member, "bg">[] = [
       "After graduating College of Alameda Dental Assistant School, I joined Piedmont Dental by Design in 1999, as a Registered Dental Assistant. In 2019, I graduated University of the Pacific: Expanded Functions Program which allows me to utilize additional skills as a Registered Dental Assistant. My goal as working chairside is to make patients feel as ease during treatment as well as to educate patients on their oral health. When not at work, I enjoy spending quality time with my loved ones and vacation!",
   },
   {
-    name: "Debra",
-    role: "Registered Dental Assistant",
-    initials: "D",
-    photo: "/img/team/debra.jpg",
-    quote:
-      "I'm a Registered Chairside Dental Assistant since 1976. I have been working for Piedmont Dental by Design since 1982. I've enjoyed my career in dentistry and love giving people warm happy beautiful smiles. I plan on continuing my journey through dentistry. It's such an amazing reward for me to give back a smile.",
-  },
-  {
     name: "Susana",
     role: "Registered Dental Assistant",
     initials: "S",
@@ -148,7 +140,7 @@ export default function TeamFull() {
             </h2>
           </div>
           <p className="lede">
-            Eight team members across patient services, hygiene, and dental
+            Seven team members across patient services, hygiene, and dental
             assisting — most have been with the practice for a decade or more.
             Click any card to read their full bio.
           </p>
