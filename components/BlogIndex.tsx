@@ -16,6 +16,88 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "what-is-smile-design-consultation",
+    title: "What Is a Smile Design Consultation?",
+    date: "June 15, 2026",
+    dateISO: "2026-06-15",
+    category: "Cosmetic",
+    image: "/img/blog/what-is-smile-design-consultation/hero.jpg",
+    alt: "Dentist and patient reviewing a digital smile design mockup on screen",
+    excerpt:
+      "The phrase “smile design” has become more common in cosmetic dentistry conversations, but many patients are still unsure what it means — or whether they need one. It's a structured evaluation that treats your smile as a whole, not tooth by tooth.",
+  },
+  {
+    slug: "how-to-choose-cosmetic-dentist-east-bay",
+    title:
+      "How to Choose a Cosmetic Dentist in the East Bay — A Checklist",
+    date: "June 1, 2026",
+    dateISO: "2026-06-01",
+    category: "Cosmetic",
+    image: "/img/blog/how-to-choose-cosmetic-dentist-east-bay/hero.jpg",
+    alt: "Cosmetic dentist in clinical setting preparing for a patient consultation",
+    excerpt:
+      "Choosing a cosmetic dentist is one of the most important decisions you can make for your appearance and confidence. Cosmetic dentistry is as much art as science — use this East Bay checklist to vet credentials, portfolio, and process.",
+  },
+  {
+    slug: "teeth-whitening-piedmont-professional-vs-at-home",
+    title:
+      "Teeth Whitening Options in Piedmont: Professional vs. At-Home",
+    date: "May 18, 2026",
+    dateISO: "2026-05-18",
+    category: "Cosmetic",
+    image:
+      "/img/blog/teeth-whitening-piedmont-professional-vs-at-home/hero.jpg",
+    alt: "Bright white teeth after a professional whitening treatment",
+    excerpt:
+      "A bright, white smile is one of the most impactful cosmetic improvements you can make — and whitening is consistently the most requested cosmetic dental procedure in the East Bay. Here's how in-office, take-home, and store-bought options actually compare.",
+  },
+  {
+    slug: "cerec-same-day-crowns-oakland",
+    title:
+      "CEREC Same-Day Crowns: What Oakland Patients Need to Know",
+    date: "May 4, 2026",
+    dateISO: "2026-05-04",
+    category: "Restorative",
+    image: "/img/blog/cerec-same-day-crowns-oakland/hero.jpg",
+    alt: "Digital dental scan and same-day CEREC crown workflow",
+    excerpt:
+      "Traditional crowns require two appointments, temporaries, and a set of gooey impressions. CEREC uses a digital scanner and an in-office milling unit to design, fabricate, and bond a permanent crown in a single visit — here's how the workflow really works.",
+  },
+  {
+    slug: "invisalign-vs-braces-adults-east-bay",
+    title: "Invisalign vs. Braces for Adults: East Bay Patient Guide",
+    date: "April 20, 2026",
+    dateISO: "2026-04-20",
+    category: "Cosmetic",
+    image: "/img/blog/invisalign-vs-braces-adults-east-bay/hero.jpg",
+    alt: "Adult holding a clear Invisalign aligner tray",
+    excerpt:
+      "More adults than ever are choosing to straighten their teeth. Invisalign and traditional braces both move teeth effectively, but differ in comfort, aesthetics, treatment time, and cost — here's the honest side-by-side for East Bay patients.",
+  },
+  {
+    slug: "veneers-cost-oakland-2026",
+    title: "How Much Do Veneers Cost in Oakland? A 2026 Guide",
+    date: "April 6, 2026",
+    dateISO: "2026-04-06",
+    category: "Cosmetic",
+    image: "/img/blog/veneers-cost-oakland-2026/hero.jpg",
+    alt: "Porcelain veneer shade guide next to a bright natural smile",
+    excerpt:
+      "Porcelain veneers are one of the most transformative cosmetic procedures available — but for many East Bay residents, the first question is practical: what should I expect to pay in Oakland in 2026? Here's a transparent breakdown by type, tooth count, and financing.",
+  },
+  {
+    slug: "porcelain-veneers-vs-dental-bonding",
+    title:
+      "Porcelain Veneers vs. Dental Bonding — Which Is Right for You?",
+    date: "March 23, 2026",
+    dateISO: "2026-03-23",
+    category: "Cosmetic",
+    image: "/img/blog/porcelain-veneers-vs-dental-bonding/hero.jpg",
+    alt: "Cosmetic dentist comparing porcelain veneers and composite bonding for a patient",
+    excerpt:
+      "Chipped teeth, stubborn stains, small gaps, and uneven edges are among the most common cosmetic concerns we hear from East Bay patients. Two of the most popular solutions are porcelain veneers and dental bonding — here's a side-by-side to help you choose.",
+  },
+  {
     slug: "dental-implants-piedmont-ca",
     title:
       "Dental Implants in Piedmont, CA: The Permanent Solution for Missing Teeth",

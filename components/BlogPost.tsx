@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import type { BlogPost as BlogPostData } from "@/lib/blog";
 import type { Post } from "@/components/BlogIndex";
 
@@ -55,6 +56,7 @@ export default function BlogPost({
           <article className="post-prose">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
+              rehypePlugins={[rehypeRaw]}
               components={{
                 // Skip the H1 — the hero already shows the title
                 h1: () => null,

@@ -13354,3 +13354,62 @@ footer.site-footer {
     scroll-behavior: auto !important;
   }
 }
+
+/* Blog article FAQ accordion — inline with the .post-prose typography */
+.post-prose .blog-faq-list {
+  margin: 8px 0 32px;
+  border-top: 1px solid var(--rule);
+}
+.post-prose .blog-faq {
+  border-bottom: 1px solid var(--rule);
+}
+.post-prose .blog-faq > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 44px 20px 0;
+  position: relative;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.15s ease;
+}
+.post-prose .blog-faq > summary::-webkit-details-marker { display: none; }
+.post-prose .blog-faq > summary::marker { display: none; }
+.post-prose .blog-faq > summary::after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform 0.25s ease;
+  color: var(--ink-soft);
+}
+.post-prose .blog-faq[open] > summary::after {
+  transform: translateY(-30%) rotate(-135deg);
+}
+.post-prose .blog-faq > summary:hover { color: var(--teal-deep); }
+.post-prose .blog-faq > summary:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+.post-prose .blog-faq[open] > summary { color: var(--teal-deep); }
+.post-prose .blog-faq > p,
+.post-prose .blog-faq[open] p {
+  padding: 0 44px 22px 0;
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+}
+

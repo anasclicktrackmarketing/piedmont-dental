@@ -1,8 +1,21 @@
+import { posts } from "./BlogIndex";
+
+const CATEGORY_MAP: Record<string, string> = {
+  Cosmetic: "Cosmetic dentistry",
+  Restorative: "Dental implants",
+  "Family Care": "Family care",
+  "Daily Care": "Daily oral health",
+};
+
+function countBy(label: string) {
+  return posts.filter((p) => CATEGORY_MAP[p.category] === label).length;
+}
+
 const TOPICS = [
-  { label: "Cosmetic dentistry", desc: "Veneers, whitening, Invisalign®", count: 1 },
-  { label: "Dental implants", desc: "Permanent solutions for missing teeth", count: 1 },
-  { label: "Family care", desc: "Whole-family dentistry from kids to seniors", count: 2 },
-  { label: "Daily oral health", desc: "Brushing, flossing, and prevention", count: 1 },
+  { label: "Cosmetic dentistry", desc: "Veneers, whitening, Invisalign®", count: countBy("Cosmetic dentistry") },
+  { label: "Dental implants", desc: "Permanent solutions for missing teeth", count: countBy("Dental implants") },
+  { label: "Family care", desc: "Whole-family dentistry from kids to seniors", count: countBy("Family care") },
+  { label: "Daily oral health", desc: "Brushing, flossing, and prevention", count: countBy("Daily oral health") },
 ];
 
 export default function BlogHero() {
