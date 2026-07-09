@@ -110,8 +110,8 @@ export default function ProcedureDetail({
             )}
 
             <div className="procedures-hero-actions">
-              <a href="/#booker" className="btn btn-primary btn-lg">
-                Book a consultation →
+              <a href="/contact" className="btn btn-primary btn-lg">
+                Contact us →
               </a>
               <a href="tel:5103503937" className="btn btn-ghost btn-lg">
                 Call (510) 350-3937
@@ -234,8 +234,8 @@ export default function ProcedureDetail({
                 and answer any questions before any treatment is scheduled.
               </p>
               <div className="actions">
-                <a href="/#booker" className="btn btn-teal">
-                  Book a consultation →
+                <a href="/contact" className="btn btn-teal">
+                  Contact us →
                 </a>
                 <a href="tel:5103503937" className="btn btn-ghost-light">
                   Call (510) 350-3937

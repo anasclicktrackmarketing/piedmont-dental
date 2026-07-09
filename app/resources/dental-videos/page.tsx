@@ -170,12 +170,12 @@ export default function DentalVideosPage() {
               <h2>Have questions about a procedure?</h2>
               <p>
                 We&apos;re happy to walk through anything you saw here in
-                person. Book a consultation and we&apos;ll set aside time to
+                person. Get in touch and we&apos;ll set aside time to
                 answer questions and talk through what&apos;s right for you.
               </p>
               <div className="videos-cta-actions">
                 <Link href="/contact" className="btn btn-primary btn-lg">
-                  Request Appointment →
+                  Contact us →
                 </Link>
                 <a href="tel:5103503937" className="btn btn-ghost btn-lg">
                   or call (510) 350-3937

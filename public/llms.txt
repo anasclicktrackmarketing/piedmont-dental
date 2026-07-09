@@ -68,7 +68,8 @@
 
 ## Booking
 
-- Online: https://piedmontdentalbydesign.com#booker
+- Currently accepting new patients
+- Contact form: https://piedmontdentalbydesign.com/contact
 - Phone: (510) 350-3937 during open hours
 
 ## Pages
@@ -85,8 +86,8 @@
 - FAQs: https://piedmontdentalbydesign.com/faqs — dental health questions answered (daily care, conditions, cosmetic)
 - Blog: https://piedmontdentalbydesign.com/blog — articles on cosmetic dentistry, implants, family care, daily oral health
 - Contact: https://piedmontdentalbydesign.com/contact — contact form, phone, email, hours, location
-- Booking: https://piedmontdentalbydesign.com/#booker
-- FAQ (booking-related): https://piedmontdentalbydesign.com/#faq
+- Appointments: https://piedmontdentalbydesign.com/contact — request an appointment via the contact form or call (510) 350-3937
+- FAQ: https://piedmontdentalbydesign.com/faqs
 
 ## Blog Posts (most recent first)
 

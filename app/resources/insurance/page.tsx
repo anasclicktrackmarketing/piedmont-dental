@@ -119,15 +119,15 @@ export default function InsurancePage() {
             </div>
 
             <div className="insurance-cta">
-              <h2>Ready to book — or want a pre-treatment estimate?</h2>
+              <h2>Planning a visit — or want a pre-treatment estimate?</h2>
               <p>
-                Request an appointment online and let us know what
+                Send us a message and let us know what
                 you&apos;re hoping to address. We&apos;ll pull a benefits
                 estimate ahead of your visit so there are no surprises.
               </p>
               <div className="insurance-cta-actions">
                 <Link href="/contact" className="btn btn-primary btn-lg">
-                  Request Appointment →
+                  Contact us →
                 </Link>
                 <a href="tel:5103503937" className="btn btn-ghost btn-lg">
                   or call (510) 350-3937

@@ -54,8 +54,8 @@ export default function SmileGalleryPage({
                   in-person consultation, where we walk through cases relevant
                   to your situation.
                 </p>
-                <a href="/#booker" className="btn btn-primary btn-lg">
-                  Book a consultation →
+                <a href="/contact" className="btn btn-primary btn-lg">
+                  Contact us →
                 </a>
               </div>
             )}
@@ -66,11 +66,11 @@ export default function SmileGalleryPage({
               <span className="num">i. — Talk to us</span>
               <h3>Curious what&apos;s possible?</h3>
               <p className="resource-sidebar-blurb">
-                Schedule a consultation and we&apos;ll walk through cases
+                Get in touch and we&apos;ll walk through cases
                 similar to yours.
               </p>
-              <a href="/#booker" className="btn btn-primary post-sidebar-cta">
-                Book a visit →
+              <a href="/contact" className="btn btn-primary post-sidebar-cta">
+                Contact us →
               </a>
               <a href="tel:5103503937" className="resource-sidebar-phone">
                 or call (510) 350-3937

@@ -7,12 +7,12 @@ export default function AboutCTA() {
           Take a tour, or <em>schedule</em> your visit.
         </h2>
         <p>
-          Experience the practice first-hand. Book online, or call us during
-          open hours — most weeks we have same-week availability.
+          Experience the practice first-hand. Send us a message, or call us
+          during open hours — most weeks we have same-week availability.
         </p>
         <div className="actions">
-          <a href="/#booker" className="btn btn-teal btn-lg">
-            Book a visit →
+          <a href="/contact" className="btn btn-teal btn-lg">
+            Contact us →
           </a>
           <a href="tel:5103503937" className="btn btn-ghost-light btn-lg">
             Call (510) 350-3937

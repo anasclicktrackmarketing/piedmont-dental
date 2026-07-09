@@ -57,8 +57,8 @@ export default function BeforeAfter() {
           <div className="meta">
             <b>Teeth whitening</b> — a real case from one of our patients.
           </div>
-          <a href="#booker" className="btn btn-primary">
-            Book a smile consultation →
+          <a href="/contact" className="btn btn-primary">
+            Contact us →
           </a>
         </div>
       </div>

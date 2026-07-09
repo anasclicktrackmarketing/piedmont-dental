@@ -141,7 +141,7 @@ export default function SmileGalleryHubPage() {
                   Browse galleries →
                 </a>
                 <Link href="/contact" className="btn btn-ghost-light btn-lg">
-                  Book a consultation
+                  Contact us
                 </Link>
               </div>
             </div>
@@ -277,7 +277,7 @@ export default function SmileGalleryHubPage() {
               </p>
               <div className="sg-cta-actions">
                 <Link href="/contact" className="btn btn-primary btn-lg">
-                  Request Appointment →
+                  Contact us →
                 </Link>
                 <a href="tel:5103503937" className="btn btn-ghost btn-lg">
                   or call (510) 350-3937

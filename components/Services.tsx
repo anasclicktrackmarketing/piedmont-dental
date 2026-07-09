@@ -5,6 +5,7 @@ type Tile = {
   category: string;
   title: string;
   caption: string;
+  href: string;
   image: string;
   alt: string;
 };
@@ -15,6 +16,7 @@ const tiles: Tile[] = [
     category: "Cosmetic",
     title: "Porcelain veneers",
     caption: "Hand-shaped, color-matched in person",
+    href: "/procedures/cosmetic-dentistry/porcelain-veneers",
     image: "/img/home-services/porcelain-veneers.jpg",
     alt: "Close-up of a polished smile after veneer treatment",
   },
@@ -23,6 +25,7 @@ const tiles: Tile[] = [
     category: "Cosmetic",
     title: "Teeth whitening",
     caption: "In-office and take-home treatments",
+    href: "/procedures/cosmetic-dentistry/tooth-whitening",
     image: "/img/home-services/tooth-whitening.jpg",
     alt: "Patient with bright, naturally white teeth smiling",
   },
@@ -31,6 +34,7 @@ const tiles: Tile[] = [
     category: "Cosmetic",
     title: "Invisalign®",
     caption: "Clear aligners, planned in 3D",
+    href: "/procedures/cosmetic-dentistry/invisalign",
     image: "/img/home-services/invisalign.jpg",
     alt: "Clear Invisalign® aligners",
   },
@@ -39,6 +43,7 @@ const tiles: Tile[] = [
     category: "Restorative",
     title: "Dental implants",
     caption: "Replace missing teeth with a permanent fix",
+    href: "/procedures/restoration/dental-implants",
     image: "/img/home-services/dental-implants.jpg",
     alt: "Restored smile after dental implant treatment",
   },
@@ -47,6 +52,7 @@ const tiles: Tile[] = [
     category: "Restorative",
     title: "CEREC® crowns",
     caption: "Same-day digital crowns, in one visit",
+    href: "/procedures/cosmetic-dentistry/cerec",
     image: "/img/home-services/cerec.jpg",
     alt: "CEREC same-day porcelain crown technology",
   },
@@ -55,6 +61,7 @@ const tiles: Tile[] = [
     category: "Restorative",
     title: "Full mouth restoration",
     caption: "Comprehensive rebuild, planned together",
+    href: "/procedures/restoration",
     image: "/img/home-services/full-mouth.jpg",
     alt: "Comprehensive smile rebuild — full mouth restoration",
   },
@@ -63,6 +70,7 @@ const tiles: Tile[] = [
     category: "Periodontal",
     title: "Gum care",
     caption: "Treatment, grafting, scaling & root planing",
+    href: "/procedures/periodontal-services",
     image: "/img/home-services/gum-care.jpg",
     alt: "Periodontal gum care treatment",
   },
@@ -71,6 +79,7 @@ const tiles: Tile[] = [
     category: "Preventive",
     title: "Cleanings & exams",
     caption: "Routine care for the whole family",
+    href: "/procedures/cleanings-prevention/dental-exams-cleanings",
     image: "/img/home-services/cleanings-exams.jpg",
     alt: "Patient receiving a routine cleaning and exam",
   },
@@ -113,10 +122,10 @@ export default function Services() {
         <div className="services-track">
           {loop.map((t, i) => (
             <a
-              href="#booker"
+              href={t.href}
               className="svc-tile"
               key={`${t.num}-${i}`}
-              aria-label={`Book a consult — ${t.title}`}
+              aria-label={`Explore ${t.title}`}
             >
               <div className="svc-tile-img">
                 <Image

@@ -105,8 +105,8 @@ export default function ResourceArticle({
                   consultation, where we walk through before-and-after
                   photography specific to your situation.
                 </p>
-                <a href="/#booker" className="btn btn-primary btn-lg">
-                  Book a consultation →
+                <a href="/contact" className="btn btn-primary btn-lg">
+                  Contact us →
                 </a>
               </div>
             )}
@@ -122,10 +122,10 @@ export default function ResourceArticle({
                 consultation and we&apos;ll set aside time.
               </p>
               <a
-                href="/#booker"
+                href="/contact"
                 className="btn btn-primary post-sidebar-cta"
               >
-                Book a visit →
+                Contact us →
               </a>
               <a href="tel:5103503937" className="resource-sidebar-phone">
                 or call (510) 350-3937

@@ -88,8 +88,8 @@ export default function FAQ() {
         </div>
 
         <div className="faq-foot">
-          <a className="btn btn-primary" href="#booker">
-            Ready to book? →
+          <a className="btn btn-primary" href="/contact">
+            Contact us →
           </a>
         </div>
       </div>

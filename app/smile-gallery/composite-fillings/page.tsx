@@ -263,13 +263,13 @@ export default function CompositeFillingsGalleryPage() {
             <div className="cf-cta">
               <h2>Have a tooth that needs repair?</h2>
               <p>
-                Book a visit and we&apos;ll evaluate the tooth, discuss
+                Get in touch and we&apos;ll evaluate the tooth, discuss
                 whether composite is the right material, and complete the
                 restoration in a single appointment when it makes sense.
               </p>
               <div className="cf-cta-actions">
                 <Link href="/contact" className="btn btn-primary btn-lg">
-                  Request Appointment →
+                  Contact us →
                 </Link>
                 <a href="tel:5103503937" className="btn btn-ghost btn-lg">
                   or call (510) 350-3937

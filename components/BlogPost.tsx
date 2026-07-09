@@ -112,8 +112,8 @@ export default function BlogPost({
                   <Link href="/procedures">All procedures →</Link>
                 </li>
               </ul>
-              <a href="/#booker" className="btn btn-primary post-sidebar-cta">
-                Book a visit →
+              <a href="/contact" className="btn btn-primary post-sidebar-cta">
+                Contact us →
               </a>
             </div>
           </aside>

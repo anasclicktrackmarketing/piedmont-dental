@@ -161,8 +161,8 @@ export default function About() {
             About {active.name.split(" ").slice(-1)[0]}
             {active.id === "martenson" ? "" : ""} →
           </Link>
-          <a href="#booker" className="btn btn-ghost">
-            Book a consultation
+          <a href="/contact" className="btn btn-ghost">
+            Contact us
           </a>
         </div>
       </div>

@@ -153,15 +153,15 @@ export default function OfficeTourPage() {
                 A guided look <em>inside.</em>
               </h1>
               <p className="page-hero-sub">
-                Take the tour at your own pace, then book a visit when
+                Take the tour at your own pace, then get in touch when
                 you&apos;re ready to see it in person.
               </p>
               <div className="procedures-hero-actions">
                 <a href="#stop-01" className="btn btn-primary btn-lg">
                   Begin tour →
                 </a>
-                <a href="/#booker" className="btn btn-ghost btn-lg">
-                  Skip to booking
+                <a href="/contact" className="btn btn-ghost btn-lg">
+                  Contact us
                 </a>
               </div>
             </div>
@@ -226,8 +226,8 @@ export default function OfficeTourPage() {
                       Continue to {STOPS[i + 1].title} →
                     </a>
                   ) : (
-                    <a href="/#booker" className="btn btn-teal btn-lg">
-                      Book a visit →
+                    <a href="/contact" className="btn btn-teal btn-lg">
+                      Contact us →
                     </a>
                   )}
                 </div>

@@ -69,8 +69,8 @@ export default function TeamPage() {
                 <a href="#team-list" className="btn btn-primary btn-lg">
                   Browse the team →
                 </a>
-                <a href="/#booker" className="btn btn-ghost btn-lg">
-                  Book a visit
+                <a href="/contact" className="btn btn-ghost btn-lg">
+                  Contact us
                 </a>
               </div>
             </div>

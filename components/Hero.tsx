@@ -41,8 +41,9 @@ export default function Hero() {
       </div>
 
       <div className="hero-content">
-        <div className="hero-eyebrow">
-          Cosmetic Dentistry · Piedmont, California
+        <div className="hero-eyebrow hero-eyebrow--sentence">
+          Caring for patients across Piedmont, Oakland, Montclair and the
+          greater East Bay.
         </div>
         <h1 className="hero-headline">
           Cosmetic, Restorative &amp; Preventive <em>Dentistry</em>
@@ -50,12 +51,14 @@ export default function Hero() {
           in Piedmont Since 1996.
         </h1>
         <p className="hero-sub">
-          Personalized cosmetic and restorative care on Grand Avenue. Dr. Jill
-          Martenson and team have served the East Bay for over 30 years.
+          Personalized cosmetic, restorative and preventative oral care on Grand
+          Avenue in Piedmont. Dr. Jill Martenson, Dr. David Ma and their team
+          have been creating sparkling smiles for 30 years. Accepting new
+          patients!
         </p>
         <div className="hero-actions">
-          <a href="#booker" className="btn btn-teal btn-lg">
-            Book a visit →
+          <a href="/contact" className="btn btn-teal btn-lg">
+            Contact us →
           </a>
           <a href="#cosmetic" className="btn btn-ghost-light btn-lg">
             See our work

@@ -9,7 +9,7 @@ const cols = [
   },
   {
     heading: "Visit",
-    links: ["Book online", "Insurance", "Financing", "FAQ"],
+    links: ["Contact us", "Insurance", "Financing", "FAQ"],
   },
   {
     heading: "Patients",

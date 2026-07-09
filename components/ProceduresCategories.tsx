@@ -117,8 +117,8 @@ export default function ProceduresCategories() {
                     <li key={h}>{h}</li>
                   ))}
                 </ul>
-                <a href="/#booker" className="proc-cat-cta">
-                  Book a consultation →
+                <a href="/contact" className="proc-cat-cta">
+                  Contact us →
                 </a>
               </div>
             </article>

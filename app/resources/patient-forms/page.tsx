@@ -100,15 +100,15 @@ export default function PatientFormsPage() {
             </div>
 
             <div className="forms-cta">
-              <h2>Ready to book your visit?</h2>
+              <h2>Ready for your next visit?</h2>
               <p>
-                Once your forms are submitted, the next step is picking a date.
-                Reserve a comprehensive exam with Dr. Martenson or Dr. Ma — or call us
-                directly and we&apos;ll set you up.
+                Once your forms are submitted, send us a message or call and
+                we&apos;ll set up a comprehensive exam with Dr. Martenson or Dr.
+                Ma at a time that works for you.
               </p>
               <div className="forms-cta-actions">
                 <Link href="/contact" className="btn btn-primary btn-lg">
-                  Request Appointment →
+                  Contact us →
                 </Link>
                 <a href="tel:5103503937" className="btn btn-ghost btn-lg">
                   or call (510) 350-3937

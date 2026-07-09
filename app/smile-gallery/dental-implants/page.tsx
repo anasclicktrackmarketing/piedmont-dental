@@ -227,7 +227,7 @@ export default function DentalImplantsGalleryPage() {
               </p>
               <div className="dig-cta-actions">
                 <Link href="/contact" className="btn btn-primary btn-lg">
-                  Request Appointment →
+                  Contact us →
                 </Link>
                 <a href="tel:5103503937" className="btn btn-ghost btn-lg">
                   or call (510) 350-3937

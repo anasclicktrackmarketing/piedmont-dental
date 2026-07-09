@@ -63,8 +63,8 @@ export default function DoctorProfile(props: DoctorProfileProps) {
             </ul>
 
             <div className="procedures-hero-actions">
-              <a href="/#booker" className="btn btn-primary btn-lg">
-                Book a visit →
+              <a href="/contact" className="btn btn-primary btn-lg">
+                Contact us →
               </a>
               <a href="/about/team" className="btn btn-ghost btn-lg">
                 Meet the full team

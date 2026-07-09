@@ -36,8 +36,8 @@ export default function BlogHero() {
             <a href="#latest" className="btn btn-primary btn-lg">
               Read latest →
             </a>
-            <a href="/#booker" className="btn btn-ghost btn-lg">
-              Book a visit
+            <a href="/contact" className="btn btn-ghost btn-lg">
+              Contact us
             </a>
           </div>
         </div>

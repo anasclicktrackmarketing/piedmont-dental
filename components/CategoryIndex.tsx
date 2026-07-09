@@ -42,8 +42,8 @@ export default function CategoryIndex({
               </p>
             ))}
             <div className="procedures-hero-actions">
-              <a href="/#booker" className="btn btn-primary btn-lg">
-                Book a consultation →
+              <a href="/contact" className="btn btn-primary btn-lg">
+                Contact us →
               </a>
               <Link href="/procedures" className="btn btn-ghost btn-lg">
                 All procedures

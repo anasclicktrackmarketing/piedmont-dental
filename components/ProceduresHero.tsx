@@ -24,8 +24,8 @@ export default function ProceduresHero() {
             provide — with a gentle touch and considered results.
           </p>
           <div className="procedures-hero-actions">
-            <a href="/#booker" className="btn btn-primary btn-lg">
-              Book a visit →
+            <a href="/contact" className="btn btn-primary btn-lg">
+              Contact us →
             </a>
             <a href="#all-services" className="btn btn-ghost btn-lg">
               See full list

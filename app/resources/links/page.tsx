@@ -48,7 +48,7 @@ export default function LinksResourcePage() {
       </p>
       <div className="links-cta-actions">
         <Link href="/contact" className="btn btn-primary btn-lg">
-          Request Appointment →
+          Contact us →
         </Link>
         <a
           href="mailto:info@piedmontdentalbydesign.com?subject=Suggested%20link%20for%20Piedmont%20Dental%20resources"
