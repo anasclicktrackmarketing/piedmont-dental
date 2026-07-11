@@ -72,7 +72,7 @@ const tiles: Tile[] = [
     caption: "Treatment, grafting, scaling & root planing",
     href: "/procedures/periodontal-services",
     image: "/img/home-services/gum-care.jpg",
-    alt: "Periodontal gum care treatment",
+    alt: "Older patient smiling after periodontal gum care",
   },
   {
     num: "08",

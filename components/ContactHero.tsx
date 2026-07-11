@@ -22,14 +22,14 @@ export default function ContactHero() {
               <span className="cc-meta">During open hours · text-friendly</span>
             </li>
             <li>
-              <span className="cc-label">Dr. Jill Martenson</span>
+              <span className="cc-label">Email</span>
               <a
-                href="mailto:jmartenson@piedmontdentalbydesign.com"
+                href="mailto:info@piedmontdentalbydesign.com"
                 className="cc-value"
               >
-                jmartenson@piedmontdentalbydesign.com
+                info@piedmontdentalbydesign.com
               </a>
-              <span className="cc-meta">Direct email — clinical questions</span>
+              <span className="cc-meta">General questions &amp; appointments</span>
             </li>
             <li>
               <span className="cc-label">Visit</span>

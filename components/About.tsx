@@ -158,8 +158,7 @@ export default function About() {
 
         <div className="about-cta">
           <Link href={active.href} className="btn btn-primary">
-            About {active.name.split(" ").slice(-1)[0]}
-            {active.id === "martenson" ? "" : ""} →
+            About Dr. {active.name.split(" ").slice(-1)[0]} →
           </Link>
           <a href="/contact" className="btn btn-ghost">
             Contact us
