@@ -10,7 +10,8 @@
     "indexnow:generate-key": "node scripts/generate-indexnow-key.mjs",
     "indexnow:submit": "node scripts/indexnow-submit.mjs",
     "indexnow:submit-sitemap": "node scripts/indexnow-submit.mjs --sitemap",
-    "bwt:submit": "node scripts/bwt-submit-urls.mjs"
+    "bwt:submit": "node scripts/bwt-submit-urls.mjs",
+    "test:ghl": "node scripts/test-ghl-lead.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
