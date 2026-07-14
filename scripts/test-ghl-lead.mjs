@@ -213,7 +213,7 @@ const firstTouch = {
   full_name: "Smoke Test",
   email: TEST_EMAIL,
   phone: TEST_PHONE,
-  form_source: "piedmontdentalbydesign.com/contact",
+  form_source: "contact-page",
   form_source_url: "https://piedmontdentalbydesign.com/contact?utm_source=google&utm_medium=cpc&utm_campaign=smoke_test&gclid=TEST_GCLID_001",
   form_intent_type: "contact",
 
@@ -275,7 +275,7 @@ const secondTouch = {
   smile_analysis_yes_count: 17, // was 5
   form_consent_sms_text: "OVERWRITE_ATTEMPTED",
 
-  form_source: "piedmontdentalbydesign.com/resources/smile-analysis",
+  form_source: "smile-analysis",
   form_source_url: "https://piedmontdentalbydesign.com/resources/smile-analysis",
 };
 
@@ -302,11 +302,11 @@ const EXPECTED_UPDATED = {
 };
 
 const EXPECTED_PRESERVED_TAGS = [
-  "form:piedmontdentalbydesign.com/contact",
+  "form:contact-page",
   "channel:paid-search",
   "website contact form submitted",
 ];
-const EXPECTED_APPENDED_TAGS = ["form:piedmontdentalbydesign.com/resources/smile-analysis", "channel:ai-search"];
+const EXPECTED_APPENDED_TAGS = ["form:smile-analysis", "channel:ai-search"];
 
 console.log("──────────────────────────────────────────────────────────────────");
 console.log("Piedmont Dental /api/lead field-bucket smoke test (against GHL directly)");

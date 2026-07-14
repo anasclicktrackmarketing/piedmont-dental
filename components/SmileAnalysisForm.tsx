@@ -10,7 +10,7 @@ declare global {
   }
 }
 
-const FORM_SOURCE = "piedmontdentalbydesign.com/resources/smile-analysis";
+const FORM_SOURCE = "smile-analysis";
 
 const QUESTIONS: string[] = [
   "Are any of your teeth yellow, stained, or somewhat discolored?",

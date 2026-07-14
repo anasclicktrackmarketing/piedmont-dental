@@ -10,7 +10,7 @@ declare global {
   }
 }
 
-const FORM_SOURCE = "piedmontdentalbydesign.com/contact";
+const FORM_SOURCE = "contact-page";
 
 function splitName(fullName: string): { firstName: string; lastName: string } {
   const parts = fullName.trim().split(/\s+/);
