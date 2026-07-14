@@ -6,22 +6,27 @@
  * the v2 Contacts API using a Private Integration Token. The PIT lives ONLY
  * in this server-side env var — never exposed to the browser.
  *
- * Write-once contract:
+ * Contract (per-client customization — see WRITE_ONCE_FIELD_KEYS below):
  *   1. Parse + minimum-validate the incoming JSON.
  *   2. Look up an existing contact by email (idempotency).
  *   3. New contact  -> POST /contacts/ with the full payload (incl. locked
- *      first-touch fields + write-once qualification answers).
- *   4. Existing contact -> PRESERVE original data:
- *      - Standard fields (name/email/phone): NOT sent -> preserved
- *      - LOCKED first-touch attribution fields: NOT sent -> preserved
- *      - WRITE_ONCE qualification answers (patient status, message,
- *        smile-analysis answers, consent record): NOT sent -> preserved
- *      - RECENT attribution fields (visitor_source_recent, last_*): SENT
+ *      first-touch fields).
+ *   4. Existing contact:
+ *      - Name/phone: SENT every time -> updated to the latest submission
+ *        (Piedmont Dental wants "latest wins" here, not first-touch preserve —
+ *        this deviates from the CTM-standard PRESERVE default on purpose)
+ *      - Email: NOT sent -> preserved (it's the lookup key)
+ *      - LOCKED first-touch attribution fields (visitor_source_first, UTMs,
+ *        click IDs, etc.): NOT sent -> preserved, true first-touch record
+ *      - WRITE_ONCE fields (SMS consent grant + timestamp + text): NOT sent
+ *        -> preserved as the legal first-grant record
+ *      - Patient status / message / smile-analysis answers: SENT every time
+ *        -> updated to the latest submission
+ *      - RECENT attribution fields (visitor_source_recent, *_recent): SENT
  *        every time -> updated
  *      - Tags: APPENDED via the dedicated /tags endpoint (never replaces)
- *      - A contact note is always appended, regardless of bucket rules, so
- *        the latest message/answers are visible to staff even though the
- *        original WRITE_ONCE field values are preserved (answer resilience).
+ *      - The contact note is replaced (old ones deleted, one fresh note
+ *        posted) so it always reflects only the latest submission.
  *   5. Return { ok, contactId, created }.
  *
  * Required env vars (server-side only, set in .env.local AND the hosting
@@ -86,17 +91,15 @@ const LOCKED_FIELD_KEYS = new Set<string>([
   "rev_days_visit_to_lead",
 ]);
 
-// WRITE_ONCE — only written when CREATING. Preserves the contact's ORIGINAL
-// qualification answers; a later resubmission's answers still reach staff
-// via the appended note + tags, without mutating the first-touch record.
+// WRITE_ONCE — only written when CREATING, preserved on every later
+// resubmission. Piedmont Dental wants patient status / message / smile
+// analysis answers to update on every submission (latest wins), so only
+// the SMS consent legal record stays WRITE_ONCE here — "first-grant
+// timestamp is the legally meaningful one" per the launch-checklist SMS
+// compliance section. This is a per-client deviation from the CTM-standard
+// PRESERVE default; keep the site's forms and this route in agreement so
+// it never drifts silently.
 const WRITE_ONCE_FIELD_KEYS = new Set<string>([
-  "are_you_a_new_or_existing_patient",
-  "form_message",
-  "patient_message",
-  "smile_analysis_yes_count",
-  "smile_analysis_answers",
-  // A2P 10DLC consent — "first-grant timestamp is the legally meaningful
-  // one" per the launch-checklist SMS compliance section.
   "form_consent_sms",
   "form_consent_marketing",
   "form_consent_sms_timestamp",
@@ -104,9 +107,11 @@ const WRITE_ONCE_FIELD_KEYS = new Set<string>([
 ]);
 
 // Standard GHL contact properties — sent at the top level of the GHL
-// payload, not as customFields entries. On UPDATE these are NOT sent so
-// the contact's existing values stay intact (a resubmission typo can't
-// corrupt the original record).
+// payload, not as customFields entries. Never treated as customFields
+// (STANDARD_FIELDS just excludes them from buildCustomFields); whether
+// they're actually sent on UPDATE is decided explicitly in the POST
+// handler below (name/phone: yes, latest wins; email: no, it's the
+// lookup key and stays preserved).
 const STANDARD_FIELDS = new Set<string>([
   "first_name",
   "last_name",
@@ -196,14 +201,29 @@ async function appendTags(contactId: string, tags: string[], pit: string) {
 }
 
 /**
- * Answer-resilience third channel: a contact note always lands regardless
- * of field provisioning or the write-once bucket rules, so a resubmission's
- * message/answers are never lost to staff even though the original
- * WRITE_ONCE custom field values are preserved. Best-effort — logged loudly
- * on failure but never blocks the overall success response.
+ * Replaces the contact's note with the latest submission's content — any
+ * existing notes are deleted first, then one fresh note is posted, so the
+ * note always reflects only the most recent touch rather than accumulating
+ * a growing history (matches the "latest wins" contract for this client).
+ * Best-effort — logged loudly on failure but never blocks the overall
+ * success response.
  */
-async function appendNote(contactId: string, body: string, pit: string) {
+async function replaceNote(contactId: string, body: string, pit: string) {
   if (!body) return;
+
+  const listRes = await ghlFetch(`/contacts/${contactId}/notes`, { method: "GET" }, pit);
+  if (listRes.ok) {
+    const listJson = (await listRes.json()) as { notes?: Array<{ id: string }> };
+    for (const note of listJson.notes || []) {
+      const delRes = await ghlFetch(`/contacts/${contactId}/notes/${note.id}`, { method: "DELETE" }, pit);
+      if (!delRes.ok) {
+        console.error(`[lead] note delete failed for ${note.id} (HTTP ${delRes.status})`);
+      }
+    }
+  } else {
+    console.error(`[lead] note list failed (HTTP ${listRes.status}) — skipping cleanup, posting anyway`);
+  }
+
   const res = await ghlFetch(
     `/contacts/${contactId}/notes`,
     { method: "POST", body: JSON.stringify({ body }) },
@@ -211,7 +231,7 @@ async function appendNote(contactId: string, body: string, pit: string) {
   );
   if (!res.ok) {
     const detail = await res.text();
-    console.error(`[lead] note append failed (HTTP ${res.status}): ${detail}`);
+    console.error(`[lead] note post failed (HTTP ${res.status}): ${detail}`);
   }
 }
 
@@ -263,17 +283,23 @@ export async function POST(request: NextRequest) {
     }
 
     if (contactId) {
-      // ── EXISTING CONTACT — preserve all original data ────────────────
+      // ── EXISTING CONTACT — latest wins on name/phone/qualification,
+      // true first-touch attribution + SMS consent record still preserved ──
       const recentCustomFields = buildCustomFields(body, "update");
       // form_last_submitted_at is server-authoritative (never trust client
       // clock) and always updates, so staff can see the most recent touch.
       recentCustomFields.push({ key: "form_last_submitted_at", field_value: nowIso });
 
-      const updatePayload = {
+      const updatePayload: Record<string, unknown> = {
         customFields: recentCustomFields,
-        // Intentionally NO firstName/lastName/email/phone — preserve existing
+        // Intentionally NO email — preserved, it's the lookup key
         // Intentionally NO tags — handled by appendTags below
       };
+      if (body.first_name) updatePayload.firstName = body.first_name;
+      if (body.last_name) updatePayload.lastName = body.last_name;
+      if (body.full_name) updatePayload.name = body.full_name;
+      if (body.phone) updatePayload.phone = body.phone;
+
       const updateRes = await ghlFetch(
         `/contacts/${contactId}`,
         { method: "PUT", body: JSON.stringify(updatePayload) },
@@ -290,7 +316,7 @@ export async function POST(request: NextRequest) {
         "website contact form submitted",
       ];
       await appendTags(contactId, tagsToAppend, PIT);
-      await appendNote(contactId, noteText, PIT);
+      await replaceNote(contactId, noteText, PIT);
     } else {
       // ── NEW CONTACT — write full first-touch payload ────────────────
       const customFields = buildCustomFields(body, "create");
@@ -329,7 +355,7 @@ export async function POST(request: NextRequest) {
       contactId = createdJson.contact?.id || createdJson.id || null;
       created = true;
 
-      if (contactId) await appendNote(contactId, noteText, PIT);
+      if (contactId) await replaceNote(contactId, noteText, PIT);
     }
 
     return Response.json({ ok: true, contactId, created, form_source: formSource });

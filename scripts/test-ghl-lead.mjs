@@ -70,11 +70,6 @@ const LOCKED = new Set([
 ]);
 
 const WRITE_ONCE = new Set([
-  "are_you_a_new_or_existing_patient",
-  "form_message",
-  "patient_message",
-  "smile_analysis_yes_count",
-  "smile_analysis_answers",
   "form_consent_sms",
   "form_consent_marketing",
   "form_consent_sms_timestamp",
@@ -131,11 +126,15 @@ async function createContact(body) {
 
 async function updateContact(id, body) {
   const recentCustomFields = buildCustomFields(body, "update");
-  if (recentCustomFields.length > 0) {
-    const payload = { customFields: recentCustomFields };
-    const r = await fetch(`${GHL}/contacts/${id}`, { method: "PUT", headers, body: JSON.stringify(payload) });
-    if (!r.ok) throw new Error(`update HTTP ${r.status}: ${await r.text()}`);
-  }
+  const payload = { customFields: recentCustomFields };
+  // Mirror app/api/lead/route.ts: name/phone update on every submission
+  // (latest wins) — email intentionally excluded, it's the lookup key.
+  if (body.first_name) payload.firstName = body.first_name;
+  if (body.last_name) payload.lastName = body.last_name;
+  if (body.full_name) payload.name = body.full_name;
+  if (body.phone) payload.phone = body.phone;
+  const r = await fetch(`${GHL}/contacts/${id}`, { method: "PUT", headers, body: JSON.stringify(payload) });
+  if (!r.ok) throw new Error(`update HTTP ${r.status}: ${await r.text()}`);
 
   const newTags = [
     `form:${body.form_source}`,
@@ -153,7 +152,14 @@ async function updateContact(id, body) {
   }
 }
 
-async function postNote(id, body) {
+async function replaceNote(id, body) {
+  const listRes = await fetch(`${GHL}/contacts/${id}/notes`, { headers });
+  if (listRes.ok) {
+    const { notes } = await listRes.json();
+    for (const note of notes || []) {
+      await fetch(`${GHL}/contacts/${id}/notes/${note.id}`, { method: "DELETE", headers });
+    }
+  }
   const r = await fetch(`${GHL}/contacts/${id}/notes`, { method: "POST", headers, body: JSON.stringify({ body }) });
   if (!r.ok) throw new Error(`note post HTTP ${r.status}: ${await r.text()}`);
   return r.json();
@@ -268,37 +274,42 @@ const secondTouch = {
   utm_source_captured: "perplexity",
   gclid_captured: undefined,
 
-  // WRITE_ONCE qualification with different values — MUST NOT overwrite
+  // "Latest wins" fields — SHOULD update (per-client customization)
   are_you_a_new_or_existing_patient: "Existing Patient", // was "New Patient"
-  form_message: "OVERWRITE_ATTEMPTED",
-  patient_message: "OVERWRITE_ATTEMPTED",
+  form_message: "Second touch message.",
+  patient_message: "Second touch message.",
   smile_analysis_yes_count: 17, // was 5
+
+  // SMS consent legal record — MUST NOT overwrite (first-grant timestamp
+  // stays the legally meaningful one even though other fields update)
   form_consent_sms_text: "OVERWRITE_ATTEMPTED",
 
   form_source: "smile-analysis",
   form_source_url: "https://piedmontdentalbydesign.com/resources/smile-analysis",
 };
 
+// Only true first-touch attribution + the SMS consent legal record are
+// preserved for this client — everything else is "latest wins" by design.
 const EXPECTED_PRESERVED = {
-  firstName: "Smoke",
-  lastName: "Test",
   email: TEST_EMAIL,
-  phone: TEST_PHONE,
   visitor_source_first: "Paid Search",
   attribution_method: "gclid",
   gclid_captured: "TEST_GCLID_001",
   utm_source_captured: "google",
-  are_you_a_new_or_existing_patient: "New Patient",
-  form_message: "I'd like to book a consultation for porcelain veneers.",
-  patient_message: "I'd like to book a consultation for porcelain veneers.",
-  smile_analysis_yes_count: 5,
   form_consent_sms_text: "I consent to receive text messages from Piedmont Dental By Design...",
 };
 
 const EXPECTED_UPDATED = {
+  firstName: "OVERWRITE",
+  lastName: "ATTEMPTED",
+  phone: "+15555550000",
   visitor_source_recent: "AI Search",
   landing_page_recent: "/procedures/cosmetic-dentistry/porcelain-veneers",
   referrer_recent: "https://www.perplexity.ai/",
+  are_you_a_new_or_existing_patient: "Existing Patient",
+  form_message: "Second touch message.",
+  patient_message: "Second touch message.",
+  smile_analysis_yes_count: 17,
 };
 
 const EXPECTED_PRESERVED_TAGS = [
@@ -333,7 +344,7 @@ try {
   console.log(`   ✓ Created contact ${createdId}`);
 
   console.log("\n2b. Posting a contact note (answer-resilience channel)…");
-  await postNote(createdId, "Smoke test note — please ignore or delete.");
+  await replaceNote(createdId, "First touch note — please ignore or delete.");
   const notes = await listNotes(createdId);
   console.log(notes.length > 0 ? `   ✓ Note landed (${notes.length} total)` : "   ✗ Note did not land");
 
@@ -347,9 +358,10 @@ try {
     console.warn(`   ⚠ Expected type="Lead" but got "${after1.type}". Check GHL Contact Type field options.`);
   }
 
-  console.log("\n4. Re-submitting same email with different channel + corrupted values…");
+  console.log("\n4. Re-submitting same email with different channel + latest-wins values…");
   await updateContact(createdId, secondTouch);
   console.log("   ✓ Update PUT returned OK");
+  await replaceNote(createdId, "Second touch note — should REPLACE the first, not add to it.");
 
   console.log("\n5. Verifying no-overwrite contract…");
   await new Promise((r) => setTimeout(r, 1500));
@@ -366,10 +378,14 @@ try {
   }
 
   for (const [field, expected] of Object.entries(EXPECTED_UPDATED)) {
-    const actual = customFieldValue(after2, field);
+    const actual = field in after2 ? after2[field] : customFieldValue(after2, field);
     if (actual === expected) pass(`${field} updated (${JSON.stringify(actual)})`);
     else fail(`${field} NOT UPDATED: expected ${JSON.stringify(expected)}, got ${JSON.stringify(actual)}`);
   }
+
+  const finalNotes = await listNotes(createdId);
+  if (finalNotes.length === 1) pass(`note replaced, not appended (1 note total)`);
+  else fail(`note count wrong: expected 1 (replaced), got ${finalNotes.length}`);
 
   const finalTags = after2.tags || [];
   for (const t of EXPECTED_PRESERVED_TAGS) {
