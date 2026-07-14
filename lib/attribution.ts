@@ -67,10 +67,14 @@ export interface AttributionData {
   referrer_url_captured?: string;
   first_visit_at_iso?: string;
 
-  // Most-recent external visit (updated each external visit)
+  // Most-recent external visit (updated each external visit). Field names
+  // match the GHL Master Schema Group A fieldKeys exactly (landing_page_recent
+  // / referrer_recent, not last_landing_page / last_referrer) so the lead API
+  // payload doesn't need a translation step — GHL silently drops any
+  // customFields key that isn't a real provisioned fieldKey.
   last_visit_at_iso?: string;
-  last_landing_page?: string;
-  last_referrer?: string;
+  landing_page_recent?: string;
+  referrer_recent?: string;
 }
 
 // ──────────────────────────────────────────────────────────────────
@@ -333,8 +337,8 @@ export function captureAttribution() {
   updated.visitor_source_recent = signal.channel;
   updated.aeo_source_engine_recent = signal.aeoEngine;
   updated.last_visit_at_iso = now;
-  updated.last_landing_page = landingPage;
-  updated.last_referrer = referrer || undefined;
+  updated.landing_page_recent = landingPage;
+  updated.referrer_recent = referrer || undefined;
 
   // Upgrade path per PRD 1.2: if current method = 'inferred' (Low confidence)
   // and new visit has a higher-confidence method, allow the upgrade.

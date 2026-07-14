@@ -2,12 +2,15 @@
 
 import { useState, type FormEvent } from "react";
 import { getAttributionData } from "@/lib/attribution";
+import SmsConsent, { SMS_CONSENT_TEXT } from "@/components/SmsConsent";
 
 declare global {
   interface Window {
     dataLayer?: Record<string, unknown>[];
   }
 }
+
+const FORM_SOURCE = "piedmontdentalbydesign.com/resources/smile-analysis";
 
 const QUESTIONS: string[] = [
   "Are any of your teeth yellow, stained, or somewhat discolored?",
@@ -34,6 +37,10 @@ type Answers = Record<number, "yes" | "no" | undefined>;
 export default function SmileAnalysisForm() {
   const [answers, setAnswers] = useState<Answers>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [smsConsent, setSmsConsent] = useState(false);
+  const [consentError, setConsentError] = useState("");
   const [contactData, setContactData] = useState({
     firstName: "",
     lastName: "",
@@ -51,15 +58,18 @@ export default function SmileAnalysisForm() {
     setAnswers((prev) => ({ ...prev, [i]: value }));
   }
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // Build a mailto: with the answers + contact details so the practice
-    // gets a complete picture even without a backend in place.
-    const lines = [
-      `Smile Analysis from: ${contactData.firstName} ${contactData.lastName}`.trim(),
-      `Email: ${contactData.email}`,
-      `Phone: ${contactData.phone}`,
-      "",
+    setErrorMessage("");
+
+    if (!smsConsent) {
+      setConsentError("Please check the box above to consent to text messages before submitting.");
+      return;
+    }
+    setConsentError("");
+    setSubmitting(true);
+
+    const formattedAnswers = [
       `Yes count: ${yesCount} / ${QUESTIONS.length}`,
       "",
       "Answers:",
@@ -69,23 +79,64 @@ export default function SmileAnalysisForm() {
       "",
       "Additional info:",
       contactData.additional || "(none provided)",
-    ];
-    const body = encodeURIComponent(lines.join("\n"));
-    const subject = encodeURIComponent(
-      `Smile Analysis — ${contactData.firstName} ${contactData.lastName}`.trim()
-    );
-    window.location.href = `mailto:info@piedmontdentalbydesign.com?subject=${subject}&body=${body}`;
+    ].join("\n");
 
+    const nowIso = new Date().toISOString();
     const attribution = getAttributionData();
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: "generate_lead",
-      form_source: "piedmontdentalbydesign.com/resources/smile-analysis",
-      form_intent_type: "smile_analysis",
-      ...attribution,
-    });
 
-    setSubmitted(true);
+    const payload = {
+      first_name: contactData.firstName,
+      last_name: contactData.lastName,
+      full_name: `${contactData.firstName} ${contactData.lastName}`.trim(),
+      email: contactData.email,
+      phone: contactData.phone,
+      form_source: FORM_SOURCE,
+      form_name: "Smile Analysis",
+      form_source_url: typeof window !== "undefined" ? window.location.href : undefined,
+      form_intent_type: "consultation",
+      smile_analysis_yes_count: yesCount,
+      smile_analysis_answers: formattedAnswers,
+      form_consent_sms: true,
+      form_consent_marketing: true,
+      form_consent_sms_timestamp: nowIso,
+      form_consent_sms_text: SMS_CONSENT_TEXT,
+      note: `Smile Analysis quiz — ${yesCount}/${QUESTIONS.length} yes answers.\n\n${formattedAnswers}`,
+      ...attribution,
+    };
+
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const json = await res.json();
+      if (!res.ok || !json.ok) {
+        console.error("[smile analysis] submission failed", json);
+        setErrorMessage(
+          "Something went wrong sending your analysis. Please call us at (510) 350-3937 or try again."
+        );
+        setSubmitting(false);
+        return;
+      }
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "generate_lead",
+        form_source: FORM_SOURCE,
+        form_intent_type: "consultation",
+        ...attribution,
+      });
+
+      setSubmitted(true);
+      setSubmitting(false);
+    } catch (err) {
+      console.error("[smile analysis] network error", err);
+      setErrorMessage(
+        "Something went wrong sending your analysis. Please call us at (510) 350-3937 or try again."
+      );
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -96,12 +147,11 @@ export default function SmileAnalysisForm() {
           Your analysis is on its way.
         </h2>
         <p>
-          A message draft just opened in your email client with your answers.
-          Send it and we&apos;ll review your responses and follow up within
-          one business day.
+          We&apos;ve received your responses and will review them and follow
+          up within one business day.
         </p>
         <p className="smile-analysis-thanks-note">
-          If nothing opened, you can email us directly at{" "}
+          Need us sooner? Email{" "}
           <a href="mailto:info@piedmontdentalbydesign.com">
             info@piedmontdentalbydesign.com
           </a>{" "}
@@ -270,12 +320,28 @@ export default function SmileAnalysisForm() {
           />
         </div>
 
+        <SmsConsent
+          id="smile-analysis-sms-consent"
+          checked={smsConsent}
+          onCheckedChange={(v) => {
+            setSmsConsent(v);
+            if (v) setConsentError("");
+          }}
+          errorMessage={consentError}
+        />
+
+        {errorMessage && (
+          <p className="form-error" role="alert">
+            {errorMessage}
+          </p>
+        )}
+
         <button
           type="submit"
           className="btn btn-primary btn-lg smile-analysis-submit"
-          disabled={!allAnswered}
+          disabled={!allAnswered || submitting}
         >
-          Submit my analysis →
+          {submitting ? "Sending…" : "Submit my analysis →"}
         </button>
         {!allAnswered && (
           <p className="smile-analysis-hint">
