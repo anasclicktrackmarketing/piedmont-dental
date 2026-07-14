@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Smile Analysis: Yes Count",
+    "fieldKey": "smile_analysis_yes_count",
+    "dataType": "NUMERICAL"
+  },
+  {
+    "name": "Smile Analysis: Answers",
+    "fieldKey": "smile_analysis_answers",
+    "dataType": "LARGE_TEXT"
+  },
+  {
+    "name": "Form Consent SMS Timestamp",
+    "fieldKey": "form_consent_sms_timestamp",
+    "dataType": "TEXT"
+  },
+  {
+    "name": "Form Consent SMS Text",
+    "fieldKey": "form_consent_sms_text",
+    "dataType": "LARGE_TEXT"
+  }
+]
