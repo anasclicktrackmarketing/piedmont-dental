@@ -168,13 +168,15 @@ export default function StructuredData() {
         { "@id": `${SITE}/#dr-cangini` },
         { "@id": `${SITE}/#dr-ma` },
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "351",
-        bestRating: "5",
-        worstRating: "1",
-      },
+      // No aggregateRating here on purpose: Google disallows self-serving
+      // review markup on a business's own Organization/LocalBusiness schema
+      // when it isn't backed by a live, verifiable feed (Places API, a
+      // review platform's structured export, etc.) — see manual-action
+      // guidance in Google's review snippet documentation. Star rich
+      // results come from the Google Business Profile, not on-site markup.
+      // The "4.9 on Google" copy in Reviews.tsx/AwardsStrip.tsx/Hero.tsx is
+      // fine to keep as plain visible text; it just can't be marked up here
+      // without a real data source behind it.
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Dental services at Piedmont Dental By Design",
