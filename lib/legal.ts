@@ -38,6 +38,7 @@ export const LEGAL_DOCS: Array<{
     title: "Terms & Conditions",
     description:
       "The terms governing your access to and use of the Piedmont Dental By Design website and services.",
+    effectiveDate: "July 14, 2026",
   },
   {
     slug: "privacy-policy-2",
@@ -45,6 +46,7 @@ export const LEGAL_DOCS: Array<{
     title: "Privacy Policy",
     description:
       "How Piedmont Dental By Design collects, stores, and uses personally identifiable information from visitors and patients.",
+    effectiveDate: "July 14, 2026",
   },
   {
     slug: "notice-of-privacy-practices",

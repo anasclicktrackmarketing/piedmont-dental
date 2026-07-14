@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "indexnow:generate-key": "node scripts/generate-indexnow-key.mjs",
+    "indexnow:submit": "node scripts/indexnow-submit.mjs",
+    "indexnow:submit-sitemap": "node scripts/indexnow-submit.mjs --sitemap",
+    "bwt:submit": "node scripts/bwt-submit-urls.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

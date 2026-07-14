@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import StructuredData from "@/components/StructuredData";
 import BestOfBayBadge from "@/components/BestOfBayBadge";
+import { GTMScript, GTMNoScript } from "@/components/GoogleTagManager";
+import AttributionCapture from "@/components/AttributionCapture";
+import VirtualPageview from "@/components/VirtualPageview";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -107,6 +110,19 @@ export const metadata: Metadata = {
     email: true,
     address: true,
   },
+  // Search engine ownership verification — env-var driven so the real tokens
+  // from Google Search Console / Bing Webmaster Tools can be dropped in via
+  // Vercel project env vars with no code change. See GOOGLE_SITE_VERIFICATION
+  // and BING_SITE_VERIFICATION in .env.example. Omitted entirely (no empty
+  // tag rendered) until a real token is set.
+  verification: {
+    ...(process.env.GOOGLE_SITE_VERIFICATION
+      ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+      : {}),
+    ...(process.env.BING_SITE_VERIFICATION
+      ? { other: { "msvalidate.01": process.env.BING_SITE_VERIFICATION } }
+      : {}),
+  },
   other: {
     "geo.region": "US-CA",
     "geo.placename": "Piedmont, California",
@@ -132,9 +148,13 @@ export default function RootLayout({
   return (
     <html lang="en-US" className={`${fraunces.variable} ${inter.variable}`}>
       <body>
+        <GTMNoScript />
+        <AttributionCapture />
+        <VirtualPageview />
         {children}
         <BestOfBayBadge />
         <StructuredData />
+        <GTMScript />
       </body>
     </html>
   );

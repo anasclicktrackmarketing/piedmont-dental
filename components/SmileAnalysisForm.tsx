@@ -1,6 +1,13 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { getAttributionData } from "@/lib/attribution";
+
+declare global {
+  interface Window {
+    dataLayer?: Record<string, unknown>[];
+  }
+}
 
 const QUESTIONS: string[] = [
   "Are any of your teeth yellow, stained, or somewhat discolored?",
@@ -68,6 +75,16 @@ export default function SmileAnalysisForm() {
       `Smile Analysis — ${contactData.firstName} ${contactData.lastName}`.trim()
     );
     window.location.href = `mailto:info@piedmontdentalbydesign.com?subject=${subject}&body=${body}`;
+
+    const attribution = getAttributionData();
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "generate_lead",
+      form_source: "piedmontdentalbydesign.com/resources/smile-analysis",
+      form_intent_type: "smile_analysis",
+      ...attribution,
+    });
+
     setSubmitted(true);
   }
 

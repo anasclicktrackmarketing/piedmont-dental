@@ -3,98 +3,150 @@ url: https://piedmontdentalbydesign.com/privacy-policy-2
 slug: privacy-policy
 title: Privacy Policy
 category: legal
-fetched: 2026-05-05
+fetched: 2026-07-14
 fetchStatus: complete
 featuredImage: ""
 sectionHeadings:
   - Privacy Policy
-  - "\"Personally Identifiable Information\""
-  - What Personally Identifiable Information is collected?
-  - What organizations are collecting the information?
-  - How does the Site use Personally Identifiable Information?
-  - With whom may the information may be shared?
-  - How is Personally Identifiable Information stored?
-  - What choices are available to Visitors regarding collection, use and distribution of the information?
-  - Are Cookies Used on the Site?
-  - How does Piedmont Dental By Design use login information?
-  - What partners or service providers have access to Personally Identifiable Information from Visitors and/or Authorized Customers on the Site?
-  - How does the Site keep Personally Identifiable Information secure?
-  - How can Visitors correct any inaccuracies in Personally Identifiable Information?
-  - Can a Visitor delete or deactivate Personally Identifiable Information collected by the Site?
-  - What happens if the Privacy Policy Changes?
-  - Links
-metaDescription: ""
+  - 1. Information We Collect
+  - 2. How We Use Your Information
+  - 3. SMS Communications
+  - 4. Cookies, Tracking, and Third-Party Services
+  - 5. How We Share Your Information
+  - 6. Data Security
+  - 7. Data Retention
+  - 8. Your Rights Under California Law
+  - 9. Children's Privacy
+  - 10. Third-Party Links
+  - 11. Changes to This Policy
+  - 12. Contact Us
+metaDescription: "Privacy Policy for Piedmont Dental By Design — how we collect, use, and protect your personal information, including website data, form submissions, and SMS communications."
+effectiveDate: July 14, 2026
 ---
 
 # Privacy Policy
 
-Welcome to https://piedmontdentalbydesign.com (the "Site"). We understand that privacy online is important to users of our Site, especially when conducting business. This statement governs our privacy policies with respect to those users of the Site ("Visitors") who visit without transacting business and Visitors who register to transact business on the Site and make use of the various services offered by Piedmont Dental By Design (collectively, "Services") ("Authorized Customers").
+Piedmont Dental By Design ("Piedmont Dental By Design," "we," "us," or "our") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy describes how we collect, use, disclose, and safeguard information collected through our website at [piedmontdentalbydesign.com](https://piedmontdentalbydesign.com) (the "Site"), through our online forms, through SMS communications, and in connection with our general, cosmetic, and restorative dentistry services.
 
-## "Personally Identifiable Information"
+By using the Site, submitting a form, or opting in to receive SMS messages from us, you acknowledge that you have read and understood this Privacy Policy.
 
-"Personally Identifiable Information" refers to any information that identifies or can be used to identify, contact, or locate the person to whom such information pertains, including, but not limited to, name, address, phone number, fax number, email address, financial profiles, social security number, and credit card information. Personally Identifiable Information does not include information that is collected anonymously (that is, without identification of the individual user) or demographic information not connected to an identified individual.
+This Privacy Policy covers information collected through our website and marketing communications. It does not cover Protected Health Information (PHI) created or received in the course of your dental treatment, which is governed separately by our [Notice of Privacy Practices](/notice-of-privacy-practices) under HIPAA.
 
-## What Personally Identifiable Information is collected?
+## 1. Information We Collect
 
-We may collect basic user profile information from all of our Visitors. We collect the following additional information from our Authorized Customers: the names, addresses, phone numbers and email addresses of Authorized Customers, the nature and size of the business, and the nature and size of the advertising inventory that the Authorized Customer intends to purchase or sell.
+We collect the following categories of information:
 
-## What organizations are collecting the information?
+**Information You Provide Directly**
 
-In addition to our direct collection of information, our third party service vendors (such as credit card companies, clearinghouses and banks) who may provide such services as credit, insurance, and escrow services may collect this information from our Visitors and Authorized Customers. We do not control how these third parties use such information, but we do ask them to disclose how they use personal information provided to them from Visitors and Authorized Customers. Some of these third parties may be intermediaries that act solely as links in the distribution chain, and do not store, retain, or use the information given to them.
+- Name, email address, phone number, and any other contact details you submit through an appointment request or contact form.
+- Information you voluntarily share about your dental concerns, preferred appointment times, insurance provider, or other free-text notes submitted through a form.
+- Any additional information you provide during SMS, email, or telephone communications with our team.
+- Your mobile phone number if you opt in to receive SMS messages from us.
 
-## How does the Site use Personally Identifiable Information?
+**Information Collected Automatically**
 
-We use Personally Identifiable Information to customize the Site, to make appropriate service offerings, and to fulfill buying and selling requests on the Site. We may email Visitors and Authorized Customers about research or purchase and selling opportunities on the Site or information related to the subject matter of the Site. We may also use Personally Identifiable Information to contact Visitors and Authorized Customers in response to specific inquiries, or to provide requested information.
+- Device and browser information (IP address, browser type, operating system, screen size).
+- Page interaction data (pages viewed, time on site, referring URLs, clickstream data).
+- Marketing attribution signals such as UTM parameters, Google Click IDs (gclid), Meta Click IDs (fbclid), Bing Click IDs (msclkid), and TikTok Click IDs (ttclid) passed through URLs when you arrive at our Site from an advertisement or referral.
+- The referring website or search query, when available, that brought you to the Site — including referrals from AI search assistants such as ChatGPT, Perplexity, Copilot, Gemini, and Claude.
+- Cookies and similar technologies, including first-party cookies we set and, where applicable, third-party cookies from the services listed in Section 4.
 
-## With whom may the information may be shared?
+## 2. How We Use Your Information
 
-Personally Identifiable Information about Authorized Customers may be shared with other Authorized Customers who wish to evaluate potential transactions with other Authorized Customers. We may share aggregated information about our Visitors, including the demographics of our Visitors and Authorized Customers, with our affiliated agencies and third party vendors. We also offer the opportunity to "opt out" of receiving information or being contacted by us or by any agency acting on our behalf.
+We use the information we collect for the following purposes:
 
-## How is Personally Identifiable Information stored?
+- To respond to your inquiries, schedule appointments, and provide information about our dental services.
+- To deliver patient support and communicate with you about scheduled or ongoing care.
+- To send SMS updates, appointment reminders, and other service-related communications, where you have opted in.
+- To improve the Site, our services, and the user experience through analytics and performance monitoring.
+- To measure the effectiveness of our marketing efforts and understand which channels (search engines, paid ads, referrals, AI search assistants) bring visitors to the Site.
+- To comply with legal obligations and enforce our terms and policies.
 
-Personally Identifiable Information collected by Piedmont Dental By Design is securely stored and is not accessible to third parties or employees of Piedmont Dental By Design except for use as indicated above.
+## 3. SMS Communications
 
-## What choices are available to Visitors regarding collection, use and distribution of the information?
+### SMS Opt-In
 
-Visitors and Authorized Customers may opt out of receiving unsolicited information from or being contacted by us and/or our vendors and affiliated agencies by responding to emails as instructed, or by contacting us at 1331 Grand Ave, Piedmont, CA 94610, United States
+By providing your mobile phone number through our website forms, online chat, or direct communication with our team and indicating your consent to receive SMS messages, you agree to receive text messages from Piedmont Dental By Design at that number. These messages may include appointment confirmations and reminders, recall and hygiene reminders, treatment follow-ups, and practice updates.
 
-## Are Cookies Used on the Site?
+### Message Frequency and Rates
 
-Cookies are used for a variety of reasons. We use Cookies to obtain information about the preferences of our Visitors and the services they select. We also use Cookies for security purposes to protect our Authorized Customers. For example, if an Authorized Customer is logged on and the site is unused for more than 10 minutes, we will automatically log the Authorized Customer off.
+Message frequency varies based on your interactions with us. Standard message and data rates from your mobile carrier may apply. We do not charge a fee for our SMS messages.
 
-## How does Piedmont Dental By Design use login information?
+### Opt-Out
 
-Piedmont Dental By Design uses login information, including, but not limited to, IP addresses, ISPs, and browser types, to analyze trends, administer the Site, track a user's movement and use, and gather broad demographic information.
+You may opt out of receiving SMS messages from us at any time by replying **STOP** to any SMS message you receive from us. After opting out, you will no longer receive promotional or reminder SMS messages from us, though we may still send transactional messages directly related to an active or upcoming appointment. For assistance at any time, reply **HELP** to any SMS from us or contact us directly at [(510) 350-3937](tel:+15103503937) or [info@piedmontdentalbydesign.com](mailto:info@piedmontdentalbydesign.com).
 
-## What partners or service providers have access to Personally Identifiable Information from Visitors and/or Authorized Customers on the Site?
+### SMS Consent and Third Parties
 
-Piedmont Dental By Design has entered into and will continue to enter into partnerships and other affiliations with a number of vendors. Such vendors may have access to certain Personally Identifiable Information on a need to know basis for evaluating Authorized Customers for service eligibility. Our privacy policy does not cover their collection or use of this information. Disclosure of Personally Identifiable Information to comply with law. We will disclose Personally Identifiable Information in order to comply with a court order or subpoena or a request from a law enforcement agency to release information. We will also disclose Personally Identifiable Information when reasonably necessary to protect the safety of our Visitors and Authorized Customers.
+Your SMS consent and mobile phone number will not be shared, sold, or rented to third parties for marketing purposes. We may share your mobile number with service providers that assist us in delivering SMS messages on our behalf (for example, our messaging or scheduling platform), and those providers are contractually bound to use your information only for the purpose of delivering our messages.
 
-## How does the Site keep Personally Identifiable Information secure?
+## 4. Cookies, Tracking, and Third-Party Services
 
-All of our employees are familiar with our security policy and practices. The Personally Identifiable Information of our Visitors and Authorized Customers is only accessible to a limited number of qualified employees who are given a password in order to gain access to the information. We audit our security systems and processes on a regular basis. Sensitive information, such as credit card numbers or social security numbers, is protected by encryption protocols, in place to protect information sent over the Internet. While we take commercially reasonable measures to maintain a secure site, electronic communications and databases are subject to errors, tampering and break-ins, and we cannot guarantee or warrant that such events will not take place and we will not be liable to Visitors or Authorized Customers for any such occurrences.
+We use cookies, local storage, and similar tracking technologies on our Site to:
 
-## How can Visitors correct any inaccuracies in Personally Identifiable Information?
+- Remember your preferences across visits.
+- Record marketing attribution signals, including first-touch and most-recent source of a visit, so we can understand which marketing channels drive inquiries to our practice.
+- Operate analytics and measure Site performance.
+- Deliver and measure advertising campaigns, if and when such campaigns are active.
 
-Visitors and Authorized Customers may contact us to update Personally Identifiable Information about them or to correct any inaccuracies by emailing us at info@piedmontdentalbydesign.com
+**Specific services we use**
 
-## Can a Visitor delete or deactivate Personally Identifiable Information collected by the Site?
+Our Site uses the following third-party services, each of which may collect data subject to its own privacy policy:
 
-We provide Visitors and Authorized Customers with a mechanism to delete/deactivate Personally Identifiable Information from the Site's database by contacting . However, because of backups and records of deletions, it may be impossible to delete a Visitor's entry without retaining some residual information. An individual who requests to have Personally Identifiable Information deactivated will have this information functionally deleted, and we will not sell, transfer, or use Personally Identifiable Information relating to that individual in any way moving forward.
+- **Google Tag Manager & Google Analytics (GA4)** — website analytics, attribution measurement, and conversion tracking.
+- **Vercel** — website hosting and serverless function delivery.
 
-## What happens if the Privacy Policy Changes?
+You may disable cookies through your browser settings, though some parts of the Site may not function as intended if cookies are declined.
 
-We will let our Visitors and Authorized Customers know about changes to our privacy policy by posting such changes on the Site. However, if we are changing our privacy policy in a manner that might cause disclosure of Personally Identifiable Information that a Visitor or Authorized Customer has previously requested not be disclosed, we will contact such Visitor or Authorized Customer to allow such Visitor or Authorized Customer to prevent such disclosure.
+## 5. How We Share Your Information
 
-## Links
+**We do not sell or rent your personal information to third parties.** We share information only as described below:
 
-https://piedmontdentalbydesign.com contains links to other web sites. Please note that when you click on one of these links, you are moving to another web site. We encourage you to read the privacy statements of these linked sites as their privacy policies may differ from ours.
+- **Service providers** — trusted third-party vendors that help us operate our practice and deliver our services, including scheduling and communications platforms, SMS delivery providers, website hosting, and analytics services. These providers are contractually bound to confidentiality and may use your information only for the services they provide to us.
+- **Legal and safety** — when required by law, subpoena, court order, or to protect the rights, property, or safety of Piedmont Dental By Design, our patients, or others.
+- **Business transfers** — in connection with a merger, acquisition, reorganization, or sale of assets, your information may be transferred as part of that transaction, subject to the same protections in this Policy.
 
-Piedmont Dentists, Dr Jill Martenson is a dental professional dedicated to General, Family & Cosmetic Dentistry with services including Dental Exams, Dental Makeovers, Teeth Whitening, Veneers, Crowns, X-rays, Fluoride, Cleanings, & more. Please come and visit Piedmont Dental by Design in Piedmont, CA today.
+## 6. Data Security
 
-## CTAs
+We implement commercially reasonable administrative, technical, and physical safeguards to protect your personal information against unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the Internet or method of electronic storage is 100% secure, and we cannot guarantee absolute security. You transmit information to us at your own risk.
 
-- "REQUEST APPOINTMENT" (button linking to contact page)
-- Contact information: (510)-956-6475
-- Email: info@piedmontdentalbydesign.com
-- Address: 1331 Grand Ave, Piedmont, CA 94610
+## 7. Data Retention
+
+We retain personal information for as long as is necessary to fulfill the purposes described in this Policy, comply with our legal obligations, resolve disputes, and enforce our agreements. Website inquiry and marketing data is generally retained for as long as your contact record remains active in our systems. When your information is no longer needed, we will securely delete or anonymize it. *(Retention periods for dental treatment records are governed separately by California recordkeeping requirements and our Notice of Privacy Practices, not this Policy.)*
+
+## 8. Your Rights Under California Law
+
+If you are a California resident, the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA) give you the following rights:
+
+- **Right to Know** — the categories and specific pieces of personal information we have collected about you, the sources of that information, and the third parties (if any) with whom we have shared it.
+- **Right to Delete** — the deletion of the personal information we have collected about you, subject to limited legal exceptions.
+- **Right to Correct** — the correction of inaccurate personal information we maintain about you.
+- **Right to Opt-Out of Sale or Sharing** — the right to opt out of the sale or sharing of your personal information. We do not sell personal information, and we do not share your personal information with third parties for cross-context behavioral advertising.
+- **Right to Non-Discrimination** — you will not receive discriminatory treatment for exercising any of your privacy rights.
+
+To exercise any of these rights, please contact us using the information in the "Contact Us" section below. We may need to verify your identity before responding to your request.
+
+## 9. Children's Privacy
+
+Our Site and services are directed to adults and are not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected such information, we will delete it promptly.
+
+## 10. Third-Party Links
+
+Our Site may contain links to third-party websites, such as social media platforms and review directories. We are not responsible for the privacy practices of those third parties. We encourage you to review the privacy policies of any third-party sites you visit.
+
+## 11. Changes to This Policy
+
+We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we do, we will revise the "Effective Date" at the top of this page. We encourage you to review this Policy periodically. Your continued use of the Site after the revised Policy becomes effective constitutes your acceptance of the updated terms.
+
+## 12. Contact Us
+
+If you have any questions or concerns about this Privacy Policy or our data practices, or if you wish to exercise any of your rights, please contact us at:
+
+**Piedmont Dental By Design**
+1331 Grand Ave
+Piedmont, CA 94610
+
+Phone: [(510) 350-3937](tel:+15103503937)
+Email: [info@piedmontdentalbydesign.com](mailto:info@piedmontdentalbydesign.com)
+
+Thank you for trusting Piedmont Dental By Design with your personal information.

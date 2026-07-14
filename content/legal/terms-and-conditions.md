@@ -3,79 +3,84 @@ url: https://piedmontdentalbydesign.com/terms-and-conditions
 slug: terms-and-conditions
 title: Terms and Conditions - Piedmont Dental By Design
 category: legal
-fetched: 2026-05-05
+fetched: 2026-07-14
 fetchStatus: complete
 featuredImage: ""
 sectionHeadings:
   - Terms and Conditions
-  - Intellectual Property
-  - Third Party Services
-  - Accounts
-  - Termination
-  - Disclaimer
-  - Jurisdiction and Applicable Law
-  - Changes
-metaDescription: ""
+  - 1. Acceptance of Terms
+  - 2. Use of the Site
+  - 3. Appointment Requests, Estimates, and Treatment Plans
+  - 4. Intellectual Property
+  - 5. Third-Party Links and Tools
+  - 6. Disclaimers and Limitation of Liability
+  - 7. Service-Specific Terms
+  - 8. Communications and Consent
+  - 9. Governing Law
+  - 10. Changes to These Terms
+  - 11. Contact
+metaDescription: "Terms governing the use of piedmontdentalbydesign.com and the services provided by Piedmont Dental By Design."
+effectiveDate: July 14, 2026
 ---
 
 # Terms and Conditions
 
-These Terms govern your access to, usage of all content, Product and Services available at https://piedmontdentalbydesign.com website (the "Service") operated by Piedmont Dental By Design ("us", "we", or "our").
+## 1. Acceptance of Terms
 
-Your access to our services are subject to your acceptance, without modification, of all of the terms and conditions contained herein and all other operating rules and policies published and that may be published from time to time by us.
+By accessing or using [piedmontdentalbydesign.com](https://piedmontdentalbydesign.com) (the "Site"), you agree to be bound by these Terms and Conditions and our [Privacy Policy](/privacy-policy-2). If you do not agree, please do not use the Site.
 
-Please read the Agreement carefully before accessing or using our Services. By accessing or using any part of our Services, you agree to be bound by these Terms. If you do not agree to any part of the terms of the Agreement, then you may not access or use our Services.
+## 2. Use of the Site
 
-## Intellectual Property
+You agree to use the Site only for lawful purposes. You will not:
 
-The Agreement does not transfer from Us to you any of Ours or third party intellectual property, and all right, title, and interest in and to such property will remain (as between the parties) solely with Piedmont Dental By Design and its licensors.
+- Attempt to gain unauthorized access to any portion of the Site or related systems.
+- Use automated tools (scrapers, bots) to extract data from the Site beyond what is permitted by robots.txt.
+- Submit false, inaccurate, or misleading information through any form on the Site.
+- Use the Site in any way that violates applicable federal, state, or local law.
 
-## Third Party Services
+## 3. Appointment Requests, Estimates, and Treatment Plans
 
-In using the Services, you may use third-party services, products, software, embeds, or applications developed by a third party ("Third Party Services").
+Any pricing, service descriptions, or other information shown on the Site or in response to an online appointment request are provided for general informational purposes only. They are not a diagnosis, a treatment recommendation, or a binding offer.
 
-If you use any Third Party Services, you understand that:
+Final treatment plans, pricing, and scope of care are determined only after an in-person examination and a signed treatment agreement or informed consent with Piedmont Dental By Design. Submitting an online appointment request does not guarantee an appointment time and does not create a dentist-patient relationship or any contractual obligation.
 
-- Any use of a Third Party Service is at your own risk, and we shall not be responsible or liable to anyone for Third Party websites or Services.
-- You acknowledge and agree that We shall not be responsible or liable for any damage or loss caused or alleged to be caused by or in connection with the use of any such content, goods or services available on or through any such web sites or services.
+## 4. Intellectual Property
 
-## Accounts
+All content on the Site — including text, graphics, photos, illustrations, design, and code — is the property of Piedmont Dental By Design or its licensors and is protected by U.S. and international copyright, trademark, and other intellectual property laws. You may view and print pages for personal, non-commercial use only. Reproduction, distribution, or modification of any content for commercial purposes without our written permission is prohibited.
 
-Where use of any part of our Services requires an account, you agree to provide us with complete and accurate information when you register for an account.
+## 5. Third-Party Links and Tools
 
-You will be solely responsible and liable for any activity that occurs under your account. You are responsible for keeping your account information up-to-date and for keeping your password secure.
+The Site may include links to third-party websites or embed third-party services (e.g., Google Analytics and Google Tag Manager). We are not responsible for the content, privacy practices, or accuracy of third-party sites. Your use of any third-party site is at your own risk and subject to that site's terms.
 
-You are responsible for maintaining the security of your account that you use to access the Service. You shall not share or misuse your access credentials. You must notify us immediately of any unauthorized uses of your account or upon becoming aware of any other breach of security.
+## 6. Disclaimers and Limitation of Liability
 
-## Termination
+The Site and its content are provided on an "as-is" and "as-available" basis without warranties of any kind, either express or implied. To the fullest extent allowed by California law, Piedmont Dental By Design disclaims all warranties of merchantability, fitness for a particular purpose, and non-infringement.
 
-We may terminate or suspend your access to all or any part of our Services at any time, with or without cause, with or without notice, effective immediately.
+Piedmont Dental By Design is not liable for indirect, incidental, special, consequential, or punitive damages arising from your use of the Site, including (but not limited to) lost profits, lost data, or business interruption. Our total aggregate liability for claims related to your use of the Site is limited to one hundred U.S. dollars ($100).
 
-If you wish to terminate the Agreement or your Piedmont Dental By Design account, you may simply discontinue using our Services.
+## 7. Service-Specific Terms
 
-All provisions of the Agreement which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+These Terms and Conditions govern your use of the website only. They are not a substitute for professional dental advice, diagnosis, or treatment, and nothing on this Site creates a dentist-patient relationship. Dental treatment, diagnosis, and care are governed by the informed consent and treatment agreements you sign in person at our office. If you have a dental emergency, please call our office directly or seek immediate medical attention rather than relying on the Site.
 
-## Disclaimer
+## 8. Communications and Consent
 
-Our Services are provided "AS IS." and "AS AVAILABLE" basis. Piedmont Dental By Design and its suppliers and licensors hereby disclaim all warranties of any kind, express or implied, including, without limitation, the warranties of merchantability, fitness for a particular purpose and non-infringement. Neither Piedmont Dental By Design, nor its suppliers and licensors, makes any warranty that our Services will be error free or that access thereto will be continuous or uninterrupted. You understand that you download from, or otherwise obtain content or services through, our Services at your own discretion and risk.
+By submitting your phone number through any form on the Site, you consent to receive calls and text messages from Piedmont Dental By Design about your inquiry, appointment, and related information. Message and data rates may apply. You can opt out at any time by replying **STOP** to a text or by calling [(510) 350-3937](tel:+15103503937). Reply **HELP** for assistance.
 
-## Jurisdiction and Applicable Law
+## 9. Governing Law
 
-Except to the extent any applicable law provides otherwise, the Agreement and any access to or use of our Services will be governed by the laws of United States.
+These Terms are governed by the laws of the State of California, without regard to conflict-of-law principles. Any dispute arising from these Terms or your use of the Site will be resolved in the state or federal courts located in Alameda County, California, and you consent to the personal jurisdiction of those courts.
 
-The proper venue for any disputes arising out of or relating to the Agreement and any access to or use of our Services will be the state and federal courts located in United States.
+## 10. Changes to These Terms
 
-## Changes
+We may update these Terms from time to time. The "Effective Date" at the top of this page reflects the most recent revision. Continued use of the Site after changes are posted constitutes acceptance of the revised Terms.
 
-Piedmont Dental By Design reserves the right, at our sole discretion, to modify or replace these Terms at any time.
+## 11. Contact
 
-If we make changes that are material, we will let you know by posting on our website, or by sending you an email or other communication before the changes take effect. The notice will designate a reasonable period of time after which the new terms will take effect.
+Questions about these Terms?
 
-If you disagree with our changes, then you should stop using our Services within the designated notice period, or once the changes become effective.
+**Piedmont Dental By Design**
+1331 Grand Ave
+Piedmont, CA 94610
 
-Your continued use of our Services will be subject to the new terms.
-
-## CTAs
-
-- [REQUEST APPOINTMENT](https://piedmontdentalbydesign.com/contact/)
-- Contact phone: [(510)-956-6475](tel:5109566475)
+Phone: [(510) 350-3937](tel:+15103503937)
+Email: [info@piedmontdentalbydesign.com](mailto:info@piedmontdentalbydesign.com)
