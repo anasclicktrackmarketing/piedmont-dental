@@ -71,8 +71,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/hero-poster.jpg",
-        width: 1920,
-        height: 1080,
+        width: 1280,
+        height: 720,
         alt: "Piedmont Dental By Design — Dr. Jill Martenson, Dr. David Ma, and team in Piedmont, California",
       },
     ],

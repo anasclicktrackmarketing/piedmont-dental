@@ -152,7 +152,7 @@ export default function SiteHeader() {
   return (
     <>
     <header className="site-header">
-      <nav className="nav">
+      <nav className="nav" aria-label="Main">
         <div className="nav-links nav-links--left">
           <div className="nav-dropdown nav-dropdown--wide">
             <Link href="/procedures" className="nav-dropdown-trigger">

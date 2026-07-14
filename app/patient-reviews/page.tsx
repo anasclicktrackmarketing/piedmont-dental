@@ -94,6 +94,7 @@ export default function PatientReviewsPage() {
                   rel="noopener noreferrer"
                 >
                   Leave a review on Google →
+                  <span className="sr-only"> (opens in a new window)</span>
                 </a>
                 <Link href="/patient-reviews/testimonial" className="btn btn-ghost btn-lg">
                   Read all testimonials
@@ -121,6 +122,7 @@ export default function PatientReviewsPage() {
                 Based on {REVIEW_TOTALS.google}+ reviews
               </div>
               <span className="reviews-hero-card-cta">View on Google →</span>
+              <span className="sr-only"> (opens in a new window)</span>
             </a>
           </div>
         </section>
@@ -232,6 +234,7 @@ export default function PatientReviewsPage() {
                 rel="noopener noreferrer"
               >
                 See all on Google →
+                <span className="sr-only"> (opens in a new window)</span>
               </a>
             </header>
 

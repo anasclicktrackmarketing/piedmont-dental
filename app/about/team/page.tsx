@@ -10,7 +10,7 @@ import SiteFooter from "@/components/SiteFooter";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Meet the Team | Piedmont Dental By Design",
+  title: "Meet the Team",
   description:
     "Meet the full team — three dentists plus seven practice staff: hygienists, assistants, and patient services. Real people who keep the practice running.",
   alternates: { canonical: "/about/team" },

@@ -104,6 +104,25 @@ function GoogleG({ size = 22 }: { size?: number }) {
   );
 }
 
+function YelpBurst({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="12" fill="#D32323" />
+      <g fill="#fff">
+        {Array.from({ length: 8 }).map((_, i) => (
+          <path
+            key={i}
+            d="M12 12 L12 3.6 A8.4 8.4 0 0 1 16.2 4.8 Z"
+            transform={`rotate(${i * 45} 12 12)`}
+            opacity={i % 2 === 0 ? 1 : 0.7}
+          />
+        ))}
+      </g>
+      <circle cx="12" cy="12" r="3.2" fill="#D32323" />
+    </svg>
+  );
+}
+
 function Stars() {
   return (
     <span className="g-stars" aria-label="5 out of 5">
@@ -127,6 +146,8 @@ function Stars() {
 
 const REVIEWS_URL =
   "https://www.google.com/search?q=Piedmont+Dental+By+Design+reviews";
+const YELP_URL =
+  "https://www.yelp.com/biz/piedmont-dental-by-design-piedmont-6";
 
 export default function Reviews() {
   // Render twice so the auto-scroll loop is seamless.
@@ -147,23 +168,35 @@ export default function Reviews() {
             </p>
           </div>
 
-          <a
-            className="g-summary"
-            href={REVIEWS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View all reviews on Google"
-          >
-            <div className="g-summary-top">
-              <GoogleG size={22} />
-              <span>Google reviews</span>
-            </div>
-            <div className="g-summary-score">
-              <span className="g-score-num">4.9</span>
-              <Stars />
-            </div>
-            <div className="g-summary-meta">Based on 350+ reviews</div>
-          </a>
+          <div className="reviews-head-right">
+            <a
+              className="g-summary"
+              href={REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View all reviews on Google (opens in a new window)"
+            >
+              <div className="g-summary-top">
+                <GoogleG size={22} />
+                <span>Google reviews</span>
+              </div>
+              <div className="g-summary-score">
+                <span className="g-score-num">4.9</span>
+                <Stars />
+              </div>
+              <div className="g-summary-meta">Based on 350+ reviews</div>
+            </a>
+            <a
+              className="yelp-link"
+              href={YELP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <YelpBurst size={18} />
+              <span>Also on Yelp</span>
+              <span className="sr-only"> (opens in a new window)</span>
+            </a>
+          </div>
         </header>
       </div>
 
@@ -206,6 +239,7 @@ export default function Reviews() {
             rel="noopener noreferrer"
           >
             Read all 350+ reviews on Google →
+            <span className="sr-only"> (opens in a new window)</span>
           </a>
         </div>
       </div>

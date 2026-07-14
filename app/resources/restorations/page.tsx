@@ -9,7 +9,7 @@ import SiteFooter from "@/components/SiteFooter";
 
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Restorations | Piedmont Dental By Design",
+  title: "Restorations",
   description:
     "Restorative dentistry — porcelain crowns, dental implants, dentures, composite fillings, and fixed bridges. All crafted to look and feel natural.",
   alternates: { canonical: "/resources/restorations" },

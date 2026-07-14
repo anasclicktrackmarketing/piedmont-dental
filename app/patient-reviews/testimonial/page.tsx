@@ -88,6 +88,7 @@ export default function TestimonialPage() {
                   rel="noopener noreferrer"
                 >
                   the {REVIEW_TOTALS.google}+ Google reviews
+                  <span className="sr-only"> (opens in a new window)</span>
                 </a>
                 .
               </p>
@@ -175,6 +176,7 @@ export default function TestimonialPage() {
                 className="btn btn-primary btn-lg"
               >
                 Read all on Google →
+                <span className="sr-only"> (opens in a new window)</span>
               </a>
             </div>
 

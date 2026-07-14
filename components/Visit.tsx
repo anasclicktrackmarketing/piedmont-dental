@@ -50,6 +50,7 @@ export default function Visit() {
               rel="noopener noreferrer"
             >
               Get directions →
+              <span className="sr-only"> (opens in a new window)</span>
             </a>
           </div>
 

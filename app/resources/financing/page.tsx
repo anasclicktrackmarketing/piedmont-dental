@@ -89,6 +89,7 @@ export default function FinancingPage() {
                     className="btn btn-primary btn-lg"
                   >
                     Apply for CareCredit →
+                    <span className="sr-only"> (opens in a new window)</span>
                   </a>
                   <a
                     href={CARECREDIT_HOME}
@@ -97,6 +98,7 @@ export default function FinancingPage() {
                     className="btn btn-ghost btn-lg"
                   >
                     Learn more
+                    <span className="sr-only"> (opens in a new window)</span>
                   </a>
                 </div>
               </div>
@@ -128,6 +130,7 @@ export default function FinancingPage() {
                 <h3>Apply Now</h3>
                 <p>Get an instant decision on a CareCredit healthcare credit card.</p>
                 <span className="financing-tile-cta">Apply online →</span>
+                <span className="sr-only"> (opens in a new window)</span>
               </a>
 
               <a
@@ -147,6 +150,7 @@ export default function FinancingPage() {
                 <h3>Pay Your Bill</h3>
                 <p>Make a CareCredit payment online — secure and quick.</p>
                 <span className="financing-tile-cta">Pay online →</span>
+                <span className="sr-only"> (opens in a new window)</span>
               </a>
 
               <a
@@ -164,6 +168,7 @@ export default function FinancingPage() {
                 <h3>Payment Calculator</h3>
                 <p>Estimate your monthly payments before you commit.</p>
                 <span className="financing-tile-cta">Open calculator →</span>
+                <span className="sr-only"> (opens in a new window)</span>
               </a>
             </div>
 

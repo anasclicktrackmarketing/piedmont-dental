@@ -8,7 +8,7 @@ import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Piedmont Dental By Design",
+  title: "Contact Us",
   description:
     "Get in touch with Piedmont Dental By Design. Send a message, call (510) 350-3937, or reach Dr. Jill Martenson and Dr. David Ma directly. 1331 Grand Ave, Piedmont, CA 94610.",
   alternates: { canonical: "/contact" },

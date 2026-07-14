@@ -8,7 +8,7 @@ import SiteFooter from "@/components/SiteFooter";
 
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Insurance | Piedmont Dental By Design",
+  title: "Insurance",
   description:
     "We accept most dental insurance and handle the paperwork. Here's how billing, pre-treatment estimates, and out-of-network coverage work at our practice.",
   alternates: { canonical: "/resources/insurance" },

@@ -1,19 +1,39 @@
 const cols = [
   {
     heading: "Care",
-    links: ["Cosmetic", "Restoration", "Periodontal", "Cleanings"],
+    links: [
+      { label: "Cosmetic", href: "/procedures/cosmetic-dentistry" },
+      { label: "Restoration", href: "/procedures/restoration" },
+      { label: "Periodontal", href: "/procedures/periodontal-services" },
+      { label: "Cleanings", href: "/procedures/cleanings-prevention" },
+    ],
   },
   {
     heading: "Practice",
-    links: ["About", "Meet the team", "Smile gallery", "Patient resources"],
+    links: [
+      { label: "About", href: "/about" },
+      { label: "Meet the team", href: "/about/team" },
+      { label: "Smile gallery", href: "/smile-gallery" },
+      { label: "Patient resources", href: "/resources" },
+    ],
   },
   {
     heading: "Visit",
-    links: ["Contact us", "Insurance", "Financing", "FAQ"],
+    links: [
+      { label: "Contact us", href: "/contact" },
+      { label: "Insurance", href: "/resources/insurance" },
+      { label: "Financing", href: "/resources/financing" },
+      { label: "FAQ", href: "/faqs" },
+    ],
   },
   {
     heading: "Patients",
-    links: ["New patient forms", "Referral portal", "Smile analysis", "Contact"],
+    links: [
+      { label: "New patient forms", href: "/resources/patient-forms" },
+      { label: "Referral portal", href: "/resources/patient-forms" },
+      { label: "Smile analysis", href: "/resources/smile-analysis" },
+      { label: "Contact", href: "/contact" },
+    ],
   },
 ];
 
@@ -43,11 +63,11 @@ export default function SiteFooter() {
         </div>
         {cols.map((col) => (
           <div key={col.heading}>
-            <h5>{col.heading}</h5>
+            <h4>{col.heading}</h4>
             <ul>
               {col.links.map((link) => (
-                <li key={link}>
-                  <a href="#">{link}</a>
+                <li key={link.label}>
+                  <a href={link.href}>{link.label}</a>
                 </li>
               ))}
             </ul>
@@ -79,6 +99,16 @@ export default function SiteFooter() {
             G
           </a>
         </div>
+        <p className="footer-credit">
+          <a
+            href="https://clicktrackmarketing.com/?utm_source=piedmont-dental&utm_medium=referral&utm_campaign=footer-credit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Designed &amp; Built by Click Track Marketing
+            <span className="sr-only"> (opens in a new window)</span>
+          </a>
+        </p>
       </div>
     </footer>
   );

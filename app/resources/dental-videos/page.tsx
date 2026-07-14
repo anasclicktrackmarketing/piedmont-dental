@@ -8,7 +8,7 @@ import SiteFooter from "@/components/SiteFooter";
 
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Dental Videos | Piedmont Dental By Design",
+  title: "Dental Videos",
   description:
     "Short animated videos explaining common dental procedures and oral health topics — from exams and whitening to crowns, implants, and root canals.",
   alternates: { canonical: "/resources/dental-videos" },

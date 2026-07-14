@@ -84,6 +84,7 @@ export default function ResourceArticle({
                           {...rest}
                         >
                           {children}
+                          <span className="sr-only"> (opens in a new window)</span>
                         </a>
                       );
                     }

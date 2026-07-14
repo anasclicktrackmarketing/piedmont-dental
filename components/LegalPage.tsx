@@ -47,6 +47,7 @@ export default function LegalPage({
                         {...rest}
                       >
                         {children}
+                        <span className="sr-only"> (opens in a new window)</span>
                       </a>
                     );
                   }

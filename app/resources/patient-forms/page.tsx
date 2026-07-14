@@ -67,6 +67,7 @@ export default function PatientFormsPage() {
                 rel="noopener noreferrer"
               >
                 Click here for patient forms →
+                <span className="sr-only"> (opens in a new window)</span>
               </a>
               <p className="forms-portal-note">
                 Opens our patient portal in a new tab (dentalsymphony.com).

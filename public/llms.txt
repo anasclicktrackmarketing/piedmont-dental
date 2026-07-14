@@ -1,4 +1,4 @@
-# Piedmont Dental By Design
+# Piedmont Dental By Design — Cosmetic & Restorative Dentist in Piedmont, CA
 
 > A small, intentional cosmetic and restorative dental practice on Grand Avenue in Piedmont, California. Led by Dr. Jill Martenson, DDS, since 2000. Voted Best Esthetic Dentist 2024 by Best of the East Bay readers.
 
@@ -25,33 +25,37 @@
 
 ## Services
 
-### Cosmetic
-- Porcelain veneers (custom porcelain, 2–3 visits)
-- Tooth whitening (in-office and take-home)
-- Invisalign clear aligners (3D-planned, 6–18 months)
-- Smile design
+### Cosmetic Dentistry — https://piedmontdentalbydesign.com/procedures/cosmetic-dentistry
+- Porcelain veneers (custom porcelain, 2–3 visits) — /procedures/cosmetic-dentistry/porcelain-veneers
+- Tooth whitening (in-office and take-home) — /procedures/cosmetic-dentistry/tooth-whitening
+- CEREC® same-day crowns — /procedures/cosmetic-dentistry/cerec
+- Invisalign® clear aligners (3D-planned, 6–18 months) — /procedures/cosmetic-dentistry/invisalign
+- Cosmetic surgery — /procedures/cosmetic-dentistry/surgery
 
-### Restorative
-- Dental implants
-- CEREC same-day crowns
-- Composite fillings
-- Porcelain crowns
-- Bridges and dentures
-- Full mouth restoration
+### Restoration — https://piedmontdentalbydesign.com/procedures/restoration
+- Dental implants — /procedures/restoration/dental-implants
+- Composite fillings — /procedures/restoration/composite-fillings
+- Crowns (caps) — /procedures/restoration/crowns-caps
+- Dentures & partial dentures — /procedures/restoration/dentures-partial-dentures
+- Fixed bridges — /procedures/restoration/fixed-bridges
 
-### Periodontal
-- Gum disease treatment and maintenance
-- Gum and bone grafting
-- Crown lengthening
-- Scaling and root planing
-- Sinus augmentation
+### Periodontal Services — https://piedmontdentalbydesign.com/procedures/periodontal-services
+- What is gum disease — /procedures/periodontal-services/what-is-periodontal-gum-disease
+- Treatment — /procedures/periodontal-services/treatment
+- Maintenance — /procedures/periodontal-services/maintenance
+- Gum grafting — /procedures/periodontal-services/gum-grafting
+- Bone grafting — /procedures/periodontal-services/bone-grafting
+- Crown lengthening — /procedures/periodontal-services/crown-lengthening
+- Scaling & root planing — /procedures/periodontal-services/periodontal-scaling-root-planing
+- Sinus augmentation — /procedures/periodontal-services/sinus-augmentation
 
-### Cleanings & Prevention
-- Comprehensive exams
-- Cleanings
-- Digital and panoramic X-rays
-- Fluoride treatment
-- Home-care guidance
+### Cleanings & Prevention — https://piedmontdentalbydesign.com/procedures/cleanings-prevention
+- Dental exams & cleanings — /procedures/cleanings-prevention/dental-exams-cleanings
+- Dental X-rays — /procedures/cleanings-prevention/dental-x-rays
+- Panoramic X-rays — /procedures/cleanings-prevention/panoramic-x-rays
+- Fluoride treatment — /procedures/cleanings-prevention/fluoride-treatment
+- Home care — /procedures/cleanings-prevention/home-care
+- How to brush & floss — /procedures/cleanings-prevention/how-to-properly-brush-floss
 
 ## Trust Signals
 

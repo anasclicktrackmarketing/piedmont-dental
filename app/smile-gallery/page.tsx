@@ -8,7 +8,7 @@ import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Smile Gallery | Piedmont Dental By Design",
+  title: "Smile Gallery",
   description:
     "Real before-and-after photographs from Piedmont Dental By Design patients — across cosmetic, restorative, and orthodontic treatments.",
   alternates: { canonical: "/smile-gallery" },

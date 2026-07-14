@@ -9,7 +9,7 @@ import SiteFooter from "@/components/SiteFooter";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Smile Analysis | Piedmont Dental By Design",
+  title: "Smile Analysis",
   description:
     "A 17-question self-assessment to honestly evaluate your smile, plus a contact form to request a personalized, free consultation from Dr. Jill Martenson and Dr. David Ma.",
   alternates: { canonical: "/resources/smile-analysis" },

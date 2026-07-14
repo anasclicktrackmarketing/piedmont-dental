@@ -47,6 +47,7 @@ export default function NoticeOfPrivacyPracticesPage() {
                 className="btn btn-primary btn-lg"
               >
                 Download PDF →
+                <span className="sr-only"> (opens in a new window)</span>
               </a>
             </div>
           }

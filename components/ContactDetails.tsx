@@ -52,6 +52,7 @@ export default function ContactDetails() {
               rel="noopener noreferrer"
             >
               Get directions →
+              <span className="sr-only"> (opens in a new window)</span>
             </a>
           </div>
 
