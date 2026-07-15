@@ -24,19 +24,18 @@ const securityHeaders = [
   },
   {
     // Lenient CSP — allows the Google Maps iframe in Visit, the next/image optimization,
-    // Google Fonts via next/font, inline JSON-LD, Google Tag Manager / GA4, and the
-    // IntentWave identity-resolution tag (loaded via GTM). Tighten further once external
-    // dependencies are known.
+    // Google Fonts via next/font, inline JSON-LD, and Google Tag Manager / GA4. Tighten
+    // further once external dependencies are known.
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.intentwave.com",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' data: https://fonts.gstatic.com",
       "img-src 'self' data: blob: https:",
       "media-src 'self'",
       "frame-src https://maps.google.com https://www.google.com https://www.googletagmanager.com",
-      "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.intentwave.com",
+      "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
