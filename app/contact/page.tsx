@@ -3,6 +3,7 @@ import AnnouncementBar from "@/components/AnnouncementBar";
 import SiteHeader from "@/components/SiteHeader";
 import ContactHero from "@/components/ContactHero";
 import ContactDetails from "@/components/ContactDetails";
+import ContactTeam from "@/components/ContactTeam";
 import AwardsStrip from "@/components/AwardsStrip";
 import AboutCTA from "@/components/AboutCTA";
 import SiteFooter from "@/components/SiteFooter";
@@ -29,6 +30,7 @@ export default function ContactPage() {
       <main>
         <ContactHero />
         <ContactDetails />
+        <ContactTeam />
         <AwardsStrip />
         <AboutCTA />
       </main>

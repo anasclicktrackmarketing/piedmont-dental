@@ -310,6 +310,9 @@ export default function SiteHeader() {
           <a href="tel:5103503937" className="phone-link">
             (510) 350-3937
           </a>
+          <Link href="/contact" className="btn btn-teal nav-cta">
+            Book Appointment
+          </Link>
           <button
             type="button"
             className="nav-toggle"
@@ -436,7 +439,7 @@ export default function SiteHeader() {
               <span className="mobile-menu-phone-num">(510) 350-3937</span>
             </a>
             <Link href="/contact" className="btn btn-primary btn-lg mobile-menu-book">
-              Contact us →
+              Book Appointment →
             </Link>
           </div>
         </div>

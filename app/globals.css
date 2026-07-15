@@ -180,11 +180,36 @@ a { color: inherit; text-decoration: none; }
 .nav-links a:hover { color: var(--ink); }
 .nav-right { display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
 .phone-link {
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   color: var(--ink);
   display: flex;
   align-items: center;
   gap: 8px;
+  white-space: nowrap;
+}
+.phone-link:hover { color: var(--teal-deep); }
+/* Header "Book Appointment" CTA — compact pill sized for the nav row */
+.nav-cta {
+  padding: 12px 22px;
+  white-space: nowrap;
+}
+/* The CTA only fits beside the full nav + enlarged phone on wide screens.
+   Below ~1200px it would push the header into a horizontal overflow, so hide
+   it there — the bigger phone carries the ask, and on mobile (≤720px) the
+   drawer's "Book Appointment →" button takes over. */
+@media (max-width: 1199px) {
+  .nav-cta { display: none; }
+}
+/* The enlarged phone only has room on wide screens; on tablet-width the nav
+   row is already tight, so keep the phone at its original size there to avoid
+   pushing the header into a horizontal overflow. */
+@media (max-width: 1080px) {
+  .phone-link {
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
 .phone-link::before {
   content: "";
@@ -1293,28 +1318,31 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Take the wide dropdown out of the trigger's positioning context so its
-   menu positions relative to .nav (which is position:relative + centered
-   in the viewport). The menu is then horizontally centered in the nav
-   row — never overflows on either side, regardless of which trigger
-   owns it. */
+   menu positions relative to .nav (which is position:relative). */
 .nav-dropdown--wide {
   position: static;
 }
 .nav-dropdown--wide .nav-dropdown-menu {
-  /* Anchor the menu's top below the nav row. Because .nav-dropdown is now
-     position:static, `top` is measured from the .nav parent. We use a
-     fixed offset that matches where the trigger sits + 12px gap. */
+  /* Left-anchor the wide menu to the nav's left edge instead of centering
+     it on the nav row. Both wide triggers (Procedures, Patient Resources)
+     sit WITHIN the menu's horizontal span, so the pointer travels straight
+     DOWN from either trigger into the menu — it never has to cross the
+     diagonal dead zone that used to make the menu vanish mid-reach.
+     `top` is measured from the .nav parent because .nav-dropdown--wide is
+     position:static; the 16px left offset lines the first menu item up
+     under the trigger text while keeping a gutter on the right. */
   top: calc(100% - 16px);
-  left: 50%;
+  left: 16px;
   right: auto;
-  transform: translateX(-50%) translateY(-6px);
+  transform: translateY(-6px);
 }
 .nav-dropdown--wide:hover .nav-dropdown-menu,
 .nav-dropdown--wide:focus-within .nav-dropdown-menu {
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
 }
-/* Extend the hover-bridge across the full menu width so users can move
-   freely from any trigger down to the menu without losing hover. */
+/* Invisible bridge spanning the full menu width and the vertical gap up to
+   the nav row, so moving from any trigger down to the menu never drops
+   hover. */
 .nav-dropdown--wide .nav-dropdown-menu::before {
   inset: -32px 0 auto 0;
   height: 32px;
@@ -2440,6 +2468,41 @@ a { color: inherit; text-decoration: none; }
 .contact-schedule-note a {
   color: var(--ink);
   border-bottom: 1px solid var(--rule-strong);
+}
+
+/* Contact page — team photo band (puts faces on the page to warm it up) */
+.contact-team {
+  padding: 96px 0;
+}
+.contact-team-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.contact-team-head {
+  margin-bottom: 48px;
+}
+.contact-team-photo {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.contact-team-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 720px) {
+  .contact-team {
+    padding: 64px 0;
+  }
+  .contact-team-inner {
+    padding: 0 20px;
+  }
+  .contact-team-head {
+    margin-bottom: 32px;
+  }
 }
 
 /* ============================================================
