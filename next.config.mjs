@@ -27,29 +27,25 @@ const LEADCONNECTOR = [
   "https://*.msgsndr.com",
 ];
 
-/* IntentWave cookie-consent banner — DELIBERATELY NOT ALLOWLISTED.
-   cdn.intentwave.com/tag.js is blocked, so the tag never runs. This is on hold
-   pending a check with the team: commit d0fc77f allowed it and 2304eca reverted
-   that 14 minutes later without recording a reason, and the tag is described
-   there as "identity-resolution", which is a privacy call rather than a
-   technical one. Do not re-enable without that confirmation.
+/* IntentWave cookie-consent banner (cdn.intentwave.com/tag.js).
+   All five origins are load-bearing — d0fc77f allowed only script-src and
+   connect-src, which leaves the banner rendering unstyled: its stylesheet is
+   served from cdn.intentwave.com and pulls Roboto from Bunny Fonts, and both
+   are style-src/font-src concerns rather than script-src ones.
 
-   When it is confirmed, uncomment this and add ...INTENTWAVE back to
-   THIRD_PARTY and to the style-src / font-src / frame-src lines below. All five
-   origins are needed: the earlier attempt only covered script-src and
-   connect-src, which would still have left the banner unstyled — its own
-   stylesheet is served from cdn.intentwave.com and it pulls Roboto from Bunny
-   Fonts. Note the banner is geo-gated by IntentWave itself and will not render
-   outside a consent-required region regardless of the CSP.
-
+   Do not judge this tag by whether a banner appears. IntentWave geo-gates it
+   itself: outside a consent-required region it sets __blockEnabled:false and
+   never initialises, so it correctly renders nothing from most of the world.
+   Check `typeof window.IntentWave === 'object'` instead. That distinction is
+   almost certainly what sank the first attempt (d0fc77f allowed it, 2304eca
+   reverted 14 minutes later with no reason recorded). */
 const INTENTWAVE = [
   "https://cdn.intentwave.com",
   "https://*.intentwave.com",
   "https://fonts.bunny.net",
 ];
-*/
 
-const THIRD_PARTY = [...GTM, ...GOOGLE_ANALYTICS, ...LEADCONNECTOR];
+const THIRD_PARTY = [...GTM, ...GOOGLE_ANALYTICS, ...LEADCONNECTOR, ...INTENTWAVE];
 
 const securityHeaders = [
   {
@@ -80,12 +76,12 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       ["script-src 'self' 'unsafe-inline' 'unsafe-eval'", ...THIRD_PARTY].join(" "),
-      ["style-src 'self' 'unsafe-inline' https://fonts.googleapis.com", ...LEADCONNECTOR].join(" "),
-      ["font-src 'self' data: https://fonts.gstatic.com", ...LEADCONNECTOR].join(" "),
+      ["style-src 'self' 'unsafe-inline' https://fonts.googleapis.com", ...LEADCONNECTOR, ...INTENTWAVE].join(" "),
+      ["font-src 'self' data: https://fonts.gstatic.com", ...LEADCONNECTOR, ...INTENTWAVE].join(" "),
       "img-src 'self' data: blob: https:",
       // The chat widget plays a notification sound on incoming messages.
       ["media-src 'self' data:", ...LEADCONNECTOR].join(" "),
-      ["frame-src 'self' https://maps.google.com https://www.google.com https://www.googletagmanager.com", ...LEADCONNECTOR].join(" "),
+      ["frame-src 'self' https://maps.google.com https://www.google.com https://www.googletagmanager.com", ...LEADCONNECTOR, ...INTENTWAVE].join(" "),
       ["connect-src 'self'", ...THIRD_PARTY, "wss://*.leadconnectorhq.com"].join(" "),
       // The chat widget runs its realtime transport in a blob-backed worker.
       "worker-src 'self' blob:",
