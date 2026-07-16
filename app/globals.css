@@ -18,6 +18,11 @@
   --shadow-md: 0 8px 24px rgba(26, 26, 26, 0.08);
   --shadow-lg: 0 24px 60px rgba(26, 26, 26, 0.18);
   --max: 1280px;
+  /* The header carries more than the body grid does — four dropdown triggers,
+     three links, the phone and the CTA need ~1368px to sit on one line beside a
+     196px logo. Capping it at --max squeezed the side columns below their
+     content width, which is what wrapped "Patient Resources" onto two lines. */
+  --max-header: 1400px;
   --serif: var(--font-fraunces), Georgia, serif;
   --sans: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
@@ -147,11 +152,16 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--rule);
 }
 .nav {
-  max-width: var(--max);
+  max-width: var(--max-header);
   margin: 0 auto;
   padding: 16px 32px;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  /* minmax(0, 1fr) — NOT a bare 1fr. A bare 1fr floors each track at its
+     min-content width, so the heavier right column (links + phone + CTA, all
+     nowrap) claimed its intrinsic 522px, stole the difference from the left
+     column and pushed the logo ~50px off centre. Flooring at 0 keeps the two
+     side tracks exactly equal, which is what actually centres the logo. */
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
   position: relative;        /* positioning context for wide dropdowns so they
                                 center on the nav row, not on their trigger */
@@ -172,11 +182,16 @@ a { color: inherit; text-decoration: none; }
 .site-footer .brand-logo:hover { opacity: 1; }
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 32px;
   justify-content: flex-start;
   font-size: 14px;
   color: var(--ink-soft);
 }
+/* Multi-word labels ("Patient Resources") must break as a unit or not at all —
+   never mid-phrase onto a second line. */
+.nav-links a,
+.nav-dropdown-trigger { white-space: nowrap; }
 .nav-links a:hover { color: var(--ink); }
 .nav-right { display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
 .phone-link {
@@ -194,22 +209,6 @@ a { color: inherit; text-decoration: none; }
 .nav-cta {
   padding: 12px 22px;
   white-space: nowrap;
-}
-/* The CTA only fits beside the full nav + enlarged phone on wide screens.
-   Below ~1200px it would push the header into a horizontal overflow, so hide
-   it there — the bigger phone carries the ask, and on mobile (≤720px) the
-   drawer's "Book Appointment →" button takes over. */
-@media (max-width: 1199px) {
-  .nav-cta { display: none; }
-}
-/* The enlarged phone only has room on wide screens; on tablet-width the nav
-   row is already tight, so keep the phone at its original size there to avoid
-   pushing the header into a horizontal overflow. */
-@media (max-width: 1080px) {
-  .phone-link {
-    font-size: 14px;
-    font-weight: 500;
-  }
 }
 .phone-link::before {
   content: "";
@@ -259,6 +258,52 @@ a { color: inherit; text-decoration: none; }
 .nav-toggle-bars.is-open span:nth-child(2) { opacity: 0; }
 .nav-toggle-bars.is-open span:nth-child(3) { top: 50%; transform: translateY(-50%) rotate(-45deg); }
 
+/* ---- Header size ladder --------------------------------------------------
+   Must stay BELOW the base .nav-toggle / .nav-cta rules: these tiers override
+   them at equal specificity, so source order is what decides the winner.
+
+   Sizing comes from the measured intrinsics at full spacing — left trigger
+   group 442px, right group 522px (the binding one), logo 196px. Keeping the
+   logo centred means both side tracks match the wider group, so the row needs
+   2×522 + 196 logo + 64 gap + 64 padding = 1368px. Each tier below keeps that
+   sum inside the viewport so no track is ever squeezed under its content. */
+
+/* Tier 2 — under 1400px the full-spacing row stops clearing 1368px. Pull the
+   gaps, padding and logo in rather than let the tracks squeeze. */
+@media (max-width: 1399px) {
+  .nav { padding: 14px 24px; gap: 20px; }
+  .nav-links { gap: 18px; }
+  .nav-right { gap: 12px; }
+  .brand-logo { height: 72px; }
+  .nav-cta { padding: 11px 18px; }
+}
+/* Tier 3 — even compact, the CTA stops fitting beside the phone and links
+   below ~1220px. Drop it; the enlarged phone carries the ask. */
+@media (max-width: 1219px) {
+  .nav-cta { display: none; }
+}
+/* Tier 4 — below ~1100px the four dropdown triggers alone (400px compact)
+   outgrow their track, so the inline nav hands off to the drawer. That handoff
+   used to happen only at 720px, which left every width from 721–1099px
+   rendering a cramped, wrapped row. With the triggers gone the phone and CTA
+   both have room again, so the CTA comes back here. */
+@media (max-width: 1099px) {
+  .nav {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 16px;
+  }
+  .nav-links { display: none; }
+  .nav-toggle { display: inline-flex; }
+  .nav-cta { display: inline-flex; }
+}
+/* The enlarged phone only has room once the drawer has freed the row. */
+@media (max-width: 1080px) {
+  .phone-link {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
 /* Mobile menu — backdrop + right-slide drawer.
    IMPORTANT: these elements must be rendered OUTSIDE the .site-header,
    because .site-header has backdrop-filter which creates a containing
@@ -298,7 +343,11 @@ a { color: inherit; text-decoration: none; }
 .mobile-menu.is-open {
   transform: translateX(0);
 }
-@media (min-width: 721px) {
+/* Keep the drawer unreachable wherever the inline nav is doing the job. This
+   threshold must track the .nav-toggle breakpoint (1099px) — the toggle is the
+   only way to open the drawer, so hiding the drawer at any width where the
+   toggle renders would leave a dead button. */
+@media (min-width: 1100px) {
   .mobile-menu,
   .mobile-menu-backdrop { display: none !important; }
 }
