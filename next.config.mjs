@@ -1,5 +1,43 @@
 /** @type {import('next').NextConfig} */
 
+/* Third-party origins, grouped by vendor. Everything below is injected at
+   runtime by the GTM container (GTM-PLVLXN8R) rather than by app code, so a tag
+   added in the GTM UI needs its origins added here or the browser silently
+   blocks it. Keep the groups named — the next marketing tag should be a
+   one-line addition, not a CSP rewrite. */
+const GTM = ["https://www.googletagmanager.com"];
+
+const GOOGLE_ANALYTICS = [
+  "https://www.google-analytics.com",
+  "https://*.google-analytics.com",
+  // Bare host is required alongside the wildcard: a `*.` CSP wildcard matches
+  // subdomains only, so https://*.analytics.google.com does NOT cover
+  // https://analytics.google.com, which is where GA4 posts /g/collect.
+  "https://analytics.google.com",
+  "https://*.analytics.google.com",
+  // GA4 ad-signal / audience pings.
+  "https://stats.g.doubleclick.net",
+  "https://www.google.com",
+];
+
+// GoHighLevel chat widget (widgets.leadconnectorhq.com/loader.js).
+const LEADCONNECTOR = [
+  "https://widgets.leadconnectorhq.com",
+  "https://*.leadconnectorhq.com",
+  "https://*.msgsndr.com",
+];
+
+// IntentWave cookie-consent banner (cdn.intentwave.com/tag.js). Its stylesheet
+// pulls Roboto from Bunny Fonts, so the banner renders in a fallback face
+// without this origin — visible only in the regions where it actually shows.
+const INTENTWAVE = [
+  "https://cdn.intentwave.com",
+  "https://*.intentwave.com",
+  "https://fonts.bunny.net",
+];
+
+const THIRD_PARTY = [...GTM, ...GOOGLE_ANALYTICS, ...LEADCONNECTOR, ...INTENTWAVE];
+
 const securityHeaders = [
   {
     key: "X-Content-Type-Options",
@@ -24,18 +62,20 @@ const securityHeaders = [
   },
   {
     // Lenient CSP — allows the Google Maps iframe in Visit, the next/image optimization,
-    // Google Fonts via next/font, inline JSON-LD, and Google Tag Manager / GA4. Tighten
-    // further once external dependencies are known.
+    // Google Fonts via next/font, inline JSON-LD, and the GTM-injected tags above.
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
-      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      "font-src 'self' data: https://fonts.gstatic.com",
+      ["script-src 'self' 'unsafe-inline' 'unsafe-eval'", ...THIRD_PARTY].join(" "),
+      ["style-src 'self' 'unsafe-inline' https://fonts.googleapis.com", ...LEADCONNECTOR, ...INTENTWAVE].join(" "),
+      ["font-src 'self' data: https://fonts.gstatic.com", ...LEADCONNECTOR, ...INTENTWAVE].join(" "),
       "img-src 'self' data: blob: https:",
-      "media-src 'self'",
-      "frame-src https://maps.google.com https://www.google.com https://www.googletagmanager.com",
-      "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com",
+      // The chat widget plays a notification sound on incoming messages.
+      ["media-src 'self' data:", ...LEADCONNECTOR].join(" "),
+      ["frame-src 'self' https://maps.google.com https://www.google.com https://www.googletagmanager.com", ...LEADCONNECTOR, ...INTENTWAVE].join(" "),
+      ["connect-src 'self'", ...THIRD_PARTY, "wss://*.leadconnectorhq.com"].join(" "),
+      // The chat widget runs its realtime transport in a blob-backed worker.
+      "worker-src 'self' blob:",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
