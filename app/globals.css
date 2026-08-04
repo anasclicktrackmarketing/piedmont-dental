@@ -23,6 +23,12 @@
      196px logo. Capping it at --max squeezed the side columns below their
      content width, which is what wrapped "Patient Resources" onto two lines. */
   --max-header: 1400px;
+  /* Announce bar (40px) + sticky header (84px logo + 32px padding + 1px rule).
+     Both sit ABOVE the hero in normal flow, so anything sized to a flat 100vh
+     overflows the first screen by exactly this much. Kept in step with the
+     header size ladder below — the tier that shrinks the logo also shrinks
+     this. */
+  --header-stack: 157px;
   --serif: var(--font-fraunces), Georgia, serif;
   --sans: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
@@ -271,6 +277,8 @@ a { color: inherit; text-decoration: none; }
 /* Tier 2 — under 1400px the full-spacing row stops clearing 1368px. Pull the
    gaps, padding and logo in rather than let the tracks squeeze. */
 @media (max-width: 1399px) {
+  /* 72px logo + 28px padding + 1px rule + 40px announce */
+  :root { --header-stack: 141px; }
   .nav { padding: 14px 24px; gap: 20px; }
   .nav-links { gap: 18px; }
   .nav-right { gap: 12px; }
@@ -481,12 +489,18 @@ a { color: inherit; text-decoration: none; }
 .hero {
   position: relative;
   width: 100%;
+  /* Fill what's left of the first screen, not the whole screen — the announce
+     bar and sticky header are stacked above us, so a flat 100vh pushed the
+     bottom of the hero (CTAs, review line) under the fold on any laptop. */
   min-height: 100vh;
+  min-height: calc(100svh - var(--header-stack, 157px));
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 120px 64px 96px;
+  /* 200px total vertical — the most the content stack can carry and still fit
+     the ~825px a 982px-tall MacBook leaves under the header. */
+  padding: 112px 64px 88px;
   color: var(--paper);
   isolation: isolate;
 }
@@ -13571,6 +13585,31 @@ footer.site-footer {
   .awards-grid { grid-template-columns: 1fr; gap: 36px; }
   .award { border-left: none; border-top: 1px solid var(--rule); padding: 36px 0 0; }
   .award:first-child { border-top: none; padding-top: 0; }
+}
+
+/* ---- Short viewports (laptops) -------------------------------------------
+   Width is not the constraint here, height is: a 1280×800 or 1366×768 laptop
+   only leaves ~630px under the header stack, and the hero's desktop rhythm
+   (120/96 padding + an 84px headline) needs ~830px. Everything from the
+   buttons down landed under the fold. Tighten the vertical rhythm only —
+   horizontal padding stays with the width tiers above, which is why these are
+   padding-top/-bottom longhands and not the padding shorthand.
+
+   Scoped to >720px so the mobile block above keeps its own (taller, scrolling)
+   treatment untouched. */
+@media (min-width: 721px) and (max-height: 900px) {
+  .hero { padding-top: 56px; padding-bottom: 56px; }
+  .hero-eyebrow--sentence { margin-bottom: 18px; }
+  .hero-headline {
+    font-size: clamp(38px, 4.6vw, 64px);
+    margin-bottom: 20px;
+  }
+  .hero-sub {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .hero-actions { margin-bottom: 20px; }
+  .hero-scroll { bottom: 20px; }
 }
 
 /* ============================================================
