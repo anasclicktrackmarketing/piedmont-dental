@@ -35,7 +35,7 @@ export default function HomePage() {
       />
       <AwardsStrip />
       <Services />
-      <BeforeAfter />
+      {/* <BeforeAfter /> */}
       <About />
       <Reviews />
       <FAQ />

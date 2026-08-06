@@ -11488,7 +11488,7 @@ a.gummy-treatment-card:hover .gummy-treatment-cta { color: var(--ink); }
 .team-doctors-strip {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 56px 32px 0;
+  padding: 56px 32px 56px;
 }
 .team-doctors-strip-inner {
   display: block;
@@ -11500,7 +11500,7 @@ a.gummy-treatment-card:hover .gummy-treatment-cta { color: var(--ink); }
   padding: 8px;
 }
 @media (max-width: 720px) {
-  .team-doctors-strip { padding: 40px 20px 0; }
+  .team-doctors-strip { padding: 40px 20px 40px; }
   .team-doctor-list--row { grid-template-columns: 1fr; }
 }
 

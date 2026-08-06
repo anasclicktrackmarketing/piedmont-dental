@@ -82,7 +82,9 @@ const securityHeaders = [
       // The chat widget plays a notification sound on incoming messages.
       ["media-src 'self' data:", ...LEADCONNECTOR].join(" "),
       ["frame-src 'self' https://maps.google.com https://www.google.com https://www.googletagmanager.com", ...LEADCONNECTOR, ...INTENTWAVE].join(" "),
-      ["connect-src 'self'", ...THIRD_PARTY, "wss://*.leadconnectorhq.com"].join(" "),
+      // IntentWave's own pulse.intentwave.com connect-src entries above are https-scheme,
+      // which does not cover the wss:// socket it opens for consent-banner analytics.
+      ["connect-src 'self'", ...THIRD_PARTY, "wss://*.leadconnectorhq.com", "wss://*.intentwave.com"].join(" "),
       // The chat widget runs its realtime transport in a blob-backed worker.
       "worker-src 'self' blob:",
       "object-src 'none'",
