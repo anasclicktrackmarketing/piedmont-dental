@@ -110,15 +110,17 @@ export const metadata: Metadata = {
     email: true,
     address: true,
   },
-  // Search engine ownership verification — env-var driven so the real tokens
-  // from Google Search Console / Bing Webmaster Tools can be dropped in via
-  // Vercel project env vars with no code change. See GOOGLE_SITE_VERIFICATION
-  // and BING_SITE_VERIFICATION in .env.example. Omitted entirely (no empty
-  // tag rendered) until a real token is set.
+  // Search engine ownership verification. The Google token is committed here on
+  // purpose: it ships publicly in the page HTML either way, and Google requires
+  // the tag to stay in place after verifying — so keeping it in code means
+  // ownership can't lapse because a dashboard env var went missing on a project
+  // move. GOOGLE_SITE_VERIFICATION still overrides it if set. Bing stays
+  // env-only (no empty tag rendered) until that token exists — see
+  // BING_SITE_VERIFICATION in .env.example.
   verification: {
-    ...(process.env.GOOGLE_SITE_VERIFICATION
-      ? { google: process.env.GOOGLE_SITE_VERIFICATION }
-      : {}),
+    google:
+      process.env.GOOGLE_SITE_VERIFICATION ||
+      "VhUBGZL0LpsjzgbTNqHDvKWQzWePilh-FzNqYreT-ig",
     ...(process.env.BING_SITE_VERIFICATION
       ? { other: { "msvalidate.01": process.env.BING_SITE_VERIFICATION } }
       : {}),
