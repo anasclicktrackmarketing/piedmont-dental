@@ -1,3 +1,5 @@
+import migrationRedirects from "./redirects.mjs";
+
 /** @type {import('next').NextConfig} */
 
 /* Third-party origins, grouped by vendor. Everything below is injected at
@@ -106,6 +108,9 @@ const nextConfig = {
         headers: securityHeaders,
       },
     ];
+  },
+  async redirects() {
+    return migrationRedirects;
   },
 };
 

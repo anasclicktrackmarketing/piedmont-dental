@@ -14,7 +14,7 @@ const CARECREDIT_HOME = "https://www.carecredit.com/";
 const CARECREDIT_PAY = "https://www.carecredit.com/Pay/";
 
 export const metadata: Metadata = {
-  title: "Financing | Piedmont Dental By Design",
+  title: "Financing — Dental Payment Options",
   description:
     "Flexible payment options at Piedmont Dental — CareCredit financing, major credit cards, and personalized arrangements for extensive treatment.",
   alternates: { canonical: "/resources/financing" },
@@ -45,9 +45,16 @@ export default function FinancingPage() {
               <h1 className="resource-hero-title">Financing</h1>
               <p className="resource-hero-description">
                 Cost shouldn&apos;t get in the way of the care you need. We
-                accept most insurance, partner with CareCredit for flexible
-                monthly financing, and tailor arrangements for more extensive
-                treatment plans.
+                accept most dental insurance as an out-of-network provider,
+                partner with CareCredit for flexible monthly financing, and
+                tailor arrangements for more extensive treatment plans.{" "}
+                <Link
+                  href="/resources/insurance"
+                  className="resource-hero-inline-link"
+                >
+                  See how insurance billing works
+                </Link>
+                .
               </p>
             </div>
           </div>

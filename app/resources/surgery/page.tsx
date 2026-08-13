@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Surgery — Before & After",
   description:
-    "Real before-and-after cases from Dr. Jill Martenson and Dr. David Ma combining minor in-office surgery (gum reshaping) with composite bonding and porcelain veneers.",
+    "Before-and-after cases from Dr. Martenson and Dr. Ma combining minor in-office gum reshaping with composite bonding and porcelain veneers.",
   alternates: { canonical: "/resources/surgery" },
   openGraph: {
     title: "Surgery — Before & After | Piedmont Dental By Design",

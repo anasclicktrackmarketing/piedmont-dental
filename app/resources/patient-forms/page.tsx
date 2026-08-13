@@ -11,7 +11,7 @@ const PORTAL_URL =
   "https://piedmontdentalbydesign.dentalsymphony.com/Patient/Newpatient.aspx";
 
 export const metadata: Metadata = {
-  title: "Patient Forms | Piedmont Dental By Design",
+  title: "New Patient Forms",
   description:
     "Save time at your visit — fill out new-patient and update forms online before your appointment. Forms upload directly into our system.",
   alternates: { canonical: "/resources/patient-forms" },

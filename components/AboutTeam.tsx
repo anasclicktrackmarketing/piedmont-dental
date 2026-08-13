@@ -23,8 +23,8 @@ const GRADIENTS = {
 
 const doctors: Member[] = [
   {
-    name: "Dr. Jill A. Martenson",
-    role: "Co-Owner · Cosmetic",
+    name: "Dr. Jill A. Martenson, DDS",
+    role: "Co-Owner · Cosmetic · UOP School of Dentistry",
     bg: GRADIENTS.teal,
     photo: "/team/dr-martenson.webp",
     href: "/about/dr-martenson",

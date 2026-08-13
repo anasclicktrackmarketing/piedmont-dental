@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title:
     "Cosmetic Dentistry in Piedmont, CA",
   description:
-    "Cosmetic dentistry — porcelain veneers, professional whitening, CEREC same-day crowns, Invisalign®, and crown lengthening. Personalized care from Dr. Martenson and Dr. Ma.",
+    "Cosmetic dentistry in Piedmont, CA — porcelain veneers, professional whitening, CEREC same-day crowns, Invisalign® and crown lengthening.",
   alternates: { canonical: "/procedures/cosmetic-dentistry" },
   openGraph: {
     title: "Cosmetic Dentistry — Piedmont Dental By Design",

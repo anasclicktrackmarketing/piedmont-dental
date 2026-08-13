@@ -9,7 +9,7 @@ import SiteFooter from "@/components/SiteFooter";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Office Tour | Piedmont Dental By Design",
+  title: "Office Tour",
   description:
     "Take a guided tour — 10 views inside our practice at 1331 Grand Ave, Piedmont. Modern operatories, digital imaging, and a comfortable patient experience.",
   alternates: { canonical: "/about/tour" },

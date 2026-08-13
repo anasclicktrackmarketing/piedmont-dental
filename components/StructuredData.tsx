@@ -89,6 +89,16 @@ export default function StructuredData() {
       image: `${SITE}/hero-poster.jpg`,
       telephone: "+1-510-350-3937",
       priceRange: "$$",
+      /* Payment facts come from /resources/financing, which lists exactly these.
+         NOTE: no aggregateRating here, deliberately. The site displays 4.9 / 350
+         as hardcoded text; marking a self-reported rating up as schema on your
+         own pages is the "spammy structured markup" pattern Google issues manual
+         actions for. The real reviews already live on Google and Yelp, which are
+         linked from sameAs. Do not add one. */
+      paymentAccepted: "Cash, Check, Money Order, CareCredit, Visa, Mastercard, American Express, Discover",
+      currenciesAccepted: "USD",
+      medicalSpecialty: "Dentistry",
+      isAcceptingNewPatients: true,
       foundingDate: "1996",
       slogan: "Cosmetic Dentistry in Piedmont Since 1996.",
       description:
@@ -211,6 +221,36 @@ export default function StructuredData() {
       honorificSuffix: "DDS",
       jobTitle: "Co-Owner · Cosmetic Dentistry",
       worksFor: { "@id": `${SITE}/#org` },
+      /* A degree marked up as EducationalOccupationalCredential is a verifiable,
+         machine-readable qualification an answer engine can cite when asked who
+         is qualified to treat someone. Every value below is already published on
+         /about/dr-martenson — nothing here is a new claim.
+         Deliberately NOT done for Dr. Cangini: his pages state "board-certified"
+         four times and never name the certifying board, so there is nothing
+         verifiable to mark up until the practice confirms it. */
+      hasCredential: {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "degree",
+        name: "Doctor of Dental Surgery (DDS)",
+        educationalLevel: "Doctoral",
+        recognizedBy: {
+          "@type": "CollegeOrUniversity",
+          name: "University of the Pacific, Arthur A. Dugoni School of Dentistry",
+          sameAs: "https://en.wikipedia.org/wiki/University_of_the_Pacific_(United_States)",
+        },
+      },
+      alumniOf: [
+        {
+          "@type": "CollegeOrUniversity",
+          name: "University of the Pacific, Arthur A. Dugoni School of Dentistry",
+          sameAs: "https://en.wikipedia.org/wiki/University_of_the_Pacific_(United_States)",
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          name: "University of California, Los Angeles",
+          sameAs: "https://en.wikipedia.org/wiki/University_of_California,_Los_Angeles",
+        },
+      ],
       knowsAbout: [
         "Cosmetic Dentistry",
         "Porcelain Veneers",
@@ -241,6 +281,20 @@ export default function StructuredData() {
       jobTitle: "Co-Owner · Restorative Dentistry",
       worksFor: { "@id": `${SITE}/#org` },
       knowsAbout: ["Restorative Dentistry", "Dental Implants", "Crowns"],
+      /* Schools only. His graduation years are one of the open client questions,
+         so no dates are asserted here — alumniOf does not require them. */
+      alumniOf: [
+        {
+          "@type": "CollegeOrUniversity",
+          name: "University of Pennsylvania School of Dental Medicine",
+          sameAs: "https://en.wikipedia.org/wiki/University_of_Pennsylvania_School_of_Dental_Medicine",
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          name: "University of California, Davis",
+          sameAs: "https://en.wikipedia.org/wiki/University_of_California,_Davis",
+        },
+      ],
     },
   ];
 

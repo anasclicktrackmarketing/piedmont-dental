@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Dental Implants — Smile Gallery",
   description:
-    "Real dental implant transformations — single-tooth replacements, multi-tooth restorations, and full-arch rehabilitations from Dr. Jill Martenson and Dr. David Ma.",
+    "Real dental implant transformations in Piedmont, CA — single-tooth replacements, multi-tooth restorations and full-arch rehabilitations.",
   alternates: { canonical: "/smile-gallery/dental-implants" },
   openGraph: {
     title: "Dental Implants — Smile Gallery | Piedmont Dental By Design",

@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Invisalign® Results — Before & After",
   description:
-    "Drag-to-compare before and after Invisalign® cases from the practice of Dr. Jill Martenson and Dr. David Ma — real patient smile transformations with clear aligners.",
+    "Drag-to-compare before and after Invisalign® cases from Dr. Jill Martenson and Dr. David Ma — real patient smile transformations with clear aligners.",
   alternates: { canonical: "/resources/invisalign-results" },
   openGraph: {
     title: "Invisalign® Results — Before & After | Piedmont Dental By Design",

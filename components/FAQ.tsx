@@ -7,7 +7,7 @@ type QA = { q: string; a: string };
 const faqs: QA[] = [
   {
     q: "What insurance do you accept?",
-    a: "Piedmont Dental By Design accepts most insurance plans. The simplest path is to call (510) 350-3937 with your card and our team will verify your specific coverage and walk you through what's included before your visit. Financing is also available for treatments not fully covered.",
+    a: "Piedmont Dental By Design accepts most dental insurance plans as an out-of-network provider, including non-managed care, indemnity (traditional) and PPO out-of-network plans. The simplest path is to call (510) 350-3937 with your card and our team will verify your specific coverage and walk you through what's included before your visit. Financing is also available for treatments not fully covered.",
   },
   {
     q: "What should I bring to my first visit?",
