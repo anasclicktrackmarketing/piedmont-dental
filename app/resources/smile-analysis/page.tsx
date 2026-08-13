@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Smile Analysis",
   description:
-    "A 17-question self-assessment to honestly evaluate your smile, plus a contact form to request a personalized, free consultation from Dr. Jill Martenson and Dr. David Ma.",
+    "A 17-question self-assessment to evaluate your smile, plus a form to request a free personalized consultation with Dr. Martenson or Dr. Ma.",
   alternates: { canonical: "/resources/smile-analysis" },
   openGraph: {
     title: "Smile Analysis — Piedmont Dental By Design",

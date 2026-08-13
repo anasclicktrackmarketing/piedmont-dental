@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Crowns (Caps) — Before & After",
   description:
-    "Interactive before-and-after crown cases — porcelain crowns, implant-supported crowns, and full-arch rehabilitation from the practice of Dr. Jill Martenson and Dr. David Ma.",
+    "Interactive before-and-after crown cases — porcelain crowns, implant-supported crowns and full-arch rehabilitation from Dr. Martenson and Dr. Ma.",
   alternates: { canonical: "/resources/restorations/crowns-caps" },
   openGraph: {
     title: "Crowns (Caps) — Before & After | Piedmont Dental By Design",

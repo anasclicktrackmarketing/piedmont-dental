@@ -19,7 +19,11 @@ export default function ContactTeam() {
           <p className="lede">
             From the front desk to the treatment room, you&apos;ll see the same
             familiar faces visit after visit — most of our team has cared for
-            patients on Grand Avenue for over a decade.
+            patients on Grand Avenue for over a decade. Your care is led by
+            co-owners Dr. Jill A. Martenson, DDS — University of the Pacific
+            School of Dentistry, with a General Practice Residency at the
+            University of Colorado — and Dr. David Ma, who trained at the
+            University of Pennsylvania School of Dental Medicine.
           </p>
         </header>
 

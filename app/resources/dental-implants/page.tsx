@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Dental Implants — Before & After",
   description:
-    "Real implant cases from Dr. Martenson and Dr. Ma — single-tooth replacements, full-arch rehabilitation, and implant-supported restorations with drag-to-compare results.",
+    "Real implant cases from Dr. Martenson and Dr. Ma — single-tooth replacements, full-arch rehabilitation and implant-supported restorations.",
   alternates: { canonical: "/resources/dental-implants" },
   openGraph: {
     title: "Dental Implants — Before & After | Piedmont Dental By Design",

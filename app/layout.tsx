@@ -27,9 +27,9 @@ const inter = Inter({
 
 const SITE = "https://piedmontdentalbydesign.com";
 const TITLE =
-  "Piedmont Dental By Design — Cosmetic, Restorative & Preventive Dentistry";
+  "Piedmont Dental By Design — Cosmetic & Restorative Dentistry";
 const DESCRIPTION =
-  "Cosmetic, restorative, and preventive dental practice on Grand Avenue in Piedmont, California — co-owned by Dr. Jill Martenson and Dr. David Ma, with 30 years of trusted care. 4.9 ★ on Google. Voted Best of the East Bay 2024 & 2025.";
+  "Cosmetic, restorative and preventive dentistry on Grand Avenue in Piedmont, CA. Dr. Jill Martenson, DDS and Dr. David Ma — 30 years of care, 4.9 ★ on Google.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),

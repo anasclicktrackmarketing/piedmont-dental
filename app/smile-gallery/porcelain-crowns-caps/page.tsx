@@ -110,7 +110,7 @@ const REASONS = [
 
 const FACTS = [
   { stat: "15–25 yrs", label: "Average lifespan of a porcelain crown" },
-  { stat: "1–2 visits", label: "Typical placement timeline" },
+  { stat: "1–2 visits", label: "Same day with CEREC®, or 2 visits via the lab" },
   { stat: "All porcelain", label: "Our preferred material — no metal" },
 ];
 

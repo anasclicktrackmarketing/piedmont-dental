@@ -37,12 +37,12 @@ export default function CrownsCapsPage() {
           tagline="Custom porcelain coverings that restore tooth shape, size, and strength."
           featuredImage="/img/lIVE Piedmont website images/63e2da680b885fcdefe302c1_Crown-Lengthening2-scaled.jpg"
           intro={[
-            "A crown (or cap) is a covering that encases the entire tooth surface, restoring it to its original shape and size. A crown protects and strengthens tooth structure that cannot be restored with fillings or other types of restorations.",
+            "A crown (or cap) is a covering that encases the entire tooth surface, restoring it to its original shape and size and protecting tooth structure that cannot be rebuilt with a filling. For many crowns we can design, mill, and bond the permanent restoration here in the office in a single visit using CEREC® — no impressions sent away, no temporary crown, and no two-week wait.",
             "Although there are several types of crowns, porcelain (tooth-colored) crowns are the most popular. They are highly durable and will last many years, but like most dental restorations, they may eventually need to be replaced. Porcelain crowns are made to match the shape, size, and color of your teeth, giving you a natural, long-lasting beautiful smile.",
           ]}
           stats={[
-            { value: "2 visits", label: "Typical timeline" },
-            { value: "~2 wks", label: "Lab fabrication" },
+            { value: "1 visit", label: "Same-day with CEREC®" },
+            { value: "2 visits", label: "Lab-fabricated route" },
             { value: "Porcelain", label: "Tooth-color match" },
             { value: "Many years", label: "Durable lifespan" },
           ]}
@@ -59,9 +59,17 @@ export default function CrownsCapsPage() {
               ],
             },
             {
-              title: "What does getting a crown involve?",
+              title: "Same-day crowns with CEREC®",
               body: [
-                "A crown procedure usually requires two appointments. Your first appointment will include taking several highly accurate molds (or impressions) that will be used to create your custom crown. A mold will also be used to create a temporary crown, which will stay on your tooth for approximately two weeks until your new crown is fabricated by a dental laboratory.",
+                "For many crowns we do not need a dental laboratory at all. We take a 3D digital scan of the prepared tooth, design the crown on screen, and mill it from a solid ceramic block in our own office while you wait. The crown that goes in is the permanent one — there is no temporary to look after and nothing to come back for.",
+                "Start to finish this takes about 1.5 to 2 hours in a single appointment. It also means one round of numbing instead of two, and no risk of a temporary crown coming loose in the meantime.",
+                "Not every case suits same-day milling. Larger reconstructions, and front teeth where we are matching subtle colour and translucency across several teeth, are often better served by a dental laboratory. We will tell you which route we recommend for your tooth, and why, before any treatment starts.",
+              ],
+            },
+            {
+              title: "The lab-fabricated route: what it involves",
+              body: [
+                "When a crown is made by a dental laboratory the procedure takes two appointments. Your first appointment will include taking several highly accurate molds (or impressions) that will be used to create your custom crown. A mold will also be used to create a temporary crown, which will stay on your tooth for approximately two weeks until your new crown is fabricated by a dental laboratory.",
                 "While the tooth is numb, the dentist will prepare the tooth by removing any decay and shaping the surface to properly fit the crown. Once these details are accomplished, your temporary crown will be placed with temporary cement and your bite will be checked to ensure you are biting properly.",
                 "At your second appointment, your temporary crown will be removed, the tooth will be cleaned, and your new crown will be carefully placed to ensure the spacing and bite are accurate.",
                 "You will be given care instructions and encouraged to have regular dental visits to check your new crown.",
@@ -90,8 +98,8 @@ export default function CrownsCapsPage() {
               a: "The crown itself can't — porcelain doesn't decay. But new decay can form at the margin where the crown meets the natural tooth, especially if you have gum recession exposing root surfaces. That's why we still check crowns at every cleaning visit and X-ray. Good home care prevents this from being a problem.",
             },
             {
-              q: "How long is the wait between the temporary crown and the permanent one?",
-              a: "Typically about 2 weeks. At the first appointment we prepare the tooth, take a mold, and place a temporary. The lab fabricates your permanent crown during that 2-week period; we bond it at the second visit. CEREC same-day crowns skip this wait entirely — the permanent is milled in our office while you wait.",
+              q: "Can I get my crown in one visit?",
+              a: "For many crowns, yes. With CEREC® we scan, design, and mill the permanent crown in our office and bond it the same day — about 1.5 to 2 hours, one appointment, no temporary. If your case is better suited to a dental laboratory (larger reconstructions, or front teeth where we are matching colour across several teeth), the lab route takes two appointments about 2 weeks apart, and you wear a temporary in between. We will tell you which we recommend for your tooth before treatment starts.",
             },
             {
               q: "Will a crown feel different from my natural tooth?",

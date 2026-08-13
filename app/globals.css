@@ -1028,6 +1028,210 @@ a { color: inherit; text-decoration: none; }
   gap: 80px;
   align-items: start;
 }
+/* Same body rhythm, no sidebar. The two-column rule above reserves a 240px
+   track for .proc-sidebar; a section that has no sidebar (a category hub, say)
+   would otherwise drop its only child into that 240px track and render as a
+   narrow ribbon on desktop. Use this modifier whenever there is no sidebar. */
+.proc-detail-body-inner--full {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+.proc-detail-body-inner--full > * {
+  max-width: 72ch;
+}
+
+/* ── Restoration hub: decision guide + cost table ─────────────────────────
+   Same visual language as the other comparison blocks on the site
+   (.cf-vs-grid, .invisalign-compare, .ivresults-compare-table): paper cards,
+   1px rule border, 14–16px radius, teal accent on the emphasised column,
+   uppercase .num eyebrow above each header. */
+.rest-guide {
+  padding: 84px 0 20px;
+  background: var(--paper);
+}
+.rest-guide-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.rest-guide-head {
+  max-width: 62ch;
+  margin: 0 0 28px;
+}
+.rest-guide-head--tight {
+  margin-top: 72px;
+}
+.rest-guide-head h2 {
+  font-family: var(--serif);
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 10px 0 0;
+}
+.rest-guide-head p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 14px 0 0;
+}
+
+.rest-decide-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.rest-decide-col {
+  padding: 30px 28px;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+}
+.rest-decide-col--accent {
+  background: rgba(63, 176, 164, 0.06);
+  border-color: var(--teal);
+  box-shadow: 0 8px 22px rgba(63, 176, 164, 0.1);
+}
+.rest-decide-tag {
+  display: inline-flex;
+  padding: 5px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: var(--paper);
+}
+.rest-decide-col--accent .rest-decide-tag {
+  border-color: var(--teal);
+  color: #1f6b62;
+}
+.rest-decide-col h3 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--ink);
+  margin: 16px 0 18px;
+}
+.rest-decide-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.rest-decide-col li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.rest-decide-col li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+.rest-decide-col li strong {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.rest-decide-col li span {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+
+/* The table scrolls inside its own wrapper on narrow screens rather than
+   forcing the page to scroll sideways. */
+.rest-costs-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.rest-costs {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.rest-costs thead {
+  background: var(--paper);
+}
+.rest-costs th[scope="col"] {
+  text-align: left;
+  padding: 16px 22px;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--rule);
+}
+.rest-costs th[scope="row"] {
+  text-align: left;
+  padding: 18px 22px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.rest-costs th[scope="row"] a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.rest-costs th[scope="row"] a:hover {
+  color: var(--teal);
+}
+.rest-costs td {
+  padding: 18px 22px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  vertical-align: top;
+}
+.rest-costs tbody tr + tr th,
+.rest-costs tbody tr + tr td {
+  border-top: 1px solid var(--rule);
+}
+.rest-costs-range {
+  display: block;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.rest-costs-unit {
+  display: block;
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+@media (max-width: 860px) {
+  .rest-decide-grid {
+    grid-template-columns: 1fr;
+  }
+  .rest-guide {
+    padding-top: 56px;
+  }
+  .rest-guide-head--tight {
+    margin-top: 52px;
+  }
+}
 .proc-sidebar {
   position: sticky;
   top: 110px;
@@ -3803,6 +4007,19 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.6;
   color: var(--ink-soft);
   margin: 0 0 18px;
+}
+/* Inline link inside a resource hero lede. Teal reads on both hero variants —
+   the light one and the dark one below — so it does not need a per-variant
+   override the way .post-hero-back does. Without this it inherits the lede
+   colour exactly and stops looking clickable. */
+.resource-hero-inline-link {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.resource-hero-inline-link:hover {
+  text-decoration-thickness: 2px;
 }
 .resource-hero-note {
   background: var(--paper-2);

@@ -24,7 +24,7 @@ export const posts: Post[] = [
     image: "/img/blog/what-is-smile-design-consultation/hero.jpg",
     alt: "Dentist and patient reviewing a digital smile design mockup on screen",
     excerpt:
-      "The phrase “smile design” has become more common in cosmetic dentistry conversations, but many patients are still unsure what it means — or whether they need one. It's a structured evaluation that treats your smile as a whole, not tooth by tooth.",
+      "A smile design consultation is a structured evaluation that treats your smile as a whole, not tooth by tooth. Here's what it involves and who needs one.",
   },
   {
     slug: "how-to-choose-cosmetic-dentist-east-bay",
@@ -36,7 +36,7 @@ export const posts: Post[] = [
     image: "/img/blog/how-to-choose-cosmetic-dentist-east-bay/hero.jpg",
     alt: "Cosmetic dentist in clinical setting preparing for a patient consultation",
     excerpt:
-      "Choosing a cosmetic dentist is one of the most important decisions you can make for your appearance and confidence. Cosmetic dentistry is as much art as science — use this East Bay checklist to vet credentials, portfolio, and process.",
+      "Cosmetic dentistry is as much art as science. Use this East Bay checklist to vet a dentist's credentials, portfolio, and process before you commit.",
   },
   {
     slug: "teeth-whitening-piedmont-professional-vs-at-home",
@@ -49,7 +49,7 @@ export const posts: Post[] = [
       "/img/blog/teeth-whitening-piedmont-professional-vs-at-home/hero.jpg",
     alt: "Bright white teeth after a professional whitening treatment",
     excerpt:
-      "A bright, white smile is one of the most impactful cosmetic improvements you can make — and whitening is consistently the most requested cosmetic dental procedure in the East Bay. Here's how in-office, take-home, and store-bought options actually compare.",
+      "Whitening is the most requested cosmetic procedure in the East Bay. Here's how in-office, take-home, and store-bought options actually compare.",
   },
   {
     slug: "cerec-same-day-crowns-oakland",
@@ -61,7 +61,7 @@ export const posts: Post[] = [
     image: "/img/blog/cerec-same-day-crowns-oakland/hero.jpg",
     alt: "Digital dental scan and same-day CEREC crown workflow",
     excerpt:
-      "Traditional crowns require two appointments, temporaries, and a set of gooey impressions. CEREC uses a digital scanner and an in-office milling unit to design, fabricate, and bond a permanent crown in a single visit — here's how the workflow really works.",
+      "CEREC designs, mills, and bonds a permanent crown in a single visit — no temporaries, no gooey impressions. Here's how the workflow really works.",
   },
   {
     slug: "invisalign-vs-braces-adults-east-bay",
@@ -72,7 +72,7 @@ export const posts: Post[] = [
     image: "/img/blog/invisalign-vs-braces-adults-east-bay/hero.jpg",
     alt: "Adult holding a clear Invisalign aligner tray",
     excerpt:
-      "More adults than ever are choosing to straighten their teeth. Invisalign and traditional braces both move teeth effectively, but differ in comfort, aesthetics, treatment time, and cost — here's the honest side-by-side for East Bay patients.",
+      "Invisalign and braces both move teeth effectively, but differ in comfort, aesthetics, treatment time, and cost. An honest side-by-side for adults.",
   },
   {
     slug: "veneers-cost-oakland-2026",
@@ -83,7 +83,7 @@ export const posts: Post[] = [
     image: "/img/blog/veneers-cost-oakland-2026/hero.jpg",
     alt: "Porcelain veneer shade guide next to a bright natural smile",
     excerpt:
-      "Porcelain veneers are one of the most transformative cosmetic procedures available — but for many East Bay residents, the first question is practical: what should I expect to pay in Oakland in 2026? Here's a transparent breakdown by type, tooth count, and financing.",
+      "What should porcelain veneers cost in Oakland in 2026? A transparent breakdown by veneer type, number of teeth, and the financing options available.",
   },
   {
     slug: "porcelain-veneers-vs-dental-bonding",
@@ -95,7 +95,7 @@ export const posts: Post[] = [
     image: "/img/blog/porcelain-veneers-vs-dental-bonding/hero.jpg",
     alt: "Cosmetic dentist comparing porcelain veneers and composite bonding for a patient",
     excerpt:
-      "Chipped teeth, stubborn stains, small gaps, and uneven edges are among the most common cosmetic concerns we hear from East Bay patients. Two of the most popular solutions are porcelain veneers and dental bonding — here's a side-by-side to help you choose.",
+      "Chips, stains, small gaps and uneven edges have two popular fixes: porcelain veneers and dental bonding. Here's a side-by-side to help you choose.",
   },
   {
     slug: "dental-implants-piedmont-ca",
@@ -107,7 +107,7 @@ export const posts: Post[] = [
     image: "/img/blog/dental-implants-piedmont-ca/hero.jpg",
     alt: "Dental implants illustration",
     excerpt:
-      "Dental implants are widely recognized as the gold standard solution for missing teeth — the only option that replaces the entire tooth structure, including the root, for a result that looks, feels, and functions like a natural tooth.",
+      "Dental implants are the only option that replaces the whole tooth, root included — for a result that looks, feels, and functions like a natural tooth.",
   },
   {
     slug: "cosmetic-dentist-piedmont-ca",
@@ -119,7 +119,7 @@ export const posts: Post[] = [
     image: "/img/blog/cosmetic-dentist-piedmont-ca/hero.jpg",
     alt: "Cosmetic dentistry results",
     excerpt:
-      "Your smile is one of the most powerful expressions of who you are. Whether you're preparing for a milestone or just ready to feel better about your teeth, modern cosmetic dentistry can create a transformation that's both meaningful and lasting.",
+      "Whether you're preparing for a milestone or simply ready to feel better about your teeth, modern cosmetic dentistry can deliver a lasting transformation.",
   },
   {
     slug: "family-dentist-piedmont-ca",
@@ -131,7 +131,7 @@ export const posts: Post[] = [
     image: "/img/blog/family-dentist-piedmont-ca/hero.jpg",
     alt: "Family general dentist appointment",
     excerpt:
-      "Choosing a dentist for your entire household is one of the most significant health decisions a family can make. From a child's first dental visit to a grandparent's routine cleaning, a trusted general dentist builds the foundation for lifelong oral wellness.",
+      "From a child's first visit to a grandparent's routine cleaning, a trusted general dentist builds the foundation for a whole family's lifelong oral health.",
   },
   {
     slug: "trusted-dentist-oakland-ca",
@@ -142,7 +142,7 @@ export const posts: Post[] = [
     image: "/img/blog/trusted-dentist-oakland-ca/hero.jpg",
     alt: "Practice exterior — trusted dentist near Oakland",
     excerpt:
-      "If you're seeking a dedicated and experienced dentist near Oakland, look no further than Piedmont Dental by Design. Located at 1331 Grand Ave, Piedmont, we have been providing great dental care to the Oakland and Piedmont communities for over 30 years.",
+      "Piedmont Dental by Design has cared for the Oakland and Piedmont communities for over 30 years from our Grand Avenue office. Here's what to expect.",
   },
   {
     slug: "waterpik-vs-flossing",
@@ -153,7 +153,7 @@ export const posts: Post[] = [
     image: "/img/blog/waterpik-vs-flossing/hero.jpg",
     alt: "Waterpik vs traditional dental floss",
     excerpt:
-      "Brushing your teeth twice a day is essential — but it's only half the battle. Most people are familiar with traditional dental floss, but Waterpiks are becoming increasingly popular. So which is better for your teeth?",
+      "Brushing is only half the battle. Traditional floss or a Waterpik — here's how they compare, and which actually cleans between your teeth better.",
   },
   {
     slug: "family-dentist-piedmont",
@@ -165,7 +165,7 @@ export const posts: Post[] = [
     image: "/img/blog/family-dentist-piedmont/hero.jpg",
     alt: "Local family dentist visit",
     excerpt:
-      "When it comes to your family's oral health, convenience, consistency, and comfort are key. A family dentist provides comprehensive dental care for patients of all ages — instead of visiting multiple specialists, you can simplify with one provider you trust.",
+      "A family dentist provides comprehensive care for every age — so instead of visiting multiple specialists, you can simplify with one provider you trust.",
   },
 ];
 

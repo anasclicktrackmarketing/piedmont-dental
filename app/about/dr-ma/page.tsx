@@ -10,7 +10,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Dr. David Ma — Co-Owner & Cosmetic Dentist",
   description:
-    "Dr. David Ma — co-owner of Piedmont Dental By Design and a UPenn Dental Medicine graduate with honors. Expert in restorative, cosmetic, and full-mouth rehabilitation dentistry.",
+    "Dr. David Ma — co-owner of Piedmont Dental By Design and a UPenn Dental Medicine graduate with honors. Restorative, cosmetic and full-mouth rehabilitation.",
   alternates: { canonical: "/about/dr-ma" },
   openGraph: {
     title: "Dr. David Ma — Piedmont Dental By Design",
@@ -32,8 +32,8 @@ export default function DrMaPage() {
           index="i"
           pronoun="he"
           name="Dr. David Ma"
-          role="Co-Owner · Restorative & Cosmetic Dentistry"
-          intro="Dr. David Ma is a compassionate, highly skilled dentist dedicated to comprehensive, patient-focused care — combining advanced clinical expertise with a personalized approach."
+          role="Co-Owner of Piedmont Dental By Design · Restorative & Cosmetic Dentistry"
+          intro="Dr. David Ma is a compassionate, highly skilled dentist caring for patients at our Piedmont practice — combining advanced clinical expertise with a personalized approach to comprehensive, patient-focused care."
           photo="/team/dr-ma.webp"
           photoAlt="Dr. David Ma, restorative dentist"
           credentials={[
@@ -44,7 +44,7 @@ export default function DrMaPage() {
           ]}
           bioParagraphs={[
             "Dr. David Ma is a compassionate and highly skilled dentist dedicated to delivering comprehensive, patient-focused care. Born in Japan and raised in the Bay Area, Dr. Ma proudly considers Northern California home. He earned his degree in Neurobiology, Physiology, and Behavior from the University of California, Davis, before receiving his dental degree from the University of Pennsylvania School of Dental Medicine, where he graduated with honors in clinical practice and community service.",
-            "Following dental school, Dr. Ma completed a General Practice Residency at the Northern California Veterans Affairs Hospital, gaining advanced experience in full mouth rehabilitations and complex treatment planning. He is passionate about helping patients achieve healthy, confident smiles through preventive, restorative, and cosmetic dentistry, combining advanced clinical expertise with a personalized approach to care.",
+            "Following dental school, Dr. Ma completed a General Practice Residency at the Northern California Veterans Affairs Hospital, gaining advanced experience in full mouth rehabilitations and complex treatment planning. He now practices at Piedmont Dental By Design on Grand Avenue in Piedmont, where he is passionate about helping patients achieve healthy, confident smiles through preventive, restorative, and cosmetic dentistry, combining advanced clinical expertise with a personalized approach to care.",
           ]}
           education={[
             {

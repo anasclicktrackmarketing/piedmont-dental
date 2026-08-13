@@ -11,7 +11,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Full Mouth Restoration",
   description:
-    "Comprehensive full-mouth restoration cases from Dr. Jill Martenson and Dr. David Ma — combining implants, crowns, veneers, and prosthetics to rebuild function and confidence.",
+    "Full-mouth restoration cases from Dr. Martenson and Dr. Ma — implants, crowns, veneers and prosthetics combined to rebuild function and confidence.",
   alternates: { canonical: "/resources/full-mouth-restoration" },
   openGraph: {
     title: "Full Mouth Restoration — Piedmont Dental By Design",

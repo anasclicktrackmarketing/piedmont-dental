@@ -11,7 +11,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Piedmont Dental By Design. Send a message, call (510) 350-3937, or reach Dr. Jill Martenson and Dr. David Ma directly. 1331 Grand Ave, Piedmont, CA 94610.",
+    "Contact Piedmont Dental By Design — call (510) 350-3937 or send a message. 1331 Grand Ave, Piedmont, CA 94610. Dr. Jill Martenson and Dr. David Ma.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Piedmont Dental By Design",

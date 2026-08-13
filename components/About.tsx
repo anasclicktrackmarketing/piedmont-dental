@@ -30,14 +30,14 @@ const DOCTORS: Doctor[] = [
     bg: "var(--teal)",
     name: "Dr. Jill A. Martenson",
     role: "Co-Owner · cosmetic",
-    yearsLabel: "30 years",
+    yearsLabel: "DDS · 30 years",
     awardLabel: "Best Esthetic Dentist 2024 & 2025",
     photo:
       "/img/lIVE Piedmont website images/Headshot_Dr-Jill-Martenson-scaled.jpg",
     photoAlt: "Dr. Jill Martenson at Piedmont Dental By Design",
     question: "Who is Dr. Jill Martenson?",
     paragraphs: [
-      "Dr. Jill A. Martenson is a co-owner of Piedmont Dental By Design and has cared for the Piedmont community for 30 years. She was voted Best Esthetic Dentist by Best of the East Bay readers in 2024 and 2025, and is a member of the AACD, ADA, and CDA — three of the professional associations most associated with cosmetic dental standards.",
+      "Dr. Jill A. Martenson, DDS, is a co-owner of Piedmont Dental By Design and has cared for the Piedmont community for 30 years. She earned her Doctor of Dental Surgery with high honors from the University of the Pacific School of Dentistry in 1996, after graduating with honors from UCLA, and completed a General Practice Residency at the University of Colorado Health Science Center. She was voted Best Esthetic Dentist by Best of the East Bay readers in 2024 and 2025, and is a member of the AACD, ADA, and CDA — three of the professional associations most associated with cosmetic dental standards.",
       "She co-owns the practice with Dr. David Ma, who handles restorative work; board-certified periodontist Dr. Filippo Cangini completes the team — so patients can stay with one practice for cosmetic, gum, and structural care.",
     ],
     href: "/about/dr-martenson",

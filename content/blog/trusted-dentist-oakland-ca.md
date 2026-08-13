@@ -81,6 +81,6 @@ The practice prioritizes oral health awareness and accessible dental care for in
 
 ## Schedule Your Appointment
 
-**Address:** 1331 Grand Ave, Oakland, CA 94610
+**Address:** 1331 Grand Ave, Piedmont, CA 94610
 **Phone:** (510) 652-2911
 **Website:** piedmontdentalbydesign.com
