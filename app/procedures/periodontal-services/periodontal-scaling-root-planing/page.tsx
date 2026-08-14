@@ -106,7 +106,6 @@ export default function ScalingRootPlaningPage() {
               a: "Possibly — your root surfaces have been cleaned of the bacterial film that was insulating them, and gums may shrink back slightly as inflammation resolves. Temporary cold sensitivity for a few weeks is common. We can prescribe a desensitizing toothpaste if it's bothering you. Most patients find the sensitivity resolves as roots build up natural protective layers.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

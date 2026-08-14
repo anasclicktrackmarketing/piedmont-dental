@@ -3,6 +3,7 @@ import Link from "next/link";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQPageSchema from "@/components/schema/FAQPageSchema";
+import { getProcedureSidebar } from "@/lib/internal-links";
 
 // Schema.org category name per practice-area slug
 const SCHEMA_CATEGORY: Record<string, string> = {
@@ -28,11 +29,6 @@ export type ProcedureStat = {
   label: string;
 };
 
-export type RelatedProcedure = {
-  slug: string;
-  title: string;
-};
-
 export type ProcedureDetailProps = {
   category: {
     slug: "cleanings-prevention" | "cosmetic-dentistry" | "periodontal-services" | "restoration";
@@ -51,8 +47,6 @@ export type ProcedureDetailProps = {
   sections: ProcedureSection[];
   /** Frequently asked questions — rendered as a server-side accordion + emits FAQPage JSON-LD */
   faqs?: ProcedureFAQ[];
-  /** Sibling procedures in the same category */
-  related?: RelatedProcedure[];
   /** Optional procedure-specific featured image; otherwise category-themed image is used */
   featuredImage?: string;
   featuredAlt?: string;
@@ -74,7 +68,6 @@ export default function ProcedureDetail({
   stats,
   sections,
   faqs,
-  related,
   featuredImage,
   featuredAlt,
 }: ProcedureDetailProps) {
@@ -82,6 +75,12 @@ export default function ProcedureDetail({
   const remainingIntro = intro.slice(1);
   const image = featuredImage ?? CATEGORY_IMAGE[category.slug];
   const imageAlt = featuredAlt ?? `${title} — Piedmont Dental By Design`;
+  // Sidebar links derive from the internal-linking template (decision #50),
+  // so cross-category and city links appear without per-page edits.
+  const [siblingGroup, ...extraGroups] = getProcedureSidebar(
+    category.slug,
+    slug,
+  );
 
   return (
     <>
@@ -138,33 +137,35 @@ export default function ProcedureDetail({
       {/* Body — 2-col with sidebar related list */}
       <section className="proc-detail-body">
         <div className="proc-detail-body-inner">
-          {/* Sidebar — related procedures within category */}
-          {related && related.length > 0 && (
+          {/* Sidebar — derived from the internal-linking template */}
+          {siblingGroup && siblingGroup.links.length > 0 && (
             <aside className="proc-sidebar" aria-label="Related procedures">
               <div className="proc-sidebar-inner">
-                <span className="proc-sidebar-label">In this category</span>
+                <span className="proc-sidebar-label">{siblingGroup.label}</span>
                 <h3 className="proc-sidebar-title">{category.label}</h3>
                 <ol className="proc-sidebar-list">
-                  {related.map((r) => {
-                    const isCurrent = r.slug === slug;
-                    return (
-                      <li
-                        key={r.slug}
-                        className={isCurrent ? "is-current" : ""}
-                      >
-                        {isCurrent ? (
-                          <span aria-current="page">{r.title}</span>
-                        ) : (
-                          <Link
-                            href={`/procedures/${category.slug}/${r.slug}`}
-                          >
-                            {r.title}
-                          </Link>
-                        )}
-                      </li>
-                    );
-                  })}
+                  {siblingGroup.links.map((r) => (
+                    <li key={r.href} className={r.isCurrent ? "is-current" : ""}>
+                      {r.isCurrent ? (
+                        <span aria-current="page">{r.title}</span>
+                      ) : (
+                        <Link href={r.href}>{r.title}</Link>
+                      )}
+                    </li>
+                  ))}
                 </ol>
+                {extraGroups.map((g) => (
+                  <div className="proc-sidebar-group" key={g.label}>
+                    <span className="proc-sidebar-label">{g.label}</span>
+                    <ol className="proc-sidebar-list">
+                      {g.links.map((r) => (
+                        <li key={r.href}>
+                          <Link href={r.href}>{r.title}</Link>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                ))}
                 <Link
                   className="proc-sidebar-back"
                   href={`/procedures/${category.slug}`}

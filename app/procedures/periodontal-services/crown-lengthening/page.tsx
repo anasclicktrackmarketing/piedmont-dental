@@ -101,7 +101,6 @@ export default function CrownLengtheningPage() {
               a: "If the procedure is functional (necessary to place a crown, or to treat damaged teeth), insurance typically covers a significant portion. If it's purely cosmetic (gummy smile correction without restorative need), most plans treat it as elective and don't cover. We verify your benefits before booking and give you a clear cost estimate.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

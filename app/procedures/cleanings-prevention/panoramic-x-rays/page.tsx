@@ -109,7 +109,6 @@ export default function PanoramicXRaysPage() {
               a: "It can show the bony structures of the TMJ joints and any obvious fractures or arthritis. For soft-tissue diagnosis of the disc or muscle problems, MRI is more useful. Panoramic imaging is often the first imaging step when TMJ pain is suspected.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

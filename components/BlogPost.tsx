@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import type { BlogPost as BlogPostData } from "@/lib/blog";
 import type { Post } from "@/components/BlogIndex";
+import { getServiceLinksForPost } from "@/lib/internal-links";
 
 export default function BlogPost({
   post,
@@ -93,22 +94,14 @@ export default function BlogPost({
             <div className="post-sidebar-card">
               <span className="num">i. — Quick links</span>
               <h3>Looking for a service?</h3>
+              {/* Per-post links from the internal-linking template — the
+                  guide points up to the money pages it supports. */}
               <ul>
-                <li>
-                  <Link href="/procedures/cosmetic-dentistry">
-                    Cosmetic Dentistry →
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/procedures/restoration/dental-implants">
-                    Dental Implants →
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/procedures/cleanings-prevention">
-                    Cleanings & Prevention →
-                  </Link>
-                </li>
+                {getServiceLinksForPost(post.slug).map((l) => (
+                  <li key={l.href}>
+                    <Link href={l.href}>{l.title} →</Link>
+                  </li>
+                ))}
                 <li>
                   <Link href="/procedures">All procedures →</Link>
                 </li>

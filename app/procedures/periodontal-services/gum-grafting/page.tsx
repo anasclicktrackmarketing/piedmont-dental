@@ -106,7 +106,6 @@ export default function GumGraftingPage() {
               a: "Yes — modern grafting techniques produce excellent aesthetic results, especially when an experienced periodontist (Dr. Cangini in our practice) does the procedure. The grafted tissue blends with the surrounding gum tissue over the first few months. Patients are typically very happy with both the comfort relief and the appearance improvement.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

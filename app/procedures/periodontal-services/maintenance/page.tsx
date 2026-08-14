@@ -99,7 +99,6 @@ export default function MaintenancePage() {
               a: "Absolutely — and possibly more carefully than someone who's never had gum disease. Daily flossing disrupts the bacterial colonies that drive recurrence. Many of our maintenance patients also use a water flosser, interdental brushes, or medicated rinses. We coach the right tools for your case.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

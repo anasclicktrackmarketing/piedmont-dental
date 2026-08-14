@@ -107,7 +107,6 @@ export default function DenturesPage() {
               a: "Yes, especially in the first few weeks — words with 's', 'f', and 'th' sounds are typically the hardest to adjust to. Reading aloud at home for 15–20 minutes a day during the first 2 weeks accelerates the adjustment dramatically. Within a month, most patients speak normally.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

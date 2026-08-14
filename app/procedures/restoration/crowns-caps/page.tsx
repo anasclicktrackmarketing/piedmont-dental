@@ -110,7 +110,6 @@ export default function CrownsCapsPage() {
               a: "Most porcelain crowns at our practice run $1,200–$1,800 depending on the tooth, material choice, and lab used. Dental insurance typically covers a substantial portion (often around 50%) when the crown is for a damaged tooth. We provide exact quotes and verify insurance benefits before starting.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

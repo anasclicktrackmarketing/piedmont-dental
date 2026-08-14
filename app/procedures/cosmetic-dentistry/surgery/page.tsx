@@ -98,7 +98,6 @@ export default function SurgeryPage() {
               a: "Gum contouring (sometimes called gum reshaping with a laser) removes only soft tissue and is reversible — gums can re-cover the tooth over time. Surgical crown lengthening reshapes both gum tissue and a small amount of bone, which makes the change permanent. The right procedure depends on how much exposure you need and how the tooth meets the bone.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

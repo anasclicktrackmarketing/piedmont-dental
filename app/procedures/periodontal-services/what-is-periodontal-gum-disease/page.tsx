@@ -118,7 +118,6 @@ export default function WhatIsPeriodontalDiseasePage() {
               a: "Bacterial plaque sitting along the gumline that isn't disrupted by daily brushing and flossing. Risk factors that make some people more susceptible: smoking (major), uncontrolled diabetes, genetic predisposition, hormonal changes (pregnancy, menopause), certain medications, and poor diet. Plaque is the cause; the risk factors determine how aggressively your body reacts to it.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

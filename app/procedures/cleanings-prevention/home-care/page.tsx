@@ -119,7 +119,6 @@ export default function HomeCarePage() {
               a: "Brush your tongue from back to front with your regular toothbrush, or use a dedicated tongue scraper. The back of the tongue harbors most of the bacteria that cause bad breath. A few gentle strokes is enough — don't scrub hard.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />
