@@ -9,6 +9,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { posts as POST_META, type Post } from "@/components/BlogIndex";
+import { getRelatedPostMeta } from "@/lib/internal-links";
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "blog");
 
@@ -41,5 +42,7 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export function getRelatedPosts(slug: string, limit = 3): Post[] {
-  return POST_META.filter((p) => p.slug !== slug).slice(0, limit);
+  // Topic-scored via the internal-linking template (decision #50) — was a
+  // positional slice that gave most posts the same three "related" articles.
+  return getRelatedPostMeta(slug, limit);
 }

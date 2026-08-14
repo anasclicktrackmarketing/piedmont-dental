@@ -1297,6 +1297,11 @@ a { color: inherit; text-decoration: none; }
   height: 1px;
   background: var(--teal);
 }
+/* Extra link groups from the internal-linking template (cross-category,
+   city pages) — spacing between a group and whatever sits above it. */
+.proc-sidebar-group {
+  margin-top: 22px;
+}
 .proc-sidebar-back {
   display: inline-block;
   margin-top: 18px;

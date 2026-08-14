@@ -117,7 +117,6 @@ export default function DentalImplantsPage() {
               a: "Brush twice daily and floss around the implant exactly as you would a natural tooth. We may recommend a water flosser or interdental brush for the implant area. Continue regular cleanings and exams every 6 months so we can check the implant, surrounding gum tissue, and bone level with X-rays. Avoid using your front implants to bite hard objects like ice or pen caps.",
             },
           ]}
-          related={category.items}
           featuredImage="/img/procedures/restoration/dental-implants/hero.png"
         />
         <AwardsStrip />

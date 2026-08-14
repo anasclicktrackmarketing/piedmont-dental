@@ -110,7 +110,6 @@ export default function FluorideTreatmentPage() {
               a: "Only if your child isn't getting enough fluoride from their water supply and is at higher-than-average cavity risk. Drops are for infants; tablets for children through the teen years. We never recommend supplements without first checking your home water source — too much fluoride during tooth development causes fluorosis.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

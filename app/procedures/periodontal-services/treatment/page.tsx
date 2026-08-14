@@ -101,7 +101,6 @@ export default function TreatmentPage() {
               a: "Yes — periodontal disease is managed, not cured. Once you've had it, you'll need quarterly maintenance visits indefinitely to prevent recurrence. The good news: with consistent maintenance, the vast majority of patients keep their teeth for life. Skipping maintenance is what allows the disease to come back.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

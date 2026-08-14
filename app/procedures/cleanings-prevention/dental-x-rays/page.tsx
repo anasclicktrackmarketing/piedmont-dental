@@ -108,7 +108,6 @@ export default function DentalXRaysPage() {
               a: "Yes — digital X-ray sensors deliver about 70–80% less radiation than traditional film. We use digital imaging throughout the practice, which also means we can review your images chairside on a screen and store them as part of your record without any chemical processing.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

@@ -92,7 +92,6 @@ export default function SinusAugmentationPage() {
               a: "Very — implant success rates in sinus-augmented sites match those in native bone (95%+) when done by an experienced periodontist. The procedure has been done for over 40 years and is well-refined. The biggest predictors of success are no smoking, proper home care during healing, and following the timing recommendation for implant placement.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

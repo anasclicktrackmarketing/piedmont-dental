@@ -111,7 +111,6 @@ export default function ToothWhiteningPage() {
               a: "Surface staining from coffee, tea, red wine, tobacco, and certain foods (dark berries, soy sauce, curry). Internal discoloration from age (enamel thins, revealing the yellower dentin underneath), genetics, medication (especially tetracycline taken in childhood), and trauma. Surface stains respond to whitening; deep internal discoloration may need veneers.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

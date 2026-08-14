@@ -135,7 +135,6 @@ export default function InvisalignPage() {
               a: "Yes — for life, just like with traditional braces. Teeth naturally try to drift back toward their original positions after any orthodontic treatment. We make clear Vivera retainers at the end of your case; most patients wear them nightly indefinitely. Skipping the retainer is the #1 reason teeth relapse.",
             },
           ]}
-          related={category.items}
           featuredImage="/img/procedures/cosmetic-dentistry/invisalign/hero.jpg"
         />
         <AwardsStrip />

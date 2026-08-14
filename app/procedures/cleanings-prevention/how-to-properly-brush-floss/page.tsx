@@ -120,7 +120,6 @@ export default function HowToBrushFlossPage() {
               a: "Molars have deep grooves (pits and fissures) on their chewing surface — narrow valleys where toothbrush bristles physically can't reach. That's why most cavities in kids form on chewing surfaces, and why we sometimes recommend dental sealants for those grooves. For adults, technique matters: angle the brush directly into the chewing surface and use back-and-forth strokes there.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />

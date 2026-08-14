@@ -101,7 +101,6 @@ export default function DentalExamsCleaningsPage() {
               a: "You're not alone, and we won't lecture you. At your first visit we'll do a thorough exam and decide together whether a regular cleaning is appropriate or whether a deeper periodontal cleaning is needed first. We see patients all the time who have been away from the dentist for 5, 10, or even 20 years — the only wrong move is continuing to wait.",
             },
           ]}
-          related={category.items}
           featuredImage="/img/lIVE Piedmont website images/Dental Exams & Cleanings.png"
         />
         <AwardsStrip />

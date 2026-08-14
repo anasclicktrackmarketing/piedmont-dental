@@ -107,7 +107,6 @@ export default function BoneGraftingPage() {
               a: "If the implant site doesn't have enough bone, we have a few options: place a smaller-diameter or shorter implant (sometimes possible), use a different replacement option like a bridge or denture, or simply leave the gap. Forcing an implant into insufficient bone leads to early failure, so a graft is usually the right investment.",
             },
           ]}
-          related={category.items}
         />
         <AwardsStrip />
         <AboutCTA />
