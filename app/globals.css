@@ -29,6 +29,13 @@
      header size ladder below — the tier that shrinks the logo also shrinks
      this. */
   --header-stack: 157px;
+  /* Best of the East Bay 2026 banner, which stacks above the announce bar.
+     The artwork is 6.75:1, so its height is what decides how much of it a
+     given viewport can show. Above ~494px the strip is a flat 112px and the
+     decorative swooshes crop off the sides; below that the height tracks the
+     viewport so the three medals never get clipped. Kept as its own variable
+     because .hero subtracts it alongside --header-stack. */
+  --award-banner-h: clamp(72px, calc(100vw / 4.4), 112px);
   --serif: var(--font-fraunces), Georgia, serif;
   --sans: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
@@ -125,6 +132,49 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-ghost-light:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
 .btn-lg { padding: 18px 32px; font-size: 15px; }
+
+/* ============================================================
+   Award banner (Best of the East Bay 2026)
+   ============================================================ */
+.award-banner {
+  /* Sampled from the artwork's own field, so the strip and the image read as
+     one surface on viewports wider than the capped artwork. */
+  background: #202845;
+  overflow: hidden;
+}
+.award-banner-inner {
+  position: relative;              /* containing block for next/image fill */
+  width: 100%;
+  /* 756 × 112 is the artwork's natural 6.75:1 aspect — at this cap it renders
+     completely uncropped, and nothing wider fits under a sane banner height. */
+  max-width: 756px;
+  height: var(--award-banner-h);
+  margin-inline: auto;
+  /* Past 756px the strip is wider than the artwork, so the gold swooshes would
+     otherwise stop dead against flat navy. Fading the last 48px dissolves them
+     into the strip instead. On narrower screens the fade lands on the cropped
+     decorative corners, where it costs nothing. */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 48px,
+    #000 calc(100% - 48px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 48px,
+    #000 calc(100% - 48px),
+    transparent 100%
+  );
+}
+.award-banner-inner img {
+  /* Only ever crops horizontally — the medals fill the artwork's full height,
+     so a vertical crop would slice the laurels. */
+  object-fit: cover;
+  object-position: center;
+}
 
 /* ============================================================
    Announcement bar
@@ -489,11 +539,14 @@ a { color: inherit; text-decoration: none; }
 .hero {
   position: relative;
   width: 100%;
-  /* Fill what's left of the first screen, not the whole screen — the announce
-     bar and sticky header are stacked above us, so a flat 100vh pushed the
-     bottom of the hero (CTAs, review line) under the fold on any laptop. */
+  /* Fill what's left of the first screen, not the whole screen — the award
+     banner, announce bar and sticky header are stacked above us, so a flat
+     100vh pushed the bottom of the hero (CTAs, review line) under the fold on
+     any laptop. */
   min-height: 100vh;
-  min-height: calc(100svh - var(--header-stack, 157px));
+  min-height: calc(
+    100svh - var(--header-stack, 157px) - var(--award-banner-h, 112px)
+  );
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -13818,9 +13871,19 @@ footer.site-footer {
    padding-top/-bottom longhands and not the padding shorthand.
 
    Scoped to >720px so the mobile block above keeps its own (taller, scrolling)
-   treatment untouched. */
-@media (min-width: 721px) and (max-height: 900px) {
-  .hero { padding-top: 56px; padding-bottom: 56px; }
+   treatment untouched.
+
+   The 1000px ceiling used to be 900px. The award banner spends ~112px above
+   the fold, so every machine that used to clear the desktop rhythm by less
+   than that no longer does — a 1512×982 MacBook Air was the first to slip.
+   Raising the cut-off by the banner's own height brings that tier back under
+   the tightened rhythm instead of leaving it to overflow. */
+@media (min-width: 721px) and (max-height: 1000px) {
+  /* The banner gives up 24px of its own height here rather than making the
+     hero absorb the whole cost; 88px still clears the ~72px floor where the
+     medals start to crowd their crop. */
+  :root { --award-banner-h: clamp(72px, calc(100vw / 4.4), 88px); }
+  .hero { padding-top: 40px; padding-bottom: 40px; }
   .hero-eyebrow--sentence { margin-bottom: 18px; }
   .hero-headline {
     font-size: clamp(38px, 4.6vw, 64px);

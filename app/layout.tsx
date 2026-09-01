@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import StructuredData from "@/components/StructuredData";
+import AwardBanner from "@/components/AwardBanner";
 import BestOfBayBadge from "@/components/BestOfBayBadge";
 import { GTMScript, GTMNoScript } from "@/components/GoogleTagManager";
 import AttributionCapture from "@/components/AttributionCapture";
@@ -153,6 +154,9 @@ export default function RootLayout({
         <GTMNoScript />
         <AttributionCapture />
         <VirtualPageview />
+        {/* Sits above every page's announce bar + header. In the layout rather
+            than the ~80 page files so new pages inherit it automatically. */}
+        <AwardBanner />
         {children}
         <BestOfBayBadge />
         <StructuredData />
