@@ -10,11 +10,15 @@ import Image from "next/image";
  * Sizing: the artwork is 1350×200 (6.75:1), which is far too wide to run
  * full-bleed at its natural aspect — a 1440px viewport would make it 213px
  * tall. Instead the strip is full-bleed navy (#202845, sampled from the
- * artwork) and the artwork itself is capped at 756×112, the largest size that
- * renders it uncropped. Below 756px the box narrows and object-fit: cover
- * trims the decorative corner swooshes rather than squashing the badges; the
- * height clamp in globals.css is tuned so the three medals (source x 240–1109)
- * stay fully visible down to a 320px viewport.
+ * artwork) with padding above and below, and the artwork itself is capped at
+ * 756×112, the largest size that renders it uncropped.
+ *
+ * The cap in globals.css is a width derived from the height (height × 6.75),
+ * not a flat 756px, so the box can never be proportionally wider than the
+ * artwork and object-fit: cover can never slice the medals top-and-bottom.
+ * Below that width the box narrows and cover trims the decorative corner
+ * swooshes instead; the height clamp is tuned so the three medals
+ * (source x 240–1109) stay fully visible down to a 320px viewport.
  */
 export default function AwardBanner() {
   return (
