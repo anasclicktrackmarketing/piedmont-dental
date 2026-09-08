@@ -47,7 +47,21 @@ const INTENTWAVE = [
   "https://fonts.bunny.net",
 ];
 
-const THIRD_PARTY = [...GTM, ...GOOGLE_ANALYTICS, ...LEADCONNECTOR, ...INTENTWAVE];
+/* Click Track Analytics (ct.js), the first-party attribution collector loaded
+   in the root layout. Two hosts, not one: the tag requests
+   app.clicktrackanalytics.com and that 308s to www.clicktrackanalytics.com,
+   and CSP re-checks the redirect target against the source list. Allowing
+   only the app host leaves the tag present in the page but blocked, which is
+   exactly the "it's in the HTML so it must be working" trap the IntentWave
+   note above warns about. Confirm with `typeof window.CT === 'object'`, not
+   by eyeballing the markup. The app host also needs connect-src for the
+   one-shot install beacon. */
+const CLICK_TRACK = [
+  "https://app.clicktrackanalytics.com",
+  "https://www.clicktrackanalytics.com",
+];
+
+const THIRD_PARTY = [...GTM, ...GOOGLE_ANALYTICS, ...LEADCONNECTOR, ...INTENTWAVE, ...CLICK_TRACK];
 
 const securityHeaders = [
   {
