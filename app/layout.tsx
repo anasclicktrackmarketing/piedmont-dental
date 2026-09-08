@@ -6,6 +6,7 @@ import BestOfBayBadge from "@/components/BestOfBayBadge";
 import { GTMScript, GTMNoScript } from "@/components/GoogleTagManager";
 import AttributionCapture from "@/components/AttributionCapture";
 import VirtualPageview from "@/components/VirtualPageview";
+import { ClickTrackAnalytics } from "@/components/ClickTrackAnalytics";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -151,6 +152,7 @@ export default function RootLayout({
   return (
     <html lang="en-US" className={`${fraunces.variable} ${inter.variable}`}>
       <body>
+        <ClickTrackAnalytics />
         <GTMNoScript />
         <AttributionCapture />
         <VirtualPageview />
