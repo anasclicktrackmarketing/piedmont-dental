@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { getAttributionData } from "@/lib/attribution";
 import SmsConsent, { SMS_CONSENT_TEXT } from "@/components/SmsConsent";
+import HoneypotField from "@/components/HoneypotField";
+import { FILL_MS_FIELD, HONEYPOT_FIELD } from "@/lib/spam-guard-fields";
 
 declare global {
   interface Window {
@@ -48,6 +50,12 @@ export default function SmileAnalysisForm() {
     phone: "",
     additional: "",
   });
+  // Anti-spam: honeypot value + when the form first rendered (for time-to-submit).
+  const [honeypot, setHoneypot] = useState("");
+  const renderedAt = useRef(0);
+  useEffect(() => {
+    renderedAt.current = Date.now();
+  }, []);
 
   const yesCount = Object.values(answers).filter((a) => a === "yes").length;
   const answeredCount = Object.values(answers).filter((a) => a !== undefined)
@@ -85,6 +93,9 @@ export default function SmileAnalysisForm() {
     const attribution = getAttributionData();
 
     const payload = {
+      [HONEYPOT_FIELD]: honeypot,
+      [FILL_MS_FIELD]: renderedAt.current ? Date.now() - renderedAt.current : 0,
+      form_message: contactData.additional || undefined,
       first_name: contactData.firstName,
       last_name: contactData.lastName,
       full_name: `${contactData.firstName} ${contactData.lastName}`.trim(),
@@ -114,19 +125,24 @@ export default function SmileAnalysisForm() {
       if (!res.ok || !json.ok) {
         console.error("[smile analysis] submission failed", json);
         setErrorMessage(
-          "Something went wrong sending your analysis. Please call us at (510) 350-3937 or try again."
+          json?.error ||
+            "Something went wrong sending your analysis. Please call us at (510) 350-3937 or try again."
         );
         setSubmitting(false);
         return;
       }
 
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: "generate_lead",
-        form_source: FORM_SOURCE,
-        form_intent_type: "consultation",
-        ...attribution,
-      });
+      // Only count a real lead — spam-filtered submissions come back ok
+      // but with no contactId, and must not fire a GA4 conversion.
+      if (json.contactId) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "generate_lead",
+          form_source: FORM_SOURCE,
+          form_intent_type: "consultation",
+          ...attribution,
+        });
+      }
 
       setSubmitted(true);
       setSubmitting(false);
@@ -166,6 +182,8 @@ export default function SmileAnalysisForm() {
 
   return (
     <form className="smile-analysis-form" onSubmit={handleSubmit}>
+      <HoneypotField value={honeypot} onChange={setHoneypot} />
+
       <fieldset className="smile-analysis-questions">
         <legend className="smile-analysis-legend">
           <span className="num">i. — 17 questions</span>

@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { getAttributionData } from "@/lib/attribution";
 import SmsConsent, { SMS_CONSENT_TEXT } from "@/components/SmsConsent";
+import HoneypotField from "@/components/HoneypotField";
+import { FILL_MS_FIELD, HONEYPOT_FIELD } from "@/lib/spam-guard-fields";
 
 declare global {
   interface Window {
@@ -29,6 +31,12 @@ export default function ContactHero() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  // Anti-spam: honeypot value + when the form first rendered (for time-to-submit).
+  const [honeypot, setHoneypot] = useState("");
+  const renderedAt = useRef(0);
+  useEffect(() => {
+    renderedAt.current = Date.now();
+  }, []);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -46,6 +54,8 @@ export default function ContactHero() {
     const attribution = getAttributionData();
 
     const payload = {
+      [HONEYPOT_FIELD]: honeypot,
+      [FILL_MS_FIELD]: renderedAt.current ? Date.now() - renderedAt.current : 0,
       first_name: firstName,
       last_name: lastName || undefined,
       full_name: name,
@@ -76,19 +86,24 @@ export default function ContactHero() {
       if (!res.ok || !json.ok) {
         console.error("[contact form] submission failed", json);
         setErrorMessage(
-          "Something went wrong sending your message. Please call us at (510) 350-3937 or try again."
+          json?.error ||
+            "Something went wrong sending your message. Please call us at (510) 350-3937 or try again."
         );
         setSubmitting(false);
         return;
       }
 
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: "generate_lead",
-        form_source: FORM_SOURCE,
-        form_intent_type: "contact",
-        ...attribution,
-      });
+      // Only count a real lead — spam-filtered submissions come back ok
+      // but with no contactId, and must not fire a GA4 conversion.
+      if (json.contactId) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "generate_lead",
+          form_source: FORM_SOURCE,
+          form_intent_type: "contact",
+          ...attribution,
+        });
+      }
 
       setSubmitted(true);
       setSubmitting(false);
@@ -165,6 +180,8 @@ export default function ContactHero() {
                 <h2>Send a message</h2>
                 <span className="contact-form-meta">~ 1 minute</span>
               </header>
+
+              <HoneypotField value={honeypot} onChange={setHoneypot} />
 
               <div className="form-row">
                 <label htmlFor="contact-name">

@@ -7,6 +7,9 @@
  * in this server-side env var — never exposed to the browser.
  *
  * Contract (per-client customization — see WRITE_ONCE_FIELD_KEYS below):
+ *   0. Spam screening (lib/spam-guard.ts): origin check, honeypot,
+ *      time-to-submit, content heuristics. Honeypot/timing hits get a fake
+ *      {ok:true} with no contactId and nothing is written.
  *   1. Parse + minimum-validate the incoming JSON.
  *   2. Look up an existing contact by email (idempotency).
  *   3. New contact  -> POST /contacts/ with the full payload (incl. locked
@@ -36,6 +39,7 @@
  */
 
 import type { NextRequest } from "next/server";
+import { screenLead, SPAM_META_KEYS } from "@/lib/spam-guard";
 
 const GHL_API = "https://services.leadconnectorhq.com";
 const API_VERSION = "2021-07-28";
@@ -139,6 +143,7 @@ function buildCustomFields(body: LeadBody, mode: "create" | "update") {
   for (const [key, raw] of Object.entries(body)) {
     if (raw === undefined || raw === null || raw === "") continue;
     if (STANDARD_FIELDS.has(key)) continue;
+    if (SPAM_META_KEYS.has(key)) continue; // honeypot / fill-time, never a GHL field
     if (key === "note") continue; // handled separately via the Notes API
 
     if (mode === "update") {
@@ -256,7 +261,23 @@ export async function POST(request: NextRequest) {
     return jsonError(400, "Invalid JSON body");
   }
 
-  if (!body || (!body.email && !body.phone)) {
+  if (!body || typeof body !== "object") {
+    return jsonError(400, "Invalid JSON body");
+  }
+
+  // Spam screening runs before anything touches GHL. Silent verdicts
+  // return a success-shaped body (no contactId) so bots get no feedback.
+  const verdict = screenLead(request, body);
+  if (verdict.kind === "silent") {
+    console.warn(`[lead] spam filtered (silent): ${verdict.reason}`);
+    return Response.json({ ok: true, contactId: null, created: false });
+  }
+  if (verdict.kind === "reject") {
+    console.warn(`[lead] spam rejected (${verdict.status}): ${verdict.reason}`);
+    return Response.json({ ok: false, error: verdict.message }, { status: verdict.status });
+  }
+
+  if (!body.email && !body.phone) {
     return jsonError(400, "email or phone is required");
   }
 
